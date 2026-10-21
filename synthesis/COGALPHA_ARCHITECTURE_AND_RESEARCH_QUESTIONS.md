@@ -1,6 +1,6 @@
 # P002 · CogAlpha：架构、作者贡献和待验证研究问题
 
-> **用户明确要求归档的专题总结**（2026-10-21），不是恢复 \`notes/\` 逐篇流水账。  
+> **用户明确要求归档的专题总结**（2026-10-21），不是恢复 `notes/` 逐篇流水账。  
 > **研究阶段**：CogAlpha 核心机制已讨论；以下关于缺点及改进的内容为**本篇的初步研究问题**，不意味着项目整体进入跨论文阶段二/方案阶段三。  
 > **正式来源**：Liu et al., *Cognitive Alpha Mining via LLM-Driven Code-Based Evolution*, ACL 2026，[ACL Anthology](https://aclanthology.org/2026.acl-long.538/)、[DOI](https://doi.org/10.18653/v1/2026.acl-long.538)、[arXiv HTML v4](https://arxiv.org/html/2511.18850)。
 
@@ -12,7 +12,7 @@
 
 ## 2. 架构图（依据 Figure 1 和 §3.1–3.6 自绘）
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
     D["OHLCV 日线数据"] --> H["七组研究主题 / 21 个领域 Agent"]
     H --> G["Diversified Guidance: 5 种 Prompt 改写"]
@@ -28,7 +28,7 @@ flowchart TD
     BAD -.-> A
     A -.->|将经验加入新 Prompt| H
     P --> O["最终选出的因子 → 下游预测模型 → Qlib 回测"]
-\`\`\`
+```
 
 此图是**逻辑骨架示意，不是原文 Figure 1 的复制**；原流程还包括多轮演化、精英继承及周期性新因子注入。**实线是候选生成/筛选，虚线是经验反馈**。参见 [§3 方法](https://arxiv.org/html/2511.18850#S3)。
 
