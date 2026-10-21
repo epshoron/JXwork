@@ -11,7 +11,7 @@
 
 | [P005](P005/README.md) | AlphaPilot: Multi-Turn Tool-Using LLM Agents for Adaptive Alpha Mining with Reinforcement Learning | [arXiv:2610.15488](https://arxiv.org/abs/2610.15488)（2026-10-11 预印本） | **已认领；原文核心方法、训练/推理边界与骨架已核，客观档案已归档；特色和不足尚待讨论**（2026-10-21） |
 | [P006](P006/README.md) | R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization | [NeurIPS 2025 / DOI:10.52202/085713-3967](https://doi.org/10.52202/085713-3967) · [arXiv:2505.15155](https://arxiv.org/abs/2505.15155) | **已认领；NeurIPS 来源、方法 §2 与 [自绘架构图](P006/README.md) 已核并归档；阶段一研读中，贡献/局限尚未审批**（2026-10-21） |
-| [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；原文方法与强化学习的因子生成骨架已核，[架构图已归档](P007/README.md)；贡献/特化不足待审批**（2026-10-21） |
+| [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；[架构与回测](P007/README.md)已归档；2 项特色机制与 1 项低置信度特化风险已讨论获批，原始实验表仍待直接复核**（2026-10-21） |
 
 
 ## 轻量认领协议
