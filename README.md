@@ -1,7 +1,7 @@
 # JXwork · AI 因子研究工作区
 
 > **当前阶段：阶段一——在 LLM 对话中全面阅读、理解原始论文（2026-10-21）**  
-> **仓库用途：研究规范、公开论文认领/去重、研读结束后确认的综合总结。**
+> **仓库用途：研究规范、论文档案（papers/P00X）、跨论文 Delta 知识库（knowledge/）与经确认的综合结论。**
 
 ## 研究方向
 
@@ -19,12 +19,12 @@
 
 以上三阶段**不等于**“质量控制、经验学习、推理协作”三个可组合的研究提问视角。具体门槛及阅读范围见 [RESEARCH_PLAN.md](RESEARCH_PLAN.md)。
 
-**协作形式：GitHub 轻量认领去重 → 在 LLM 对话里全面研读、讨论并与用户核对 → 经用户确认后再把相应阶段的精炼成果归档至 GitHub。**
+**协作形式：先在 INDEX 认领去重 → 在 LLM 对话中理解并与用户讨论 → 用户要求/确认后归档 `papers/P00X/` 单篇成果 → 按机制更新 `knowledge/` Delta 基础库 → 证据积累后在 `synthesis/` 形成跨论文结论。**
 
 - 开始某篇论文前，只在 [papers/INDEX.md](papers/INDEX.md) 登记**统一论文编号、权威原文链接和最小状态**，不以聊天窗口身份命名。
-- **研读过程中不创建逐篇读书笔记、模板、分析日志或阶段性仓库总结**。充分理解和讨论保留在 LLM 对话。
+- **不创建逐篇过程流水账**，研读在 LLM 对话；但用户明确要求的单篇成果必须落在 `papers/P00X/`：论文链接/合法原文入口、简洁架构图、作者实际贡献、客观优缺点和研究者候选想法。
 - Agent 优先自主阅读公开原文 HTML/PDF；访问受限才请研究者按需提供 PDF，索引始终保留原文链接。
-- **只有用户要求或确认归档**，才在 [synthesis/](synthesis/) 写已核验的精炼总结；不会将中间推测直接固化。
+- **Delta 数据库**只记录机制及相对既有数据库的增量，区分「首次入库」「相对已读论文新增」「学术上首次提出」。P001 是第一篇，首次入库不代表原创；成熟项目综合结论才进入 [synthesis/](synthesis/)。
 - 修改公共 Markdown 前读最新版本并处理 SHA 冲突。跨 Agent 去重只看索引，不查看其他 Agent 的聊天。
 - `CHANGELOG.md` 只记录**研究规范/架构变更与经确认的成果发布**，不充当逐篇研究流水账。
 
@@ -32,7 +32,9 @@
 
 - [AGENTS.md](AGENTS.md)：新窗口接续规范（**先读**）
 - [RESEARCH_PLAN.md](RESEARCH_PLAN.md)：研究问题及对话研读方式
-- [papers/INDEX.md](papers/INDEX.md)：**唯一跨窗口论文去重索引**
+- [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 论文去重索引**
+- [papers/P001/](papers/P001/README.md)：单篇论文档案范例（来源、架构、贡献/局限、研究设想）
+- [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)：跨论文机制 Delta 知识库
 - [synthesis/](synthesis/)：工作性问题视角及后续确认的综合成果
 - [CHANGELOG.md](CHANGELOG.md)：架构与最终成果变更记录
 
