@@ -12,6 +12,7 @@
 | [P006](P006/README.md) | R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization | [NeurIPS 2025 / DOI:10.52202/085713-3967](https://doi.org/10.52202/085713-3967) · [arXiv:2505.15155](https://arxiv.org/abs/2505.15155) | **已认领；NeurIPS 来源、方法 §2 与 [自绘架构图](P006/README.md) 已核并归档；阶段一研读中，贡献/局限尚未审批**（2026-10-21） |
 | [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；[架构与回测](P007/README.md)已归档；2 项特色机制与 1 项低置信度特化风险已讨论获批，原始实验表仍待直接复核**（2026-10-21） |
 | [P008](P008/README.md) | AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning | [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 论文](https://openreview.net/forum?id=lNmZrawUMu) | **已认领；[ICLR 2026 题录及自绘高层架构](P008/README.md)已归档，正式 PDF 方法/实验待逐节核；特色与不足未经审批**（2026-10-21） |
+| [P009](P009/README.md) | AI Trading's Alpha Singularity: Emergent Market Reasoning through Agent-to-Agent Self-Evolution | [arXiv:2606.29194](https://arxiv.org/abs/2606.29194)（2026-06-28 预印本） | **已认领；原文 §3–5 与 Appendix A 关键机制已核，客观双轨架构及 [来源边界](P009/PAPER.md) 已归档**；创新与特化不足尚待研究者逐项审批（2026-10-21） |
 
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
