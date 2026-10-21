@@ -16,7 +16,7 @@
 
 | 编号 | 项目 / 信息来源 | 原始仓库 | 最小状态 |
 |---|---|---|---|
-| [G001](../projects/G001/README.md) | **Sharpen / Crucible**：开源自动因子挖掘与研究验证系统 | [bigcan/sharpen](https://github.com/bigcan/sharpen) · [Crucible 说明](https://github.com/bigcan/sharpen/blob/main/docs/guides/crucible.md) | **已认领；源码与核心文档已初检**；骨架记录于 [G001](../projects/G001/README.md)，创新与特化不足尚未审批（2026-10-21） |
+| [G001](../projects/G001/README.md) | **Sharpen / Crucible**：开源自动因子挖掘与研究验证系统 | [bigcan/sharpen](https://github.com/bigcan/sharpen) · [Crucible 说明](https://github.com/bigcan/sharpen/blob/main/docs/guides/crucible.md) | **已认领；核心 Python 调用链已核，骨架图更新归档**；创新及特化不足待讨论，尚未入 Delta（2026-10-21） |
 
 **编号规则**：P00X 对应论文，G00X 对应非论文 GitHub 项目；**两类均在本索引查重**，且注意项目是否只是已有论文的同一个方法实现。项目材料归入 `projects/G00X/`，原有论文档案保持 `papers/P00X/`；任何创新、缺点、Delta 均需先讨论获批。
 
