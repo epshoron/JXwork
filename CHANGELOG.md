@@ -2,6 +2,12 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · P005 池级 GRPO 机制获批
+
+- **研究者明确认可**：P005 AlphaPilot 的**多轮真实数据工具反馈 → 因子池边际增删/替换 → 最终因子池轨迹奖励 → GRPO 更新 LLM 搜索策略参数**作为一项具体特色机制；归档至 [P005 已审评价](papers/P005/ARCHITECTURE.md) 和 [D016](knowledge/deltas/D016_pool_trajectory_grpo.md)，同步 [papers/INDEX](papers/INDEX.md) 与 [Delta Index](knowledge/DELTA_INDEX.md)。
+- **严格去重**：与 P007 D013 单公式 TMB/DAPO、P008 D014–D015 种子进化多目标 RL、P002 D007 固定 LLM 代码种群搜索的**任务对象、奖励对象、更新层级**相区别。GRPO/强化学习微调、多轮工具调用、池级优化的基础思想均不称学术首创。LoRA/全参数实施方式尚未确认。
+- **审批边界**：轨迹信用分配、贪心池更新以及训练奖励与交易目标的差异仍为对话中的待核讨论，未获逐项批准，**未归档成论文缺点或新 Delta**；论文属于 2026-10-11 arXiv 预印本，结果非独立复现，项目整体仍在阶段一。
+
 ## 2026-10-21 · P008 两项特色设计获批
 
 - **研究者认可的 P008 贡献**：[D014](knowledge/deltas/D014_seed_conditioned_evolution.md)（从种子 Alpha 出发的连续多轮因子进化工程工作流）与 [D015](knowledge/deltas/D015_hierarchical_evolution_reward.md)（Tool/Consistency/Exploration/Performance/Streak 五目标分层奖励训练进化策略）；对应[单篇评价](papers/P008/ARCHITECTURE.md)。
