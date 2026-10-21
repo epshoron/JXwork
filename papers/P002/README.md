@@ -34,6 +34,6 @@ flowchart TD
 
 - **已有/变体**：生成—审核—评价—反馈闭环（[D001](../../knowledge/deltas/D001_nested_feedback.md)）；角色分工与质量检查（[D004](../../knowledge/deltas/D004_role_separation.md)）；样本外评价（[D005](../../knowledge/deltas/D005_oos_evaluation.md)）。
 - **结构不同**：P001 有可检索的 101 Alpha 结构先验及长期成功因子 Main KB（D002/D003）；CogAlpha 主要是**金融主题角色引导 + 代码进化种群 + 当轮成败样本写回 Prompt**。不能说二者记忆机制完全相同。
-- **新进入项目知识库的机制**：领域主题分工与提示多样化（[D006](../../knowledge/deltas/D006_domain_guidance.md)）、LLM 代码级进化/种群控制（[D007](../../knowledge/deltas/D007_code_evolution.md)）。**项目新入库不代表学术首次发明。**
+- **候选新进入项目知识库的机制（尚待研究者审阅）**：领域主题分工与提示多样化（[D006](../../knowledge/deltas/D006_domain_guidance.md)）、LLM 代码级进化/种群控制（[D007](../../knowledge/deltas/D007_code_evolution.md)）。**项目新入库不代表学术首次发明。**
 
 **阅读阶段**：单篇核心机制、实验与讨论已归档；仍在整体项目**阶段一**。正式跨论文创新/局限整合与原创方案未完成。
