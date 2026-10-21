@@ -11,6 +11,7 @@
 
 | [P005](P005/README.md) | AlphaPilot: Multi-Turn Tool-Using LLM Agents for Adaptive Alpha Mining with Reinforcement Learning | [arXiv:2610.15488](https://arxiv.org/abs/2610.15488)（2026-10-11 预印本） | **已认领；原文核心方法、训练/推理边界与骨架已核，客观档案已归档；特色和不足尚待讨论**（2026-10-21） |
 | [P006](P006/README.md) | R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization | [NeurIPS 2025 / DOI:10.52202/085713-3967](https://doi.org/10.52202/085713-3967) · [arXiv:2505.15155](https://arxiv.org/abs/2505.15155) | **已认领；NeurIPS 来源、方法 §2 与 [自绘架构图](P006/README.md) 已核并归档；阶段一研读中，贡献/局限尚未审批**（2026-10-21） |
+| [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；原文方法与强化学习的因子生成骨架已核，[架构图已归档](P007/README.md)；贡献/特化不足待审批**（2026-10-21） |
 
 ## 非论文研究材料｜GitHub 项目
 
@@ -19,7 +20,6 @@
 | [G001](../projects/G001/README.md) | **Sharpen / Crucible**：开源自动因子挖掘与研究验证系统 | [bigcan/sharpen](https://github.com/bigcan/sharpen) · [Crucible 说明](https://github.com/bigcan/sharpen/blob/main/docs/guides/crucible.md) | **已认领；核心 Python 调用链已核，骨架图更新归档**；创新及特化不足待讨论，尚未入 Delta（2026-10-21） |
 
 **编号规则**：P00X 对应论文，G00X 对应非论文 GitHub 项目；**两类均在本索引查重**，且注意项目是否只是已有论文的同一个方法实现。项目材料归入 `projects/G00X/`，原有论文档案保持 `papers/P00X/`；任何创新、缺点、Delta 均需先讨论获批。
-| [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；原文方法与强化学习的因子生成骨架已核，[架构图已归档](P007/README.md)；贡献/特化不足待审批**（2026-10-21） |
 
 ## 轻量认领协议
 
