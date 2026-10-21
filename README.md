@@ -33,7 +33,8 @@
 - [AGENTS.md](AGENTS.md)：研究 Agent 接续规范（**先读**）
 - [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：**必读**写作风格、骨架优先、特化筛选和研究者审批
 - [RESEARCH_PLAN.md](RESEARCH_PLAN.md)：研究问题及对话研读方式
-- [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 论文去重索引**
+- [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 来源去重索引**（论文 + GitHub 项目）
+- [projects/G001/](projects/G001/README.md)：首个非论文 GitHub 项目（Sharpen / Crucible）
 - [papers/P001/](papers/P001/README.md)：第一篇单篇论文档案范例
 - [papers/P002/](papers/P002/README.md)：CogAlpha 结构化档案与 Mermaid 架构图
 - [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)：跨论文机制 Delta 知识库
