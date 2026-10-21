@@ -15,6 +15,6 @@
 
 本次骨架根据**原文 §3 Methodology**（Selection、Expansion、Multi-Dimensional Alpha Evaluation、Backpropagation、Frequent Subtree Avoidance）及 **Appendix F Pseudo-Code** 核对，并参考 §1 的总体任务与 Figure 1/2 的说明。已能重建「MCTS 定向选点 → LLM 按较弱维度改公式 → 回测多维评价 → 树上回传反馈 → 有效因子进入 Alpha Zoo → FSA 约束下一步生成」的核心流程。
 
-**尚待单独讨论与审批**：作者主张的学术贡献、相对已知系统的真实 Delta、针对这一机制的特化局限和我们自己的创新思考。实验表、消融、附录可继续深入，但目前不标记“全文全部研读完成”。
+**已补核并经研究者认可归档**：原文 §3 中 MCTS 动态相对评分（公式 6–8）、最大值回传（公式 10）、FSA 高频公式子树规避（公式 11–12）以及 **Appendix J Limitations**。两项特化风险属于研究推断，Appendix J 才是作者自述局限。参见 [P004 特色与局限](ARCHITECTURE.md)。**完整实验表格和学术首创性调查尚未完成**，不标记“全文已精读完成”。
 
 仓库为 Public：保留原始来源的链接，不未经许可转存论文 PDF。
