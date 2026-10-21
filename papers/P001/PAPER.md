@@ -1,5 +1,7 @@
 # P001｜论文原文与来源
 
+**归档审核状态：待研究者确认。** 原文链接仅用于获取与核实；架构、评价和相关 Delta 提议尚未获得批准。
+
 - **英文题名**：Self-improving alpha mining for quantitative trading via multi-agent large language models with knowledge base accumulation
 - **作者**：Minh-Son Vu, The-Trung Pham, Hong-Viet Tran
 - **正式出处**：*Machine Learning with Applications*, Volume 25 (September 2026), Article 100987
