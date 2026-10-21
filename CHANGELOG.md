@@ -2,6 +2,12 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · 各 Agent 强制同步 Index 与 Markdown
+
+- **研究者显式要求**：每个研究 Agent 在正式研究归档、客观骨架写入、创新/不足审批状态变化及 Delta 卡新增/修改后，必须在**同一回合**主动同步相关 Markdown、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md`，不许等待别的 Agent 补漏；工作结束前检查链接、状态、Markdown 表格完整性。纯对话、无真实状态改变时不刷屏。
+- **AGENTS/规范同步**：研究规则变化要同时修改 `AGENTS.md`、`RESEARCH_WRITING_STANDARD.md` 并检查 README、RESEARCH_PLAN 与目录指引无冲突。完整规则现已同步到 [AGENTS](AGENTS.md)、[写作标准](RESEARCH_WRITING_STANDARD.md)、[论文 Index](papers/INDEX.md)、[Delta Index](knowledge/DELTA_INDEX.md) 和相关指引；不改变原来的审批/保密权限。
+- **这次修复**：`papers/INDEX.md` 中 P004/P005 空行导致的表格中断已修正，P002 的两项已审批机制与一项风险状态同步到 Index；`knowledge/DELTA_INDEX.md` D011/D012 间的空行也已修正。**只调整展示和真实同步状态，不增写未经批准观点**。
+
 ## 2026-10-21 · P007 的 2＋1 已审批归档
 
 - **用户批准**：P007 AlphaRLM 只保留**两项具体贡献**：金融文献题名/摘要与允许算子的 LEGO 公式构造（[D012](knowledge/deltas/D012_literature_operator_assembly.md)），以及单因子 TMB 分组收益差/合法性奖励配合 DAPO 更新生成模型（[D013](knowledge/deltas/D013_tmb_rl_factor_policy.md)）；学术原创性仍待更广查新。
