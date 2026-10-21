@@ -9,6 +9,8 @@
 | [P003](P003/README.md) | AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay | [KDD 2025 / DOI:10.1145/3711896.3736838](https://doi.org/10.1145/3711896.3736838) · [arXiv:2502.16789](https://arxiv.org/abs/2502.16789) | **原文机制与架构已核、单篇档案已归档；2 项特色机制及 3 项特化疑问已讨论认可，风险仍待实证**（2026-10-21） |
 | [P004](P004/README.md) | Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Alpha Factor Mining | [AAAI 2026 / DOI:10.1609/aaai.v40i2.37069](https://doi.org/10.1609/aaai.v40i2.37069) · [arXiv:2505.11122](https://arxiv.org/abs/2505.11122) | **已认领；原文方法与伪代码已核，架构骨架已直接归档**；创新与特化不足尚待研究者讨论（2026-10-21） |
 
+| P005 | AlphaPilot: Multi-Turn Tool-Using LLM Agents for Adaptive Alpha Mining with Reinforcement Learning | [arXiv:2610.15488](https://arxiv.org/abs/2610.15488)（2026-10-11 预印本） | **已认领；阶段一原文研读中**（2026-10-21） |
+
 ## 轻量认领协议
 
 1. 开始处理任何原始论文前，研究 Agent **实时刷新本索引**，按 DOI、arXiv ID 和原始标题查重；已有认领原则上另选，避免重复研究。
