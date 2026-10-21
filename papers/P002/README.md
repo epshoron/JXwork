@@ -34,6 +34,6 @@ flowchart TD
 
 - **已有/变体**：生成—审核—评价—反馈闭环（[D001](../../knowledge/deltas/D001_nested_feedback.md)）；角色分工与质量检查（[D004](../../knowledge/deltas/D004_role_separation.md)）；样本外评价（[D005](../../knowledge/deltas/D005_oos_evaluation.md)）。
 - **结构不同**：P001 有可检索的 101 Alpha 结构先验及长期成功因子 Main KB（D002/D003）；CogAlpha 主要是**金融主题角色引导 + 代码进化种群 + 当轮成败样本写回 Prompt**。不能说二者记忆机制完全相同。
-- **已获研究者审批的项目级特色机制**：[D006｜专业领域引导与提示多样化](../../knowledge/deltas/D006_domain_guidance.md)，并确认其可能产生同质化的特化风险（尚未证实）。代码级进化及其他机制仍是论文架构事实，**是否作为创新 Delta 待单独审批**；已获认可不等于学术首次发明。
+- **经研究者审批的两个特色机制**：[D006｜金融专业领域 Agent + 多样化 Prompt](../../knowledge/deltas/D006_domain_guidance.md)；[D007｜LLM 代码级种群进化](../../knowledge/deltas/D007_code_evolution.md)。**唯一获批的特化风险**：不同专业 Agent 可能生成高度相关的因子（未实证）。此前提出“Python 代码灵活导致更难质检”的缺点已被否决，**不要求创新点与缺点一一配对**；获认可也不意味着学术首次发明。
 
 **阅读阶段**：单篇核心机制、实验与讨论已归档；仍在整体项目**阶段一**。正式跨论文创新/局限整合与原创方案未完成。
