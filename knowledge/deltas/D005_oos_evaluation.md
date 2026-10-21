@@ -1,5 +1,7 @@
 # D005｜时间顺序切分、知识库冻结与评价口径
 
+**审批状态：候选待审，研究者尚未确认机制是否应独立建卡；不能作为已批准的 Delta 基线。**
+
 - **首次入库**：P001（KB-first；属于**验证范式**，不是声称的新算法）
 - **机制**：按时间分 discovery/train、validation 与 held-out test；最后测试阶段冻结 Main KB，减少把测试反馈反灌到后续生成/筛选的风险。
 - **P001 依据**：[作者 README 的 Chronological Split](https://github.com/VMSSON345/Self-Improving-Alpha-Mining-for-Quantitative-Trading-via-Multi-Agent-Large-Language-Models-with-Know)。
