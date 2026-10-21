@@ -5,7 +5,15 @@
 | 编号 | 原始论文标题 | 年份/出处 | 原文 DOI / arXiv / 官方链接 | 关注机制（暂定） | 阅读状态 | 笔记 | 公开 PDF 许可 |
 |---|---|---|---|---|---|---|---|
 | P001 | Self-improving alpha mining for quantitative trading via multi-agent large language models with knowledge base accumulation | 2026 · *Machine Learning with Applications* 25:100987 | [DOI](https://doi.org/10.1016/j.mlwa.2026.100987) · [出版方](https://www.sciencedirect.com/science/article/pii/S2666827026001520) · [作者代码](https://github.com/VMSSON345/Self-Improving-Alpha-Mining-for-Quantitative-Trading-via-Multi-Agent-Large-Language-Models-with-Know) | 多 Agent 嵌套反馈、知识库积累、101 Alpha 先验（暂定） | **S5 处理中**：已核摘要与官方代码说明，全文待精读（2026-10-21） | [笔记](../notes/2026_vu_self_improving_alpha_mining.md) | 未核实；不上传 PDF |
-| S6-001 | Cognitive Alpha Mining via LLM-Driven Code-Based Evolution | 2025 初稿；arXiv v4（2026-07-11），预印本 | [arXiv:2511.18850](https://arxiv.org/abs/2511.18850) · [HTML](https://arxiv.org/html/2511.18850) | LLM 代码级因子生成/演化；质量控制、经验学习、推理协作（待分证据核实） | **S6 认领中**：原文身份与摘要已核验；方法与实验待逐节核实 | [notes/COGALPHA_2511.18850.md](../notes/COGALPHA_2511.18850.md) | arXiv 页面注明非独占发布许可；不上传 PDF |
+| S6-001 | Cognitive Alpha Mining via LLM-Driven Code-Based Evolution | **ACL 2026 Long Papers**（初稿 arXiv 2025） | [ACL Anthology](https://aclanthology.org/2026.acl-long.538/) · [DOI](https://doi.org/10.18653/v1/2026.acl-long.538) · [arXiv:2511.18850](https://arxiv.org/abs/2511.18850) | LLM 代码级因子生成、演化搜索；质量控制＋经验学习＋推理协作 | **S6 已读方法及实验/附录**（2026-10-21）；结果未独立复现 | [笔记](../notes/COGALPHA_2511.18850.md) | 未申请公开再分发许可；不上传 PDF |
+
+## 多 Agent 并行去重
+
+- **开始阅读全文之前，实时刷新本索引**，按标题、DOI、arXiv ID（不按标题缩写）查重；已有他人标记“处理中”则换论文。
+- **一旦确定开始处理，先提交带 S5/S6 标识及阅读状态的认领行**，再精读；先认领不代表已经验证结论。
+- 每篇由认领者维护自己的独立 `notes/` 文件；索引只显示可核实信息和真实阅读状态，全文/实验复现不能混写。
+- 编辑公共索引和日志时，写前获取最新版本及 SHA，避免覆盖另一窗口刚刚提交的条目；SHA 冲突则重新拉取和合并，不能强行覆写。
+- 不从另一窗口聊天记录推断进展；GitHub 文件是唯一跨窗口状态来源。
 
 ## 添加要求
 
