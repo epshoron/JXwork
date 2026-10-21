@@ -19,13 +19,13 @@
 
 以上三阶段**不等于**“质量控制、经验学习、推理协作”三个可组合的研究提问视角。具体门槛及阅读范围见 [RESEARCH_PLAN.md](RESEARCH_PLAN.md)。
 
-**协作形式：先在 INDEX 认领去重 → 在 LLM 对话中理解并与用户讨论 → 用户要求/确认后归档 `papers/P00X/` 单篇成果 → 按机制更新 `knowledge/` Delta 基础库 → 证据积累后在 `synthesis/` 形成跨论文结论。**
+**协作形式：先在 INDEX 认领去重 → 核实原文后可直接归档论文骨架并向研究者讲解 → 创新/特化不足经研究者审批与严格语义去重后正式入库 → 同一工作回合同步论文档案、papers/INDEX 和相关 Delta 索引 → 经确认后再形成成熟综合。**
 
 - 开始某篇论文前，只在 [papers/INDEX.md](papers/INDEX.md) 登记**统一论文编号、权威原文链接和最小状态**，不以聊天窗口身份命名。
 - **不同来源不同入库权限**：**正式论文**经核对可直接归档骨架；**非论文材料**（GitHub 项目、文章、技术笔记、实验记录等）必须先在对话中介绍其研究价值，得到研究者明确同意，**才可在 GitHub 建档、登记索引或写入骨架**。所有来源的创新、特化不足、独立想法和 Delta 仍须逐项批准并严格语义去重。不创建逐篇讨论流水账。
 - Agent 优先自主阅读公开原文 HTML/PDF；访问受限才请研究者按需提供 PDF，索引始终保留原文链接。
 - **Delta 数据库**区分「机制基础」「论文特化增量」「学术新颖性」，不把通用 OOS、成本、市场变化等凑成创新或独有缺点；P001 首篇首次入库不代表学术首创。成熟综合才进入 [synthesis/](synthesis/)。
-- 修改公共 Markdown 前读最新版本并处理 SHA 冲突。跨 Agent 去重只看索引，不查看其他 Agent 的聊天。
+- **每个 Agent 必须负责本轮同步**：论文 Markdown 发生真实状态变化，**同一工作回合更新 [papers/INDEX.md](papers/INDEX.md)**；Delta 改变则同步 [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md) 和相应论文引用；协作规范改变时同步 **[AGENTS.md](AGENTS.md)** 与 [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)。**结束前检查索引缺行、表格、链接、审批状态**。写共享文件前读最新 SHA，遇冲突合并，绝不覆盖其他 Agent。
 - `CHANGELOG.md` 只记录**研究规范/架构变更与经确认的成果发布**，不充当逐篇研究流水账。
 
 ## 导航
