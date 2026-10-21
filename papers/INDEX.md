@@ -14,6 +14,8 @@
 | [P008](P008/README.md) | AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning | [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 论文](https://openreview.net/forum?id=lNmZrawUMu) | **自绘骨架与 [两项已批准特色机制](P008/ARCHITECTURE.md)已归档（种子因子连续进化、五目标分层奖励），无获批特化不足；原始 PDF 公式/消融待直接复核**（2026-10-21）
 | [P009](P009/README.md) | AI Trading's Alpha Singularity: Emergent Market Reasoning through Agent-to-Agent Self-Evolution | [arXiv:2606.29194](https://arxiv.org/abs/2606.29194)（2026-06-28 预印本） | **已认领；原文 §3–5 与 Appendix A 关键机制已核，客观双轨架构及 [来源边界](P009/PAPER.md) 已归档**；创新与特化不足尚待研究者逐项审批（2026-10-21） |
 
+| P010 | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **已认领；阶段一原文方法与实验核查中**（2026-10-21） |
+
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
 **每个研究 Agent 必须自己负责“论文 Markdown ↔ 本 INDEX ↔ 相关 Delta 索引”的一致性；不能指望别的 Agent 或后续会话补齐。** 新认领、骨架落档、已审批内容落档、重要证据状态改变、放弃/撤回时，**在同一工作回合更新本行的最小状态**，只写实际完成的内容、不记录过程流水账；仅对话探讨、无真实状态改变则不必刷屏更新。
