@@ -7,7 +7,7 @@
 | [P001](P001/README.md) | Self-improving alpha mining for quantitative trading via multi-agent large language models with knowledge base accumulation | [DOI:10.1016/j.mlwa.2026.100987](https://doi.org/10.1016/j.mlwa.2026.100987) | **P001 研究骨架与已讨论的特化贡献/风险已获研究者通过**（2026-10-21）；全文 PDF 仍未逐节核验、风险不代表实证定论 |
 | [P002](P002/README.md) | Cognitive Alpha Mining via LLM-Driven Code-Based Evolution | [ACL 2026 / DOI:10.18653/v1/2026.acl-long.538](https://doi.org/10.18653/v1/2026.acl-long.538) · [arXiv:2511.18850](https://arxiv.org/abs/2511.18850) | 已认领；**阶段一核心机制与用户确认的单篇架构档案已归档**；[档案及架构图](P002/README.md)，研究假设未验证（2026-10-21） |
 | P003 | AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay | [KDD 2025 / DOI:10.1145/3711896.3736838](https://doi.org/10.1145/3711896.3736838) · [arXiv:2502.16789](https://arxiv.org/abs/2502.16789) | **已认领；阶段一原文及关键图表已研读，讨论未定稿**（2026-10-21） |
-| P004 | Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Alpha Factor Mining | [AAAI 2026 / DOI:10.1609/aaai.v40i2.37069](https://doi.org/10.1609/aaai.v40i2.37069) · [arXiv:2505.11122](https://arxiv.org/abs/2505.11122) | **已认领；阶段一原文研读中，骨架待讨论**（2026-10-21） |
+| [P004](P004/README.md) | Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Alpha Factor Mining | [AAAI 2026 / DOI:10.1609/aaai.v40i2.37069](https://doi.org/10.1609/aaai.v40i2.37069) · [arXiv:2505.11122](https://arxiv.org/abs/2505.11122) | **已认领；原文方法与伪代码已核，架构骨架已直接归档**；创新与特化不足尚待研究者讨论（2026-10-21） |
 
 ## 轻量认领协议
 
@@ -17,4 +17,4 @@
 4. 不在索引添加机制分类、实验结果或创新/缺点判断；**用户确认的单篇成果**存入对应 `P00X/`，跨论文机制差异存入 `../knowledge/`，整体研究总结放 `../synthesis/`。**先画骨架；创新点、特化缺点和 Delta 必须讨论获批再落库；项目三阶段顺序仍有效**；参见 `../RESEARCH_PLAN.md`。
 5. 阅读正文由研究 Agent 优先自行访问官方 HTML、公开 PDF、出版方或作者版本；**无需等待研究者逐篇下载 PDF**。确实访问不了时保留可靠原文链接，在对话中说明缺失内容。除获得公开再分发许可，不上传 PDF 到 Public 仓库。
 6. 只在认领/必要状态变化时更新本索引；写前获取最新 SHA，遇冲突则重新读取并合并。跨 Agent 协作以此文件为准，不查彼此聊天。
-7. 论文实质讨论在 LLM 对话内进行；在 `P00X/` 可归档**单篇论文的来源和架构**；**贡献评价、特化不足和研究者想法须先讨论逐项批准**才写入。跨论文通用机制及其增量进入 `../knowledge/`；成熟的项目级综合成果才进入 `../synthesis/`。
+7. 论文实质讨论在 LLM 对话内进行；研究 Agent 核实来源后可**直接归档 `P00X/` 的来源和架构，无须审图**；**贡献评价、特化不足、研究者想法和创新 Delta 须先讨论逐项批准**才写入。跨论文通用机制及其增量进入 `../knowledge/`；成熟的项目级综合成果才进入 `../synthesis/`。
