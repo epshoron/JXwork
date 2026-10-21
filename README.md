@@ -33,7 +33,8 @@
 - [AGENTS.md](AGENTS.md)：新窗口接续规范（**先读**）
 - [RESEARCH_PLAN.md](RESEARCH_PLAN.md)：研究问题及对话研读方式
 - [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 论文去重索引**
-- [papers/P001/](papers/P001/README.md)：单篇论文档案范例（来源、架构、贡献/局限、研究设想）
+- [papers/P001/](papers/P001/README.md)：第一篇单篇论文档案范例
+- [papers/P002/](papers/P002/README.md)：CogAlpha 结构化档案与 Mermaid 架构图
 - [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)：跨论文机制 Delta 知识库
 - [synthesis/](synthesis/)：工作性问题视角及后续确认的综合成果
 - [CHANGELOG.md](CHANGELOG.md)：架构与最终成果变更记录
