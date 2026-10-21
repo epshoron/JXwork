@@ -14,7 +14,7 @@
 | [P008](P008/README.md) | AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning | [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 论文](https://openreview.net/forum?id=lNmZrawUMu) | **自绘骨架与 [两项已批准特色机制](P008/ARCHITECTURE.md)已归档（种子因子连续进化、五目标分层奖励），无获批特化不足；原始 PDF 公式/消融待直接复核**（2026-10-21）
 | [P009](P009/README.md) | AI Trading's Alpha Singularity: Emergent Market Reasoning through Agent-to-Agent Self-Evolution | [arXiv:2606.29194](https://arxiv.org/abs/2606.29194)（2026-06-28 预印本） | **已认领；原文 §3–5 与 Appendix A 关键机制已核，客观双轨架构及 [来源边界](P009/PAPER.md) 已归档**；创新与特化不足尚待研究者逐项审批（2026-10-21） |
 
-| P010 | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **已认领；阶段一原文方法与实验核查中**（2026-10-21） |
+| [P010](P010/README.md) | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **已认领；原文 §2–5、关键附录与主要实验核对，语义搜索客观骨架已归档；创新/不足与 Delta 未审批**（2026-10-21） |
 
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
