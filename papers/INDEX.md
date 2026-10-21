@@ -19,6 +19,7 @@
 | [G001](../projects/G001/README.md) | **Sharpen / Crucible**：开源自动因子挖掘与研究验证系统 | [bigcan/sharpen](https://github.com/bigcan/sharpen) · [Crucible 说明](https://github.com/bigcan/sharpen/blob/main/docs/guides/crucible.md) | **已认领；核心 Python 调用链已核，骨架图更新归档**；创新及特化不足待讨论，尚未入 Delta（2026-10-21） |
 
 **编号规则**：P00X 对应论文，G00X 对应非论文 GitHub 项目；**两类均在本索引查重**，且注意项目是否只是已有论文的同一个方法实现。项目材料归入 `projects/G00X/`，原有论文档案保持 `papers/P00X/`；任何创新、缺点、Delta 均需先讨论获批。
+| P007 | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；原文方法、公式与 RL 更新机制已核，阶段一在研读；贡献/特化不足未经研究者审批**（2026-10-21） |
 
 ## 轻量认领协议
 
