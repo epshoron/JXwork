@@ -25,6 +25,9 @@
 | [D013](deltas/D013_tmb_rl_factor_policy.md) | **P007**：单公式 TMB 分组收益奖励 + 合法性奖励指导 DAPO 更新生成 LLM | **P007 · 用户已认可的特色机制** | P005 轨迹/池级 GRPO 奖励不同；单因子分组极值奖励的噪声放大仅低置信度待核 | [P007 §3.3–3.4](https://arxiv.org/abs/2610.14959) |
 | [D014](deltas/D014_seed_conditioned_evolution.md) | **P008**：种子 Alpha 条件下的连续多轮因子进化策略 | **P008 · 研究者已认可的工程化机制** | 不重复 P005 多轮 RL：优化的是一个种子及其后代的连续改造，不是整个因子池成员更新；区别 D007 外部代码种群进化 | [P008 正式摘要](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) |
 | [D015](deltas/D015_hierarchical_evolution_reward.md) | **P008**：Tool/Consistency/Exploration/Performance/Streak 五目标分层轨迹奖励 | **P008 · 研究者已认可的训练奖励设计** | 区别 P005 最终因子池轨迹奖励、D013 单公式 TMB 和 D010 搜索树回传；兼顾方向与探索的张力是设计目标，不作为缺点 | [P008 ICLR 摘要](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) |
+| [D016](deltas/D016_pool_trajectory_grpo.md) | **P005**：池级边际增删 + 多轮工具轨迹终端奖励 + GRPO 参数训练 | **P005 · 研究者已批准的特化机制** | 不声称首创 GRPO 或 RL；区别 D013 单公式 TMB 奖励、D014–D015 种子因子连续进化训练、D007 固定 LLM 代码进化；不足尚未获批 | [P005 §4.2–4.5](https://arxiv.org/abs/2610.15488) |
+
+**P005 已审（2026-10-21）**：仅新增 [D016｜因子池边际更新与多轮工具轨迹 GRPO 策略训练](deltas/D016_pool_trajectory_grpo.md)。区别 P007 单公式 TMB/DAPO、P008 种子进化多目标 RL 的任务状态和奖励对象；普通工具反馈、RL/GRPO 本身不重复开卡。**本轮未批准 P005 的独立特化不足或研究方案。**
 
 **同步一致性（每个 Agent 必须执行）**：每次新增、更新、撤回 D 卡，**同一工作回合同步本索引的 ID、论文链接、审批状态和证据边界**，并核对对应 `papers/P00X/` 已审批引用及 `papers/INDEX.md` 的研究状态。共享索引改前拉取最新 SHA，冲突后合并。不得只改一张知识卡而把旧 Index 留着；也不得借“同步”之名写入未经批准的创新/不足。
 
