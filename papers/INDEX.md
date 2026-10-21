@@ -6,7 +6,7 @@
 |---|---|---|---|
 | [P001](P001/README.md) | Self-improving alpha mining for quantitative trading via multi-agent large language models with knowledge base accumulation | [DOI:10.1016/j.mlwa.2026.100987](https://doi.org/10.1016/j.mlwa.2026.100987) | **P001 研究骨架与已讨论的特化贡献/风险已获研究者通过**（2026-10-21）；全文 PDF 仍未逐节核验、风险不代表实证定论 |
 | [P002](P002/README.md) | Cognitive Alpha Mining via LLM-Driven Code-Based Evolution | [ACL 2026 / DOI:10.18653/v1/2026.acl-long.538](https://doi.org/10.18653/v1/2026.acl-long.538) · [arXiv:2511.18850](https://arxiv.org/abs/2511.18850) | 已认领；**阶段一核心机制与用户确认的单篇架构档案已归档**；[档案及架构图](P002/README.md)，研究假设未验证（2026-10-21） |
-| P003 | AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay | [KDD 2025 / DOI:10.1145/3711896.3736838](https://doi.org/10.1145/3711896.3736838) · [arXiv:2502.16789](https://arxiv.org/abs/2502.16789) | **已认领；阶段一原文及关键图表已研读，讨论未定稿**（2026-10-21） |
+| [P003](P003/README.md) | AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay | [KDD 2025 / DOI:10.1145/3711896.3736838](https://doi.org/10.1145/3711896.3736838) · [arXiv:2502.16789](https://arxiv.org/abs/2502.16789) | **原文机制与架构已核、单篇档案已归档；2 项特色机制及 3 项特化疑问已讨论认可，风险仍待实证**（2026-10-21） |
 | [P004](P004/README.md) | Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Alpha Factor Mining | [AAAI 2026 / DOI:10.1609/aaai.v40i2.37069](https://doi.org/10.1609/aaai.v40i2.37069) · [arXiv:2505.11122](https://arxiv.org/abs/2505.11122) | **已认领；原文方法与伪代码已核，架构骨架已直接归档**；创新与特化不足尚待研究者讨论（2026-10-21） |
 
 ## 轻量认领协议
