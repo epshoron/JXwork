@@ -14,6 +14,21 @@
 | [D004](deltas/D004_role_separation.md) | 专职生成/审查/回测/复盘的 Agent 分工 | P001 · KB-first | 模块化具体实现；Writer/Judge 在 QuantAgent 已存在，**非已证实首次发明** | P001 作者 README；QuantAgent §3 |
 | [D005](deltas/D005_oos_evaluation.md) | 时序拆分、冻结 KB 的样本外验证 | P001 · KB-first | **评价实践，不声称算法创新**；费用净回测等还有待补证 | P001 作者 README、期刊 Highlights |
 
+
+## P002 入库对照（2026-10-21）
+
+| P002 技术变化 | 相对已存机制 | 入库决策 | 学术首创判断 |
+|---|---|---|---|
+| 代码审查 + 指标筛选 + 正反样例 Prompt 反馈 | [D001](deltas/D001_nested_feedback.md) | **已有反馈机制的变体**，在 D001 更新 | 自反馈并非首创，具体组合待查新 |
+| 21 个主题 Agent、五类 Guidance | [D004](deltas/D004_role_separation.md)、[D002](deltas/D002_structured_alpha_prior.md) | **新增 [D006](deltas/D006_domain_guidance.md)**：主题搜索先验和提示多样化，与 101 公式 KB 不同 | KB-first，学术 novelty 待核 |
+| 质量审查与生成岗位分工 | [D004](deltas/D004_role_separation.md) | **已有机制的角色变体** | 不能将多 Agent 本身算作首创 |
+| LLM Python Mutation/Crossover、精英种群与后代搜索 | [D001](deltas/D001_nested_feedback.md) | **新增 [D007](deltas/D007_code_evolution.md)**：独立的搜索操作与种群控制层 | KB-first；此前 FunSearch、AlphaEvolve 已有进化编程相关方法 |
+| 当轮成功/失败示例 vs 长期 Main KB | [D003](deltas/D003_success_memory.md) | **不同，不混为一个持久记忆机制** | 不推断存在跨任务持久 KB |
+| 多市场/有成本的 Qlib 时序回测 | [D005](deltas/D005_oos_evaluation.md) | **评价范式的不同实现** | 不宣称新算法 |
+
+**证据入口**：[P002 正式档案](../papers/P002/README.md)、[CogAlpha 原文 §3–4](https://arxiv.org/html/2511.18850)。  
+**规则**：P002 的 D006/D007 是新入**本项目**知识库，不表示 CogAlpha 在学术上首创变异、交叉、多 Agent 或 LLM 代码进化。
+
 ## 以后比较新论文时怎么用
 
 - **存在完全同等机制**：归到 D001 等原卡，关联论文；不是新 Delta。
