@@ -2,6 +2,14 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · 建立 papers/P001 单篇档案与 knowledge/Delta 机制数据库
+
+- **研究者明确要求的架构调整**：每篇用户确认的研究成果统一归入 `papers/P00X/`，而不是堆在 `synthesis/`。P001 已落地 [来源/原文入口](papers/P001/PAPER.md)、[架构示意与概览](papers/P001/README.md)、[客观贡献及限制](papers/P001/ARCHITECTURE.md)、[独立研究问题](papers/P001/IDEAS.md)。
+- **Delta 知识库初建**：[knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md) 将 P001 分为五个可复用机制卡 D001–D005，供下一篇判断「已有／变体／新增／待核」。P001 是首篇，所以都是**第一次入本项目知识库**，但**不等于学术原创**；双循环、知识反馈等已见 QuantAgent 2024。
+- **原始证据与边界**：已核正式期刊摘要/Highlights、作者仓库 README 和 QuantAgent 原文；P001 PDF 正文尚未逐页验证，客观评价中的未证实缺口均以待核标示。论文正文留权威链接，不擅自上传 PDF。
+- **保留阶段顺序**：阶段一先理解单篇；记录客观评价与候选思考是研究者本轮明确指示，**不代表跨论文系统比较或原创方案已定稿**。
+- **已同步**：README、AGENTS、RESEARCH_PLAN、papers/INDEX、papers/README、synthesis/README；保留其他 Agent 论文的认领状态。
+
 ## 2026-10-21 · 用户明确要求归档 CogAlpha 专题架构总结
 
 - 新增 [CogAlpha 架构与研究问题](synthesis/COGALPHA_ARCHITECTURE_AND_RESEARCH_QUESTIONS.md)：包含自绘 Mermaid 流程图、21 领域 Agent 的七组任务、作者声称的贡献及原文证据、可检验的疑问。
@@ -10,7 +18,7 @@
 
 ## 2026-10-21 · P001 架构骨架归档（研究者明确要求）
 
-- 按研究者本轮明确要求，在 [`synthesis/P001_ALPHA_MINING_ARCHITECTURE.md`](synthesis/P001_ALPHA_MINING_ARCHITECTURE.md) 归档精炼架构与 Mermaid 图、作者明确主张的贡献、此前 QuantAgent 的相关基础、作者报告结果和**待后续文献核验**的缺点/改善假设。
+- 按研究者本轮明确要求，在 [`papers/P001/README.md`](papers/P001/README.md) 归档精炼架构与 Mermaid 图、作者明确主张的贡献、此前 QuantAgent 的相关基础、作者报告结果和**待后续文献核验**的缺点/改善假设。
 - **资料完整性边界**：核实期刊摘要/Highlights、作者仓库说明与相关前作摘要；未逐页核对 P001 PDF 全文，故这份骨架总结**不等于阶段一完整研读完成**，也不宣告进入阶段二/三。
 - 其他研究 Agent 的认领不受影响；索引继续仅用于最小去重状态。
 
