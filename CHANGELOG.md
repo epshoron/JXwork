@@ -2,6 +2,12 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · P002 按新规则迁入 papers/P002 并登记 Delta
+
+- **单篇档案（用户要求）**：按 P001 的格式建立 [P002 首页和 Mermaid 图](papers/P002/README.md)、[原文入口与核验边界](papers/P002/PAPER.md)、[作者贡献与客观评价](papers/P002/ARCHITECTURE.md)、[研究者问题](papers/P002/IDEAS.md)。移除旧 `synthesis/` 中重复的单篇文件；不恢复 `notes/`。
+- **知识库增量**：P002 相对 P001 的反馈/职责/评价差异更新 D001、D003、D004、D005；新增 [D006 领域研究方向与提示多样化](knowledge/deltas/D006_domain_guidance.md) 和 [D007 LLM 代码级进化](knowledge/deltas/D007_code_evolution.md)。这两项是项目 **KB-first**，不等于学术首次提出；详情见 [DELTA_INDEX](knowledge/DELTA_INDEX.md)。
+- **范围**：仍处于项目阶段一；作者结果与我们的疑问分离，未完成独立复现、学术首创性查新或阶段二/三正式整合。其他论文的认领与材料未修改。
+
 ## 2026-10-21 · 建立 papers/P001 单篇档案与 knowledge/Delta 机制数据库
 
 - **研究者明确要求的架构调整**：每篇用户确认的研究成果统一归入 `papers/P00X/`，而不是堆在 `synthesis/`。P001 已落地 [来源/原文入口](papers/P001/PAPER.md)、[架构示意与概览](papers/P001/README.md)、[客观贡献及限制](papers/P001/ARCHITECTURE.md)、[独立研究问题](papers/P001/IDEAS.md)。
