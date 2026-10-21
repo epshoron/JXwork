@@ -1,0 +1,30 @@
+# Credentials / local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.secrets.*
+secrets/
+credentials/
+
+# Local environments / caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Local raw datasets and scratch space
+data/
+scratch/
+tmp/
+*.log
+
+# Company material must never be placed in this public repository,
+# even when gitignore would otherwise exclude it.
