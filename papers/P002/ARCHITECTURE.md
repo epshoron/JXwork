@@ -76,7 +76,7 @@ CogAlpha 从 OHLCV 价格成交数据中**创造新的可运行 Python 因子代
 - D003（成功经验的长期 Main KB）：**不同**——CogAlpha 的候选种群与 Prompt 案例不等于明确的跨任务检索 KB。
 - D004（多 Agent 角色分工）：**变体**——CogAlpha 的 21 个专门生成 Agent + 四种质量角色，与 P001 的 Writer/Judge/Reviewer 分工粒度不同。
 - D005（样本外验证）：**类似评价范式，细节不同**——CogAlpha 用多市场 Qlib（含费用），但主要报告单次挖掘的结果。
-- [D006](../../knowledge/deltas/D006_domain_guidance.md)：**项目新机制**，不同领域角色 + 五类提示多样化。
+- [D006](../../knowledge/deltas/D006_domain_guidance.md)：**项目候选新机制（待审）**，不同领域角色 + 五类提示多样化。
 - [D007](../../knowledge/deltas/D007_code_evolution.md)：**项目新机制**，代码级进化和种群选择。
 
 **“P002 相对库里 P001 有结构差异” ≠ “P002 在整个学界首次发明”。** 真正 novelty 需后续论文的可核查对照。
