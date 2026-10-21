@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · P008 两项特色设计获批
+
+- **研究者认可的 P008 贡献**：[D014](knowledge/deltas/D014_seed_conditioned_evolution.md)（从种子 Alpha 出发的连续多轮因子进化工程工作流）与 [D015](knowledge/deltas/D015_hierarchical_evolution_reward.md)（Tool/Consistency/Exploration/Performance/Streak 五目标分层奖励训练进化策略）；对应[单篇评价](papers/P008/ARCHITECTURE.md)。
+- **设计判断**：奖励目标之间的张力是主动平衡研究方向、候选多样性、性能与持续改进的目的，**不作为缺点**；本轮无获批 P008 特化不足，不强行配对。
+- **语义去重**：P005 多轮 RL 优化整套因子池，D007 进化代码种群，D013 针对单因子 TMB 奖励更新生成模型，D010 更新 MCTS 搜索树；P008 分别在**种子连续进化任务状态**和**五目标进化轨迹奖励**上有可解释的机制差异，不声称首次发明 RL/多 Agent/工具调用。
+- **证据状态**：ICLR 2026 正式题录/摘要已核；五项奖励精确公式与相关消融根据公开 PDF 摘录和研究解读记录，受 OpenReview 浏览器验证限制，**正式 PDF 仍未逐页直接核对**。已同步论文 INDEX 与 Delta 总表。
+
 ## 2026-10-21 · 各 Agent 强制同步 Index 与 Markdown
 
 - **研究者显式要求**：每个研究 Agent 在正式研究归档、客观骨架写入、创新/不足审批状态变化及 Delta 卡新增/修改后，必须在**同一回合**主动同步相关 Markdown、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md`，不许等待别的 Agent 补漏；工作结束前检查链接、状态、Markdown 表格完整性。纯对话、无真实状态改变时不刷屏。
