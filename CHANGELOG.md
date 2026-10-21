@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · P004 审批归档及严格语义去重门禁
+
+- **P004 已获研究者认可**：[原架构](papers/P004/README.md)及[精炼评价](papers/P004/ARCHITECTURE.md)共记录**2 项机制亮点（MCTS 多维反馈树搜索、FSA 高频子树规避）+ 2 项相应特化风险假设（动态历史评分偏向、频率规避误伤）+ 1 项作者 Appendix J 自述的新颖性/生成空间限制**；风险未实证，学术首创尚待核查。
+- **Delta 语义去重并行合并**：P003 已占 D008–D009，不覆盖。P004 使用 [D010](knowledge/deltas/D010_mcts_multidimensional_search.md)、[D011](knowledge/deltas/D011_frequent_subtree_avoidance.md)；特别核查 D011 与 D008 的区别（全库高频模式作为后续生成约束，vs 候选对参考公式的最大公共子树惩罚）。作者自述局限只在 P004 档案保留，**不再复制成新的 Delta**。
+- **新强制规则**：[RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md) 与 [AGENTS.md](AGENTS.md) 明确要求每次上云创新、局限、知识卡前**显式比对最新全库语义重复**，对比干预点与失效原因；无法证明真正增量的内容先合并/关联或暂缓提交。**研究者审批、原文证据、严格去重缺一不可**。
+- 其他 Agent 的 P002、P003 成果和索引状态保持，未擅自修改其审批结论。
+
 ## 2026-10-21 · P002 代码级种群演化贡献获批
 
 - 研究者认可 **Thinking Evolution 的 Python 代码级因子种群搜索**（父代选择、变异/交叉、精英保留）作为 P002 的另一项特色贡献，已同步 [P002 架构](papers/P002/ARCHITECTURE.md) 和 [D007](knowledge/deltas/D007_code_evolution.md)；不声称遗传算子或 LLM 演化式编程学术首创。
