@@ -22,15 +22,16 @@
 **协作形式：先在 INDEX 认领去重 → 在 LLM 对话中理解并与用户讨论 → 用户要求/确认后归档 `papers/P00X/` 单篇成果 → 按机制更新 `knowledge/` Delta 基础库 → 证据积累后在 `synthesis/` 形成跨论文结论。**
 
 - 开始某篇论文前，只在 [papers/INDEX.md](papers/INDEX.md) 登记**统一论文编号、权威原文链接和最小状态**，不以聊天窗口身份命名。
-- **不创建逐篇过程流水账**，研读在 LLM 对话；但用户明确要求的单篇成果必须落在 `papers/P00X/`：论文链接/合法原文入口、简洁架构图、作者实际贡献、客观优缺点和研究者候选想法。
+- **先画清架构**：简洁图 + 人话解释机制，链接原文；**创新点、特化不足与独立想法必须在对话中先与研究者讨论、得到明确批准后才写入 `papers/P00X/` 或 Delta 数据库**。不创建逐篇讨论流水账。
 - Agent 优先自主阅读公开原文 HTML/PDF；访问受限才请研究者按需提供 PDF，索引始终保留原文链接。
-- **Delta 数据库**只记录机制及相对既有数据库的增量，区分「首次入库」「相对已读论文新增」「学术上首次提出」。P001 是第一篇，首次入库不代表原创；成熟项目综合结论才进入 [synthesis/](synthesis/)。
+- **Delta 数据库**区分「机制基础」「论文特化增量」「学术新颖性」，不把通用 OOS、成本、市场变化等凑成创新或独有缺点；P001 首篇首次入库不代表学术首创。成熟综合才进入 [synthesis/](synthesis/)。
 - 修改公共 Markdown 前读最新版本并处理 SHA 冲突。跨 Agent 去重只看索引，不查看其他 Agent 的聊天。
 - `CHANGELOG.md` 只记录**研究规范/架构变更与经确认的成果发布**，不充当逐篇研究流水账。
 
 ## 导航
 
-- [AGENTS.md](AGENTS.md)：新窗口接续规范（**先读**）
+- [AGENTS.md](AGENTS.md)：研究 Agent 接续规范（**先读**）
+- [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：**必读**写作风格、骨架优先、特化筛选和研究者审批
 - [RESEARCH_PLAN.md](RESEARCH_PLAN.md)：研究问题及对话研读方式
 - [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 论文去重索引**
 - [papers/P001/](papers/P001/README.md)：第一篇单篇论文档案范例
