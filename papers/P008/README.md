@@ -2,9 +2,9 @@
 
 **一句话骨架**：不是让 LLM 每次独立「生成因子→回测→重来」，而是给它一个种子因子，让它在**多轮提出变体、调用因子评估工具、分析反馈、继续改进**的轨迹里学习；训练时依据**有效性、探索多样性、与种子的一致性、表现改进、持续改进**等奖励更新因子搜索 Agent 的策略。
 
-> **ICLR 2026 正式论文，阶段一原文研读中。** 此处只有可核查的高层系统骨架；**研究者已认可两项特色设计（种子连续进化＋五目标分层奖励）；没有批准特化缺点**，不宣称“首次自进化”已得到学术首创性证明。
+> **ICLR 2026 正式论文，阶段一原文研读中。** 此处只有可核查的高层系统骨架；**研究者已认可两项特色设计及一一对应的两项特化验证不足**（种子连续进化↔Pass@T 表达力；五维奖励↔独立消融覆盖不足），不宣称“首次自进化”已得到学术首创性证明。
 
-[论文来源与核验范围](PAPER.md) · [已审创新及证据边界](ARCHITECTURE.md) · [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 原文](https://openreview.net/forum?id=lNmZrawUMu)
+[论文来源与核验范围](PAPER.md) · [已审创新与对应不足](ARCHITECTURE.md) · [两个特化研究问题](IDEAS.md) · [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 原文](https://openreview.net/forum?id=lNmZrawUMu)
 
 ## 自绘高层架构图（依据 ICLR 正式摘要；细节待 PDF 逐节核）
 
@@ -26,7 +26,8 @@ flowchart TD
 
 - **[D014](../../knowledge/deltas/D014_seed_conditioned_evolution.md)：种子 Alpha 的连续进化**。在同一任务中记住前序候选与工具反馈，学习如何持续改造这个种子的后代；区别于 P005 对整套因子池的增删优化，而不是声称独创多轮 RL。
 - **[D015](../../knowledge/deltas/D015_hierarchical_evolution_reward.md)：五类奖励的分层组合**。Tool、Consistency、Exploration、Performance、Streak 相互制衡，兼顾可用性、保留研究方向、探索不同候选和连续改善；**目的不是让所有目标都同向**。具体消融及证据边界见[评价页](ARCHITECTURE.md)。
-- **不足：本轮未批准任何一项**，不把目标张力误写成缺陷，也不强行凑创新与缺点的数量。
+- **与创新①对应的不足**：论文 Pass@T 成功定义只要求前 T 轮至少一个候选 `IR > max(0, 种子IR)`，**无法单凭成功率看出改善幅度**；不是说没有其他 IR 或组合指标。
+- **与创新②对应的不足**：§3.4 Figure 4 主要验证 Exploration 与 Consistency 奖励的互补性；Tool、Performance、Streak 以及分层组合形式缺乏同等充分的独立拆分。**奖励目标相互制衡是设计价值，并非缺陷**。两项均已获研究者审批、仍待进一步验证。
 
 ## 与此前论文的事实性对照
 
