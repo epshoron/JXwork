@@ -22,7 +22,7 @@
 **协作形式：先在 INDEX 认领去重 → 在 LLM 对话中理解并与用户讨论 → 用户要求/确认后归档 `papers/P00X/` 单篇成果 → 按机制更新 `knowledge/` Delta 基础库 → 证据积累后在 `synthesis/` 形成跨论文结论。**
 
 - 开始某篇论文前，只在 [papers/INDEX.md](papers/INDEX.md) 登记**统一论文编号、权威原文链接和最小状态**，不以聊天窗口身份命名。
-- **先画清架构**：原文核对后的图、机制与链接可由研究 Agent **直接写入 `papers/P00X/`，无须研究者审批骨架**；创新点、特化不足与独立想法必须先讨论，获研究者逐项批准后才写入论文评价或 Delta 数据库。不创建逐篇讨论流水账。
+- **不同来源不同入库权限**：**正式论文**经核对可直接归档骨架；**非论文材料**（GitHub 项目、文章、技术笔记、实验记录等）必须先在对话中介绍其研究价值，得到研究者明确同意，**才可在 GitHub 建档、登记索引或写入骨架**。所有来源的创新、特化不足、独立想法和 Delta 仍须逐项批准并严格语义去重。不创建逐篇讨论流水账。
 - Agent 优先自主阅读公开原文 HTML/PDF；访问受限才请研究者按需提供 PDF，索引始终保留原文链接。
 - **Delta 数据库**区分「机制基础」「论文特化增量」「学术新颖性」，不把通用 OOS、成本、市场变化等凑成创新或独有缺点；P001 首篇首次入库不代表学术首创。成熟综合才进入 [synthesis/](synthesis/)。
 - 修改公共 Markdown 前读最新版本并处理 SHA 冲突。跨 Agent 去重只看索引，不查看其他 Agent 的聊天。
@@ -33,8 +33,7 @@
 - [AGENTS.md](AGENTS.md)：研究 Agent 接续规范（**先读**）
 - [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：**必读**写作风格、骨架优先、特化筛选和研究者审批
 - [RESEARCH_PLAN.md](RESEARCH_PLAN.md)：研究问题及对话研读方式
-- [papers/INDEX.md](papers/INDEX.md)：**唯一跨研究 Agent 来源去重索引**（论文 + GitHub 项目）
-- [projects/G001/](projects/G001/README.md)：首个非论文 GitHub 项目（Sharpen / Crucible）
+- [papers/INDEX.md](papers/INDEX.md)：**跨研究 Agent 论文去重索引**；其他来源经研究者批准后再登记
 - [papers/P001/](papers/P001/README.md)：第一篇单篇论文档案范例
 - [papers/P002/](papers/P002/README.md)：CogAlpha 结构化档案与 Mermaid 架构图
 - [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)：跨论文机制 Delta 知识库
