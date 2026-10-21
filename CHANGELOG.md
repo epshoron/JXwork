@@ -8,12 +8,13 @@
 - **严格去重**：与 P007 D013 单公式 TMB/DAPO、P008 D014–D015 种子进化多目标 RL、P002 D007 固定 LLM 代码种群搜索的**任务对象、奖励对象、更新层级**相区别。GRPO/强化学习微调、多轮工具调用、池级优化的基础思想均不称学术首创。LoRA/全参数实施方式尚未确认。
 - **审批边界**：仅上述机制获批；未批准的独立不足与研究方案均未归档。论文属于 2026-10-11 arXiv 预印本，结果非独立复现，项目整体仍在阶段一。
 
-## 2026-10-21 · P008 两项特色设计获批
+## 2026-10-21 · P008 两项创新与一一对应的两项特化不足获批
 
-- **研究者认可的 P008 贡献**：[D014](knowledge/deltas/D014_seed_conditioned_evolution.md)（从种子 Alpha 出发的连续多轮因子进化工程工作流）与 [D015](knowledge/deltas/D015_hierarchical_evolution_reward.md)（Tool/Consistency/Exploration/Performance/Streak 五目标分层奖励训练进化策略）；对应[单篇评价](papers/P008/ARCHITECTURE.md)。
-- **设计判断**：奖励目标之间的张力是主动平衡研究方向、候选多样性、性能与持续改进的目的，**不作为缺点**；本轮无获批 P008 特化不足，不强行配对。
-- **语义去重**：P005 多轮 RL 优化整套因子池，D007 进化代码种群，D013 针对单因子 TMB 奖励更新生成模型，D010 更新 MCTS 搜索树；P008 分别在**种子连续进化任务状态**和**五目标进化轨迹奖励**上有可解释的机制差异，不声称首次发明 RL/多 Agent/工具调用。
-- **证据状态**：ICLR 2026 正式题录/摘要已核；五项奖励精确公式与相关消融根据公开 PDF 摘录和研究解读记录，受 OpenReview 浏览器验证限制，**正式 PDF 仍未逐页直接核对**。已同步论文 INDEX 与 Delta 总表。
+- **研究者认可的 P008 创新**：[D014](knowledge/deltas/D014_seed_conditioned_evolution.md)（从种子 Alpha 出发的连续多轮因子进化）与 [D015](knowledge/deltas/D015_hierarchical_evolution_reward.md)（Tool/Consistency/Exploration/Performance/Streak 五目标分层奖励）。
+- **对应特化不足①（D014）**：Pass@T（Eq.6）只要在前 T 轮至少出现一个 IR 优于种子且为正的因子便成功，无法单凭成功率分辨小幅和大幅改善；作者另有 IR 轨迹和组合评估，不能断言“只报告成功率”。
+- **对应特化不足②（D015）**：§3.4 Figure4 主要消融 Exploration、Consistency，尚未同等充分地分别证明 Tool/Performance/Streak 与截断、乘法耦合、工具项分母的必要性。**奖励目标制衡本身是创新设计价值，而非此不足**。
+- **去重与证据**：前者是**种子持续改进任务的成功指标表达局限**，后者是**五目标训练奖励的独立归因局限**，非同义缺点，也不同于 D010 树搜索评分回传、D013 TMB 历史分组极值风险。两项经研究者分别批准，**不是已证实算法故障**；正式 ICLR 题录可查，实验图表通过公开原始 PDF 可检索片段及转录核对，完整 PDF 仍待直接逐页验证。已同步 [论文评价](papers/P008/ARCHITECTURE.md)、[逐项问题](papers/P008/IDEAS.md)、[论文索引](papers/INDEX.md)与[知识总表](knowledge/DELTA_INDEX.md)。
+
 
 ## 2026-10-21 · 各 Agent 强制同步 Index 与 Markdown
 
