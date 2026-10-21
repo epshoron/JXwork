@@ -1,5 +1,7 @@
 # D004｜专职 Agent 分工与评价器隔离
 
+**审批状态：候选待审，研究者尚未确认机制是否应独立建卡；不能作为已批准的 Delta 基线。**
+
 - **首次入库**：P001（KB-first）
 - **机制**：WriterAgent 负责构造因子；JudgeAgent 负责逻辑/代码检查；BacktestEngine 提供数据驱动的性能检验；ReviewerAgent 消化指标，向下一轮生成反馈。职责分离有利于保持“生成建议”和“客观测量”的区别。
 - **P001 依据**：[出版方摘要](https://www.sciencedirect.com/science/article/pii/S2666827026001520)、[作者架构说明](https://github.com/VMSSON345/Self-Improving-Alpha-Mining-for-Quantitative-Trading-via-Multi-Agent-Large-Language-Models-with-Know)。
