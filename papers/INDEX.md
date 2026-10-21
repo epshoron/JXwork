@@ -6,6 +6,7 @@
 |---|---|---|---|
 | P001 | Self-improving alpha mining for quantitative trading via multi-agent large language models with knowledge base accumulation | [DOI:10.1016/j.mlwa.2026.100987](https://doi.org/10.1016/j.mlwa.2026.100987) | 已认领；**阶段一研读中**（2026-10-21；目前仅核实来源、摘要及作者材料） |
 | P002 | Cognitive Alpha Mining via LLM-Driven Code-Based Evolution | [ACL 2026 / DOI:10.18653/v1/2026.acl-long.538](https://doi.org/10.18653/v1/2026.acl-long.538) · [arXiv:2511.18850](https://arxiv.org/abs/2511.18850) | 已认领；**阶段一核心方法、实验及附录已研读，讨论未定稿**（2026-10-21） |
+| P003 | AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay | [KDD 2025 / DOI:10.1145/3711896.3736838](https://doi.org/10.1145/3711896.3736838) · [arXiv:2502.16789](https://arxiv.org/abs/2502.16789) | **已认领；阶段一研读中**（2026-10-21；论文全文核验中） |
 
 ## 轻量认领协议
 
