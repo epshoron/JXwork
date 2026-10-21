@@ -2,6 +2,12 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-21 · 用户明确要求归档 CogAlpha 专题架构总结
+
+- 新增 [CogAlpha 架构与研究问题](synthesis/COGALPHA_ARCHITECTURE_AND_RESEARCH_QUESTIONS.md)：包含自绘 Mermaid 流程图、21 领域 Agent 的七组任务、作者声称的贡献及原文证据、可检验的疑问。
+- 严格分离作者声明、实验结果、我们自己的待验证分析；这是用户批准的 P002 专题归档，**不是恢复逐篇 notes 或全面进入阶段二/三**。
+- 索引仍只记录最小状态，其他 Agent 仍通过 `papers/INDEX.md` 去重。
+
 ## 2026-10-21 · P001 架构骨架归档（研究者明确要求）
 
 - 按研究者本轮明确要求，在 [`synthesis/P001_ALPHA_MINING_ARCHITECTURE.md`](synthesis/P001_ALPHA_MINING_ARCHITECTURE.md) 归档精炼架构与 Mermaid 图、作者明确主张的贡献、此前 QuantAgent 的相关基础、作者报告结果和**待后续文献核验**的缺点/改善假设。
