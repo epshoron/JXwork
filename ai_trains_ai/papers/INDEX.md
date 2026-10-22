@@ -8,6 +8,8 @@
 
 | [T002](T002/README.md) | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **新认领；已核 ICLR 2026 正式题录与原文摘要，完整机制与实验研读待继续**（2026-10-22） |
 
+| [T003](T003/README.md) | Automated Design of Agentic Systems | [ICLR 2025 论文](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **新认领；已核原文和正式发表来源，阶段一方法/实验研读中**（2026-10-22） |
+
 ## 认领与同步
 
 - 用 `T001`、`T002`…… 编号；先检查**两个方向**的索引、 DOI / arXiv / 题名，避免撞号与无价值重复登记。
