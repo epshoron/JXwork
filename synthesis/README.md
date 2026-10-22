@@ -1,4 +1,6 @@
-# synthesis / 经确认的综合研究成果
+# 方向 A｜synthesis / 因子挖掘经确认的综合研究成果
+
+**方向 B 的成熟综合**未来写入 [ai_trains_ai/synthesis/](../ai_trains_ai/synthesis/README.md)，不可混入本目录；各方向研究阶段独立判定。
 
 此目录目前保留 `RESEARCH_LENSES.md`，作为**暂定研究提问框架**，不是已验证的分类地图或逐篇笔记；当前项目仍处于**阶段一：完整理解原始论文**。
 
