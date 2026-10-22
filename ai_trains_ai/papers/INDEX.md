@@ -4,8 +4,9 @@
 
 | 编号 | 原始论文题名 | 权威原文／唯一标识 | 实际研究状态 |
 |---|---|---|---|
-| [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **正式 ICML 2024 来源、[P/M/H 通俗骨架及方法](T001/README.md)、[§3–6 / Appendix J、L 核查范围](T001/PAPER.md) 已归档**；创新/不足已进入讨论但**未经逐项审批**，TD 未创建；未复现（2026-10-22） |
+| [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **原始机制与 [P/M/H 骨架](T001/README.md) 已归档；[两项已审特色](T001/ARCHITECTURE.md)＋[对应两项特化不足](T001/IDEAS.md) 已获批准，机制入库 TD001/TD002**；未独立复现/未宣告学术首创（2026-10-22） |
 | [T002](T002/README.md) | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026 正式论文](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **已核原文 §2–4 / Figure 2–3 / Table 1、3 / Appendix C–D；[客观架构](T002/README.md) 与 [来源边界](T002/PAPER.md) 已归档**；未复现，创新/特化不足/TD 均未审批（2026-10-22） |
+| [T003](T003/README.md) | Agent Lightning: Train ANY AI Agents with Reinforcement Learning | [arXiv:2508.03680（2025 原论文）](https://arxiv.org/abs/2508.03680) · [Microsoft Research 项目](https://www.microsoft.com/en-us/research/project/agent-lightning/) | **已认领；原论文 §1–4 的执行/训练解耦、轨迹转移与 LightningRL 架构正在核对；特色与不足未审批**（2026-10-22） |
 | [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **ICML 2024 正式来源、[原文方法/实验/局限 §2–3/6 与架构图](T005/README.md) 已核并归档；[证据边界](T005/PAPER.md) 已标明；创新/特化不足与 TD 未审批，未独立复现**（2026-10-22） |
 
 ## 认领与同步
