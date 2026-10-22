@@ -6,7 +6,7 @@
 
 **方向 A：AI Agent 量化因子挖掘（现有内容）**：研究入口 [README](README.md)；论文 `papers/INDEX.md` + `papers/P00X/`（现有 P001–P010），机制 `knowledge/DELTA_INDEX.md` + `knowledge/deltas/D00X_*.md`（现有 D001–D020），综合 `synthesis/`。**不得为改目录迁移、重命名或重编号任何既有档案。**
 
-**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**T001 Promptbreeder 已批准两组机制＋配对不足、入库 TD001/TD002；T003 Agent Lightning 只有客观原文骨架、创新/不足未批准。其余论文状态以 B 的实时 Index 为准。**
+**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**T001 Promptbreeder 已批准两组机制＋配对不足、入库 TD001/TD002；T003 Agent Lightning 已批准 2+2 并入库 TD008/TD009。其余论文状态以 B 的实时 Index 为准。**
 
 - **收到研究任务先判所属方向**，读取该方向 README、两份 Index 与相关单篇档案；另一方向的相同 DOI/arXiv/相近机制也需查重，不因双目录而重复认领或重复声称创新。
 - **本文件下文未带方向前缀的 `papers/P00X/`、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md` 等旧路径，均是方向 A 的历史示例**。执行于 B 时必须替换为上述 `ai_trains_ai/` 的**本方向**路径，不得把 T/TD 误写到 A 的公共 Index。
@@ -17,7 +17,7 @@
 
 ## 接手顺序
 
-1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A 或方向 B，再确认该方向实际阶段**；B 的 T001 2+2 已审，T003 仅骨架已归档，A 仍以原文理解为主。
+1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A 或方向 B，再确认该方向实际阶段**；B 的 T001 2+2 已审，T003 已审 2+2，T005 也已审 2+2，A 仍以原文理解为主。
 2. 实时阅读**所属方向论文 Index**，并核对另一方向是否已收录相同题名/DOI/arXiv；已有认领原则上优先交叉引用。**非论文资料在研究者明确批准收录前，不得自行认领、登记、建档或写入任何研究内容。**
 3. **必须阅读 `RESEARCH_WRITING_STANDARD.md`**（图先行、语言精炼、特化观察、贡献/缺点研究者审批）；再看**所属方向 Delta Index**；方向 A 可用 `papers/P001/` 作示例、`synthesis/RESEARCH_LENSES.md` 作为 A 专属研究视角；方向 B 参考 `ai_trains_ai/README.md`。必要时查最新 `CHANGELOG.md`。
 
