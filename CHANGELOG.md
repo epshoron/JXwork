@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · T003 Agent Lightning 2+2 审批归档
+
+- **研究者批准两组特色及一一对应的不足**：① [TD008｜多轮 Agent 的 LLM 调用拆为单次 RL transition](ai_trains_ai/knowledge/deltas/TD008_agent_call_transition_lightningrl.md) ↔ 原论文各调用共享同一轨迹最终回报 R，缺细粒度跨调用信用分配；② [TD009｜多角色调用选择性进入参数训练](ai_trains_ai/knowledge/deltas/TD009_role_selected_agent_training.md) ↔ 共享权重可能波及未参与训练的角色、多角色协作依赖未得到独立控制。
+- **严格证据边界**：原文 §3.2–3.3 / §4.1 / §5.2 可证实结构与当前奖励组织；“坏的调用已遭错误强化导致失败”“未选中的 Checker 已经退化”均**不是原文已证实的事实**。2025 原论文与 2026 Agent Lightning v1.0 分开；学术首创性与独立复现未确认。
+- **双方向严格去重**：区别方向 B TD001–TD005（Prompt 文本/搜索）、TD006 自有偏好 DPO、TD007 共享权重下 Judge 跨任务能力迁移，以及方向 A D016（因子池整轨 GRPO）；TD008 聚焦**通用 Agent 多次调用→训练单元的转换**，TD009 聚焦**训练角色/调用选择**，不另称 RL/多 Agent 分工为新发明。
+- **同步归档**：[T003 架构](ai_trains_ai/papers/T003/README.md)、[已审特色](ai_trains_ai/papers/T003/ARCHITECTURE.md)、[配对不足](ai_trains_ai/papers/T003/IDEAS.md)、[B 论文 Index](ai_trains_ai/papers/INDEX.md)、[B Delta Index](ai_trains_ai/knowledge/DELTA_INDEX.md)。阶段一单篇评价，不代表开展跨论文阶段二或提出原创工程方案。
+
 ## 2026-10-22 · T005 自奖励模型两项机制与配对不足获批
 
 - **研究者明确批准 2+2**：① [TD006｜同一 Actor/Judge 自评分偏好对→迭代 DPO 参数更新](ai_trains_ai/knowledge/deltas/TD006_shared_actor_judge_self_reward_dpo.md) ↔ 同源评分可能强化长度/格式偏好；② [TD007｜IFT/EFT 双任务初始化与 Judge 跨任务间接能力提升](ai_trains_ai/knowledge/deltas/TD007_dual_task_judge_transfer.md) ↔ Judge 细项指标未持续同步增长、只测试三模型阶段。
