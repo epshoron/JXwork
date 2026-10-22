@@ -6,11 +6,11 @@
 |---|---|---|---|
 | [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **正式 ICML 2024 来源 + [客观骨架](T001/README.md) + [原文核查边界](T001/PAPER.md) 已归档**；创新、特化不足与 TD 均未审批；无论文复现（2026-10-22） |
 
-| [T002](T002/README.md) | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **新认领；已核 ICLR 2026 正式题录与原文摘要，完整机制与实验研读待继续**（2026-10-22） |
+| T002 | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **新认领；已核 ICLR 2026 正式题录与原文摘要，完整机制与实验研读待继续**（2026-10-22） |
 
-| [T003](T003/README.md) | Automated Design of Agentic Systems | [ICLR 2025 论文](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **新认领；已核原文和正式发表来源，阶段一方法/实验研读中**（2026-10-22） |
+| T003 | Automated Design of Agentic Systems | [ICLR 2025 论文](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **新认领；已核原文和正式发表来源，阶段一方法/实验研读中**（2026-10-22） |
 
-| [T004](T004/README.md) | Agent Lightning: Train ANY AI Agents with Reinforcement Learning | [arXiv:2508.03680](https://arxiv.org/abs/2508.03680)（2025 年预印本） | **新认领；已读原文总览与训练/执行解耦方法，阶段一深入研读中**（2026-10-22） |
+| T004 | Agent Lightning: Train ANY AI Agents with Reinforcement Learning | [arXiv:2508.03680](https://arxiv.org/abs/2508.03680)（2025 年预印本） | **新认领；已读原文总览与训练/执行解耦方法，阶段一深入研读中**（2026-10-22） |
 | [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **已认领；ICML 2024 正式记录及原文 §2 的数据生成—自评—DPO 迭代链路已核，客观骨架整理中；创新/不足未审批**（2026-10-22） |
 
 ## 认领与同步
