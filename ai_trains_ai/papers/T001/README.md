@@ -1,6 +1,6 @@
 # T001｜Promptbreeder：让修改任务 Prompt 的方法也随实验反馈进化
 
-> **归档状态（2026-10-22）**：正式论文的**客观系统骨架**已按 arXiv 原始全文 §1–6、相关图与部分附录核实；ICML 2024 正式题录可核。**没有经过研究者对特色创新、特化不足和知识 Delta 的逐项审批，因此不创建评价文件或 TD 卡；也不声称完整复现。**
+> **归档状态（2026-10-22）**：正式论文的**客观系统骨架**已按 arXiv 原始全文 §1–6、相关图与部分附录核实；ICML 2024 正式题录可核。**两组特色机制与一一对应的特化不足已获研究者批准**，见 [ARCHITECTURE.md](ARCHITECTURE.md)、[IDEAS.md](IDEAS.md)、[TD001](../../knowledge/deltas/TD001_coupled_task_mutator_prompt_evolution.md)、[TD002](../../knowledge/deltas/TD002_success_trace_prompt_induction_context_evolution.md)；无独立复现、无学术首次查新定论。
 
 [原文及证据范围](PAPER.md) · [ICML 2024 / PMLR 官方记录](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv 原文](https://arxiv.org/pdf/2309.16797)
 
@@ -64,4 +64,4 @@ flowchart TD
 
 - **本文原型只覆盖提示内容与改变提示的元指令**，不是完整的上层 CLI / 下层多工具 Executor；没有论文依据支持把通用 Skills/工具路由/外部知识库也说成 Promptbreeder 已经优化。
 - **严格区分“会优化自己的提示修改方式”与“递归改写模型权重”**：它是自然语言层的自指式优化，非 LoRA/SFT/RL 模型微调。
-- **单篇特色、特化不足、跨论文 TD 增量仍待研究者审查**。尤其要与旧方向 P002 的代码因子种群进化、P009 的评分器代码进化区分更新对象；这里只给出读图事实，不入库创新比较结论。
+- **两组已审特色及对应不足**已完成语义去重并归档，具体证据和作用对象见 [ARCHITECTURE](ARCHITECTURE.md) 与 [IDEAS](IDEAS.md)；旧方向 P002 的因子代码进化、P009 的评分指标代码进化与本篇 P/M、成功轨迹反推不同。
