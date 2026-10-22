@@ -1,6 +1,6 @@
 # 方向 B｜机制 Delta Index：AI 如何训练 AI
 
-> **初始化于 2026-10-22，已有 TD001–TD005 五项经研究者批准的机制卡。** 本索引记录 AI trains AI 论文中**经过研究者确认、严格语义去重**的具体机制，不自动等同学术首创。
+> **初始化于 2026-10-22，已有 TD001–TD009 九项经研究者批准的机制卡。** 本索引记录 AI trains AI 论文中**经过研究者确认、严格语义去重**的具体机制，不自动等同学术首创。
 
 | 编号 | 机制指纹／更新对象 | 来源 | 审批及证据状态 | 与已有机制的区别 |
 |---|---|---|---|---|
@@ -12,6 +12,8 @@
 | [TD006](deltas/TD006_shared_actor_judge_self_reward_dpo.md) | **T005**：同一 LLM Actor/Judge 自评候选→生成偏好对→迭代 DPO 更新共享参数 | [T005](../papers/T005/ARCHITECTURE.md) | **特色①和对应风险①已批准（2026-10-22）**；长度上升属作者观察，Reward Hacking 未证实 | 区别 TD001–TD005 的 Prompt 改写/搜索；区别 D013/D015/D016 因子专属奖励：这里用同权重普通回答自评价转为偏好训练 |
 | [TD007](deltas/TD007_dual_task_judge_transfer.md) | **T005**：IFT+EFT 双任务初始化；回答偏好 DPO 训练向 Judge 能力间接迁移 | [T005](../papers/T005/ARCHITECTURE.md) | **特色②和对应不足②已批准（2026-10-22）**；Table 4 的 5-best 下降、Exact Match 持平，三模型阶段范围有限 | 区别 TD006 的自有偏好数据闭环；专指 Judge 任务初始化与跨任务迁移的可持续性证据，不是重新发明多任务学习 |
 
+| [TD008](deltas/TD008_agent_call_transition_lightningrl.md) | **T003**：把复杂 Agent 多次 LLM 调用转换为单次 `(input, output, reward)` transition 接入 RL 参数训练 | [T003](../papers/T003/ARCHITECTURE.md) | **机制① + 对应跨调用信用分配不足①已批准（2026-10-22）**；2025 原论文 §3.2–3.3；未复现 | 与 D016 的因子池整轨 GRPO、TD006 自评分 DPO 不同：本机制控制**调用级训练单元映射**，不新发明 RL |
+| [TD009](deltas/TD009_role_selected_agent_training.md) | **T003**：按多角色 Agent 的指定 LLM 决策筛选进入模型参数训练的数据 | [T003](../papers/T003/ARCHITECTURE.md) | **机制② + 对应共享权重/协作影响不足②已批准（2026-10-22）**；2025 原论文 §3.2.2、§4.1；未复现 | 不同于 TD007 Actor/Judge 跨任务能力迁移及 D004 普通角色分工：这里是**训练数据的角色级选择**，未选角色不保证参数隔离 |
 ## 使用与同步
 
 - 机制卡编号从 **TD001** 起，正式路径为 `deltas/TD001_*.md`；不创建空卡或未经批准的“候选创新”。
