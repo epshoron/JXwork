@@ -9,7 +9,7 @@
 | 方向 | 研究任务 | 论文索引 | 机制知识 |
 |---|---|---|---|
 | A｜AI Agent 因子挖掘 | LLM/Agent 如何发现量化 Alpha、利用反馈改进搜索 | [papers/INDEX.md](papers/INDEX.md)（P001–P010） | [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)（D001–D020） |
-| B｜AI 如何训练 AI | 上层 AI 反馈优化下层 Executor 的 Prompt/Skills/工具/记忆策略 **与** SFT/RL 参数训练的比较 | [ai_trains_ai/papers/INDEX.md](ai_trains_ai/papers/INDEX.md)（T001 起，尚未认领） | [ai_trains_ai/knowledge/DELTA_INDEX.md](ai_trains_ai/knowledge/DELTA_INDEX.md)（TD001 起，尚未建卡） |
+| B｜AI 如何训练 AI | 上层 AI 反馈优化下层 Executor 的 Prompt/Skills/工具/记忆策略 **与** SFT/RL 参数训练的比较 | [ai_trains_ai/papers/INDEX.md](ai_trains_ai/papers/INDEX.md)（T001 Promptbreeder 已归档骨架） | [ai_trains_ai/knowledge/DELTA_INDEX.md](ai_trains_ai/knowledge/DELTA_INDEX.md)（TD001 起，尚未建卡） |
 
 - **先读 [AGENTS.md](AGENTS.md)**：跨方向审批、来源准入、去重、并行同步、安全边界。
 - **再读 [RESEARCH_PLAN.md](RESEARCH_PLAN.md)**、[RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：三个研究阶段与写作/审批要求。方向 B 的研究场景和两条优化路线详见 [ai_trains_ai/README.md](ai_trains_ai/README.md)，不要先把“训练”限定为修改权重，也不要把自动改 Prompt 当成权重训练。
