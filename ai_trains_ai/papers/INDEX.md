@@ -1,9 +1,10 @@
 # 方向 B｜论文 Index：AI 如何训练 AI
 
-> **初始化于 2026-10-22，目前无已认领论文。** 这里专用于 AI trains AI 方向的去重和真实进度；旧方向的论文见 [根目录 papers/INDEX.md](../../papers/INDEX.md)。
+> **初始化于 2026-10-22，T001 已认领；其余尚未认领。** 这里专用于 AI trains AI 方向的去重和真实进度；旧方向的论文见 [根目录 papers/INDEX.md](../../papers/INDEX.md)。
 
 | 编号 | 原始论文题名 | 权威原文／唯一标识 | 实际研究状态 |
 |---|---|---|---|
+| [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **已认领；原始论文方法与实验正在核查，骨架待正式归档**（2026-10-22） |
 
 ## 认领与同步
 
