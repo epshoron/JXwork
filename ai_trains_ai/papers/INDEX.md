@@ -1,11 +1,12 @@
 # 方向 B｜论文 Index：AI 如何训练 AI
 
-> **初始化于 2026-10-22；当前收录 T001、T005，其他状态以本表为准。** 这里专用于 AI trains AI 方向的去重和真实进度；旧方向的论文见 [根目录 papers/INDEX.md](../../papers/INDEX.md)。
+> **初始化于 2026-10-22；各来源的真实进度以本表为准。** 这里专用于 AI trains AI 方向的去重和真实进度；旧方向的论文见 [根目录 papers/INDEX.md](../../papers/INDEX.md)。
 
 | 编号 | 原始论文题名 | 权威原文／唯一标识 | 实际研究状态 |
 |---|---|---|---|
 | [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **正式 ICML 2024 来源 + [客观骨架](T001/README.md) + [原文核查边界](T001/PAPER.md) 已归档**；创新、特化不足与 TD 均未审批；无论文复现（2026-10-22） |
 | [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **ICML 2024 正式来源、[原文方法/实验/局限 §2–3/6 与架构图](T005/README.md) 已核并归档；[证据边界](T005/PAPER.md) 已标明；创新/特化不足与 TD 未审批，未独立复现**（2026-10-22） |
+| T001 | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026 official paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **仅认领；正式发表题录、原文摘要和核心反思式 Prompt 优化路径已核；完整方法、消融与实验仍待逐节研读；创新/特化不足/TD 未审批**（2026-10-22） |
 
 ## 认领与同步
 
