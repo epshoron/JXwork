@@ -1,9 +1,9 @@
 # T004｜Automated Design of Agentic Systems（ADAS）｜Meta Agent Search
 
 **原题**：Automated Design of Agentic Systems。Shengran Hu、Cong Lu、Jeff Clune；**ICLR 2025 正式会议论文**。  
-[正式会议题录](https://proceedings.iclr.cc/paper_files/paper/2025/hash/36b7acf6f6010652b3f2a433774a66fe-Abstract-Conference.html) · [官方 PDF](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) · [原文与证据界限](PAPER.md)
+[正式会议题录](https://proceedings.iclr.cc/paper_files/paper/2025/hash/36b7acf6f6010652b3f2a433774a66fe-Abstract-Conference.html) · [官方 PDF](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) · [原文与证据界限](PAPER.md) · [已审特色（2 项）](ARCHITECTURE.md) · [对应特化不足（2 项）](IDEAS.md)
 
-> **仅为经原文核实的客观架构**。本篇独立创新性评价、特化不足、独立研究想法以及 TD 知识卡**尚未由研究者审批**；未独立复现实验。
+> **已核实的客观骨架获研究者认可**；2026-10-22 进一步批准 **[TD010 代码级 Agent 结构搜索](../../knowledge/deltas/TD010_executable_agent_program_search.md)** 与 **[TD011 历史 Agent 设计档案回流](../../knowledge/deltas/TD011_agent_design_archive_stepping_stones.md)**，以及各自一项**[对应特化不足](IDEAS.md)**。项目级机制辨识度不代表学术首创；两条待核归因问题不等于已证实故障；未独立复现。
 
 ## 一句话抓住不同
 
@@ -65,4 +65,4 @@ flowchart TD
 - T003 Agent Lightning：隔离执行器和 RL 训练器、用轨迹/奖励更新**模型参数**；
 - **T004 ADAS**：搜索的候选是**整个 Agent 的可执行 Python 设计**，允许改变 Agent 流程/模块拓扑，不是只改文字提示或训练权重。与方向 A 的 P002 代码变异不同：P002 演化的是**金融因子计算程序**，本篇演化的是**使用基础模型解决任务的 Agent 程序**。
 
-**阶段与审批**：只完成 T004 客观原文骨架；跨论文创新/特化缺点不自动定稿，必须研究者逐项批准且跨双方向语义去重。更多证据见 [PAPER.md](PAPER.md)。
+**阶段与审批**：T004 客观骨架以及两项特色与各自配对不足已于 2026-10-22 获批，并完成双方向语义去重、归档于 [ARCHITECTURE](ARCHITECTURE.md)、[IDEAS](IDEAS.md) 和 TD010/TD011。仍属方向 B 阶段一；不宣称完整学术首创查新或独立复现。更多证据见 [PAPER.md](PAPER.md)。
