@@ -2,6 +2,12 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · Promptbreeder T001 两项机制与特化不足获批
+
+- **研究者明确批准 2+2**：① [TD001｜任务 Prompt 与变异 Prompt 联动进化](ai_trains_ai/knowledge/deltas/TD001_coupled_task_mutator_prompt_evolution.md)，对应作者明确承认“仅改变 Prompt 内容，未自动进化外层 Prompting 算法/调用结构”的边界；② [TD002｜成功工作过程反推任务 Prompt + Few-shot 正确示例上下文进化](ai_trains_ai/knowledge/deltas/TD002_success_trace_prompt_induction_context_evolution.md)，对应作者 Appendix J.5 观察到 Few-shot 示例主导结果、任务 Prompt 漂移到无意义文本的现象。风险不是已证实的普遍泛化失败。
+- **严格语义去重**：与方向 A 的 D003 成功因子持久检索、D007 因子代码进化、D017 因子/指标代码双轨进化比较；TD001 更新自然语言**变异策略 M**，TD002 把**成功执行推理转成 P 与上下文**，既与彼此不同，也不冒充基础遗传算法/提示工程的新发明。
+- **同步**：[T001 已审特色](ai_trains_ai/papers/T001/ARCHITECTURE.md)、[两项特化不足](ai_trains_ai/papers/T001/IDEAS.md)、[T001 骨架](ai_trains_ai/papers/T001/README.md)、[B 论文 Index](ai_trains_ai/papers/INDEX.md) 与 [B Delta Index](ai_trains_ai/knowledge/DELTA_INDEX.md)。另 [T003 Agent Lightning](ai_trains_ai/papers/T003/README.md) 已按论文来源归档**客观骨架**，其创新/不足尚未经审批；项目方向 B 仍以阶段一研究为主，不宣布阶段二/三或系统方案启动。
+
 ## 2026-10-22 · 明确方向 B 的双层优化研究问题
 
 - **研究者提出的目标研究场景（未定稿方法）**：上层 AI 通过 CLI 等界面与用户沟通，利用知识库、记忆与任务反馈，持续改进下层 API/Executor Agent 的提示、技能、工具和记忆策略；是否进一步更新下层模型参数仍是开放问题，不创建新论文或创新知识卡。
