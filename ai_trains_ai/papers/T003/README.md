@@ -1,6 +1,6 @@
 # T003｜Agent Lightning：让现有 Agent 的执行记录成为模型 RL 训练数据
 
-> **状态（2026-10-22）**：2025 年原论文 [arXiv:2508.03680](https://arxiv.org/abs/2508.03680) 的 **§1、§3–4 与关键算法/系统结构**已核实并建立**客观骨架**；特色创新、特化不足与 TD 卡**尚待研究者逐项讨论批准**。未实际训练模型、未复现实验。
+> **状态（2026-10-22）**：2025 年原论文 [arXiv:2508.03680](https://arxiv.org/abs/2508.03680) 的 **§1、§3–4 与关键算法/系统结构**已核实并建立**客观骨架**；**2 项项目级特色设计 + 对应 2 项特化不足已获研究者逐项批准**，分别见 [ARCHITECTURE.md](ARCHITECTURE.md)、[IDEAS.md](IDEAS.md)、[TD008](../../knowledge/deltas/TD008_agent_call_transition_lightningrl.md)、[TD009](../../knowledge/deltas/TD009_role_selected_agent_training.md)。未实际训练模型、未复现实验、不宣称学术首次。
 
 [原文与版本核查边界](PAPER.md) · [原论文 HTML 全文](https://arxiv.org/html/2508.03680) · [Microsoft Research 项目](https://www.microsoft.com/en-us/research/project/agent-lightning/)
 
@@ -45,5 +45,5 @@ flowchart TD
 
 - **更贴近用户研究中的“权重训练”路线**：它研究怎样复用执行 Agent 的交互轨迹，真正训练可更新的模型，而非搜索 Prompt 文本。上层 CLI + 下层 Executor 是用户目标场景，**不是这篇论文已经实现的通用产品**。
 - **不要混淆论文和仓库版本**：2025 原始 Agent Lightning 论文和微软 GitHub 2026 年的 **Agent Lightning v1.0** 有设计迭代；当前 `main` 已全面重构，不能用 v1.0 的训练指标冒充 2025 原论文 §4 的结果。
-- **正式贡献、特化不足、TD 是否新增**仍未审批。本档不将训练/执行分离、奖励分配、监控等先行视为学术首次发明。
+- **已审特色与特化不足**记录在 [ARCHITECTURE](ARCHITECTURE.md) 和 [IDEAS](IDEAS.md)；知识卡为 TD008/TD009。训练/执行分离、RL、角色分工和监控的基础思想不被冒称学术首次发明。
 
