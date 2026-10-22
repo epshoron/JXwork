@@ -6,7 +6,7 @@
 
 [原文与核验边界](PAPER.md) · [已审特色与证据](ARCHITECTURE.md) · [两项特化问题](IDEAS.md) · [D019](../../knowledge/deltas/D019_five_axis_semantic_plan_space.md) · [D020](../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md) · [arXiv 全文](https://arxiv.org/html/2607.26642)
 
-**已确认保留的研究骨架重点（2026-10-22）**：研究者认可继续保留本篇「**五维语义 Plan → 受预算约束的可学习调度器 → LLM 因子实现 → 工具评价 → Plan–Reward 经验回流**」作为研究主线。**这里认可的是准确的架构理解与保留价值，不是对任何学术创新、特化不足或新 Delta 的提前审批**；相关独立评价仍需单独讨论、严格语义去重后才能归档。
+**已确认的研究主线（2026-10-22）**：「**五维语义 Plan → 可学习的预算调度 → LLM 实现 → 真实数据评价 → Plan–Reward 经验回流**」。在骨架获认可后，研究者进一步批准 [D019](../../knowledge/deltas/D019_five_axis_semantic_plan_space.md) 与 [D020](../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md) 及两项一一对应的待验证问题；不表示世界范围首创。
 
 ## 一眼看懂：系统骨架（依据原文 Figure 1、§2–3 自绘）
 
