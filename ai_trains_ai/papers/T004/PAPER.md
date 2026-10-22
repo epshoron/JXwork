@@ -15,6 +15,6 @@
 1. **没有独立运行论文代码、重现指标或做当前模型复测**；所有数字都是论文报告。
 2. 本篇的可更新工件是**下层 Agent 的 Python 调用程序/流程**及搜索档案，而不是执行 LLM 权重。上层 Meta Agent 也未被所描述算法更新权重。
 3. 不是整个 Agent 生产部署体系的自主管控证明：安全依赖实验约束、隔离与人工审查；任务目标和评价指标为研究者预先设定。
-4. **用户尚未批准 T004 的具体创新、特化不足、原创方案或 TD 机制卡**；这里只归档可核对的论文结构，不擅自推进阶段二/三。
+4. **2026-10-22 研究者已批准 T004 两项特色设计与各自对应特化问题（2+2），并经过双方向语义去重归档 [TD010](../../knowledge/deltas/TD010_executable_agent_program_search.md)、[TD011](../../knowledge/deltas/TD011_agent_design_archive_stepping_stones.md)，单篇详见 [ARCHITECTURE.md](ARCHITECTURE.md) 与 [IDEAS.md](IDEAS.md)。**原创方案、跨论文阶段二/三均未批准；此处不代表复现或世界首次提出。
 
 [返回 T004 架构](README.md) · [方向 B 论文 Index](../INDEX.md)。
