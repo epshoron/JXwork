@@ -7,7 +7,7 @@
 ## 目录与编号：按方向独立，规则共用
 
 - **方向 A：AI Agent 因子挖掘**：旧 `papers/P00X/`、`papers/INDEX.md`、`knowledge/deltas/D00X_*.md` 与 `knowledge/DELTA_INDEX.md` 原位不变（当前 P001–P010、D001–D020）。
-- **方向 B：AI 如何训练 AI**：[ai_trains_ai/README.md](ai_trains_ai/README.md)，论文 `ai_trains_ai/papers/T00X/` + `ai_trains_ai/papers/INDEX.md`（T001 起），机制 `ai_trains_ai/knowledge/deltas/TD00X_*.md` + `ai_trains_ai/knowledge/DELTA_INDEX.md`（TD001 起）。目前 [T001 Promptbreeder](ai_trains_ai/papers/T001/ARCHITECTURE.md) 的两项特色与对应不足已获批、TD001/TD002 已入库；[T003 Agent Lightning](ai_trains_ai/papers/T003/README.md) 仅归档原文客观骨架，创新未审批。
+- **方向 B：AI 如何训练 AI**：[ai_trains_ai/README.md](ai_trains_ai/README.md)，论文 `ai_trains_ai/papers/T00X/` + `ai_trains_ai/papers/INDEX.md`（T001 起），机制 `ai_trains_ai/knowledge/deltas/TD00X_*.md` + `ai_trains_ai/knowledge/DELTA_INDEX.md`（TD001 起）。目前 [T001 Promptbreeder](ai_trains_ai/papers/T001/ARCHITECTURE.md) 的两项特色与对应不足已获批、TD001/TD002 已入库；[T003 Agent Lightning](ai_trains_ai/papers/T003/ARCHITECTURE.md) 2+2 已批准并入库 TD008/TD009；具体单篇状态以本方向 [论文 Index](ai_trains_ai/papers/INDEX.md) 为准。
 - **本文下文旧 P/D 路径均是方向 A 的具体示例**；写 B 时必须换成本方向的 T/TD 路径。**审批、证据要求、语义去重、同回合 Index 同步完全一致**，而且新论文/机制需跨方向检查是否重复。
 - B 的核心证据还应清楚说明**谁提供评价/训练信号、谁被优化、究竟更新了哪一个对象（Prompt/Skills/记忆/工具策略、训练数据/奖励器、还是模型参数）、怎样验证改进**。Prompt 自动搜索/版本更新是合法的**Agent 系统优化研究对象**，但不能把它误写成模型参数训练；SFT/RL 是训练方法、LoRA 是参数高效微调技术，层级不同。方向 B 同时研究两条路线与可能的组合，**不能先设哪一条更优**；只在独立证据支持时给出创新判断或收益主张。
 
