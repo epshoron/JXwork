@@ -10,6 +10,8 @@
 
 | [T003](T003/README.md) | Automated Design of Agentic Systems | [ICLR 2025 论文](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **新认领；已核原文和正式发表来源，阶段一方法/实验研读中**（2026-10-22） |
 
+| [T004](T004/README.md) | Agent Lightning: Train ANY AI Agents with Reinforcement Learning | [arXiv:2508.03680](https://arxiv.org/abs/2508.03680)（2025 年预印本） | **新认领；已读原文总览与训练/执行解耦方法，阶段一深入研读中**（2026-10-22） |
+
 ## 认领与同步
 
 - 用 `T001`、`T002`…… 编号；先检查**两个方向**的索引、 DOI / arXiv / 题名，避免撞号与无价值重复登记。
