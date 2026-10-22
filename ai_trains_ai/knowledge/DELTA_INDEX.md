@@ -9,6 +9,8 @@
 | [TD003](deltas/TD003_trace_guided_module_prompt_reflection.md) | **T002**：执行/评价轨迹诊断→反思式指定模块 Prompt 改写，反馈 minibatch 验收 | [T002](../papers/T002/ARCHITECTURE.md) | **机制①＋归因待核问题①已获研究者批准（2026-10-22）**；ICLR 2026 §2–3/Appendix C–D；未复现 | 区别 TD002 成功 working out→Prompt/示例；本卡用失败轨迹及评测诊断局部改写；改善不等于真实致错模块归因已证实 |
 | [TD004](deltas/TD004_instancewise_pareto_parent_selection.md) | **T002**：对 D_pareto 各验证样例取局部领先候选，Pareto 抽父代保留搜索分支 | [T002](../papers/T002/ARCHITECTURE.md) | **机制②＋局部领先稳定性待核②已获批准（2026-10-22）**；Table 3 Pareto +12.44 vs global-best +6.05；未复现 | 不同于 TD001 锦标赛、D010 MCTS 路径回传、D020 LightGBM 预测计划奖励；按逐题胜出选择 Prompt 父代 |
 | [TD005](deltas/TD005_lineage_aware_module_merge.md) | **T002**：GEPA+Merge 从共同祖先的互补模块进化分支合并整套 Prompt | [T002](../papers/T002/ARCHITECTURE.md) | **机制③＋合并时机/模块互补待核③已获批准（2026-10-22）**；Table 1 两模型反向结果；未复现 | 不同于 TD003 单模块反思、D007 Python 因子代码普通交叉；按祖先谱系/互补模块合并，Qwen 聚合结果未提升 |
+| [TD006](deltas/TD006_shared_actor_judge_self_reward_dpo.md) | **T005**：同一 LLM Actor/Judge 自评候选→生成偏好对→迭代 DPO 更新共享参数 | [T005](../papers/T005/ARCHITECTURE.md) | **特色①和对应风险①已批准（2026-10-22）**；长度上升属作者观察，Reward Hacking 未证实 | 区别 TD001–TD005 的 Prompt 改写/搜索；区别 D013/D015/D016 因子专属奖励：这里用同权重普通回答自评价转为偏好训练 |
+| [TD007](deltas/TD007_dual_task_judge_transfer.md) | **T005**：IFT+EFT 双任务初始化；回答偏好 DPO 训练向 Judge 能力间接迁移 | [T005](../papers/T005/ARCHITECTURE.md) | **特色②和对应不足②已批准（2026-10-22）**；Table 4 的 5-best 下降、Exact Match 持平，三模型阶段范围有限 | 区别 TD006 的自有偏好数据闭环；专指 Judge 任务初始化与跨任务迁移的可持续性证据，不是重新发明多任务学习 |
 
 ## 使用与同步
 
