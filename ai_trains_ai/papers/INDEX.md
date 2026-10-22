@@ -8,7 +8,7 @@
 | T002 | GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning | [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0e9e708b6f48e14fd0ac29e167413f76-Abstract-Conference.html) · [arXiv:2507.19457](https://arxiv.org/abs/2507.19457) | **新认领；已核 ICLR 2026 正式题录与原文摘要，完整机制与实验研读待继续**（2026-10-22） |
 | T003 | Automated Design of Agentic Systems | [ICLR 2025 论文](https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **新认领；已核原文和正式发表来源，阶段一方法/实验研读中**（2026-10-22） |
 | T004 | Agent Lightning: Train ANY AI Agents with Reinforcement Learning | [arXiv:2508.03680](https://arxiv.org/abs/2508.03680)（2025 年预印本） | **新认领；已读原文总览与训练/执行解耦方法，阶段一深入研读中**（2026-10-22） |
-| [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **已认领；ICML 2024 正式记录及原文 §2 的数据生成—自评—DPO 迭代链路已核，客观骨架整理中；创新/不足未审批**（2026-10-22） |
+| [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **ICML 2024 正式来源、[原文方法/实验/局限 §2–3/6 与架构图](T005/README.md) 已核并归档；[证据边界](T005/PAPER.md) 已标明；创新/特化不足与 TD 未审批，未独立复现**（2026-10-22） |
 
 ## 认领与同步
 
