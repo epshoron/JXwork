@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · GEPA T002 三项机制＋对应三项特化问题获批
+
+- **研究者明确批准 3+3**：① [TD003｜执行/评价轨迹驱动模块级 Prompt 反思](ai_trains_ai/knowledge/deltas/TD003_trace_guided_module_prompt_reflection.md) ↔ 模块级错误归因仍待隔离验证；② [TD004｜逐验证样例 Pareto 父代选择](ai_trains_ai/knowledge/deltas/TD004_instancewise_pareto_parent_selection.md) ↔ 局部胜出能否跨子集稳定迁移待核；③ [TD005｜同祖先互补模块合并](ai_trains_ai/knowledge/deltas/TD005_lineage_aware_module_merge.md) ↔ Merge 时机/模块交互与成本归因未被完全隔离（作者 Table 1 报告两种模型聚合收益方向不同）。
+- **严格语义去重**：对照已审 T001/TD001–TD002 与方向 A 的 D001、D003、D007、D010、D020 等；三个更新环节分别是**生成新 Prompt 的诊断与局部改写、选择下一轮父代的逐样例调度、跨谱系合并互补模块**。不将普通反思、遗传交叉或 Pareto 概念宣称世界首创。
+- 已同步 [T002 客观骨架](ai_trains_ai/papers/T002/README.md)、[已审贡献](ai_trains_ai/papers/T002/ARCHITECTURE.md)、[配对不足](ai_trains_ai/papers/T002/IDEAS.md)、[本方向论文 Index](ai_trains_ai/papers/INDEX.md) 与 [TD 总表](ai_trains_ai/knowledge/DELTA_INDEX.md)。原文为 ICLR 2026，尚无独立复现；未进入项目阶段二/三。
+
+
 ## 2026-10-22 · Promptbreeder T001 两项机制与特化不足获批
 
 - **研究者明确批准 2+2**：① [TD001｜任务 Prompt 与变异 Prompt 联动进化](ai_trains_ai/knowledge/deltas/TD001_coupled_task_mutator_prompt_evolution.md)，对应作者明确承认“仅改变 Prompt 内容，未自动进化外层 Prompting 算法/调用结构”的边界；② [TD002｜成功工作过程反推任务 Prompt + Few-shot 正确示例上下文进化](ai_trains_ai/knowledge/deltas/TD002_success_trace_prompt_induction_context_evolution.md)，对应作者 Appendix J.5 观察到 Few-shot 示例主导结果、任务 Prompt 漂移到无意义文本的现象。风险不是已证实的普遍泛化失败。
