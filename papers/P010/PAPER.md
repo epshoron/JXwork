@@ -16,6 +16,6 @@
 - §5：五个语义字段逐一移除的消融、语义空间探索轨迹、重复实现效率、不同 LLM 代码实现差异；
 - Appendix A：奖励公式与参数、10,000 Plan 采样、相关性去重、下游 LightGBM、Qlib Top50/Drop5、费用与指标；Appendix C/D：词表来源、JSON Schema 及完整 Plan→Code 示例。
 
-**尚未完成**：未独立复现作者代码、核实实验数据/统计显著性、对同等搜索预算/模型大小的竞争系统作统一新实验，未系统核查学术首创性。**创新判断、特化不足与知识库 Delta 均未审批，未写入**。
+**尚未完成**：未独立复现作者代码、核实实验数据/统计显著性、对同等搜索预算/模型大小的竞争系统作统一新实验，未系统核查学术首创性。**2026-10-22 研究者进一步审批**：两项机制及对应特化问题已在 [ARCHITECTURE.md](ARCHITECTURE.md)、[IDEAS.md](IDEAS.md) 与 [D019](../../knowledge/deltas/D019_five_axis_semantic_plan_space.md)、[D020](../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md) 记录；独立复现、完整学术首创查新仍未开展。
 
 原文 PDF 仅提供链接，不转存或再分发到公共仓库。
