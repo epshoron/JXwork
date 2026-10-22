@@ -10,7 +10,7 @@
 
 **原文依据**：[Promptbreeder ICML 2024](https://proceedings.mlr.press/v235/fernando24a.html)；[arXiv §3.2.4–3.2.5、Appendix J.5、Appendix B](https://arxiv.org/pdf/2309.16797)。
 
-**区别/去重**：[D003](../../../knowledge/../../knowledge/deltas/D003_success_memory.md) 是保存并检索**历史有效因子**，并非从正确执行的 **working out 反向生成 Prompt**；`TD001` 是变异 M 本身由任务下游表现选择。普通示例记忆/反思不单独拆卡，也不将 Lamarckian 作为首次学术发明。
+**区别/去重**：[D003](../../../knowledge/deltas/D003_success_memory.md) 是保存并检索**历史有效因子**，并非从正确执行的 **working out 反向生成 Prompt**；`TD001` 是变异 M 本身由任务下游表现选择。普通示例记忆/反思不单独拆卡，也不将 Lamarckian 作为首次学术发明。
 
 **对应特化不足**：[T001 IDEAS §2](../../papers/T001/IDEAS.md)：作者 Appendix J.5 记录正确示例主导效果、P 漂移到无意义字符串的现象。需要把 P 与示例贡献隔离验证，**不等于全系统泛化失败已证实**。
 
