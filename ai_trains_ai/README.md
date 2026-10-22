@@ -1,6 +1,6 @@
 # 方向 B｜AI 优化 AI：Agent 自动改进与模型训练（AI Improves AI）
 
-> **状态：2026-10-22 更新研究问题（研究者明确的目标场景）**。已批准作为研究方向；**T001 Promptbreeder 已归档客观骨架，T002–T004 为新认领且尚未完成全文研读的论文；未批准具体创新或选定工程路线**。这里记录的是研究目标，不是已证实的方法或实现承诺。
+> **状态：2026-10-22 更新研究问题（研究者明确的目标场景）**。已批准作为研究方向；**T001 Promptbreeder 已归档客观骨架，T002–T004 已认领；其余并行新增论文以本方向论文 Index 为准。尚未批准具体创新或选定工程路线**。这里记录的是研究目标，不是已证实的方法或实现承诺。
 
 ## 核心研究问题：AI 应该优化什么？
 
@@ -31,7 +31,7 @@ flowchart TD
 
 | 位置 | 用途 |
 |---|---|
-| [papers/INDEX.md](papers/INDEX.md) | 方向 B 论文认领/去重/最小状态；[T001 Promptbreeder](papers/T001/README.md) 已归档骨架；**T002 GEPA、T003 ADAS、T004 Agent Lightning 仅认领，全文骨架待研读** |
+| [papers/INDEX.md](papers/INDEX.md) | 方向 B 论文认领/去重/最小状态；[T001 Promptbreeder](papers/T001/README.md) 已归档骨架；**T002 GEPA、T003 ADAS、T004 Agent Lightning 已认领，后续全文归档待研读**；其他 Agent 并行认领以实时 Index 为准 |
 | `papers/T00X/README.md` | 单篇原文依据的自绘架构与输入/反馈/训练路径（归档后才出现） |
 | `papers/T00X/PAPER.md` | 原文及查证范围 |
 | `papers/T00X/ARCHITECTURE.md` | **逐项经研究者确认**的特色机制；不强制每篇都有 |
