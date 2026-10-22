@@ -6,7 +6,7 @@
 ## 两方向范围与独立进度
 
 - **方向 A｜AI Agent 因子挖掘**：现有根目录 `papers/`、`knowledge/`、`synthesis/`；P001–P010 / D001–D020 均不迁移。下文**第 1、3、4、6 节的因子研究内容、案例和三视角只针对 A**，不能自动投射到 B。
-- **方向 B｜AI 优化 AI（Agent 外部优化 vs 模型参数训练）**：独立 [ai_trains_ai/README.md](ai_trains_ai/README.md)、[T 论文 Index](ai_trains_ai/papers/INDEX.md) 与 [TD 机制 Index](ai_trains_ai/knowledge/DELTA_INDEX.md)。研究者提出的**研究场景（非已定方案）**是：上层 AI 与用户交互（如 CLI），有记忆/知识库和评价能力，根据下层执行 Agent（API/工具）的任务结果持续改善其 Prompt、Skills、工具与记忆策略；与之对比的是利用数据/奖励及 SFT/RL 真正更新模型参数，LoRA 属训练实现技术。**重点是比较更新对象与可验证收益，而非预设只研究权重或只研究 Prompt**。尚未选定文献、最终架构或学术分类。
+- **方向 B｜AI 优化 AI（Agent 外部优化 vs 模型参数训练）**：独立 [ai_trains_ai/README.md](ai_trains_ai/README.md)、[T 论文 Index](ai_trains_ai/papers/INDEX.md) 与 [TD 机制 Index](ai_trains_ai/knowledge/DELTA_INDEX.md)。研究者提出的**研究场景（非已定方案）**是：上层 AI 与用户交互（如 CLI），有记忆/知识库和评价能力，根据下层执行 Agent（API/工具）的任务结果持续改善其 Prompt、Skills、工具与记忆策略；与之对比的是利用数据/奖励及 SFT/RL 真正更新模型参数，LoRA 属训练实现技术。**重点是比较更新对象与可验证收益，而非预设只研究权重或只研究 Prompt**。已有论文认领与客观骨架记录，实时进度见 B 论文 Index；最终架构或学术分类尚未选定。
 - **共同程序**：各自先读懂来源 → 再进行跨论文创新/不足比较 → 最后形成自己的可验证研究设想。**每方向分别走三阶段，阶段切换由研究者确认**。统一遵守来源准入、创新逐项审批、严格语义去重与强制同步；新方向文献不可自动占用旧 P/D 编号。
 
 ## 1. 方向 A 的研究问题
