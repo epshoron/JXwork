@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · T005 自奖励模型两项机制与配对不足获批
+
+- **研究者明确批准 2+2**：① [TD006｜同一 Actor/Judge 自评分偏好对→迭代 DPO 参数更新](ai_trains_ai/knowledge/deltas/TD006_shared_actor_judge_self_reward_dpo.md) ↔ 同源评分可能强化长度/格式偏好；② [TD007｜IFT/EFT 双任务初始化与 Judge 跨任务间接能力提升](ai_trains_ai/knowledge/deltas/TD007_dual_task_judge_transfer.md) ↔ Judge 细项指标未持续同步增长、只测试三模型阶段。
+- **原文/推断明确分开**：作者报告平均回复长度 `1092→1552→2552`，Table 4 中 `M2→M3` 5-best `44.3%→43.2%`、Exact Match `14.3%→14.3%`；**Reward Hacking 已发生、Judge 整体退化、无限迭代必然失败都不是已证实结论**。作者同时报告人评及 Pairwise Accuracy 增益。
+- **双方向语义去重**：T001/TD001–002、T002/TD003–005 优化外部 Prompt 或搜索调度；方向 A D013/D015/D016 是因子专属奖励/轨迹的权重训练。T005 具体区别是普通指令回答的**同模型自产偏好反馈**与**IFT/EFT 初始化促成的 Judge 迁移**。DPO/多任务学习/LLM-as-a-Judge 不是学术首次主张，创新与不足均经研究者逐项批准。
+- **同步**：[T005 已审评价](ai_trains_ai/papers/T005/ARCHITECTURE.md)、[配对不足](ai_trains_ai/papers/T005/IDEAS.md)、[原文架构](ai_trains_ai/papers/T005/README.md)、[方向 B 论文 Index](ai_trains_ai/papers/INDEX.md)、[B Delta Index](ai_trains_ai/knowledge/DELTA_INDEX.md)；方向 A 没有改动。研究仍属阶段一，无独立复现或学术世界首创证明。
+
 ## 2026-10-22 · GEPA T002 三项机制＋对应三项特化问题获批
 
 - **研究者明确批准 3+3**：① [TD003｜执行/评价轨迹驱动模块级 Prompt 反思](ai_trains_ai/knowledge/deltas/TD003_trace_guided_module_prompt_reflection.md) ↔ 模块级错误归因仍待隔离验证；② [TD004｜逐验证样例 Pareto 父代选择](ai_trains_ai/knowledge/deltas/TD004_instancewise_pareto_parent_selection.md) ↔ 局部胜出能否跨子集稳定迁移待核；③ [TD005｜同祖先互补模块合并](ai_trains_ai/knowledge/deltas/TD005_lineage_aware_module_merge.md) ↔ Merge 时机/模块交互与成本归因未被完全隔离（作者 Table 1 报告两种模型聚合收益方向不同）。
