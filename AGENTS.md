@@ -6,18 +6,18 @@
 
 **方向 A：AI Agent 量化因子挖掘（现有内容）**：研究入口 [README](README.md)；论文 `papers/INDEX.md` + `papers/P00X/`（现有 P001–P010），机制 `knowledge/DELTA_INDEX.md` + `knowledge/deltas/D00X_*.md`（现有 D001–D020），综合 `synthesis/`。**不得为改目录迁移、重命名或重编号任何既有档案。**
 
-**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**目录已初始化，暂无 T 论文或 TD 卡；不得编造来源和审批。**
+**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**T001 Promptbreeder 已归档客观骨架；暂无经批准的 TD 卡或 T001 创新/不足评价；不得编造来源和审批。**
 
 - **收到研究任务先判所属方向**，读取该方向 README、两份 Index 与相关单篇档案；另一方向的相同 DOI/arXiv/相近机制也需查重，不因双目录而重复认领或重复声称创新。
 - **本文件下文未带方向前缀的 `papers/P00X/`、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md` 等旧路径，均是方向 A 的历史示例**。执行于 B 时必须替换为上述 `ai_trains_ai/` 的**本方向**路径，不得把 T/TD 误写到 A 的公共 Index。
-- 两方向**分别推进**阶段一原文研读 → 阶段二跨论文比较 → 阶段三原创研究设想；A 仍以阶段一研读与单篇评价为主，B 仅处于目录准备状态。**仅研究者决定阶段切换**，不能因另一方向已有成果就越级。
+- 两方向**分别推进**阶段一原文研读 → 阶段二跨论文比较 → 阶段三原创研究设想；A 仍以阶段一研读与单篇评价为主，B 已有 T001 骨架但仍处于阶段一。**仅研究者决定阶段切换**，不能因另一方向已有成果就越级。
 - **方向 B 的明确研究问题（2026-10-22）**：上层 AI（可用 CLI 交互）基于知识/记忆与下层 Executor Agent 的任务反馈，自动改进下层 Prompt、Skills、工具路由、记忆检索或工作流；**与之并行研究**通过合成/筛选数据、SFT/RL、蒸馏等更新下层**模型参数**的路线。LoRA 是参数高效微调手段。两条路线都在研究范围，先通过原文和可验证实验比较，**不预先把用户场景定为已验证系统方案**；仅改 Prompt 属外部 Agent 优化，**不是模型权重训练或严格 RSI 的证据**。详情见 [ai_trains_ai/README.md](ai_trains_ai/README.md)。
 - **全局入库门槛保持不变**：论文客观骨架经原文核查可自主归档；非论文来源需研究者先批准准入；创新、特化不足、研究观点和 Delta 均须**研究者逐项审批 + 与两方向现有内容严格语义去重**；每位 Agent 自己完成档案与**所属方向两份 Index** 同回合同步。
 - 根目录 `README.md`、`AGENTS.md`、`RESEARCH_PLAN.md`、`RESEARCH_WRITING_STANDARD.md` 和 `JXWORK_START_HERE.md` 为**共享导航与规范**；正常单篇研究无需机械编辑它们，协作规则变更时须同步维护。
 
 ## 接手顺序
 
-1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A 或方向 B，再确认该方向实际阶段**；B 尚无论文，A 仍以原文理解为主。
+1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A 或方向 B，再确认该方向实际阶段**；B 已归档 T001 骨架且创新未审，A 仍以原文理解为主。
 2. 实时阅读**所属方向论文 Index**，并核对另一方向是否已收录相同题名/DOI/arXiv；已有认领原则上优先交叉引用。**非论文资料在研究者明确批准收录前，不得自行认领、登记、建档或写入任何研究内容。**
 3. **必须阅读 `RESEARCH_WRITING_STANDARD.md`**（图先行、语言精炼、特化观察、贡献/缺点研究者审批）；再看**所属方向 Delta Index**；方向 A 可用 `papers/P001/` 作示例、`synthesis/RESEARCH_LENSES.md` 作为 A 专属研究视角；方向 B 参考 `ai_trains_ai/README.md`。必要时查最新 `CHANGELOG.md`。
 
