@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · 正式建立双研究方向（研究者批准）
+
+- **方向 A 原位保留**：现有 `papers/P001–P010`、`knowledge/deltas/D001–D020`、`synthesis/` 不移动、不重编号，当前阶段仍以单篇原文理解和评审为主。
+- **方向 B 独立创建**： [ai_trains_ai/](ai_trains_ai/README.md) 用于“AI 如何训练 AI”；[论文索引](ai_trains_ai/papers/INDEX.md) 使用 `T001` 起，[机制索引](ai_trains_ai/knowledge/DELTA_INDEX.md) 使用 `TD001` 起，[综合目录](ai_trains_ai/synthesis/README.md) 独立。**尚无论文认领或已审创新，不建立空机制卡。**
+- **统一工作门禁**：[AGENTS.md](AGENTS.md) 与 [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md) 同步规定：先判方向，各自查 DOI/题名且跨方向去重；经原文核验的**论文骨架**可直接归档，**非论文来源须获准入批准**；创新、特化不足、研究想法、Delta **逐项经研究者审批与严格语义去重**；每个 Agent 自己同回合同步所属方向 Markdown 与两份 Index。
+- **统一导航已修正**：[README](README.md)、[RESEARCH_PLAN](RESEARCH_PLAN.md)、[JXWORK_START_HERE.md](JXWORK_START_HERE.md) 及相关目录说明支持双方向；废弃旧指针里已删除的 `notes/TEMPLATE.md`。本轮仅改变研究资料组织，未开展方向 B 文献或研究阶段二/三。
+
 ## 2026-10-22 · P009 SJS 双轨共同进化 2+2 获批
 
 - 研究者明确认可 P009 **2 项机制 + 2 项特化不足**：① 同时搜索因子 `f` 和可执行评分指标 `g`，由非自我裁定规则晋级指标；② SJS 通过定向通信、按数据来源与角色过滤、跨轮容量限制、技能库权限等结构约束管理双轨搜索。
