@@ -28,6 +28,10 @@
 | [D016](deltas/D016_pool_trajectory_grpo.md) | **P005**：池级边际增删 + 多轮工具轨迹终端奖励 + GRPO 参数训练 | **P005 · 研究者已批准的特化机制** | 不声称首创 GRPO 或 RL；区别 D013 单公式 TMB 奖励、D014–D015 种子因子连续进化训练、D007 固定 LLM 代码进化；不足尚未获批 | [P005 §4.2–4.5](https://arxiv.org/abs/2610.15488) |
 | [D017](deltas/D017_joint_alpha_metric_evolution.md) | **P009**：因子 `f` 与可执行评分指标 `g` 双轨搜索，trial→accepted 经验晋级 | **P009 · 用户已批准的特色机制①（2026-10-22）** | 区别 D010 只更新 MCTS 路径、D013/D015/D016 用固定奖励训练生成策略，以及 P010 训练语义奖励预测代理；**改变的是评价函数代码/库状态**；训练 Sharpe 共适应为对应待核风险 | [P009 §3、§4.3、§5.7](https://arxiv.org/html/2606.29194) |
 | [D018](deltas/D018_sealed_joint_search_information_topology.md) | **P009**：SJS 角色/来源/字段/跨轮权限路由 + 系统级晋级控制 | **P009 · 用户已批准的特色机制②（2026-10-22）** | 区别 D004 通用 Agent 职责分工与 D005 通用测试冻结；在**联合搜索的信息通道**强制过滤与隔离；**F1 缺单 Agent 联合进化消融，B6 预算及 PPO 混杂** | [P009 §3、§4.3、§6、A.9](https://arxiv.org/html/2606.29194) |
+| [D019](deltas/D019_five_axis_semantic_plan_space.md) | **P010**：Event/Context/Qualities/Direction/Output 五维 Plan 作为生成前语义搜索单元 | **P010 · 已批准机制①及对应待核限制** | 区别 D002 公式先验、D006 角色 Prompt、D012 文献-算子构造及 D009 生成后对齐；在线词表覆盖可能限制未编码新机制，但作者支持周期之间离线扩词表 | [P010 §2、§3、Appendix C/E](https://arxiv.org/html/2607.26642) |
+| [D020](deltas/D020_semantic_reward_surrogate_scheduler.md) | **P010**：Plan–Reward 经验训练 LightGBM 语义代理，三路配额选择待实现计划 | **P010 · 已批准机制②及对应待核限制** | 与 D010 搜索树、D016 GRPO 权重训练、D017 可进化评分函数不同；代理排序 Spearman 0.239，不替代等预算关闭代理的端到端独立消融 | [P010 §3、Appendix A/E](https://arxiv.org/html/2607.26642) |
+
+**P010 已审批（2026-10-22）**：两项特色与一一对应的待核问题分别收于 [D019｜五维语义 Plan](deltas/D019_five_axis_semantic_plan_space.md)（当前在线词表覆盖边界）和 [D020｜语义奖励代理 + 配额调度](deltas/D020_semantic_reward_surrogate_scheduler.md)（同预算完整搜索增益归因）。已按输入—控制位置—更新对象与 D002/D006/D009/D010/D012/D016/D017 去重；**不声称词表完全封闭、奖励代理失效或学术首次提出**。
 
 **P005 已审（2026-10-21）**：仅新增 [D016｜因子池边际更新与多轮工具轨迹 GRPO 策略训练](deltas/D016_pool_trajectory_grpo.md)。区别 P007 单公式 TMB/DAPO、P008 种子进化多目标 RL 的任务状态和奖励对象；普通工具反馈、RL/GRPO 本身不重复开卡。**本轮未批准 P005 的独立特化不足或研究方案。**
 
