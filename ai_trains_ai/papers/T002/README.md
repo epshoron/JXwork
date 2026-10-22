@@ -1,9 +1,9 @@
 # T002｜GEPA：反思式 Prompt 演化与逐样例 Pareto 搜索
 
 **论文**：GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning（ICLR 2026）  
-[官方完整论文 PDF](https://proceedings.iclr.cc/paper_files/paper/2026/file/0e9e708b6f48e14fd0ac29e167413f76-Paper-Conference.pdf) · [原文来源与核查边界](PAPER.md)
+[官方完整论文 PDF](https://proceedings.iclr.cc/paper_files/paper/2026/file/0e9e708b6f48e14fd0ac29e167413f76-Paper-Conference.pdf) · [原文来源与核查边界](PAPER.md) · [已审特色（3 项）](ARCHITECTURE.md) · [对应不足（3 项）](IDEAS.md)
 
-> **本页只记录已经核实的客观架构和作者报告的实验**。创新性独立评价、特化缺点、改进构想和 TD 卡均**未获研究者批准**，不得把本页当成正式评审或复现实证。
+> **本页保留经原文核实的客观骨架与作者报告数据**；研究者已于 2026-10-22 批准 **[三项特色机制](ARCHITECTURE.md) + [各自对应的三项特化问题](IDEAS.md)**，分别入库 [TD003](../../knowledge/deltas/TD003_trace_guided_module_prompt_reflection.md)、[TD004](../../knowledge/deltas/TD004_instancewise_pareto_parent_selection.md)、[TD005](../../knowledge/deltas/TD005_lineage_aware_module_merge.md)。项目内机制辨识度不等于学术首创，问题不等于已证实失效；未独立复现。
 
 **一句话**：冻结执行模型权重，只让一个 reflection LLM 使用实际任务执行轨迹、工具/评测器的文本诊断与数值分数，**定向改写整套 AI 系统中某一个模块的 Prompt**；用小批量测试过滤改动，再根据不同验证样例上的各自最佳候选执行 Pareto 式父代采样；可选进行跨模块的家族合并。最终输出**聚合验证表现最佳的一整套 Prompt**，不是 LLM 权重检查点。
 
