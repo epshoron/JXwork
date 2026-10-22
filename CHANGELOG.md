@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · P009 SJS 双轨共同进化 2+2 获批
+
+- 研究者明确认可 P009 **2 项机制 + 2 项特化不足**：① 同时搜索因子 `f` 和可执行评分指标 `g`，由非自我裁定规则晋级指标；② SJS 通过定向通信、按数据来源与角色过滤、跨轮容量限制、技能库权限等结构约束管理双轨搜索。
+- **特化不足**：① 指标晋级参照训练 Sharpe，而 Alpha 搜索也面向这一目标，可能产生指标/因子的目标共适应（作者承认循环性，未证实真实失效）；② 作者未做单 Agent 联合进化对照，冻结技能库等消融与 Agora 的迭代轮数/PPO 设置不一致，贡献难单独归因。
+- **严格语义去重与入库**：对照最新 D001–D016（含其他 Agent 新增 D014–D016）和 P010。两条分别改变**评分函数本身与晋级状态**、**角色/数据来源信息流拓扑**，不与 D004 通用分工、D005 通用 OOS、D010 MCTS 评价回传或 P010 奖励代理学习重复；新增 [D017](knowledge/deltas/D017_joint_alpha_metric_evolution.md)、[D018](knowledge/deltas/D018_sealed_joint_search_information_topology.md)，风险仅归 [P009 IDEAS](papers/P009/IDEAS.md)，不滥开知识卡。
+- 已同步 [P009 骨架](papers/P009/README.md)、[已审批评价](papers/P009/ARCHITECTURE.md)、[论文索引](papers/INDEX.md)、[Delta Index](knowledge/DELTA_INDEX.md)。原始预印本及单种子/短严格 holdout 的证据边界不变，不宣告阶段二/三开始。
+
 ## 2026-10-21 · P005 池级 GRPO 机制获批
 
 - **研究者明确认可**：P005 AlphaPilot 的**多轮真实数据工具反馈 → 因子池边际增删/替换 → 最终因子池轨迹奖励 → GRPO 更新 LLM 搜索策略参数**作为一项具体特色机制；归档至 [P005 已审评价](papers/P005/ARCHITECTURE.md) 和 [D016](knowledge/deltas/D016_pool_trajectory_grpo.md)，同步 [papers/INDEX](papers/INDEX.md) 与 [Delta Index](knowledge/DELTA_INDEX.md)。
