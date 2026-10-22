@@ -4,7 +4,7 @@
 
 | 编号 | 原始论文题名 | 权威原文／唯一标识 | 实际研究状态 |
 |---|---|---|---|
-| [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **已认领；原始论文方法与实验正在核查，骨架待正式归档**（2026-10-22） |
+| [T001](T001/README.md) | Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/fernando24a.html) · [arXiv:2309.16797](https://arxiv.org/abs/2309.16797) | **正式 ICML 2024 来源 + [客观骨架](T001/README.md) + [原文核查边界](T001/PAPER.md) 已归档**；创新、特化不足与 TD 均未审批；无论文复现（2026-10-22） |
 
 ## 认领与同步
 
