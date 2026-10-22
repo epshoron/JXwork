@@ -2,6 +2,13 @@
 
 > **新用途**：只登记研究协作规则/架构变更，以及用户确认后归档的最终综合成果；**不记录逐篇研读过程、临时见解或 LLM 聊天流水账**。
 
+## 2026-10-22 · T004 ADAS 2+2 正式审批归档
+
+- **研究者批准两项特色和一一对应的特化问题**：① [TD010｜可执行 Agent 程序与模块结构搜索](ai_trains_ai/knowledge/deltas/TD010_executable_agent_program_search.md) ↔ 性能导向评价没有隔离复杂结构带来的额外模型调用/Token/延迟预算；② [TD011｜历史 Agent 代码设计与成绩积累为搜索踏脚石](ai_trains_ai/knowledge/deltas/TD011_agent_design_archive_stepping_stones.md) ↔ Appendix J 显示 MGSM 空初始化好于人工种子，但这并**未隔离持续 Archive 本身**的作用。
+- **语义去重**：对照方向 B TD001–TD009 与方向 A D003/D007/D017/D020，分别记录「**搜索的可执行对象**」和「**历史设计怎样回流新结构搜索**」；不将普通代码修复、通用记忆或跨任务实验另建机制卡。
+- **同步**：[T004 论文骨架](ai_trains_ai/papers/T004/README.md)、[已审特色](ai_trains_ai/papers/T004/ARCHITECTURE.md)、[配对问题](ai_trains_ai/papers/T004/IDEAS.md)、[B 论文索引](ai_trains_ai/papers/INDEX.md) 和 [B 机制索引](ai_trains_ai/knowledge/DELTA_INDEX.md)。未经独立复现，阶段一单篇研究不等于阶段二/三正式启动。
+
+
 ## 2026-10-22 · T003 Agent Lightning 2+2 审批归档
 
 - **研究者批准两组特色及一一对应的不足**：① [TD008｜多轮 Agent 的 LLM 调用拆为单次 RL transition](ai_trains_ai/knowledge/deltas/TD008_agent_call_transition_lightningrl.md) ↔ 原论文各调用共享同一轨迹最终回报 R，缺细粒度跨调用信用分配；② [TD009｜多角色调用选择性进入参数训练](ai_trains_ai/knowledge/deltas/TD009_role_selected_agent_training.md) ↔ 共享权重可能波及未参与训练的角色、多角色协作依赖未得到独立控制。
