@@ -1,6 +1,6 @@
 # JXwork · 两方向 AI 研究工作区
 
-> **2026-10-22 双方向状态**：方向 A（AI Agent 因子挖掘）已有 P001–P010、D001–D020，仍以论文原文理解与单篇评审为主；方向 B（AI 优化 AI）已建立，**T001 Promptbreeder 已审两组特色/不足并入库 TD001/TD002；T003 Agent Lightning 与 T005 Self-Rewarding 已归档客观骨架；T002 等状态以 B 论文 Index 为准**。  
+> **2026-10-22 双方向状态**：方向 A（AI Agent 因子挖掘）已有 P001–P010、D001–D020，仍以论文原文理解与单篇评审为主；方向 B（AI 优化 AI）已建立，**T001 Promptbreeder 已审两组特色/不足并入库 TD001/TD002；T003 Agent Lightning 与 T005 Self-Rewarding 已归档客观骨架；T002 GEPA 已审 3+3 并入库 TD003–TD005；其他状态以 B 论文 Index 为准**。  
 > **仓库用途**：保留两个方向各自的论文索引、机制知识和成熟综合；共享一个审批、去重、协作与安全规范。
 
 ## 两个独立研究方向
@@ -17,7 +17,7 @@
 
 [ai_trains_ai/](ai_trains_ai/README.md) 研究**上层 AI 利用记忆、知识与可验证的任务反馈，改进下层执行 Agent** 的方法；**并行比较外部 Prompt/Skills/工具及记忆策略优化，与 SFT/RL 等模型权重训练**。LoRA 属参数高效微调手段。CLI + Executor 是目标研究场景，不是已经定稿的工程架构；**不预设哪条路线必然更好，或将 Prompt 优化误称模型训练/严格 RSI**。
 
-- [B 论文 Index](ai_trains_ai/papers/INDEX.md)：**[T001 Promptbreeder 已归档骨架](ai_trains_ai/papers/T001/README.md)、[T005 Self-Rewarding 已归档骨架](ai_trains_ai/papers/T005/README.md)**；[B 机制 Delta Index](ai_trains_ai/knowledge/DELTA_INDEX.md)：**TD001** 起；[B 综合目录](ai_trains_ai/synthesis/README.md)。
+- [B 论文 Index](ai_trains_ai/papers/INDEX.md)：**[T001 Promptbreeder 已审 2+2](ai_trains_ai/papers/T001/ARCHITECTURE.md)、[T002 GEPA 已审 3+3](ai_trains_ai/papers/T002/ARCHITECTURE.md)、[T005 Self-Rewarding 已归档骨架](ai_trains_ai/papers/T005/README.md)**；[B 机制 Delta Index](ai_trains_ai/knowledge/DELTA_INDEX.md)：**TD001** 起；[B 综合目录](ai_trains_ai/synthesis/README.md)。
 - 同一论文可跨方向交叉引用，**先查两个索引，避免重复归档或重复包装同一机制**。
 
 
