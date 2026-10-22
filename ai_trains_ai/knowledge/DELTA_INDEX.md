@@ -1,11 +1,14 @@
 # 方向 B｜机制 Delta Index：AI 如何训练 AI
 
-> **初始化于 2026-10-22，已有 TD001、TD002 两项经研究者批准的机制卡。** 本索引记录 AI trains AI 论文中**经过研究者确认、严格语义去重**的具体机制，不自动等同学术首创。
+> **初始化于 2026-10-22，已有 TD001–TD005 五项经研究者批准的机制卡。** 本索引记录 AI trains AI 论文中**经过研究者确认、严格语义去重**的具体机制，不自动等同学术首创。
 
 | 编号 | 机制指纹／更新对象 | 来源 | 审批及证据状态 | 与已有机制的区别 |
 |---|---|---|---|---|
 | [TD001](deltas/TD001_coupled_task_mutator_prompt_evolution.md) | **T001**：任务 P 与修改任务的变异指令 M **联动进化**，以任务适应度间接筛选修改策略 | [T001](../papers/T001/ARCHITECTURE.md) | **特色机制① + 对应边界①经研究者批准（2026-10-22）**；论文原文 Fig.1–2 / §3 / §6，未复现 | 不同于 D007 因子代码变异、D017 评分函数代码进化；这里更新自然语言 P/M，评价规则保持固定 |
 | [TD002](deltas/TD002_success_trace_prompt_induction_context_evolution.md) | **T001**：成功 working out **反推任务 Prompt**，并演化 Few-shot 正确示例上下文 | [T001](../papers/T001/ARCHITECTURE.md) | **特色机制② + 对应漂移风险②经研究者批准（2026-10-22）**；原文 §3.2.4–3.2.5 / Appendix J.5，未复现 | 不同于 D003 保存并检索成功因子；这里将正确执行轨迹转为提示指令/示例，亦不同于 TD001 的 M 自身变化 |
+| [TD003](deltas/TD003_trace_guided_module_prompt_reflection.md) | **T002**：执行/评价轨迹诊断→反思式指定模块 Prompt 改写，反馈 minibatch 验收 | [T002](../papers/T002/ARCHITECTURE.md) | **机制①＋归因待核问题①已获研究者批准（2026-10-22）**；ICLR 2026 §2–3/Appendix C–D；未复现 | 区别 TD002 成功 working out→Prompt/示例；本卡用失败轨迹及评测诊断局部改写；改善不等于真实致错模块归因已证实 |
+| [TD004](deltas/TD004_instancewise_pareto_parent_selection.md) | **T002**：对 D_pareto 各验证样例取局部领先候选，Pareto 抽父代保留搜索分支 | [T002](../papers/T002/ARCHITECTURE.md) | **机制②＋局部领先稳定性待核②已获批准（2026-10-22）**；Table 3 Pareto +12.44 vs global-best +6.05；未复现 | 不同于 TD001 锦标赛、D010 MCTS 路径回传、D020 LightGBM 预测计划奖励；按逐题胜出选择 Prompt 父代 |
+| [TD005](deltas/TD005_lineage_aware_module_merge.md) | **T002**：GEPA+Merge 从共同祖先的互补模块进化分支合并整套 Prompt | [T002](../papers/T002/ARCHITECTURE.md) | **机制③＋合并时机/模块互补待核③已获批准（2026-10-22）**；Table 1 两模型反向结果；未复现 | 不同于 TD003 单模块反思、D007 Python 因子代码普通交叉；按祖先谱系/互补模块合并，Qwen 聚合结果未提升 |
 
 ## 使用与同步
 
