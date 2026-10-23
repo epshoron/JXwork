@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AI Agent 因子挖掘 · 机制地图 | Atlas v1.0</title>
+<style>
+:root{--bg:#f4f6fa;--ink:#152238;--muted:#6d7889;--line:#dce3ec;--panel:#fff;--blue:#2559a7;--soft:#ebf1fb;--shadow:0 14px 40px rgba(31,53,87,.06)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink)}
+button{font:inherit;cursor:pointer}a{color:inherit}header{background:#14253d;color:#fff;padding:22px clamp(22px,4vw,56px) 23px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}header small{color:#b1bed0;font-size:12px;letter-spacing:.14em;font-weight:700}h1{font-size:clamp(24px,2.1vw,35px);letter-spacing:-.045em;margin:7px 0 8px;font-weight:750}header p{margin:0;color:#cbd5e1;font-size:13px}header .topright{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.hdrbtn{border:1px solid #4b607d;background:#213b5b;color:#eef3fa;border-radius:10px;padding:10px 13px;font-size:12px}.hdrbtn:hover{background:#365273}
+main{display:grid;grid-template-columns:244px minmax(500px,1fr) 318px;align-items:stretch;gap:14px;margin:16px auto;max-width:1700px;padding:0 16px}
+.panel{background:var(--panel);border:1px solid #e1e7ef;border-radius:16px;box-shadow:var(--shadow);min-height:650px;overflow:hidden}.panel-head{border-bottom:1px solid #e7ebf1;padding:18px 19px 15px}.eyebrow{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:750;color:#7b889a}.panel h2{margin:6px 0 4px;font-size:18px;letter-spacing:-.03em}.sub{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.paper-list{padding:8px;display:grid;gap:5px}.paper{border:1px solid transparent;width:100%;background:transparent;text-align:left;padding:11px 10px 11px 12px;border-radius:11px;display:grid;grid-template-columns:9px 1fr 18px;gap:10px;align-items:center;transition:background .16s,border .16s}.paper:hover{background:#f5f7fb}.paper[aria-pressed=true]{background:#f2f6fd;border-color:#ccd9ed}.dot{height:27px;width:5px;border-radius:100px;display:block}.paper-label{display:block;font-weight:750;font-size:13px;line-height:1.2}.paper-title{color:#728094;font-size:11px;line-height:1.4;display:block;margin-top:5px}.check{height:18px;width:18px;border:1.6px solid #cbd5e1;border-radius:6px;display:grid;place-items:center;color:transparent;font-size:13px}.paper[aria-pressed=true] .check{background:#183963;border-color:#183963;color:white}.hint{margin:10px 16px 17px;color:#7a879b;font-size:11px;line-height:1.7}.paper-actions{padding:0 16px 14px;display:flex;gap:8px;align-items:center}.linkbtn{font-size:12px;padding:8px 10px;border:1px solid #d7e0eb;background:#fff;border-radius:8px;color:#395775}.linkbtn:hover{background:#edf3f9}
+.board{position:relative}.board-head{padding:16px 20px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}.board-title{font-weight:750;font-size:17px}.board-meta{font-size:11px;color:#7c8997}.topline{display:flex;gap:8px;align-items:center}.key{display:flex;gap:5px;align-items:center;color:#768497;font-size:11px}.keyi{height:9px;width:9px;border-radius:50%;background:#315fa5}.svg-zone{width:100%;padding:4px 10px 0}.svg-zone svg{width:100%;display:block;height:auto}.footnote{border-top:1px solid #edf0f5;margin:0 18px;padding:13px 2px 17px;font-size:11px;color:#8994a3;line-height:1.6}
+.details{padding:18px 17px}.empty{padding:30px 6px;text-align:center}.empty-symbol{display:grid;place-items:center;margin:auto auto 18px;background:#f0f4f9;width:62px;height:62px;border-radius:18px;color:#52709a;font-size:26px}.empty h3{font-size:17px;letter-spacing:-.02em}.empty p{color:#7b8798;line-height:1.9;font-size:13px}.review-step{padding:14px;text-align:left;border:1px solid #e9edf4;border-radius:11px;margin:12px 0;font-size:12px;line-height:1.6}.review-step strong{display:block;color:#31547e;margin-bottom:2px}.selected-card{border:1px solid #e5e9f1;border-radius:12px;margin-bottom:13px;overflow:hidden;box-shadow:0 4px 12px rgba(32,50,77,.025)}.sc-head{padding:13px 15px 12px;border-left:5px solid var(--accent);background:#f8fafc}.sc-top{display:flex;justify-content:space-between;align-items:center;gap:6px}.sc-id{font-size:12px;font-weight:800;color:var(--accent)}.sc-tag{color:#617489;font-size:11px;font-weight:600}.sc-name{font-size:15px;font-weight:750;margin-top:5px;line-height:1.35}.sc-body{padding:13px 15px 15px}.field{margin:0 0 14px;font-size:12px;line-height:1.75;color:#36475e}.field:last-child{margin-bottom:0}.field strong{font-size:10.5px;display:block;letter-spacing:.025em;color:#8a96a7;margin-bottom:3px}.field.note{color:#68788e}.source{font-size:11px;display:inline-block;border-bottom:1px solid #c5d3e3;color:#245b98;text-decoration:none}.source:hover{color:#133e6b}.contrast{background:#f0f4fb;border-radius:10px;padding:13px 14px;font-size:12px;line-height:1.8;color:#405576;margin-bottom:12px}.contrast strong{display:block;color:#254c7c;margin-bottom:2px}
+.countbadge{padding:3px 9px;border-radius:100px;background:#edf2f8;color:#355474;font-weight:800;font-size:11px}
+svg text{font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}svg .base-edge{stroke:#b8c6d7;stroke-width:2.3;fill:none}svg .secondary-edge{stroke:#9cb2ca;stroke-width:2;stroke-dasharray:6 6;fill:none}svg .node-title{font-weight:750;fill:#20324d;font-size:16px}svg .node-sub{font-size:12px;fill:#78889c}svg .node-index{font-weight:800;font-size:15px;fill:#507099}svg .small-node-title{fill:#244263;font-weight:750;font-size:15px}svg .small-node-sub{fill:#72869c;font-size:11.6px}svg .edge-label{fill:#7f8ca1;font-size:11.5px;font-weight:600}svg .pintxt{font-size:10px;font-weight:800;text-anchor:middle}svg .node-bg{fill:#fff;stroke:#dbe3ee;stroke-width:1.5;transition:stroke .15s}svg .mini-bg{fill:#f7f9fd;stroke:#dce5ef;stroke-width:1.6}svg .is-active .node-bg,svg .is-active .mini-bg{stroke:#6c92c4;stroke-width:2.4}svg .stage-num{fill:#edf3fa}svg .is-active .stage-num{fill:#e2eefa}
+footer{max-width:1700px;margin:0 auto 20px;padding:0 24px;color:#8995a5;font-size:11px;line-height:1.6;display:flex;justify-content:space-between;gap:18px}footer a{color:#6683a5;text-decoration:none}
+@media(max-width:1200px){main{grid-template-columns:215px minmax(460px,1fr)}.rightpanel{grid-column:1/-1;min-height:0}.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}.selected-card{margin:0}.panel{min-height:0}}
+@media(max-width:740px){header{padding:22px 16px;align-items:flex-start;flex-direction:column}header .topright{justify-content:flex-start}main{display:flex;flex-direction:column;padding:0 10px;margin:10px auto}.paper-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.paper{padding:9px 7px;gap:7px}.paper-title{font-size:10px}.leftpanel{min-height:0}.svg-zone{overflow-x:auto}.svg-zone svg{min-width:630px}.board{min-height:0}.details{display:block}.selected-card{margin-bottom:12px}footer{padding:0 16px;flex-direction:column}}
+@media print{ @page{size:A3 landscape;margin:9mm}html,body{background:#fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}header{padding:12px 18px;break-inside:avoid}main{display:grid;grid-template-columns:165px minmax(550px,1fr) 260px;gap:8px;padding:0;margin:8px auto}.panel{border:1px solid #dee5ee;box-shadow:none;break-inside:avoid}.panel-head{padding:11px}.paper-list{padding:4px}.paper{padding:6px}.hint{display:none}.paper-actions{display:none}.details{display:block;padding:9px}.selected-card{margin-bottom:7px}.sc-body{padding:8px}.field{font-size:10px;margin-bottom:7px}.svg-zone svg{max-height:625px}.footnote{font-size:9px}footer{display:none}.hdrbtn{display:none}}
+
+/* Per-paper clamp explanations (v0.2) */
+@media(min-width:1201px){.leftpanel,.board,.rightpanel{height:820px;min-height:0}.rightpanel .details{height:calc(100% - 108px);overflow-y:auto;scrollbar-color:#d5dfec transparent}}
+@media print{.leftpanel,.board,.rightpanel{height:auto!important;min-height:0!important}.rightpanel .details{height:auto!important;overflow:visible!important}}
+.keyi--outline{background:#fff!important;border:2px solid #315fa5}
+.maplegend{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.clip-heading{font-size:12px;font-weight:800;margin:3px 0 10px;color:#294665}
+.clip-row{display:grid;grid-template-columns:40px 1fr;gap:10px;margin:0 0 8px;border:1px solid #e6ecf4;border-radius:10px;padding:10px 9px;line-height:1.5;background:#fff;scroll-margin-top:28px;transition:background .25s,border-color .25s}
+.clip-row:last-of-type{margin-bottom:14px}
+.clip-row.flash-clip{background:#e7f1ff;border-color:#6797d0}
+.clip-step{font-size:10px;white-space:nowrap;font-weight:800;color:var(--accent);padding-top:2px}
+.clip-step .s-dot{height:9px;width:9px;border-radius:50%;display:inline-block;background:var(--accent);margin-right:4px}
+.clip-step .s-dot.open{background:white;border:2px solid var(--accent)}
+.clip-copy b{font-size:12px;display:block;line-height:1.4;margin-bottom:3px;color:#273d59}
+.clip-copy p{font-size:11.5px;margin:0;color:#586a81;line-height:1.65}
+.clip-role{font-size:10px;color:#55708e;margin:0 0 13px;line-height:1.7}
+.note-small{font-size:11px;line-height:1.7;color:#52657f;background:#f6f8fb;border-radius:9px;padding:10px 11px;margin:0 0 14px}
+.walk-box{margin:16px 0 14px;border-top:1px solid #e8edf4;padding-top:13px}
+.walk-box h4{font-size:12px;color:#294665;margin:0 0 11px}
+.walk-step{display:grid;grid-template-columns:19px 1fr;gap:7px;margin:0 0 11px}
+.walk-step .n{width:18px;height:18px;border-radius:50%;background:#edf3fb;font-size:10px;font-weight:800;color:#31659e;display:grid;place-items:center}
+.walk-step b{font-size:11px;display:block;color:#253c57}
+.walk-step p{font-size:11px;color:#65778f;line-height:1.65;margin:3px 0 0}
+.pin-hit{cursor:pointer}
+.pin-hit:focus{outline:none}
+.pin-hit:focus rect{stroke:#111f35;stroke-width:2}
+.mini-source{font-size:11px;color:#315e96;margin-right:10px;line-height:2;white-space:normal}
+.sc-body .field.clip-top{margin-bottom:10px}
+@media print{.clip-row{padding:5px;margin-bottom:4px}.clip-copy p{font-size:9px}.walk-box{display:none}}
+
+/* v0.3: concise summaries + reserved detail-page entry */
+@media(min-width:1201px){
+ .leftpanel{display:flex;flex-direction:column}
+ .leftpanel .paper-list{flex:1;min-height:0;overflow-y:auto;scrollbar-color:#c7d5e6 transparent}
+ .leftpanel .paper-actions{flex:none;padding-top:10px;border-top:1px solid #edf0f5}
+ .leftpanel .hint{flex:none;margin:0 16px 14px}
+}
+.details{padding:15px}
+.selected-card{margin-bottom:12px}
+.sc-body{padding:11px 13px 13px}
+.sc-head{padding:12px 14px 11px}
+.overview-text{font-size:11.7px;line-height:1.7;color:#52647b;margin:0 0 12px}
+.section-cap{display:flex;align-items:center;justify-content:space-between;color:#2d4b71;font-size:12px;font-weight:800;border-top:1px solid #edf0f5;padding-top:12px;margin:0 0 10px}
+.section-cap span{font-size:10px;color:#8190a3;font-weight:650}
+.clip-row{grid-template-columns:34px 1fr;padding:9px 9px;gap:7px;margin-bottom:6px;border-color:#e7edf4}
+.clip-step{font-size:10px}
+.clip-copy b{font-size:11.5px;margin-bottom:2px}
+.clip-copy p{font-size:11px;line-height:1.55}
+.deep-link{display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding:11px 12px;border-radius:10px;border:1px solid #cbd9eb;background:#f4f8fd;color:#24558c;font-size:12px;font-weight:750;text-decoration:none;transition:background .15s,border .15s,transform .15s}
+.deep-link:hover,.deep-link:focus-visible{background:#e9f2ff;border-color:#8aaddb;transform:translateY(-1px)}
+.deep-arrow{font-size:16px;font-weight:500}
+.detail-toast{position:fixed;bottom:24px;left:50%;z-index:999;max-width:min(90vw,520px);padding:11px 16px;transform:translate(-50%,12px);opacity:0;pointer-events:none;border-radius:10px;box-shadow:0 12px 35px rgba(17,35,62,.2);background:#172e4c;color:white;font-size:12px;line-height:1.6;transition:opacity .2s,transform .2s}
+.detail-toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1200px){.details{padding:14px}.selected-card{align-self:start}}
+@media print{.deep-link{display:none}.overview-text{font-size:10px}.clip-copy p{font-size:9px}.clip-row{margin-bottom:4px}}
+
+</style>
+</head>
+<body>
+<header>
+ <div><small>JXWORK · RESEARCH ATLAS / A</small><h1>AI Agent 因子挖掘 · 机制地图</h1><p>以统一研究流程为底图，对比十篇论文在不同环节采用的关键机制。</p></div>
+ <div class="topright"><button class="hdrbtn" id="compareBtn" title="示例对照 P004 与 P010">试试 P004 ↔ P010</button><button class="hdrbtn" id="printBtn">打印 / 保存 PDF ↗</button></div>
+</header>
+<main>
+<section class="panel leftpanel"><div class="panel-head"><div class="eyebrow">01 / PAPER SELECTOR</div><h2>选择研究论文</h2><p class="sub">选择 1–3 篇，将其关键机制叠加到统一流程图上。</p></div><div id="paperList" class="paper-list"></div><div class="paper-actions"><button class="linkbtn" id="clearBtn">清空选择</button><span class="countbadge" id="counter">0 / 3</span></div><div class="hint">● 关键机制　○ 实现差异。标注表示具体设计特征，不等同于学术首创。</div></section>
+<section class="panel board"><div class="board-head"><div><div class="eyebrow">02 / SHARED SKELETON</div><div class="board-title">从构思到评价的共同研究循环</div></div><div class="topline"><div class="maplegend"><span class="key"><span class="keyi"></span><span>关键机制</span></span><span class="key"><span class="keyi keyi--outline"></span><span>实现差异</span></span></div></div></div>
+<div class="svg-zone"><svg id="diagram" viewBox="0 0 1180 805" role="img" aria-label="AI Agent 因子挖掘的基础研究循环，带可选论文落点">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9fb2c8"/></marker><marker id="arrowblue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7297bf"/></marker></defs>
+<!-- central spine -->
+<path class="base-edge" marker-end="url(#arrow)" d="M443 113 V141"/><path class="base-edge" marker-end="url(#arrow)" d="M443 211 V239"/><path class="base-edge" marker-end="url(#arrow)" d="M443 309 V337"/><path class="base-edge" marker-end="url(#arrow)" d="M443 407 V435"/><path class="base-edge" marker-end="url(#arrow)" d="M443 505 V533"/><path class="base-edge" marker-end="url(#arrow)" d="M443 603 V655"/>
+<!-- feedback and learning routes -->
+<path class="base-edge" marker-end="url(#arrow)" d="M708 472 H768 Q784 472 784 456 V407 Q784 392 805 392 H849"/>
+<path class="secondary-edge" marker-end="url(#arrowblue)" d="M849 367 H752 Q732 367 732 350 V194 Q732 179 708 179"/>
+<path class="secondary-edge" marker-end="url(#arrowblue)" d="M1003 432 V510"/>
+<path class="secondary-edge" marker-end="url(#arrowblue)" d="M849 554 H775 Q747 554 747 531 V292 Q747 277 708 277"/>
+<path class="secondary-edge" marker-end="url(#arrowblue)" d="M1111 432 V654"/>
+<text x="790" y="335" class="edge-label">下一轮调整</text><text x="794" y="467" class="edge-label">实验反馈</text>
+<text x="800" y="498" class="edge-label">可选：训练策略</text><text x="977" y="635" class="edge-label">可选：扩展目标</text>
+<g id="S1" class="stage"><rect class="node-bg" x="178" y="43" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="55" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="83" text-anchor="middle">01</text><text class="node-title" x="253" y="72">任务、数据与约束</text><text class="node-sub" x="253" y="95">市场数据 · 研究目标 · 可用算子 · 时间边界</text><g class="pins"></g></g>
+<g id="S2" class="stage"><rect class="node-bg" x="178" y="141" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="153" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="181" text-anchor="middle">02</text><text class="node-title" x="253" y="170">因子构思 / 研究假设</text><text class="node-sub" x="253" y="193">金融想法 · 语义计划 · 搜索方向</text><g class="pins"></g></g>
+<g id="S3" class="stage"><rect class="node-bg" x="178" y="239" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="251" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="279" text-anchor="middle">03</text><text class="node-title" x="253" y="268">候选因子生成 / 实现</text><text class="node-sub" x="253" y="291">公式 · Python 代码 · 种子改造</text><g class="pins"></g></g>
+<g id="S4" class="stage"><rect class="node-bg" x="178" y="337" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="349" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="377" text-anchor="middle">04</text><text class="node-title" x="253" y="366">执行与质量检查</text><text class="node-sub" x="253" y="389">合法性 · 未来信息 · 相似性 · 逻辑约束</text><g class="pins"></g></g>
+<g id="S5" class="stage"><rect class="node-bg" x="178" y="435" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="447" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="475" text-anchor="middle">05</text><text class="node-title" x="253" y="464">实验评价 / 反馈生成</text><text class="node-sub" x="253" y="487">IC · IR · 稳定性 · 组合边际贡献</text><g class="pins"></g></g>
+<g id="S6" class="stage"><rect class="node-bg" x="178" y="533" width="530" height="70" rx="16"/><rect class="stage-num" x="190" y="545" width="45" height="45" rx="12"/><text class="node-index" x="212.5" y="573" text-anchor="middle">06</text><text class="node-title" x="253" y="562">筛选、留存与经验积累</text><text class="node-sub" x="253" y="585">因子池 · 历史搜索结果 · 知识记忆</text><g class="pins"></g></g>
+<g id="DOWN" class="stage"><rect class="node-bg" x="178" y="655" width="530" height="70" rx="16"/><rect x="190" y="667" width="45" height="45" rx="12" fill="#edf3fa"/><text class="node-index" x="212.5" y="695" text-anchor="middle">↘</text><text class="node-title" x="253" y="684">下游预测与策略评价</text><text class="node-sub" x="253" y="707">因子组合 · 收益预测 · 组合回测（区分外部测试）</text><g class="pins"></g></g>
+<g id="CTRL" class="stage"><rect class="mini-bg" x="849" y="350" width="287" height="82" rx="17"/><text class="small-node-title" x="869" y="380">反馈 / 搜索控制</text><text class="small-node-sub" x="869" y="401">决定下一轮探索什么、怎么搜索</text><g class="pins"></g></g>
+<g id="TRAIN" class="stage"><rect class="mini-bg" x="849" y="510" width="287" height="84" rx="17"/><text class="small-node-title" x="869" y="540">LLM 参数更新（可选）</text><text class="small-node-sub" x="869" y="561">RL / 策略训练 ≠ Prompt 改写</text><g class="pins"></g></g>
+<g id="EXT" class="stage"><rect class="mini-bg" x="849" y="654" width="287" height="84" rx="17"/><text class="small-node-title" x="869" y="684">研究对象扩展（可选）</text><text class="small-node-sub" x="869" y="705">预测模型 / 内部评分 / 奖励代理</text><g class="pins"></g></g>
+</svg></div><div class="footnote">读图说明：中间是跨论文对照用的通用研究流程，并非各论文工程架构的逐项复刻。● 表示关键机制，○ 表示值得说明的实现差异。一个机制可能覆盖多个环节，节点数量不代表独立创新数量。</div></section>
+<section class="panel rightpanel"><div class="panel-head"><div class="eyebrow">03 / MECHANISM SUMMARY</div><h2>所选论文 · 机制摘要</h2><p class="sub">点击图中论文标记，可定位到右侧相应说明。</p></div><div class="details" id="details"></div></section>
+</main>
+<div id="detailToast" class="detail-toast" aria-live="polite"></div>
+<footer><span>基于 JXwork P001–P010 研究资料整理 · 主界面沿用已确认 UI v0.3 · Atlas v1.0 · 2026-10-23</span><span>机制对照用于研究展示；十篇机制详解现已接入 · 离线可用。</span></footer>
+<script>
+'use strict';
+const PAPERS=[{"id":"P001","name":"Self-improving Alpha Mining","brief":"结构化公式先验 + 成功经验积累","primary":"公式先验 · 双循环","focus":"以 WorldQuant 101 结构化公式作为生成先验，通过双层反馈修正候选，并把成功因子保存在外部知识库。","color":"#2563eb","detailPath":"papers/P001.html","tags":["S2","S3","S6","CTRL"],"clips":{"S2":{"title":"研究假设输入","desc":"研究者提供要验证的金融方向；这里不额外设计独立构思机制。","kind":"support"},"S3":{"title":"WorldQuant 101 结构先验","desc":"Writer 检索经典 Alpha 公式模式，再由 LLM 生成新的候选公式或代码。","kind":"core"},"S6":{"title":"成功因子知识库","desc":"KB Updater 保存通过回测的因子，供后续任务检索复用。","kind":"support"},"CTRL":{"title":"Judge / Reviewer 双层反馈","desc":"Judge 审核逻辑与实现；Backtest 结果经 Reviewer 分析后再反馈给 Writer。","kind":"core"}}},{"id":"P002","name":"CogAlpha","brief":"领域 Agent 引导 + Python 代码种群进化","primary":"领域引导 · 代码进化","focus":"以专业主题 Agent 和多样化提示生成候选，再通过 Python 代码变异、交叉与精英继承进行种群搜索。","color":"#ca6641","detailPath":"papers/P002.html","tags":["S2","S3","S6","CTRL"],"clips":{"S2":{"title":"21 主题 Agent + 五类引导","desc":"不同金融主题与提示策略扩展生成方向，不是 21 个独立训练模型。","kind":"core"},"S3":{"title":"Python 代码变异与交叉","desc":"LLM 修改、组合已有父代的 Python 因子代码，生成后代候选。","kind":"core"},"S6":{"title":"父代选择与精英继承","desc":"根据 Fitness 保留高质量代码，并用优秀父代驱动下一代搜索。","kind":"core"},"CTRL":{"title":"成败经验进入提示","desc":"历史候选与评价结果进入下一轮 Prompt；LLM 权重保持不变。","kind":"support"}}},{"id":"P003","name":"AlphaAgent","brief":"结构原创性和金融假设一致性约束","primary":"表达式质量约束","focus":"核心区别是把结构新颖性和金融假设一致性纳入因子质量约束，而非重新发明 Agent 生成闭环。","color":"#8b5cf6","detailPath":"papers/P003.html","tags":["S3","S4","S5"],"clips":{"S3":{"title":"AST 符号化因子生成","desc":"Factor Agent 利用受限算子库与 AST 组织公式表达式。","kind":"support"},"S4":{"title":"结构原创性 + 假设一致性","desc":"惩罚与 Alpha Zoo 的 AST 结构相似性，并检查假设—描述—公式是否对应。","kind":"core"},"S5":{"title":"Eval Agent 组织实验评价","desc":"执行候选、记录多维评价与反馈，属于评价职责的实现差异。","kind":"support"}}},{"id":"P004","name":"Alpha Jungle / MCTS","brief":"MCTS 定向搜索 + 高频子树规避","primary":"树搜索 · 高频结构规避","focus":"以 MCTS 选择因子改进路径，用多维评价更新搜索树，并通过高频子树规避降低重复生成。","color":"#059669","detailPath":"papers/P004.html","tags":["S3","S5","S6","CTRL"],"clips":{"S3":{"title":"FSA：生成时规避高频子树","desc":"从 Alpha Zoo 挖掘常见 AST 子结构，作为新公式生成的负向约束。","kind":"core"},"S5":{"title":"多维反馈驱动搜索","desc":"有效性、稳定性、换手等表现进入搜索奖励，并指向待改进维度。","kind":"core"},"S6":{"title":"Alpha Zoo 候选留存","desc":"保存通过筛选的因子，也为 FSA 统计高频结构提供样本。","kind":"support"},"CTRL":{"title":"MCTS 节点选择与奖励回传","desc":"UCT 平衡探索和利用；回测奖励更新树统计，指导下一步扩展。","kind":"core"}}},{"id":"P005","name":"AlphaPilot","brief":"因子池边际更新 + 轨迹级 GRPO","primary":"因子池 · 轨迹级 RL","focus":"LLM 多轮探索候选，用池级边际贡献维护因子池；离线以最终整池效果训练搜索策略。","color":"#c08218","detailPath":"papers/P005.html","tags":["S2","S6","CTRL","TRAIN"],"clips":{"S2":{"title":"市场状态 + 现有因子池","desc":"把当日可知市场描述和已有池状态组织为生成上下文。","kind":"support"},"S6":{"title":"Pool Updater 池级边际更新","desc":"根据候选对整池表现的增量，决定加入、拒绝或替换成员。","kind":"core"},"CTRL":{"title":"多轮工具反馈与池状态","desc":"新一轮搜索读取真实工具结果、近期尝试与当前因子池状态。","kind":"core"},"TRAIN":{"title":"整池轨迹奖励 → GRPO","desc":"离线用完整轨迹的最终池级奖励训练生成 LLM；不等于每日在线微调。","kind":"core"}}},{"id":"P006","name":"R&D-Agent-Quant","brief":"因子与预测模型共同研发 + Bandit 调度","primary":"因子 + 模型共同研发","focus":"不只研发 Alpha 因子，也自动研发下游预测模型；Bandit 决定下一轮把资源投向哪类任务。","color":"#d04785","detailPath":"papers/P006.html","tags":["S2","S3","S5","CTRL","EXT"],"clips":{"S2":{"title":"研究假设与任务组织","desc":"Research Agent 汇总历史研发信息，提出因子或模型研究任务。","kind":"support"},"S3":{"title":"Co-STEER 代码研发","desc":"依赖任务调度、实现与修复代码，并利用过往执行经验。","kind":"core"},"S5":{"title":"与当前最佳配套件联合验证","desc":"新因子配最佳预测器；新模型配最佳因子池，使用 Qlib 评价。","kind":"support"},"CTRL":{"title":"Bandit 调度研发方向","desc":"根据历史改进效果，在优化因子和优化预测模型之间分配机会。","kind":"core"},"EXT":{"title":"预测模型也成为研发对象","desc":"从只搜索因子扩展为“因子 + 收益预测模型”的联合研发。","kind":"core"}}},{"id":"P007","name":"AlphaRLM","brief":"金融文献→公式 + 单公式奖励 DAPO","primary":"文献生成 · 单公式 RL","focus":"从金融论文标题与摘要提取研究线索，生成可执行因子，并以单公式 TMB 奖励训练生成模型。","color":"#0f8da5","detailPath":"papers/P007.html","tags":["S2","S3","S5","TRAIN"],"clips":{"S2":{"title":"金融文献提供经济线索","desc":"利用论文标题与摘要提供研究方向，而不是直接给定种子公式。","kind":"support"},"S3":{"title":"LEGO：文献线索 × 允许算子","desc":"结合行情变量和受限 DSL，把经济线索转成可执行 Alpha 公式。","kind":"core"},"S5":{"title":"单公式 TMB 奖励","desc":"结合公式合法性与收益最高/最低分组差，构造市场奖励。","kind":"core"},"TRAIN":{"title":"DAPO 更新生成 LLM","desc":"用单条公式的奖励训练因子生成策略参数，而不是只筛选公式。","kind":"core"}}},{"id":"P008","name":"AlphaAgentEvo","brief":"种子 Alpha 多轮改良 + 分层 RL 奖励","primary":"种子进化 · 轨迹级 RL","focus":"围绕给定 Seed Alpha 连续生成、评价并改良后代，以五类分层奖励训练多轮进化策略。","color":"#b245a2","detailPath":"papers/P008.html","tags":["S2","S3","S5","CTRL","TRAIN"],"clips":{"S2":{"title":"已有 Seed Alpha 作为起点","desc":"输入是待改进的种子因子，而不是全新金融研究主题。","kind":"support"},"S3":{"title":"生成种子后代","desc":"LLM 根据种子与历史尝试提出修改版本；变体生成本身不单列创新。","kind":"support"},"S5":{"title":"五目标分层奖励","desc":"Tool、Consistency、Exploration、Performance、Streak 平衡工具、保真、探索与持续改善。","kind":"core"},"CTRL":{"title":"种子条件下的多轮进化","desc":"工具评价与前序后代反馈进入下一轮，使改进过程形成连续轨迹。","kind":"core"},"TRAIN":{"title":"RL 更新进化策略参数","desc":"基于多轮轨迹的分层奖励训练 LLM，让模型学习如何持续改良。","kind":"core"}}},{"id":"P009","name":"Alpha Singularity / SJS","brief":"因子与可执行评分指标共同搜索","primary":"因子 + 指标共同搜索","focus":"分别搜索因子 f 与内部评价指标 g，并通过受控晋级及按角色/数据来源限制的信息流维持边界。","color":"#4759ab","detailPath":"papers/P009.html","tags":["S5","S6","CTRL","EXT"],"clips":{"S5":{"title":"内部评分指标也可生成与更新","desc":"Evaluation-miner 提出可执行评价函数，经过校验、试用后才可晋级。","kind":"core"},"S6":{"title":"Trial / Accepted 指标技能库","desc":"评分函数按审核状态保存、版本化，已接受指标供后续轮次复用。","kind":"support"},"CTRL":{"title":"SJS：权限化信息与反馈","desc":"限制各角色可见字段、数据来源、跨轮摘要以及指标晋级权限。","kind":"core"},"EXT":{"title":"搜索对象扩展到评价函数 g","desc":"除了因子 f，内部评分代码自身也是搜索对象；最终留出评测不变。","kind":"core"}}},{"id":"P010","name":"AlphaSchema","brief":"五维语义计划 + 奖励代理调度","primary":"语义 Plan · 代理调度","focus":"先搜索五维金融语义 Plan，再由外部 LightGBM 奖励代理预测方向价值，调度 LLM 实现与回测预算。","color":"#5f7a2b","detailPath":"papers/P010.html","tags":["S2","S3","CTRL"],"clips":{"S2":{"title":"五维语义 Plan 搜索空间","desc":"Event、Context、Qualities、Direction、Output 定义可组合的研究计划。","kind":"core"},"S3":{"title":"LLM 将 Plan 落地为代码","desc":"被选中的金融语义计划交由 Code Agent 实现为具体因子程序。","kind":"support"},"CTRL":{"title":"LightGBM 奖励代理 + 三路调度","desc":"学习历史 Plan–Reward，按探索、高分利用、局部变异分配预算；不更新生成 LLM。","kind":"core"}}}];
+const STAGE_IDS=['S1','S2','S3','S4','S5','S6','DOWN','CTRL','TRAIN','EXT'];
+const STAGE_Y={S1:43,S2:141,S3:239,S4:337,S5:435,S6:533,DOWN:655,CTRL:350,TRAIN:510,EXT:654};
+const chosen=[];
+const paperList=document.getElementById('paperList');
+const details=document.getElementById('details');
+const svg=document.getElementById('diagram');
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs){const e=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));return e;}
+function esc(s){return String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));}
+function toggle(id){const index=chosen.indexOf(id);if(index>=0){chosen.splice(index,1);}else if(chosen.length<3){chosen.push(id);}else{alert('最多同时对比三篇论文，请先取消一篇。');return;} render();}
+function renderList(){paperList.innerHTML=PAPERS.map(p=>`<button class="paper" data-id="${p.id}" aria-pressed="${chosen.includes(p.id)}"><span class="dot" style="background:${p.color}"></span><span><span class="paper-label">${p.id} · ${esc(p.name)}</span><span class="paper-title">${esc(p.brief)}</span></span><span class="check">✓</span></button>`).join('');paperList.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>toggle(btn.dataset.id)));document.getElementById('counter').textContent=`${chosen.length} / 3`;}
+function renderSVG(){for(const sid of STAGE_IDS){const g=svg.querySelector('#'+sid);if(!g)continue;const participating=chosen.map(id=>PAPERS.find(p=>p.id===id)).filter(p=>p.tags.includes(sid));g.classList.toggle('is-active',participating.length>0);const pins=g.querySelector('.pins');pins.replaceChildren();const y=STAGE_Y[sid];const mini=['CTRL','TRAIN','EXT'].includes(sid);participating.forEach((p,i)=>{
+ const px=mini?867+69*i:532+56*i;const py=mini?y+60:y+11;const c=p.clips[sid];const core=c.kind==='core';
+ const pin=el('g',{'aria-label':`${p.id} · ${c.title}`,'class':'pin-hit','role':'button','tabindex':'0'});const w=mini?61:49;
+ const tooltip=el('title',{});tooltip.textContent=`${p.id}｜${core?'关键机制':'实现差异'}｜${c.title}：${c.desc}`;pin.append(tooltip);
+ pin.append(el('rect',{x:px,y:py,width:w,height:21,rx:7,fill:core?p.color:'#fff',stroke:p.color,'stroke-width':core?0:2}));
+ const tx=el('text',{x:px+w/2,y:py+14,class:'pintxt',fill:core?'#fff':p.color});tx.textContent=p.id;pin.append(tx);
+ const jump=()=>{const target=document.getElementById(`clip-${p.id}-${sid}`);if(!target)return;target.scrollIntoView({behavior:'smooth',block:'center'});target.classList.add('flash-clip');window.setTimeout(()=>target.classList.remove('flash-clip'),1300)};
+ pin.addEventListener('click',jump);pin.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();jump()}});pins.append(pin);
+ });}}
+function renderDetails(){
+ if(!chosen.length){
+  details.innerHTML=`<div class="empty"><span class="empty-symbol">⌁</span><h3>选择论文，查看机制落点</h3><p>在左侧选中最多三篇论文。中间统一架构不变，仅叠加论文特有的关键机制与实现差异。</p><div class="review-step"><strong>● 关键机制</strong>具有明确实现方式的核心方法或结构变化。</div><div class="review-step"><strong>○ 实现差异</strong>便于理解系统如何工作，但不单独强调为创新。</div></div>`;
+  return;
+ }
+ const names={S1:'①',S2:'②',S3:'③',S4:'④',S5:'⑤',S6:'⑥',DOWN:'下游',CTRL:'反馈',TRAIN:'LLM 训练',EXT:'扩展'};
+ details.innerHTML=chosen.map(id=>{
+  const p=PAPERS.find(x=>x.id===id);
+  const items=p.tags.map(sid=>{
+    const c=p.clips[sid], core=c.kind==='core';
+    return `<div class="clip-row" id="clip-${p.id}-${sid}"><div class="clip-step"><span class="s-dot ${core?'':'open'}"></span>${names[sid]}</div><div class="clip-copy"><b>${esc(c.title)}</b><p>${esc(c.desc)}</p></div></div>`;
+  }).join('');
+  return `<article class="selected-card" style="--accent:${p.color}"><div class="sc-head"><div class="sc-top"><span class="sc-id">${p.id}</span><span class="sc-tag">${esc(p.primary)}</span></div><div class="sc-name">${esc(p.name)}</div></div><div class="sc-body"><p class="overview-text">${esc(p.focus)}</p><div class="section-cap">机制落点 <span>${p.tags.length} 处</span></div>${items}<a href="${p.detailPath}" class="deep-link" title="打开独立论文解析页" data-paper="${p.id}"><span>查看 ${p.id} 机制详解</span><span class="deep-arrow">↗</span></a></div></article>`;
+ }).join('');
+ /* 独立解析页面已接入：本地相对链接直接导航，无需联网。 */
+}
+function render(){renderList();renderSVG();renderDetails();}
+document.getElementById('clearBtn').addEventListener('click',()=>{chosen.splice(0);render()});
+document.getElementById('compareBtn').addEventListener('click',()=>{chosen.splice(0,chosen.length,'P004','P010');render()});
+document.getElementById('printBtn').addEventListener('click',()=>window.print());
+render();
+</script>
+</body></html>
