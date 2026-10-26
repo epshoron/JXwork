@@ -74,4 +74,4 @@
 
 ## 方向 A 工程复现问题速查（2026-10-26 新增）
 
-研究者已要求针对 P001–P010 在各自目录使用简明工程问题速查表（CSV GitHub 直接看 + XLSX Excel 展示），具体见 [papers/ENGINEERING_REVIEW_STANDARD.md](papers/ENGINEERING_REVIEW_STANDARD.md)。每篇只保留关键工程问题，用户明确提问不得漏答；问题可跨篇复用但不强制统一字段。P002 等专题角色众多的论文只在主表相应行给一个公开详情链接，不另建专题表。此规定仅改变展示颗粒度，不放宽非论文准入、创新/缺点评价审批、跨方向去重与同回合同步义务；`technical_reading` 零字段占位不动。
+研究者已要求针对 P001–P010 在各自目录使用简明工程问题速查表（CSV GitHub 直接看 + XLSX Excel 展示），具体见 [papers/ENGINEERING_REVIEW_STANDARD.md](papers/ENGINEERING_REVIEW_STANDARD.md)。每篇只保留关键工程问题，用户明确提问不得漏答；问题可跨篇复用但不强制统一字段。P002 等专题角色众多的论文，只在主表对应一行概述工程机制；完整名单放在**可点击的作者来源或同篇短 MD 补充说明**里（不是第二张表），不得将 21 个名称塞进主表单元格。此规定仅改变展示颗粒度，不放宽非论文准入、创新/缺点评价审批、跨方向去重与同回合同步义务；`technical_reading` 零字段占位不动。

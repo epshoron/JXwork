@@ -1,5 +1,5 @@
 ﻿"主题","关键问题","简明答案"
-"金融专题Agent","七层21类金融Agent分别有哪些？如何实现？","I市场周期/波动状态(2)；II尾部风险/崩盘预警(2)；III流动性/订单失衡/量价协同/成交量结构(4)；IV趋势/反转/区间波动/滞后响应/波动非对称(5)；V回撤/分形(2)；VI状态门控/稳定性(2)；VII K线形态/创造性设计/因子组合/羊群效应(4)。每类有专门金融任务Prompt，不是21个微调模型。详见作者21个原始Prompt：https://github.com/uwFengyuan/CogAlpha_Prompt/tree/main/prompts/seven_level_agent_hierarchy"
+"金融专题Agent","21个金融专题Agent怎样分工，具体靠什么实现？","作者按7个金融研究层级定义21种专业角色。每种角色以独立的研究任务Intro和因子设计Guidance，搭配统一的代码与输出模板组成Prompt；并不是21个分别微调的模型。具体分类及每份原始Prompt，点击查看：https://github.com/epshoron/JXwork/blob/main/papers/P002/P002_AGENT_TOPICS.md"
 "模型与Agent实现","底座是什么？靠微调还是Prompt限制？","论文所有Agent默认使用gpt-oss-120b；角色靠金融专题Prompt分工，未报告为21个角色分别微调或在进化中更新LLM权重；生成/演化Agent温度从0.7至1.2选取。"
 "五种Guidance","所谓“五个限制词”到底是什么、如何输入？","其实是研究指导的5种改写风格：light轻改写、moderate适度改写、creative创意深化、divergent切换相关视角、concrete给出可计算的比率/公式例子。由改写Prompt接收{guidance}和{rewrite_style}，输出不同版本指导语，不是5条硬限制。"
 "代码输入输出","初始生成的Python因子长什么样？","专题Agent根据OHLCV和Prompt输出可执行Python函数factor_...(df)，返回对齐(date,ticker)的pd.Series；不是先搜索固定运算符语法树。"
