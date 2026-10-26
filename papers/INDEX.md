@@ -13,7 +13,7 @@
 | [P007](P007/README.md) | AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery | [arXiv:2610.14959](https://arxiv.org/abs/2610.14959)（2026-10-10 预印本） | **已认领；[架构与回测](P007/README.md)已归档；2 项特色机制与 1 项低置信度特化风险已讨论获批，原始实验表仍待直接复核**（2026-10-21） |
 | [P008](P008/README.md) | AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning | [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 论文](https://openreview.net/forum?id=lNmZrawUMu) | **[两项特色机制与对应两项验证不足](P008/ARCHITECTURE.md)已获研究者批准，并有[独立问题档案](P008/IDEAS.md)；原始 PDF 公式/消融待逐页核验**（2026-10-21） |
 | [P009](P009/README.md) | AI Trading's Alpha Singularity: Emergent Market Reasoning through Agent-to-Agent Self-Evolution | [arXiv:2606.29194](https://arxiv.org/abs/2606.29194)（2026-06-28 预印本） | **架构已核并归档；[D017](../knowledge/deltas/D017_joint_alpha_metric_evolution.md)、[D018](../knowledge/deltas/D018_sealed_joint_search_information_topology.md) 两项特色机制 + [2 项特化不足](P009/IDEAS.md) 已经研究者批准，严格语义去重；风险未实证（2026-10-22）** |
-| [P010](P010/README.md) | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **骨架和原文已核；D019 五维语义 Plan、D020 学习式搜索调度及各自对应待核限制已获研究者认可并归档**；无独立复现与学术首创定论（2026-10-22） |
+| [P010](P010/README.md) | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **骨架、原文及部分作者Python已核，[工程问题表](P010/P010_工程复现问题清单_v1.csv)与[图解](P010/P010_SEMANTIC_PLAN_GUIDE.md)已补；D019/D020及对应待核限制沿用原有审批**；未独立复现或认定学术首创（2026-10-26） |
 
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
