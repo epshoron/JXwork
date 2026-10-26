@@ -55,5 +55,5 @@
 ## 证据范围
 
 - **官方确认**：ICLR 2026 正式[题录/摘要](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/)陈述连续进化轨迹与分层奖励。
-- **奖励细项及消融数据**：参考可检索的 [OpenReview PDF 摘录](https://openreview.net/pdf?id=lNmZrawUMu)和[公开方法细读与表格转录](https://m0rtzz.github.io/paper-notes/ICLR2026/llm_agent/alphaagentevo_evolution-oriented_alpha_mining_via_self-evolving_agentic_reinforc/)。OpenReview 当前存在浏览器验证，**尚未直接逐页核对完整 PDF**，细节和数字暂留复核标记；不是独立复现、也没有实盘绩效认证。
+- **奖励细项及消融数据**：参考可检索的 [OpenReview PDF 摘录](AlphaAgentEvo_ICLR2026.pdf)和[公开方法细读与表格转录](https://m0rtzz.github.io/paper-notes/ICLR2026/llm_agent/alphaagentevo_evolution-oriented_alpha_mining_via_self-evolving_agentic_reinforc/)。OpenReview 当前存在浏览器验证，**尚未直接逐页核对完整 PDF**，细节和数字暂留复核标记；不是独立复现、也没有实盘绩效认证。
 - **阶段**：单篇阶段一审批，不等于启动项目阶段二/三的原创研究。
