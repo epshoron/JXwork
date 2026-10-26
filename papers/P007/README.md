@@ -55,3 +55,5 @@ flowchart TD
 - **与 P002 CogAlpha 的事实性区别**：P002 用固定 LLM 生成并进化**因子代码**；这里通过 RL 更新**因子生成模型的权重**。是否构成学术原创的新贡献，还须核查已认领的 P005、AlphaAgentEvo 和其他前作，不在此直接下结论。
 
 **原文依据**：[AlphaRLM §3.1–3.4](https://arxiv.org/abs/2610.14959)、[§4.1 实验设置](https://arxiv.org/abs/2610.14959)。
+
+**工程复现速查**：[GitHub 在线表（CSV）](P007_工程复现问题清单_v1.csv) · [Excel 版本](P007_工程复现问题清单_v1.xlsx)。重点是论文题名/摘要到Prompt与LEGO的真实边界、TMB奖励、DAPO参数训练及研报迁移尚未验证的部分。
