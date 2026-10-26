@@ -10,6 +10,8 @@
 | [T004](T004/README.md) | Automated Design of Agentic Systems | [ICLR 2025 官方论文](https://proceedings.iclr.cc/paper_files/paper/2025/hash/36b7acf6f6010652b3f2a433774a66fe-Abstract-Conference.html) · [arXiv:2408.08435](https://arxiv.org/abs/2408.08435) | **[客观骨架](T004/README.md)与[原文证据](T004/PAPER.md)已核；[TD010–TD011 两项特色机制](T004/ARCHITECTURE.md)及[各自对应两项特化问题](T004/IDEAS.md)已获研究者批准并归档**；未独立复现、不宣称学术首创（2026-10-22） |
 | [T005](T005/README.md) | Self-Rewarding Language Models | [ICML 2024 / PMLR 235](https://proceedings.mlr.press/v235/yuan24d.html) · [arXiv:2401.10020](https://arxiv.org/abs/2401.10020) | **[原文骨架](T005/README.md)已归档；[2 项创新与对应 2 项不足](T005/ARCHITECTURE.md)已批准，[特化问题](T005/IDEAS.md)已存档，TD006/TD007 已去重入库；原文 Table 4 与 §6 已核，风险未独立实证**（2026-10-22） |
 
+| [T006](T006/README.md) | Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?（Agent4Sci） | [arXiv:2610.28763](https://arxiv.org/abs/2610.28763)（2026-10-20） · [作者项目](https://github.com/maszhongming/agent4sci) | **[客观实验骨架](T006/README.md)与[原文/核验范围](T006/PAPER.md)已归档**：三阶段研究/封存评分/审计、三种外加 Skills 与作者报告结果；**arXiv PDF/HTML 本轮无法直接阅读，仍待原始全文复核；创新、特化不足与 TD 均未审批，未独立复现**（2026-10-26） |
+
 ## 认领与同步
 
 - 用 `T001`、`T002`…… 编号；先检查**两个方向**的索引、 DOI / arXiv / 题名，避免撞号与无价值重复登记。
