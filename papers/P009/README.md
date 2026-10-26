@@ -61,3 +61,5 @@ flowchart TB
 - **实现核验**：已阅读原始 HTML §3–5、Limitations 与 Appendix A 中关键设计/审计说明；**没有完成独立代码执行和数据复现，也尚未找到可确认的官方代码仓库入口**。原文声称发布实现，不在未核实前把发布情况当作已验证事实。
 
 **审批与知识库（2026-10-22）**：研究者认可两项项目级机制：[D017｜因子与评分指标共同搜索、受控晋级](../../knowledge/deltas/D017_joint_alpha_metric_evolution.md) 与 [D018｜SJS 来源/角色权限隔离的信息拓扑](../../knowledge/deltas/D018_sealed_joint_search_information_topology.md)。已核对与 D001/D003–D005/D010/D013–D016 及 P010 的语义差异。**只批准两项特化不足**：（1）指标晋级与训练 Sharpe 的循环依赖/可能共适应；（2）缺单 Agent 联合进化对照且冻结库实验预算、PPO 设置混杂。[详情](IDEAS.md)。两项不足属待核推断与作者说明的实证归因边界，非算法失败定论。**不额外创建同义风险 Delta**。
+
+**工程复现速查**：[P009 工程问题表（CSV，GitHub 在线查看）](P009_工程复现问题清单_v1.csv)。沿用 P001–P008 的三列问答，具体区分历史行情与受控研究上下文、SJS 与 Agora、评分器 g 的晋级依据、跨轮 Wiki/Prompt 反馈和 PPO 更新边界。
