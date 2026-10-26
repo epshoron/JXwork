@@ -1,0 +1,65 @@
+name: One-time import of P008 AlphaAgentEvo PDF
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-p008-once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download and verify exact paper PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p papers/P008
+          TEMP_FILE="$(mktemp)"
+          OFFICIAL="https://proceedings.iclr.cc/paper_files/paper/2026/file/741aab8b41a2987867acc9939ad50383-Paper-Conference.pdf"
+          MIRROR="https://raw.githubusercontent.com/hongha5192-bit/AlphaAgent/main/3446_AlphaAgentEvo_Evolution_O.pdf"
+          SOURCE=""
+          for URL in "$OFFICIAL" "$MIRROR"; do
+            echo "Trying $URL"
+            if ! curl -fLsS --retry 2 --max-time 100 --connect-timeout 15 "$URL" -o "$TEMP_FILE"; then
+              continue
+            fi
+            if [ "$(head -c 5 "$TEMP_FILE")" != "%PDF-" ]; then
+              echo "Download is not a PDF; skipping."
+              continue
+            fi
+            if ! command -v pdftotext >/dev/null; then
+              sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+            fi
+            TEXT="$(pdftotext -f 1 -l 2 "$TEMP_FILE" - 2>/dev/null | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]' || true)"
+            if [[ "$TEXT" != *"alphaagentevo"* || "$TEXT" != *"tang"* ]]; then
+              echo "Title/author check failed; skipping."
+              continue
+            fi
+            SOURCE="$URL"
+            break
+          done
+          if [ -z "$SOURCE" ]; then
+            echo "No verified PDF could be downloaded"
+            exit 1
+          fi
+          cp "$TEMP_FILE" papers/P008/AlphaAgentEvo_ICLR2026.pdf
+          printf '# P008 PDF source\n\nVerified source URL: %s\n\nOriginal paper: AlphaAgentEvo: Evolution-Oriented Alpha Mining via Self-Evolving Agentic Reinforcement Learning (ICLR 2026). The copy was title/author/PDF-header checked for personal archival use.\n' "$SOURCE" > papers/P008/P008_PDF_SOURCE.md
+          echo "Verified PDF via $SOURCE, bytes $(wc -c < papers/P008/AlphaAgentEvo_ICLR2026.pdf)"
+      - name: Commit paper and remove one-time workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f .github/workflows/import-p008-once.yml
+          git add papers/P008/AlphaAgentEvo_ICLR2026.pdf papers/P008/P008_PDF_SOURCE.md
+          git commit -m "Archive verified P008 original PDF and remove one-time importer"
+          git pull --rebase origin main
+          git push origin HEAD:main
