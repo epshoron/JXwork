@@ -1,0 +1,41 @@
+name: Bundle T001-T006 AI trains AI Atlas one time
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bundle-t-atlas-once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate and package offline atlas
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd visualization
+          test -f ai-trains-ai-atlas/index.html
+          test -f alpha-factor-atlas/assets/detail.css
+          for n in 001 002 003 004 005 006; do
+            test -f "ai-trains-ai-atlas/papers/T$n.html"
+          done
+          zip -q -r AI_Trains_AI_T001-T006_Atlas.zip ai-trains-ai-atlas alpha-factor-atlas/assets/detail.css
+          unzip -t AI_Trains_AI_T001-T006_Atlas.zip | tail -n 2
+      - name: Commit bundle and delete one-time workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f .github/workflows/bundle-t-atlas-once.yml
+          git add visualization/AI_Trains_AI_T001-T006_Atlas.zip
+          git commit -m "Package standalone offline T001-T006 mechanism atlas"
+          git pull --rebase origin main
+          git push origin HEAD:main
