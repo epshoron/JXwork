@@ -1,20 +1,20 @@
 # P008｜两项已审批、与特色机制一一对应的特化验证不足
 
-[原始架构](README.md) · [创新及对应不足](ARCHITECTURE.md) · [ICLR 2026 原文](https://openreview.net/forum?id=lNmZrawUMu)
+[原始架构](README.md) · [创新及对应不足](ARCHITECTURE.md) · [ICLR 2026 原文（私有归档 PDF）](AlphaAgentEvo_ICLR2026.pdf)
 
 ## 创新① → 不足①：连续进化任务 vs Pass@T 成功标准
 
 - **设计特性**：给定 Seed Alpha，Agent 连续生成后代、调用评价工具并利用历史反馈，希望学到有效的因子持续进化策略。
 - **对应不足**：论文 Eq. 6 以“前 T 轮至少出现一个因子 IR **严格超过** `max(0, 种子IR)`”定义 Pass@T。该指标将 IR 小幅超越种子与大幅超越视为同一次成功，**不能单独显示后代改善幅度、逐轮进步的连续性及经济意义**。它并非 97% 年化收益；论文还有 IR 轨迹和组合回测，不能说只报告了成功率。
 - **检验方向**：同等搜索预算下记录绝对及相对 IR 改善的均值/分布、逐轮进步次数与更长持有期样本外表现；不能把有限的成功阈值当成完整系统质量评价。
-- **原文依据**：[AlphaAgentEvo §3.1 Eq.6、§3.3、附录 B](https://openreview.net/pdf?id=lNmZrawUMu)。
+- **原文依据**：[AlphaAgentEvo §3.1 Eq.6、§3.3、附录 B](AlphaAgentEvo_ICLR2026.pdf)。
 
 ## 创新② → 不足②：五维分层奖励 vs 独立贡献未充分拆分
 
 - **设计特性**：Tool Call、Consistency、Exploration、Performance、Streak 的联合奖励，刻意平衡保留方向、探索新结构与持续收益改善。**奖励目标之间存在张力，是设计价值而非失效**。
 - **对应不足**：论文 §3.4 / Figure 4 重点单独移除了 Exploration、Consistency。AlphaEvo500 的 Pass@3 为完整 0.65 / 去探索 0.54 / 去一致性 0.51，支持两项奖励互补；**其余 Tool/Performance/Streak 及原乘法耦合、截断与工具奖励分母未获得同等充分的独立消融证明**。
 - **检验方向**：同样训练计算预算下，逐项消融余下奖励与组合结构，比较短期 Pass@T、持续改进轨迹和真实样本外质量。
-- **原文依据**：[AlphaAgentEvo §2.3 Eq.5、§3.4 Figure4](https://openreview.net/pdf?id=lNmZrawUMu)。
+- **原文依据**：[AlphaAgentEvo §2.3 Eq.5、§3.4 Figure4](AlphaAgentEvo_ICLR2026.pdf)。
 
 ## 审批身份与严格去重
 
