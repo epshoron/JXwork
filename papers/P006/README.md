@@ -38,4 +38,4 @@ flowchart TD
 
 **原文依据**：[§2.1–2.5](https://arxiv.org/html/2505.15155#S2) · [NeurIPS 正式摘要](https://papers.neurips.cc/paper_files/paper/2025/hash/ac5c2b6e423883cbcacbcccf88491b78-Abstract-Datasets_and_Benchmarks_Track.html)。
 
-**工程机制速查（2026-10-26）**：[GitHub 上直接查看三列表（CSV）](P006_工程复现问题清单_v1.csv) · [Excel 单页版](P006_工程复现问题清单_v1.xlsx)。重点核对 Bandit 的二臂 Thompson Sampling、Synthesis 的因子/模型假设生成、Co-STEER 任务调度与执行，以及论文与当前开源代码的实际差异；其余适用问题按贪婪双向复用协议补齐。仅作为原文与部分公开源码的客观工程解释，**非正式新贡献/不足或独立复现**。
+**工程机制速查（2026-10-26）**：[GitHub 上直接查看三列表（CSV）](P006_工程复现问题清单_v1.csv) · [Excel 单页版](P006_工程复现问题清单_v1.xlsx)。合并为13个易读问题：重点讲清Bandit为什么叫Bandit、怎样选方向并根据回测学习，以及LLM提出假设、Co-STEER写代码、因子/模型交替优化的真实分工；其他适用问题按贪婪双向复用协议保留。仅作为原文与部分公开源码的客观工程解释，**非正式新贡献/不足或独立复现**。
