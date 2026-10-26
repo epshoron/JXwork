@@ -4,7 +4,7 @@
 
 > **ICLR 2026 正式论文，阶段一原文研读中。** 此处只有可核查的高层系统骨架；**研究者已认可两项特色设计及一一对应的两项特化验证不足**（种子连续进化↔Pass@T 表达力；五维奖励↔独立消融覆盖不足），不宣称“首次自进化”已得到学术首创性证明。
 
-[论文来源与核验范围](PAPER.md) · [已审创新与对应不足](ARCHITECTURE.md) · [两个特化研究问题](IDEAS.md) · [ICLR 2026 正式题录](https://mlanthology.org/iclr/2026/tang2026iclr-alphaagentevo/) · [OpenReview 原文](https://openreview.net/forum?id=lNmZrawUMu)
+[**已归档原始 PDF**](AlphaAgentEvo_ICLR2026.pdf) · [ICLR 2026 官方论文页](https://proceedings.iclr.cc/paper_files/paper/2026/hash/741aab8b41a2987867acc9939ad50383-Abstract-Conference.html) · [论文来源与核验范围](PAPER.md) · [已审创新与对应不足](ARCHITECTURE.md) · [两个特化研究问题](IDEAS.md) · [OpenReview 入口](https://openreview.net/forum?id=lNmZrawUMu)
 
 ## 自绘高层架构图（依据 ICLR 正式摘要；细节待 PDF 逐节核）
 
