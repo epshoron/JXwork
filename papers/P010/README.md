@@ -42,3 +42,7 @@ flowchart TB
 **已审的去重结论**：项目内将**生成前的五维语义 Plan 表示**记录为 [D019](../../knowledge/deltas/D019_five_axis_semantic_plan_space.md)，将**外部 LightGBM 奖励代理与三路动态调度**记录为 [D020](../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md)。已对照 D002/D006/D009/D010/D012/D016/D017 等邻近机制；相同的普通 Agent 反馈不重复建卡。学术首次仍需查新。
 
 **状态**：原文 HTML §2–5、Appendix A、C、D、E 的方法与主要证据已核；2026-10-22 研究者认可 2 项机制及 2 项对应的待验证问题，详见 [ARCHITECTURE](ARCHITECTURE.md) 和 [IDEAS](IDEAS.md)。代码与回测未独立复现；整体研究仍处阶段一。
+
+**工程问题速查（2026-10-26）**：[三列工程问题表CSV](P010_工程复现问题清单_v1.csv) · [Excel](P010_工程复现问题清单_v1.xlsx)。覆盖此前可复用的输入、模型、Prompt、因子评价、反馈与复现问题，并增加本篇语义词表、五维Plan、奖励预测和局部变异的解释。
+
+**可点击深入图解**：[语义词表 → Plan → LightGBM奖励代理 → 搜索调度与语义变异](P010_SEMANTIC_PLAN_GUIDE.md)。含作者方法图、四张Mermaid流程图和教学例子，不是第二张工程表。
