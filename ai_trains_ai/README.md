@@ -29,7 +29,7 @@ flowchart TD
 
 ## 六篇论文的交互式机制 Atlas
 
-[**打开 T001–T006 HTML 机制地图（visualization）**](../visualization/ai-trains-ai-atlas/index.html) · [本地打开说明](../visualization/ai-trains-ai-atlas/README.md)。保留 P 系列 Atlas 的深色页头、三栏和清晰 SVG 结构，但按 B 方向自身的研究对象组织：Prompt 文字、Agent 代码、模型权重、科研评测。总图特别解释 T002 GEPA 与 T006 Agent4Sci 的“反馈过程类似、但不是工程实现关系”，并有各篇原文入口。
+[**打开 T001–T006 HTML 机制地图（visualization）**](../visualization/ai-trains-ai-atlas/index.html) · [**下载完整离线 HTML 包**](../visualization/AI_Trains_AI_T001-T006_Atlas.zip) · [本地打开说明](../visualization/ai-trains-ai-atlas/README.md)。保留 P 系列 Atlas 的深色页头、三栏和清晰 SVG 结构，但按 B 方向自身的研究对象组织：Prompt 文字、Agent 代码、模型权重、科研评测。总图特别解释 T002 GEPA 与 T006 Agent4Sci 的“反馈过程类似、但不是工程实现关系”，并有各篇原文入口。
 
 ## 文件导航（仅本方向）
 
