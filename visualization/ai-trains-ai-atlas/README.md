@@ -2,6 +2,8 @@
 
 **入口**：[打开 HTML 目录源文件](index.html)；六篇解析分别在 [papers/T001.html](papers/T001.html) ～ [papers/T006.html](papers/T006.html)。
 
+**最省事的离线打开方式**：[下载完整 T Atlas 网页包（ZIP）](../AI_Trains_AI_T001-T006_Atlas.zip)，解压后双击 `ai-trains-ai-atlas/index.html`。此包仅 38 KB 左右，不含论文 PDF；六篇详解和相对 CSS 路径齐全。
+
 ## 用法
 
 - **离线优先**：保存整个 `visualization/ai-trains-ai-atlas/` 文件夹，并同时保留同级 `visualization/alpha-factor-atlas/assets/detail.css`（六篇详情页共用 P 系列已认可的样式）。在浏览器打开本目录的 `index.html`。**只下载一个 HTML 文件时**，首页的统一图和对照表仍可独立显示，但六篇独立页以及返回 P 系列 Atlas 的相对链接需对应目录文件一起下载。
