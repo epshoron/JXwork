@@ -1,0 +1,39 @@
+name: Build and verify P001-P010 workbook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "visualization/build_engineering_package.py"
+      - ".github/workflows/build-engineering-visualization.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install real Excel writer
+        run: python -m pip install --disable-pip-version-check "openpyxl==3.1.5"
+      - name: Rebuild and validate the workbook and ZIP
+        run: python visualization/build_engineering_package.py
+      - name: Publish only generated deliverables
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add visualization/JXwork_P001-P010_Engineering_QA.xlsx visualization/JXwork_P001-P010_Engineering_QA_Pack.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebuild valid Excel with openpyxl and verified local links"
+            git push
+          fi
