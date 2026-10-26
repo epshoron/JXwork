@@ -28,3 +28,5 @@ flowchart TB
 **知识库去重**：通用反馈/角色分工对应 [D001](../../knowledge/deltas/D001_nested_feedback.md)、[D003](../../knowledge/deltas/D003_success_memory.md)、[D004](../../knowledge/deltas/D004_role_separation.md)；P003 仅对结构相似度惩罚 [D008](../../knowledge/deltas/D008_ast_originality_penalty.md) 和双层语义对齐 [D009](../../knowledge/deltas/D009_hypothesis_factor_alignment.md) 留独立特色记录。单篇的特化问题见 [IDEAS](IDEAS.md)，不在这里重复展开。
 
 **状态**：论文方法及主要结果已据公开 HTML 核对；代码实现与实证缺口尚未独立验证。此为研究者已同意归档的单篇特色讨论，不意味着已开始整个项目阶段二/三。
+
+**工程复现速查**：[GitHub 直接查看极简问题表（CSV）](P003_工程复现问题清单_v1.csv) · [Excel 单工作表](P003_工程复现问题清单_v1.xlsx)。仅记录论文关键工程链路，未声称按当前公开仓库独立复现。
