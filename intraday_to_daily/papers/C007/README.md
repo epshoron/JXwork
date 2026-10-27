@@ -27,9 +27,9 @@ flowchart TD
 
 对股票 `i`、交易日 `d`、分钟 `t`，原文公式 (1)：
 
-[
-Polarity_{i,t,d}=rac{NOB_{i,t,d}-NOS_{i,t,d}}{NOB_{i,t,d}+NOS_{i,t,d}}
-]
+$
+Polarity_{i,t,d}=\frac{NOB_{i,t,d}-NOS_{i,t,d}}{NOB_{i,t,d}+NOS_{i,t,d}}
+$
 
 - `NOB`：该分钟**参与成交的买方委托序号对应的不同委托数**。
 - `NOS`：该分钟**参与成交的卖方委托序号对应的不同委托数**。
