@@ -10,6 +10,7 @@
 
 **方向 C：分钟级数据构建日频特征**：入口 [intraday_to_daily/README.md](intraday_to_daily/README.md)；学术论文 `intraday_to_daily/papers/INDEX.md`（C001 起），券商研报 `intraday_to_daily/reports/INDEX.md`（CR001 起）；机制知识需要时再用 CD001 起。**先搞清楚原始数据、分钟到日频的构造方法、可见时间及实际评价，不预设老师要的最终交易频率或是否使用 AI**。目前两个索引均无认领。
 
+- **方向 C 并行硬规则（2026-10-27）**：每个研究 Agent **一次只认领一篇 C00X 论文或 CR00X 研报**；不同 Agent 可以并行认领不同来源，不与其他 Agent 串行排队。认领前刷新 C 论文/研报两份 INDEX 并与 A/B 查重；认领当轮建立自己的最小 README/PAPER 与对应 INDEX 条目，后续每次实际状态变更由该 Agent 同回合更新。共享 INDEX 写前取最新 SHA，冲突后重新分配未占编号并合并，绝不覆盖别人；研报准入支持研究者按批批准。具体流程以 [C 方向指南](intraday_to_daily/README.md) 为准。
 - **收到研究任务先判所属方向**，读取该方向 README、现有来源 Index 与相关单篇档案；其他方向的相同 DOI/arXiv/相近机制也需查重，不因分目录而重复认领或重复声称创新。
 - **本文件下文未带方向前缀的 `papers/P00X/`、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md` 等旧路径，均是方向 A 的历史示例**。执行于 B 时必须替换为上述 `ai_trains_ai/` 的**本方向**路径，不得把 T/TD 误写到 A 的公共 Index。
 - 各方向**分别推进**阶段一原文研读 → 阶段二跨论文比较 → 阶段三原创研究设想；A 仍以阶段一研读与单篇评价为主，B 已有 T001 骨架但仍处于阶段一。**仅研究者决定阶段切换**，不能因另一方向已有成果就越级。
@@ -19,7 +20,7 @@
 
 ## 接手顺序
 
-1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A 或方向 B，再确认该方向实际阶段**；B 的 T001 2+2 已审，T003 已审 2+2，T005 也已审 2+2，A 仍以原文理解为主。
+1. 阅读最新 `README.md` 与 `RESEARCH_PLAN.md`，**先确认任务属方向 A、B 或 C，再确认该方向实际阶段**；B 的 T001 2+2 已审，T003 已审 2+2，T005 也已审 2+2，A 仍以原文理解为主。
 2. 实时阅读**所属方向论文 Index**，并核对另一方向是否已收录相同题名/DOI/arXiv；已有认领原则上优先交叉引用。**非论文资料在研究者明确批准收录前，不得自行认领、登记、建档或写入任何研究内容。**
 3. **必须阅读 `RESEARCH_WRITING_STANDARD.md`**（图先行、语言精炼、特化观察、贡献/缺点研究者审批）；再看**所属方向 Delta Index**；方向 A 可用 `papers/P001/` 作示例、`synthesis/RESEARCH_LENSES.md` 作为 A 专属研究视角；方向 B 参考 `ai_trains_ai/README.md`。必要时查最新 `CHANGELOG.md`。
 
