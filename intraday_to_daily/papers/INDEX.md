@@ -4,6 +4,7 @@
 
 | 编号 | 原始论文题名 | 权威来源／DOI／arXiv | 当前研读与归档状态 |
 |---|---|---|---|
+| [C007](C007/README.md) | Trading Imbalance in Chinese Stock Market—A High-Frequency View | [Entropy 2020 DOI:10.3390/e22080897](https://doi.org/10.3390/e22080897) · [开放全文](https://www.mdpi.com/1099-4300/22/8/897) | **已认领、原文方法初核（2026-10-27）**；逐笔委托序号→1分钟 polarity→逐股票日度均值/翻转特征及同期收益关系；原文 PDF 和关键公式、表格已核；未独立复现，不宣称未来日收益预测 |
 | [C001](C001/README.md) | Good Volatility, Bad Volatility, and the Cross Section of Stock Returns | [JFQA DOI:10.1017/S0022109019000097](https://doi.org/10.1017/S0022109019000097) · [2018 作者稿](https://public.econ.duke.edu/~boller/Papers/SignedJump_111518.pdf) | **已认领（2026-10-27）**；已核原文作者稿中的分钟→日度半方差、RSJ、周度聚合与关键实证；未核正式刊发版所有差异、未复现 |
 | [C004](C004/README.md) | Realized moments and the cross-sectional stock returns around earnings announcements | [DOI:10.1016/j.iref.2022.02.036](https://doi.org/10.1016/j.iref.2022.02.036) · [作者稿](https://pure.bond.edu.au/ws/files/190520552/AM_Realized_moments_and_the_cross_sectional.pdf) | **原文客观金融知识已按方向 C 新规中立整理**：[数据→Daily矩→5日周度变量及财报事件检验](C004/README.md)、[证据边界](C004/PAPER.md)；明确作者假设/观察、偏度回归变号、峰度负结果、事件与非事件区别。未完整复核附录/复现；无搜索建议、无获批创新/特化不足（2026-10-27） |
 | [C002](C002/README.md) | Investor clientele and intraday patterns in the cross section of stock returns | [DOI:10.1007/s11156-024-01319-8](https://doi.org/10.1007/s11156-024-01319-8) | **已认领**（2026-10-27）；出版社开放全文已获取，方法与结果初核；正在分节精读，尚未独立复现 |
