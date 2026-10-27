@@ -1,4 +1,4 @@
-# C009｜论文身份、原文核实及明确的证据边界
+# C009A｜论文身份、原文核实及明确的证据边界
 
 **原始题名**：Deep Learning for Stock Selection Based on High Frequency Price-Volume Data  
 **作者**：Junming Yang, Yaoqi Li, Xuanyu Chen, Jiahang Cao, Kangkang Jiang  

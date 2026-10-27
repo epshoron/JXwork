@@ -1,4 +1,4 @@
-# C009｜Deep Learning for Stock Selection Based on High Frequency Price-Volume Data
+# C009A｜Deep Learning for Stock Selection Based on High Frequency Price-Volume Data
 
 > **方向 C／阶段一（2026-10-27）**。直接查阅 [arXiv:1911.02502v1 原始 PDF（25 页）](https://arxiv.org/pdf/1911.02502) 的方法 §2、数据与实验 §3、结果和局限 §4，并以 PDF 截图核查标签表、数据表、模型测试图及 Table 4 回测数据。**2019 年预印本，未独立复现；作者结果不等于已验证实盘效果。** 只归档金融来源事实，不给下游 Agent 研究指令、推荐因子或 Idea Seeds。
 
