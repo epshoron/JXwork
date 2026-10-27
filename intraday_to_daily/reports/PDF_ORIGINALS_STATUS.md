@@ -1,6 +1,6 @@
-# 方向 C｜CR001–CR008 原始研报 PDF 获取清单
+# 方向 C｜CR001–CR009N 原始研报 PDF 获取清单
 
-> **检查日期：2026-10-27**。本页只记录原始文件的获取入口及其**实际核验范围**，不代表已取得 PDF 或获得转载/上传许可。GitHub 仓库内目前仅有对应研究的 Markdown；**截至本次检查，未向 CR001–CR008 新上传 PDF**。第三方网页摘要、图片预览、OCR 文本不等于原始 PDF。用户可在获得合适使用/存储权限后逐篇自行下载，并放入对应目录。
+> **检查日期：2026-10-27**。本页只记录原始文件的获取入口及其**实际核验范围**，不代表已取得 PDF 或获得转载/上传许可。GitHub 仓库内目前仅有对应研究的 Markdown；**截至本次检查，未向 CR001–CR009N 新上传 PDF**。第三方网页摘要、图片预览、OCR 文本不等于原始 PDF。用户可在获得合适使用/存储权限后逐篇自行下载，并放入对应目录。
 
 ## 当前找到的入口
 
@@ -14,6 +14,8 @@
 | [CR006N](CR006N/README.md) 国盛证券《高频数据+离散化构建方式的重要性》 | [股票报告网24页PDF下载页](https://www.nxny.com/report/view_5966903.html) · [公开全文转录](https://www.vzkoo.com/read/202505161482bab3c39fda0ce4460240.html) | 网站显示“无限制—登录即可下载”，**并不是免登录PDF直链**；登录后的文件未核实 | `CR006N/original.pdf` |
 | [CR007](CR007/README.md) 方正证券《“滴水穿石”因子》 | [股票报告网20页下载页](https://www.nxny.com/report/view_6177409.html) · [慧博报告入口](https://m.hibor.com.cn/wap_detail.aspx?id=67a0ed010d2d505422d32703b38d1c97) | PDF题录可查，但第三方页面标为**加密报告**；未发现可直接确认的原始PDF直链 | `CR007/original.pdf` |
 | [CR008](CR008/README.md) 东吴证券《CPV分时版》 | [股票报告网22页PDF下载页](https://www.nxny.com/report/view_5844264.html) · [公开研报摘要](https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/11/rptid/788798601713/index.phtml) | PDF下载页标“无限制—登录即可下载”；**当前未取得免登录直链** | `CR008/original.pdf` |
+
+| [CR009N](CR009N/README.md) 方正证券《个股日内成交量分布特征与日内流动性弹性刻画》 | [慧博21页PDF研报页](https://www.hibor.com.cn/repinfodetail_4414407.html) · [公开报告转录](https://m.vzkoo.com/read/20250828a4b2ec9e2f21ddba1dc19d60.html) | 第三方研报页可见21页PDF预览和下载选项（平台可能要求登录/操作）；**未取得PDF二进制**，另有网站声称19/22页，按文件封面版本核对 | `CR009N/original.pdf` |
 
 ## 人工获取与核验约定
 
