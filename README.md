@@ -58,7 +58,7 @@
 - [papers/P002/](papers/P002/README.md)：CogAlpha 结构化档案与 Mermaid 架构图
 - [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md)：跨论文机制 Delta 知识库
 - [synthesis/](synthesis/)：工作性问题视角及后续确认的综合成果
-- [evaluation/](evaluation/README.md)：**因子多空组合构建与评分口径（讨论版）**；保存 0.5/0.5 股票权重定义、VWAP 收益、换手成本、Objective 系数及权重历史数据契约
+- [evaluation/](evaluation/README.md)：**单因子多空组合评价 V1（研究口径已定，待实证）**；0.5/0.5 因子仓位、日频 VWAP、Delta Turnover、统一 10 bps 成本及线性 Objective
 - [CHANGELOG.md](CHANGELOG.md)：架构与最终成果变更记录
 
 旧版 `notes/` 逐篇笔记目录及模板已从当前分支删除，不再采用。
