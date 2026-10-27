@@ -13,6 +13,8 @@
 | [C005](C005/README.md) | Caught on tape: Institutional trading, stock returns, and earnings announcements | [2009 JFE／DOI:10.1016/j.jfineco.2008.03.006](https://doi.org/10.1016/j.jfineco.2008.03.006) · [哈佛作者稿](https://dash.harvard.edu/bitstreams/7312037c-4c32-6bd4-e053-0100007fdf3b/download) | **[已认领；逐笔交易→每日规模分档净成交量→机构日度估计资金流的客观骨架](C005/README.md)及[核验边界](C005/PAPER.md)已归档**（2026-10-27）；核实出版社信息与作者稿可检索方法段落，未能直接逐页读取正式 PDF；不是分钟 OHLCV 可直接复现的方法；未独立复现或审批创新／不足 |
 | [C006](C006/README.md) | Daily return distribution forecast incorporating intraday high frequency information in China’s stock market | [2023 期刊 DOI:10.1080/1331677X.2022.2107554](https://doi.org/10.1080/1331677X.2022.2107554) · [期刊开放入口](https://hrcak.srce.hr/en/306641) | **已认领，分钟→Daily 金融知识及原文证据已归档**：[5分钟/跨日首段→每日RV与尺度校准→指数翌日分布预测](C006/README.md) · [来源/未核范围](C006/PAPER.md)；报告 realNP 下一日信息权重约0.85%，扩展样本方向预测不显著。PDF 未逐页核/未复现；无创新和特化不足审批（2026-10-27） |
 
+| [C009](C009/README.md) | Deep Learning for Stock Selection Based on High Frequency Price-Volume Data | [arXiv:1911.02502（2019 原始预印本）](https://arxiv.org/abs/1911.02502) · [原始 PDF](https://arxiv.org/pdf/1911.02502) | **已认领；[15/120分钟量价→CNN/LSTM 隐含表征→个股每日预测分数的客观骨架](C009/README.md)与[原文核验范围](C009/PAPER.md)已归档**（2026-10-27）；直接核对 25 页原文的方法、数据、测试图和回测 Table 4；没有输出独立显式日频公式、未使用 1/5 分钟；未复现或审批创新/不足 |
+
 ## 多 Agent 并行认领约定
 
 - **每个 Agent 一次一篇，互不串行**：多个 Agent 可以并行研究不同 C00X，不必等待其他论文完成。
