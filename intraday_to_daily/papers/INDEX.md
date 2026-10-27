@@ -4,6 +4,7 @@
 
 | 编号 | 原始论文题名 | 权威来源／DOI／arXiv | 当前研读与归档状态 |
 |---|---|---|---|
+| [C001](C001/README.md) | Good Volatility, Bad Volatility, and the Cross Section of Stock Returns | [JFQA DOI:10.1017/S0022109019000097](https://doi.org/10.1017/S0022109019000097) · [2018 作者稿](https://public.econ.duke.edu/~boller/Papers/SignedJump_111518.pdf) | **已认领（2026-10-27）**；已核原文作者稿中的分钟→日度半方差、RSJ、周度聚合与关键实证；未核正式刊发版所有差异、未复现 |
 | [C004](C004/README.md) | Realized moments and the cross-sectional stock returns around earnings announcements | [DOI:10.1016/j.iref.2022.02.036](https://doi.org/10.1016/j.iref.2022.02.036) · [作者稿](https://pure.bond.edu.au/ws/files/190520552/AM_Realized_moments_and_the_cross_sectional.pdf) | **原文客观金融知识已按方向 C 新规中立整理**：[数据→Daily矩→5日周度变量及财报事件检验](C004/README.md)、[证据边界](C004/PAPER.md)；明确作者假设/观察、偏度回归变号、峰度负结果、事件与非事件区别。未完整复核附录/复现；无搜索建议、无获批创新/特化不足（2026-10-27） |
 | [C002](C002/README.md) | Investor clientele and intraday patterns in the cross section of stock returns | [DOI:10.1007/s11156-024-01319-8](https://doi.org/10.1007/s11156-024-01319-8) | **已认领**（2026-10-27）；出版社开放全文已获取，方法与结果初核；正在分节精读，尚未独立复现 |
 | [C003](C003/README.md) | Does realized skewness predict the cross-section of equity returns? | [2015 JFE／DOI:10.1016/j.jfineco.2015.02.009](https://doi.org/10.1016/j.jfineco.2015.02.009) · [2013 原始工作论文 PDF](https://repec.econ.au.dk/repec/creates/rp/13/rp13_41.pdf) | **已认领；[分钟→日度统计与中立金融知识](C003/README.md)、[原文核验边界](C003/PAPER.md)已更新**（2026-10-27）；补全原文研究问题、金融现象、公式、结果、弱／负证据与适用范围；不包含给 Agent 的搜索指令或自拟 Idea Seeds；2013 工作版关键公式已核、2015 终版正文未逐页核；未复现，创新／不足未审批 |
