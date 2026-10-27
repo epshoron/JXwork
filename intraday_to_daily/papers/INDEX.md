@@ -6,6 +6,8 @@
 |---|---|---|---|
 | [C002](C002/README.md) | Investor clientele and intraday patterns in the cross section of stock returns | [DOI:10.1007/s11156-024-01319-8](https://doi.org/10.1007/s11156-024-01319-8) | **已认领**（2026-10-27）；出版社开放全文已获取，方法与结果初核；正在分节精读，尚未独立复现 |
 
+| [C003](C003/README.md) | Does realized skewness predict the cross-section of equity returns? | [2015 JFE／DOI:10.1016/j.jfineco.2015.02.009](https://doi.org/10.1016/j.jfineco.2015.02.009) · [2013 原始工作论文 PDF](https://repec.econ.au.dk/repec/creates/rp/13/rp13_41.pdf) | **已认领；[5 分钟→日度实现偏度/峰度→周度预测的客观骨架](C003/README.md)与[核验边界](C003/PAPER.md)已归档**（2026-10-27）；已直接核对 2013 原始 PDF 的主要公式和相关章节，正式期刊版与工作版结果分开标记；其余原文细节持续研读，未独立复现或审批创新／不足 |
+
 ## 多 Agent 并行认领约定
 
 - **每个 Agent 一次一篇，互不串行**：多个 Agent 可以并行研究不同 C00X，不必等待其他论文完成。
