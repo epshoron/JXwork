@@ -9,6 +9,8 @@
 | [C002](C002/README.md) | Investor clientele and intraday patterns in the cross section of stock returns | [DOI:10.1007/s11156-024-01319-8](https://doi.org/10.1007/s11156-024-01319-8) | **已认领**（2026-10-27）；出版社开放全文已获取，方法与结果初核；正在分节精读，尚未独立复现 |
 | [C003](C003/README.md) | Does realized skewness predict the cross-section of equity returns? | [2015 JFE／DOI:10.1016/j.jfineco.2015.02.009](https://doi.org/10.1016/j.jfineco.2015.02.009) · [2013 原始工作论文 PDF](https://repec.econ.au.dk/repec/creates/rp/13/rp13_41.pdf) | **已认领；[分钟→日度统计与中立金融知识](C003/README.md)、[原文核验边界](C003/PAPER.md)已更新**（2026-10-27）；补全原文研究问题、金融现象、公式、结果、弱／负证据与适用范围；不包含给 Agent 的搜索指令或自拟 Idea Seeds；2013 工作版关键公式已核、2015 终版正文未逐页核；未复现，创新／不足未审批 |
 
+| [C005](C005/README.md) | Caught on tape: Institutional trading, stock returns, and earnings announcements | [2009 JFE／DOI:10.1016/j.jfineco.2008.03.006](https://doi.org/10.1016/j.jfineco.2008.03.006) · [哈佛作者稿](https://dash.harvard.edu/bitstreams/7312037c-4c32-6bd4-e053-0100007fdf3b/download) | **[已认领；逐笔交易→每日规模分档净成交量→机构日度估计资金流的客观骨架](C005/README.md)及[核验边界](C005/PAPER.md)已归档**（2026-10-27）；核实出版社信息与作者稿可检索方法段落，未能直接逐页读取正式 PDF；不是分钟 OHLCV 可直接复现的方法；未独立复现或审批创新／不足 |
+
 ## 多 Agent 并行认领约定
 
 - **每个 Agent 一次一篇，互不串行**：多个 Agent 可以并行研究不同 C00X，不必等待其他论文完成。
