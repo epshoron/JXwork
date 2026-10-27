@@ -15,7 +15,7 @@
 - **先读 [AGENTS.md](AGENTS.md)**：跨方向审批、来源准入、去重、并行同步、安全边界。
 - **再读 [RESEARCH_PLAN.md](RESEARCH_PLAN.md)**、[RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：三个研究阶段与写作/审批要求。方向 C 的范围与数据口径见 [intraday_to_daily/README.md](intraday_to_daily/README.md)；方向 B 的研究场景和两条优化路线详见 [ai_trains_ai/README.md](ai_trains_ai/README.md)，不要先把“训练”限定为修改权重，也不要把自动改 Prompt 当成权重训练。
 - [README.md](README.md)：总导航；[CHANGELOG.md](CHANGELOG.md)：最新结构或已审批成果变更。
-- 在各自的 `papers/T00X`、`papers/P00X` 或 `intraday_to_daily/papers/C00X`（ARCH 来源可加 A 后缀，如 `C008A`） 中，`README.md` 是系统骨架、`PAPER.md` 是来源证据、`ARCHITECTURE.md` 是获批特色机制、`IDEAS.md` 是获批特化不足；对应知识卡位于各方向的 `knowledge/deltas/`。
+- 在各自的 `papers/T00X`、`papers/P00X` 或 `intraday_to_daily/papers/C00X`（ARCH 来源可加 A 后缀，如 `C011A`） 中，`README.md` 是系统骨架、`PAPER.md` 是来源证据、`ARCHITECTURE.md` 是获批特色机制、`IDEAS.md` 是获批特化不足；对应知识卡位于各方向的 `knowledge/deltas/`。
 - 各方向按需建立的 `synthesis/` 只放**研究者确认**的跨论文综合成果，不是会话笔记。
 
 ## 继续研究的硬要求
