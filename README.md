@@ -1,9 +1,9 @@
-# JXwork · 两方向 AI 研究工作区
+# JXwork · 三方向量化与 AI 研究工作区
 
-> **2026-10-22 双方向状态**：方向 A（AI Agent 因子挖掘）已有 P001–P010、D001–D020，仍以论文原文理解与单篇评审为主；方向 B（AI 优化 AI）已建立，**T001 Promptbreeder 已审两组特色/不足并入库 TD001/TD002；T003 Agent Lightning 2+2（TD008/TD009）和 T005 Self-Rewarding 2+2（TD006/TD007）均已审批入库；T002 GEPA 已审 3+3 并入库 TD003–TD005；T004 ADAS 已审 2+2 并入库 TD010/TD011；其他状态以 B 论文 Index 为准**。  
-> **仓库用途**：保留两个方向各自的论文索引、机制知识和成熟综合；共享一个审批、去重、协作与安全规范。
+> **研究状态（2026-10-27 更新方向 C）**：方向 A（AI Agent 因子挖掘）已有 P001–P010、D001–D020，仍以论文原文理解与单篇评审为主；方向 B（AI 优化 AI）已建立，**T001 Promptbreeder 已审两组特色/不足并入库 TD001/TD002；T003 Agent Lightning 2+2（TD008/TD009）和 T005 Self-Rewarding 2+2（TD006/TD007）均已审批入库；T002 GEPA 已审 3+3 并入库 TD003–TD005；T004 ADAS 已审 2+2 并入库 TD010/TD011；其他状态以 B 论文 Index 为准**。  
+> **仓库用途**：A / B / C 各有独立的来源索引、研究档案及按需建立的知识体系，基础核验、去重、记录规则尽量共用。
 
-## 两个独立研究方向
+## 三个独立研究方向
 
 ### A｜AI Agent 驱动的量化因子挖掘（既有研究，不迁移）
 
@@ -21,6 +21,10 @@
 - 同一论文可跨方向交叉引用，**先查两个索引，避免重复归档或重复包装同一机制**。
 
 
+### C｜分钟级量价数据构建日频特征（2026-10-27 新增）
+
+[**方向 C 研究入口**](intraday_to_daily/README.md) · [学术论文索引 C001 起](intraday_to_daily/papers/INDEX.md) · [券商研报索引 CR001 起](intraday_to_daily/reports/INDEX.md)。研究分钟 OHLCV、成交信息及日内行为特征怎样聚合为 Daily 特征，并讨论与未来收益预测/选股的关系。**老师要求的目标标签、调仓频率、可用数据尚待确认**；当前先搜集、研读论文与券商金工研报，统计聚合、条件聚合、模型学习都不预设优劣。暂不创建空白知识卡或强行规定技术方案。与 A/B 严格分目录，不迁移旧成果。
+
 ## 研究顺序与轻量协作（2026-10-21）
 
 **每个研究方向分别按顺序推进三个研究阶段**（A 以阶段一原文研读为主；B 刚初始化）：
@@ -31,19 +35,20 @@
 
 以上三阶段**不等于**“质量控制、经验学习、推理协作”三个可组合的研究提问视角。具体门槛及阅读范围见 [RESEARCH_PLAN.md](RESEARCH_PLAN.md)。
 
-**两方向共用的协作形式：先在所属方向 INDEX 认领去重 → 核实原文后可直接归档论文骨架并向研究者讲解 → 创新/特化不足经研究者审批与严格语义去重后正式入库 → 同一工作回合同步论文档案、所属方向论文 Index 和 Delta 索引 → 经确认后再形成成熟综合。**
+**三方向共用的协作形式：先在所属方向 INDEX 认领去重 → 核实原文后可直接归档论文骨架并向研究者讲解 → 创新/特化不足经研究者审批与严格语义去重后正式入库 → 同一工作回合同步论文档案、所属方向论文 Index 和 Delta 索引 → 经确认后再形成成熟综合。**
 
-- 开始论文前，先选择方向：A 登记在 [papers/INDEX.md](papers/INDEX.md)（P 号），B 登记在 [ai_trains_ai/papers/INDEX.md](ai_trains_ai/papers/INDEX.md)（T 号）；两个 Index 均查 DOI/arXiv/题名避免重复，不以聊天窗口身份命名。
+- 开始论文前，先选择方向：A 登记在 [papers/INDEX.md](papers/INDEX.md)（P 号），B 登记在 [ai_trains_ai/papers/INDEX.md](ai_trains_ai/papers/INDEX.md)（T 号）；各方向 Index 互查 DOI/arXiv/题名避免重复，不以聊天窗口身份命名。
 - **不同来源不同入库权限**：**正式论文**经核对可直接归档骨架；**非论文材料**（GitHub 项目、文章、技术笔记、实验记录等）必须先在对话中介绍其研究价值，得到研究者明确同意，**才可在 GitHub 建档、登记索引或写入骨架**。所有来源的创新、特化不足、独立想法和 Delta 仍须逐项批准并严格语义去重。不创建逐篇讨论流水账。
 - Agent 优先自主阅读公开原文 HTML/PDF；访问受限才请研究者按需提供 PDF，索引始终保留原文链接。
-- **两方向各自的 Delta 数据库**区分「机制基础」「论文特化增量」「学术新颖性」，不把通用 OOS、成本、市场变化等凑成创新或独有缺点；P001 首篇首次入库不代表学术首创。成熟综合才进入 [synthesis/](synthesis/)。
-- **每个 Agent 必须负责本轮同步**：论文 Markdown 发生真实状态变化，**同一工作回合更新所属方向论文 Index**（[A](papers/INDEX.md) / [B](ai_trains_ai/papers/INDEX.md)）；Delta 改变则同步所属方向机制 Index（[A](knowledge/DELTA_INDEX.md) / [B](ai_trains_ai/knowledge/DELTA_INDEX.md)） 和相应论文引用；协作规范改变时同步 **[AGENTS.md](AGENTS.md)** 与 [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)。**结束前检查索引缺行、表格、链接、审批状态**。写共享文件前读最新 SHA，遇冲突合并，绝不覆盖其他 Agent。
+- **各方向按需建立的 Delta 数据库**区分「机制基础」「论文特化增量」「学术新颖性」，不把通用 OOS、成本、市场变化等凑成创新或独有缺点；P001 首篇首次入库不代表学术首创。成熟综合才进入 [synthesis/](synthesis/)。
+- **每个 Agent 必须负责本轮同步**：论文 Markdown 发生真实状态变化，**同一工作回合更新所属方向来源 Index**（[A](papers/INDEX.md) / [B](ai_trains_ai/papers/INDEX.md) / [C 论文](intraday_to_daily/papers/INDEX.md) / [C 研报](intraday_to_daily/reports/INDEX.md)）；Delta 改变则同步所属方向机制 Index（[A](knowledge/DELTA_INDEX.md) / [B](ai_trains_ai/knowledge/DELTA_INDEX.md)） 和相应论文引用；协作规范改变时同步 **[AGENTS.md](AGENTS.md)** 与 [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)。**结束前检查索引缺行、表格、链接、审批状态**。写共享文件前读最新 SHA，遇冲突合并，绝不覆盖其他 Agent。
 - `CHANGELOG.md` 只记录**研究规范/架构变更与经确认的成果发布**，不充当逐篇研究流水账。
 
 ## 导航
 
-- [JXWORK_START_HERE.md](JXWORK_START_HERE.md)：两个方向的快速入口（代替失效的旧导航指针）
+- [JXWORK_START_HERE.md](JXWORK_START_HERE.md)：三个方向的快速入口（代替失效的旧导航指针）
 - [ai_trains_ai/README.md](ai_trains_ai/README.md)：方向 B 研究边界和各自的论文、知识、综合目录
+- [intraday_to_daily/README.md](intraday_to_daily/README.md)：方向 C 分钟级数据构建日频特征的独立研究入口
 
 - [AGENTS.md](AGENTS.md)：研究 Agent 接续规范（**先读**）
 - [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)：**必读**写作风格、骨架优先、特化筛选和研究者审批
@@ -58,6 +63,6 @@
 
 旧版 `notes/` 逐篇笔记目录及模板已从当前分支删除，不再采用。
 
-## 公开仓库边界
+## 仓库与数据边界
 
-仓库为 **Public**。不提交公司内部材料、代码、数据、邮件、API Key、策略，也不上传未经授权可公开再分发的论文 PDF；原论文只登记公开链接及版权许可允许的内容。
+仓库当前为 **Private**，但仍须保护版权、商业数据与研究权限。不提交公司内部材料、代码、数据、邮件、API Key、策略，也不上传未经授权可公开再分发的论文 PDF；原论文只登记公开链接及版权许可允许的内容。
