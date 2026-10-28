@@ -1,5 +1,7 @@
 # C005N｜论文来源、核查内容与未核边界
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](caughtontape.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 **2009期刊排版正式版PDF（作者Tarun Ramadorai主页）**：[https://www.tarunramadorai.com/TarunPapers/caughtontape.pdf](https://www.tarunramadorai.com/TarunPapers/caughtontape.pdf)。已核对首页署名及 JFE 92(1):66–91；该网页链接不需哈佛账户。哈佛 DASH 作者稿使用新版 PDF 内容地址（原 /bitstreams/.../download 返回405），为不同版本。
 
 **正式论文**：*Caught on tape: Institutional trading, stock returns, and earnings announcements*  
