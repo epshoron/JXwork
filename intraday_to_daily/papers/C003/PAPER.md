@@ -1,5 +1,7 @@
 # C003｜原文来源、公式与核验边界
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](rp13_41.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 **正式期刊论文标题**：Does realized skewness predict the cross-section of equity returns?  
 **作者**：Diego Amaya, Peter Christoffersen, Kris Jacobs, Aurelio Vasquez  
 **发表**：*Journal of Financial Economics*, 118(1), 135–167 (2015)  
