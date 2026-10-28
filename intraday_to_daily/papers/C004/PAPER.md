@@ -1,5 +1,7 @@
 # C004｜来源、原始证据与核验范围
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](AM_Realized_moments_and_the_cross_sectional.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 ## 1. 正式题录
 
 - **论文原题**：*Realized moments and the cross-sectional stock returns around earnings announcements*
