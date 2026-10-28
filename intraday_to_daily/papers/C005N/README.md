@@ -1,5 +1,7 @@
 # C005N｜Caught on tape: Institutional trading, stock returns, and earnings announcements
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](caughtontape.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 > **方向 C／阶段一（2026-10-27）**：正式论文为 Campbell、Ramadorai、Schwartz（2009，*Journal of Financial Economics*）。已核对出版社的题录、摘要和公开正文内容，以及哈佛大学作者稿可检索的具体方法段落/表格文字；**本轮未能直接打开原始 PDF 逐页核查，不能声明全文精读完成**。只整理有证据的客观金融知识，不含给 AI Agent 的生成任务或自拟 Idea Seeds。
 
 [原文与核验范围](PAPER.md) · [哈佛大学作者稿 PDF](https://dash.harvard.edu/server/api/core/bitstreams/7312037c-4c32-6bd4-e053-0100007fdf3b/content) · [正式 DOI](https://doi.org/10.1016/j.jfineco.2008.03.006) · [方向 C 索引](../INDEX.md)
