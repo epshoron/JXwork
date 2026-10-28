@@ -1,10 +1,10 @@
 # Research Loop｜两类外部输入 + 两个循环库（讨论草图 v2）
 
-> 2026-10-28。**当前只校正逻辑关系，尚非最终架构或系统实现方案。** 与旧 \`architecture/dual_loop_v1.0.1/\` 独立；Meta Loop 暂不展开。此前 v0/v1 错把四库全部视作基础输入，又额外拆出 Alpha 经验库，本版纠正。
+> 2026-10-28。**当前只校正逻辑关系，尚非最终架构或系统实现方案。** 与旧 `architecture/dual_loop_v1.0.1/` 独立；Meta Loop 暂不展开。此前 v0/v1 错把四库全部视作基础输入，又额外拆出 Alpha 经验库，本版纠正。
 
 ## 一张主图
 
-\`\`\`mermaid
+```mermaid
 flowchart TB
     subgraph EXT["外部来源｜不接受 Research 成败的直接回写"]
         direction LR
@@ -42,7 +42,7 @@ flowchart TB
     G["Research 外层遗传进化<br/>选父代 → 变异 / 交叉 → 下一候选<br/>传统算法、LLM 或混合：未定"]
     K -- "历史候选 / 结果 / 适应度" --> G
     G -- "提出下一候选" --> I
-\`\`\`
+```
 
 ## 这张图只确定四条逻辑边界
 
