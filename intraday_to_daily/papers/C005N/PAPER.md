@@ -1,10 +1,12 @@
 # C005N｜论文来源、核查内容与未核边界
 
+**2009期刊排版正式版PDF（作者Tarun Ramadorai主页）**：[https://www.tarunramadorai.com/TarunPapers/caughtontape.pdf](https://www.tarunramadorai.com/TarunPapers/caughtontape.pdf)。已核对首页署名及 JFE 92(1):66–91；该网页链接不需哈佛账户。哈佛 DASH 作者稿使用新版 PDF 内容地址（原 /bitstreams/.../download 返回405），为不同版本。
+
 **正式论文**：*Caught on tape: Institutional trading, stock returns, and earnings announcements*  
 **正式作者**：John Y. Campbell, Tarun Ramadorai, Allie Schwartz  
 **正式发表**：*Journal of Financial Economics* 92(1):66–91（2009）  
 **DOI**：[10.1016/j.jfineco.2008.03.006](https://doi.org/10.1016/j.jfineco.2008.03.006)  
-**哈佛大学作者稿**：[哈佛 DASH 论文记录](https://dash.harvard.edu/entities/publication/73120378-7e71-6bd4-e053-0100007fdf3b) · [原始作者稿 PDF](https://dash.harvard.edu/bitstreams/7312037c-4c32-6bd4-e053-0100007fdf3b/download)  
+**哈佛大学作者稿**：[哈佛 DASH 论文记录](https://dash.harvard.edu/entities/publication/73120378-7e71-6bd4-e053-0100007fdf3b) · [原始作者稿 PDF](https://dash.harvard.edu/server/api/core/bitstreams/7312037c-4c32-6bd4-e053-0100007fdf3b/content)  
 **可检索原文副本**：[作者论文全文文字材料（ResearchGate）](https://www.researchgate.net/publication/314904870_Caught_on_Tape_Institutional_Trading_Stock_Returns_and_Earnings_Announcements)（辅助手稿文本核对，不等同已读原 PDF）。
 
 ## 不可混用的版本
