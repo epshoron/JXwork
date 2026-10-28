@@ -1,5 +1,7 @@
 # C010｜来源身份与原文核验记录
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](2610.16311v1.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 ## 书目信息
 
 - **Title**: Measuring intraday return-shape geometry with modified Brownian motion
