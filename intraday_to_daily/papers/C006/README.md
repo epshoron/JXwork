@@ -1,5 +1,7 @@
 # C006｜用 5 分钟收益描述和预测每日收益分布
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](25-Daily%20return%20distribution%20forecast%20incorporating%20intraday%20high%20frequency%20information%20in%20China_.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 > **方向 C／阶段一客观金融知识（2026-10-27）**。原始期刊题录、官方摘要，以及可检索的出版方 §2–6 正文方法与结果已核；**PDF 图像及全部公式排版未能在当前访问环境逐页复核，未独立复现**。本页不包含因子搜索建议、AI Agent 行动方案或自行衍生的市场规律。
 
 **论文**：Yanyun Yao, Qiang Huang, Shangzhen Cai (2023), *Daily return distribution forecast incorporating intraday high frequency information in China’s stock market*, *Economic Research–Ekonomska Istraživanja*, 36(2), 2107554。[DOI](https://doi.org/10.1080/1331677X.2022.2107554) · [期刊存档](https://hrcak.srce.hr/en/306641) · [出版方正文](https://www.tandfonline.com/doi/full/10.1080/1331677X.2022.2107554) · [来源及未核范围](PAPER.md)
