@@ -1,5 +1,7 @@
 # C004｜Realized moments：五分钟价格生成日频已实现矩
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](AM_Realized_moments_and_the_cross_sectional.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 > **方向 C／阶段一客观金融知识档案（2026-10-27，按最新中立知识规范调整）**：已核作者接受稿摘要、§1–4关键方法、数据及部分实证论述；本轮又核对 §2 Eq.(1)–(12)、§3 数据时间口径、§4.2–4.3 与部分扩展讨论。**未完整核对所有表格、附录或复现实验；下文仅记录原文事实、作者假设与报告结果，不包含给 AI Agent 的搜索指令、策略建议或衍生因子方向。**
 
 **原题**：*Realized moments and the cross-sectional stock returns around earnings announcements*  
