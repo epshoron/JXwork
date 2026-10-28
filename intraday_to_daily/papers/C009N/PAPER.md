@@ -1,5 +1,7 @@
 # C009N｜论文身份、原文核实及明确的证据边界
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](1911.02502v1.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 **原始题名**：Deep Learning for Stock Selection Based on High Frequency Price-Volume Data  
 **作者**：Junming Yang, Yaoqi Li, Xuanyu Chen, Jiahang Cao, Kangkang Jiang  
 **原始出处**：2019-11-06 发布的 [arXiv:1911.02502v1](https://arxiv.org/abs/1911.02502)，[原始 PDF（25 页）](https://arxiv.org/pdf/1911.02502)。**本轮无证据证明它是经过期刊或会议同行评审的正式论文**，不得把它当成已正式录用论文。
