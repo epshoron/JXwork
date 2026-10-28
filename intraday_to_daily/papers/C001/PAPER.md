@@ -1,5 +1,7 @@
 # C001｜来源、原文身份与证据边界
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](SignedJump_111518.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 ## 正式出版信息
 
 - **完整题名**：Good Volatility, Bad Volatility, and the Cross Section of Stock Returns
