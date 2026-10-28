@@ -1,5 +1,7 @@
 # C001｜Good Volatility, Bad Volatility, and the Cross Section of Stock Returns
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](SignedJump_111518.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 > 方向 C · 客观金融知识归档（2026-10-27）。基于作者 **2018-11-15 版本全文**和出版社正式题录核查；正式刊发于 *Journal of Financial and Quantitative Analysis* 55(3), 751–781 (2020)。未独立复现，未逐字核对最终刊发版全文。不包含面向 Agent 的研究建议、指令或自拟 Idea。
 
 ## 研究问题与原文观点
