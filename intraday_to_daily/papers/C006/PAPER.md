@@ -1,5 +1,7 @@
 # C006｜原文身份、证据与阅读边界
 
+> **原文 PDF 已归位（2026-10-28）**：研究者自行上传的 [PDF 原文](25-Daily%20return%20distribution%20forecast%20incorporating%20intraday%20high%20frequency%20information%20in%20China_.pdf) 已放在本目录。文件归档**不等于本轮重新逐页核对**，下述既有核验范围及版本差异仍须保留。
+
 ## 正式来源
 
 - **原题**：*Daily return distribution forecast incorporating intraday high frequency information in China’s stock market*
