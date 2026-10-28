@@ -1,49 +1,68 @@
-# Research Loop｜四库 + 双沉淀 + 未来信息关卡：简洁模块图 v7
+# Research Loop｜四库 + 双沉淀 + 研究输入 + 反馈：完整模块图 v8
 
 > **2026-10-28 · 暂行设计，不是已实现或验证。** 只维护本独立草图，不覆盖 `architecture/dual_loop_v1.0.1/`、不改 A/B/C 原始论文/研报档案，不启动 Meta Loop。**P002 的“21 个金融角色”不是本项目既定数量**；研究 Agent 数量及组织方式 N 待试验。本版统一采用[输入与随机遮蔽暂行协议](RESEARCH_INPUT_PROTOCOL_V1.md)，不再强制预设“材料组织 Agent”。
 
-## 一、Research Loop 模块骨架（简洁图）
+## 一、Research Loop 模块骨架（完整图，节点强制换行）
 
 ```mermaid
 flowchart TB
-    subgraph SOURCE["外部输入"]
+    subgraph SOURCE["外部输入｜不接受实验反馈改写"]
         direction LR
-        M[("Min 库")]
-        P[("论文 / 研报库")]
+        MIN[("Min 库<br/>分钟原始数据<br/>字段与可用时点")]
+        PAPER[("论文 / 研报库<br/>人工新增来源<br/>原文保留")]
     end
 
-    CA["Daily 沉淀 Agent<br/>AI"]
-    D[("Daily 库")]
-    K[("知识库")]
+    subgraph PERSIST["沉淀与循环库"]
+        CUR["独立 Daily 沉淀 Agent<br/>AI：读取来源<br/>提取中间特征 / 文献结论<br/>审核后续新增申请"]
+        CALC["Daily 计算校验<br/>程序：字段 / 时点<br/>计算 / CSV 物化"]
+        DAILY[("Daily 库<br/>日频中间特征<br/>定义 / 依赖 / CSV")]
+        KNOW[("知识库<br/>文献假设 / 作者结论<br/>Alpha 候选 / 研究谱系<br/>内部成功 / 失败实验")]
+        CUR --> CALC --> DAILY
+        CUR -- "文献结论" --> KNOW
+    end
 
-    UI["统一读取接口<br/>程序"]
-    RA["Research Agent<br/>AI · 数量待定"]
-    F["Alpha 候选生成<br/>AI / 算法"]
-    L{"未来信息检查<br/>程序"}
-    EV["评价模块<br/>程序"]
-    REC["结果记录 / 复盘<br/>程序 + 可选 AI"]
-    GA["遗传进化<br/>算法 / LLM 待定"]
+    MIN --> CUR
+    PAPER --> CUR
+    MIN --> CALC
 
-    M --> CA
-    P --> CA
-    CA --> D
-    CA --> K
+    subgraph INPUT["Research 输入｜程序读取 + Agent 自主理解"]
+        READ["统一程序读取接口<br/>结构化知识与特征目录<br/>论文按章节展开<br/>CSV 用 Python 分析"]
+        MODE{"输入曝光模式<br/>程序控制 / 随机 seed"}
+        FULL["Full 完整知识<br/>可读的精炼知识卡"]
+        MASK["Masked 随机遮蔽<br/>部分结论 / Alpha 谱系<br/>不隐藏数据 / 安全约束"]
+        RA["Research Agent｜AI<br/>数量 N 未定<br/>读材料 / 分析 / 构思<br/>主动请求更多信息"]
+        READ --> MODE
+        MODE --> FULL --> RA
+        MODE --> MASK --> RA
+    end
 
-    M -.-> UI
-    P -.-> UI
-    D --> UI
-    K --> UI
+    MIN -.-> READ
+    PAPER -.-> READ
+    DAILY --> READ
+    KNOW --> READ
+    RA -. "按需查询" .-> READ
+    RA -. "新增特征申请" .-> CUR
 
-    UI --> RA --> F --> L
-    L -- 通过 --> EV --> REC
-    L -- 阻断 --> REC
+    subgraph CANDIDATE["Alpha 生成 / 验证 / 评价"]
+        GEN["Alpha 候选生成<br/>AI / 算法<br/>自主发现 / 文献复现<br/>或遗传生成子代"]
+        AUDIT["恢复全库 / 后验核查<br/>程序：去重<br/>查询历史候选与谱系"]
+        LEAK{"未来信息 / 数据泄漏<br/>独立程序硬关卡"}
+        EVAL["Evaluator｜程序<br/>独立评价模块"]
+        RECORD["结果记录与复盘<br/>程序保存成功 / 失败<br/>AI 可辅助解释"]
+        GEN --> AUDIT --> LEAK
+        LEAK -- "通过" --> EVAL --> RECORD
+        LEAK -- "阻断" --> RECORD
+    end
 
-    REC --> K
-    REC -.-> CA
-    K --> GA --> F
+    RA --> GEN
+
+    GA["遗传进化｜Research<br/>父代选择 / 变异 / 交叉<br/>程序 / LLM 实现待定"]
+    RECORD -- "实验记录" --> KNOW
+    RECORD -. "复用特征申请" .-> CUR
+    KNOW --> GA --> GEN
 ```
 
-**图例说明**：实线表示主要数据流与研究反馈；虚线表示程序按需读取外部资料，或研究结果向沉淀 Agent 提出新中间特征申请。**图中只写模块名称和 AI / 程序身份**，详细职责放在下文，防止 GitHub Mermaid 长文字被裁切。遗传产生的候选与 Research Agent 候选共用未来信息关卡和评价模块；未通过未来信息检查只记录阻断，不得正式评价。
+**图例说明**：实线表示主数据流、入库或反馈；虚线表示按需读取和向沉淀 Agent 申请新特征。**完整保留已讨论的随机遮蔽（Full / Masked）、Agent 自主补查、生成后恢复全库去重、独立未来信息检查、评价、双库回流和遗传进化**。图内使用显式 `<br/>` 换行控制行宽，不以删除模块或关键职责解决文字裁切。遗传子代与自主候选使用同一硬关卡；未通过未来信息检查不得进入评价。
 
 **四库且仅四库**：
 1. **Min 库（外部输入）**：实际分钟行情、字段、数据可用时间；Research 失败不会回写修改它。
