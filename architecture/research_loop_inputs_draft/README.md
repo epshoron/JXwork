@@ -1,4 +1,4 @@
-# Research Loop｜四库 + 双沉淀 + 未来信息关卡：模块骨架 v6
+# Research Loop｜四库 + 双沉淀 + 未来信息关卡：简洁模块图 v7
 
 > **2026-10-28 · 暂行设计，不是已实现或验证。** 只维护本独立草图，不覆盖 `architecture/dual_loop_v1.0.1/`、不改 A/B/C 原始论文/研报档案，不启动 Meta Loop。**P002 的“21 个金融角色”不是本项目既定数量**；研究 Agent 数量及组织方式 N 待试验。本版统一采用[输入与随机遮蔽暂行协议](RESEARCH_INPUT_PROTOCOL_V1.md)，不再强制预设“材料组织 Agent”。
 
