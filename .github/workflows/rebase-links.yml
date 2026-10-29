@@ -1,0 +1,33 @@
+name: Repair links after JXwork reorganization
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assistant/tools/rebase_links.py"
+      - ".github/workflows/rebase-links.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebase:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Rewrite moved Markdown and HTML links from pre-migration version
+        run: python assistant/tools/rebase_links.py
+      - name: Commit repaired links
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shared assistant presentation
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair cross-directory links after shared/assistant/presentation move"
+            git push
+          fi
