@@ -19,7 +19,7 @@
 
 ## 2026-10-26 · P001–P010 工程问题合并 Excel 重制与验证
 
-- 将十篇 **136 条工程问题**汇总到 [visualization/](visualization/README_工程问题汇总.md) 的十 Sheet 工作簿，附带本地补充说明和 ZIP。
+- 将十篇 **136 条工程问题**汇总到 [visualization/](../presentation/visualization/README_工程问题汇总.md) 的十 Sheet 工作簿，附带本地补充说明和 ZIP。
 - **修复交付事故**：旧版手写 XLSX 内部结构不规范，Windows Excel 提示修复且长文本显示截断；已**舍弃旧版**，改用 [openpyxl 构建脚本](../presentation/visualization/build_engineering_package.py) 从各篇 CSV 重新生成，统一列宽、自动换行、居中对齐与按文本估算行高。
 - [GitHub Actions 构建与校验](https://github.com/epshoron/JXwork/actions/runs/40280727878) 已通过：重新读取 XLSX 检查 10 Sheet、136 行、格式及超链接，核对 ZIP 内相对路径目标。**未在 Windows Excel 实机复测**；论文内容、审批状态与 Delta 未改。
 

@@ -24,8 +24,8 @@
 
 - [DELTA_INDEX.md](../../shared/A_alpha_mining/knowledge/DELTA_INDEX.md)：所有已登记机制的总索引、首次观察来源、学术新颖性边界。
 - [deltas/](../../shared/A_alpha_mining/knowledge/deltas)：每一个独立机制的证据卡（D001、D002…），记录定义、来源、变体、客观缺口及后续修订。
-- [../papers/](../../papers)：论文档案（原文来源、系统图、作者贡献、评价以及我们的候选研究想法）。
-- [../synthesis/](../../synthesis)：跨论文比较成熟后、研究者认可的综合研究结论；知识卡不是完整研究地图。
+- [../papers/](../../shared/A_alpha_mining/papers)：论文档案（原文来源、系统图、作者贡献、评价以及我们的候选研究想法）。
+- [../synthesis/](../../shared/A_alpha_mining/synthesis)：跨论文比较成熟后、研究者认可的综合研究结论；知识卡不是完整研究地图。
 
 ## 新论文的 Delta 判定算法（人工 + 研究 Agent）
 

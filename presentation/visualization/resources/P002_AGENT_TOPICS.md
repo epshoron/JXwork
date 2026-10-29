@@ -1,6 +1,6 @@
 # P002｜七层 21 个金融专题 Agent（点击展开说明）
 
-> 本页是 [P002 工程问题主表](P002_工程复现问题清单_v1.csv) 中“金融专题 Agent”一项的**补充阅读入口**，不是第二张研究表格。分类及模板文件名依据作者公开的 [Seven-Level Agent Hierarchy README](https://github.com/uwFengyuan/CogAlpha_Prompt/blob/main/prompts/seven_level_agent_hierarchy/README.md) 核对。
+> 本页是 [P002 工程问题主表](../../../shared/A_alpha_mining/papers/P002/P002_工程复现问题清单_v1.csv) 中“金融专题 Agent”一项的**补充阅读入口**，不是第二张研究表格。分类及模板文件名依据作者公开的 [Seven-Level Agent Hierarchy README](https://github.com/uwFengyuan/CogAlpha_Prompt/blob/main/prompts/seven_level_agent_hierarchy/README.md) 核对。
 
 ## 实际怎么实现
 
@@ -26,4 +26,4 @@
 
 ## 证据边界
 
-这里核对的是作者公开的 Prompt 模板及其 README，不是完整调度源码；不能据此证明 21 角色采用并发进程、分别训练模型，或每个角色都产生独立有效的 Alpha。论文原文入口见 [PAPER.md](PAPER.md)。
+这里核对的是作者公开的 Prompt 模板及其 README，不是完整调度源码；不能据此证明 21 角色采用并发进程、分别训练模型，或每个角色都产生独立有效的 Alpha。论文原文入口见 [PAPER.md](../../../shared/A_alpha_mining/papers/P002/PAPER.md)。
