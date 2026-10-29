@@ -8,6 +8,7 @@
 | **B：AI 优化 AI** | [B_ai_trains_ai/](B_ai_trains_ai/README.md) | T 系列论文、TD 机制、上层 Agent 改进研究；供未来 Meta Loop |
 | **C：分钟到 Daily** | [C_intraday_to_daily/](C_intraday_to_daily/README.md) | C/CR 论文、金融现象、计算条件、字段限制；供 Daily 与 Research |
 | **V1.0.1 已确认架构** | [architecture/V1.0.1/](architecture/V1.0.1/README.md) | 四库 + 两阶段检查 + Knowledge 统一记录 |
+| **可替换 Research Agent 专业策略 V0.2** | [16角色分工](architecture/V1.0.1/research_design/README.md) | 单股日内6、多股日内5、单股跨日3、多股跨日2；与运行时准入规则分离 |
 | **评价数学口径** | [evaluation/](evaluation/PORTFOLIO_SCORING_STANDARD.md) | VWAP/组合/Ret/SR/DD/TO；Score 仅按需计算 |
 
 ## 区分三类事实

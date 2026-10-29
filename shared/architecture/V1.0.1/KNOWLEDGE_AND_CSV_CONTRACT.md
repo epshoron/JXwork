@@ -8,6 +8,7 @@
 
 **Experiment（一次真实尝试）**：`experiment_id, factor_id, run_id, data_version, data_snapshot, sample_start, sample_end, eval_version, gate_version, model_version, seed, exposure_mode, created_at, stage, status, failure_code, failure_reason, stage1_metrics, ret_ann_gross, sr_gross, mdd_gross, to_daily_mean, to_ann, cost_ann, qualified, factor_csv_path, daily_metrics_csv_path, weights_csv_path, execution_log_ref, parent_experiment_id`。
 
+- **角色生成来源建议字段**：`role_id, role_strategy_version, primary_domain, secondary_domains, research_question` 及有效材料引用。当前参考 [16角色策略 V0.2](research_design/README.md)；这是候选实验的来源追踪信息，**不是修改成功硬门槛**，每次策略版本升级必须保留可比较的历史记录。
 - **一个 Factor 可对应多个 Experiment**：重跑/更改数据窗口或版本必须生成新的 `experiment_id`，不能覆盖成功/失败历史。
 - `status` 可以为 `pending`、`blocked`、`technical_fail`、`statistical_fail`（含 `redundant` 原因）、`evaluation_error`、`financial_fail`、`qualified`。`qualified` 建议为三态：`true`（正式成功）、`false`（有效金融评价但未达标）、`null`（未跑完金融评价），而不是把未执行算作失败收益。
 - `stage1_metrics` 保存技术/泄漏及统计结果；Alpha 相关性须记录 `winner_reference_ids`（或引用集合快照）、`winner_count`、`max_abs_corr`、`closest_winner_factor_id`、`correlation_status`（`NO_REFERENCE/PASS/FAIL/BLOCKED`）、计算方法/样本/门槛版本。空胜者集合时 `max_abs_corr=NULL`，只跳过相关性检查，不能把 NULL 当成零。当前 Alpha 最大绝对相关严格 `<0.65`，算法和样本细节仍待冻结。

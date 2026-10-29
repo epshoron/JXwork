@@ -9,7 +9,7 @@
 | **M0 数据/文献来源** | Min Schema、分钟数据、来源 PDF/研报 | 原文定位、字段字典、`data_snapshot`、时间可用性 | 字段/许可缺失则仅记录、禁止假装存在 |
 | **M1 Daily Curator** | 外部论文假设 + Min 或 Research 申请的中间表达式 | 源证据卡入 Knowledge；Daily 定义审核和相关性 `<0.6` 检查后可发布版本化 CSV | 字段、时间、计算、相关性未通过时不发布新特征 |
 | **M2 统一读取 API（程序）** | Min / 文献 / Daily / Knowledge 的结构化目录 | 按需卡片、受控原文段落、Python 统计结果；可记录查询日志 | 不把整个 PDF/CSV 塞进 Prompt，不构造第五库 |
-| **M3 Research Agent** | 当前任务、材料、`full/masked`、查询接口 | 因子假设、表达式/代码、依赖、父代和来源、可复现研究配置 | 不自行审核通过；生成后必须交程序 |
+| **M3 Research Agent（可替换策略）** | 当前任务、材料、`full/masked`、查询接口、[Role Taxonomy V0.2](research_design/README.md) 的版本化角色定义 | 提出假设、日频 Daily 中间特征或 Alpha 候选、代码/依赖/父代/来源；记录角色 ID 和策略版本 | 当前采用16角色 A6/C5/B3/D2，但只是可替换基线；不自行审核通过，生成后交程序 |
 | **M4 Candidate Register** | 研究候选、版本/数据/随机种子/父代 | `factor_id` + `experiment_id`，在 Knowledge 注册并记录状态 `pending` | 失败也要保留记录，不等回测后才写 |
 | **M5A Technical & Leakage Gate** | 真实字段、代码和时间依赖 | 独立核验数据可用性、可执行、信息时点与未来泄漏 | FAIL/BLOCKED 则止步，金融字段 `NULL` |
 | **M5B Statistical Evaluator** | M5A PASS 的因子值、数据质量统计、Knowledge 已成功 Alpha 的实际因子 CSV | 非退化、覆盖率、异常/缺失、严格重复；仅对已成功胜者求最大绝对相关性 `<0.65`，记录胜者快照 | 无胜者时相关性子检查 `NO_REFERENCE`，仍检查其他统计项；失败不进入金融评价，计算方法未知时 `BLOCKED` |

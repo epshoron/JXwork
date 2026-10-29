@@ -1,0 +1,179 @@
+{
+  "strategy_id": "research_role_taxonomy",
+  "version": "role-taxonomy-v0.2",
+  "status": "adopted_replaceable_baseline_not_empirically_optimized",
+  "date": "2026-10-29",
+  "roles": [
+    {
+      "role_id": "A01",
+      "scope": "A",
+      "label": "价格方向与变动幅度",
+      "definition": "A_single_stock_intraday/A01.md",
+      "enabled": true
+    },
+    {
+      "role_id": "A02",
+      "scope": "A",
+      "label": "波动强度与风险规模",
+      "definition": "A_single_stock_intraday/A02.md",
+      "enabled": true
+    },
+    {
+      "role_id": "A03",
+      "scope": "A",
+      "label": "收益分布与不对称性",
+      "definition": "A_single_stock_intraday/A03.md",
+      "enabled": true
+    },
+    {
+      "role_id": "A04",
+      "scope": "A",
+      "label": "路径顺序与动态依赖",
+      "definition": "A_single_stock_intraday/A04.md",
+      "enabled": true
+    },
+    {
+      "role_id": "A05",
+      "scope": "A",
+      "label": "时钟时间与时段结构",
+      "definition": "A_single_stock_intraday/A05.md",
+      "enabled": true
+    },
+    {
+      "role_id": "A06",
+      "scope": "A",
+      "label": "多时间尺度与层级结构",
+      "definition": "A_single_stock_intraday/A06.md",
+      "enabled": true
+    },
+    {
+      "role_id": "B01",
+      "scope": "B",
+      "label": "跨日持续性与记忆",
+      "definition": "B_single_stock_cross_day/B01.md",
+      "enabled": true
+    },
+    {
+      "role_id": "B02",
+      "scope": "B",
+      "label": "历史稳定性与结构变化",
+      "definition": "B_single_stock_cross_day/B02.md",
+      "enabled": true
+    },
+    {
+      "role_id": "B03",
+      "scope": "B",
+      "label": "历史多特征关系与条件机制",
+      "definition": "B_single_stock_cross_day/B03.md",
+      "enabled": true
+    },
+    {
+      "role_id": "C01",
+      "scope": "C",
+      "label": "横截面相对位置",
+      "definition": "C_multi_stock_intraday/C01.md",
+      "enabled": true
+    },
+    {
+      "role_id": "C02",
+      "scope": "C",
+      "label": "共同变化与个体残差",
+      "definition": "C_multi_stock_intraday/C02.md",
+      "enabled": true
+    },
+    {
+      "role_id": "C03",
+      "scope": "C",
+      "label": "跨股票时序传导",
+      "definition": "C_multi_stock_intraday/C03.md",
+      "enabled": true
+    },
+    {
+      "role_id": "C04",
+      "scope": "C",
+      "label": "行业与群体层级结构",
+      "definition": "C_multi_stock_intraday/C04.md",
+      "enabled": true
+    },
+    {
+      "role_id": "C05",
+      "scope": "C",
+      "label": "非线性共同变化与极端联动",
+      "definition": "C_multi_stock_intraday/C05.md",
+      "enabled": true
+    },
+    {
+      "role_id": "D01",
+      "scope": "D",
+      "label": "横截面相对地位的历史演化",
+      "definition": "D_multi_stock_cross_day/D01.md",
+      "enabled": true
+    },
+    {
+      "role_id": "D02",
+      "scope": "D",
+      "label": "群体关系的历史演化",
+      "definition": "D_multi_stock_cross_day/D02.md",
+      "enabled": true
+    }
+  ],
+  "domains": {
+    "A": {
+      "label": "单股 × 日内",
+      "count": 6,
+      "ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06"
+      ]
+    },
+    "B": {
+      "label": "单股 × 跨日",
+      "count": 3,
+      "ids": [
+        "B01",
+        "B02",
+        "B03"
+      ]
+    },
+    "C": {
+      "label": "多股 × 日内",
+      "count": 5,
+      "ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ]
+    },
+    "D": {
+      "label": "多股 × 跨日",
+      "count": 2,
+      "ids": [
+        "D01",
+        "D02"
+      ]
+    }
+  },
+  "output_grain": "instrument x trade_date -> scalar | null",
+  "model_count_fixed": false,
+  "mutable_settings": [
+    "role_count",
+    "role_prompts",
+    "sampling_budget",
+    "scheduling",
+    "masking",
+    "genetic_search"
+  ],
+  "not_overridable": [
+    "data_availability",
+    "no_lookahead",
+    "evaluation_policy",
+    "knowledge_recording",
+    "alpha_qualification"
+  ]
+}
