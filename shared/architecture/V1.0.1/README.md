@@ -6,6 +6,10 @@
 
 **四个逻辑库（Min、论文/研报、Daily、Knowledge），Research 候选先通过技术/统计关，再做昂贵金融评测，所有尝试统一进 Knowledge；通过金融硬门槛即正式成功，没有第五个 Alpha 库；Score 为独立的可选排序工具。**
 
+## 四库落地必读
+
+**[四库读写与研究运行实施契约](FOUR_LIBRARY_RUNTIME_CONTRACT.md)**：本轮已确认的 Min 可选行业视图、文献全量目录/结构化模块/三种随机探索模式、Daily Base/Curated 和 Review、Knowledge 极简 Episode、M2 查询权限与验收要求。云端实现前优先阅读；原有 Gate/Evaluator 数值不变。
+
 ## 权威文件（按职能拆分）
 
 1. [RESEARCH_LOOP.md](RESEARCH_LOOP.md)：完整上下游流程图与两个回流循环。
