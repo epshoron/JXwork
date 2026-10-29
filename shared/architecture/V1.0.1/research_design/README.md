@@ -21,6 +21,5 @@
 - [现有 C/CR 论文仅作为实例](ROLE_EXAMPLE_CROSSWALK.md)
 - [16份独立Alpha Prompt](prompting/README.md)：每个角色按输入工具、专业研究、研究过程、输出去向四部分完整规定。
 - [role_manifest.json](role_manifest.json)：可供离线本地 Agent 读取的 16 角色清单。
-- [Research Scheduler / Full-Masked 具体规范](scheduling/README.md)：本次专门负责的可替换运行策略。
 
 **研究空间不是生产调度的刚性顺序。** A/C研究原始分钟价格与跨股日内信息，B/D可利用已有Daily及合法历史Min；四组**全部只负责日频Alpha生成**，不发现/申请/审核Daily中间特征。M1 Daily Curator独立负责Daily生产。所有Alpha最终为股票×日期一个信号值，后续技术、统计及金融审核独立运行。

@@ -15,9 +15,7 @@
 5. [RESEARCH_INPUT_PROTOCOL_V1.md](RESEARCH_INPUT_PROTOCOL_V1.md)：full/masked、自主查阅、去重和实验记录。
 6. [待定实现细节](OPEN_DECISIONS.md)：相关性口径、数据样本、并发与测试验收。
 7. [当前专业研究 Agent 策略 V0.2（四范围 16 角色）](research_design/README.md)：M3的可替换研究分工，含[16份独立Alpha挖掘Prompt](research_design/prompting/README.md)，不修改评价规则。
-8. [Research 调度与 Full/Masked 实施规范 V0](research_design/scheduling/README.md)：可替换的角色选择、轮转、预算、遮蔽和对照；不改16份Prompt。
-9. [Overall Orchestrator 总编排实施规范 V0](orchestration/README.md)：仅模块衔接/状态/故障/验收，不重做S16/S17正在处理的M0/M1/M2/M4/M8或已定M5/M6。
-10. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
+8. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
 
 ## 拍板的关键规则
 
