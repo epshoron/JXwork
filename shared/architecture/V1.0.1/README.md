@@ -15,14 +15,15 @@
 5. [RESEARCH_INPUT_PROTOCOL_V1.md](RESEARCH_INPUT_PROTOCOL_V1.md)：full/masked、自主查阅、去重和实验记录。
 6. [待定实现细节](OPEN_DECISIONS.md)：相关性口径、数据样本、并发与测试验收。
 7. [当前专业研究 Agent 策略 V0.2（四范围 16 角色）](research_design/README.md)：M3的可替换研究分工，含[16份独立Alpha挖掘Prompt](research_design/prompting/README.md)，不修改评价规则。
-8. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
+8. [Daily Curator 已确认沉淀原则](DAILY_CURATOR_RULES.md)：每个新Alpha由M1强制回看、最多提取一个中间候选；四项标准及已有Daily的整体复用。**不是Prompt或格式规范**。
+9. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
 
 ## 拍板的关键规则
 
 - **全部候选留痕**：一生成就创建 `factor_id/experiment_id`，每一关 PASS/FAIL/BLOCKED、原因、运行版本可追溯；金融字段在没有运行 Evaluator 时必须是 `NULL`。
 - **Alpha 第一关**：程序核验计算/字段、未来信息合法、完整性/有效性、严格重复和相关性等信号统计属性。失败就不做金融回测。**已确认：Alpha 只与 Knowledge 中内部真实实验通过金融硬门槛、已正式成功的胜者因子比较**。计算与各胜者的相关性并取最大绝对值，硬门槛严格 `<0.65`（等于也失败）；首次无胜者时仅跳过这个相关性子检查，其他技术/统计/金融门槛照常。具体相关系数算法和对齐样本尚未冻结。
 - **Alpha 第二关**：独立 Evaluator 对第一关 PASS 的候选计算 Ret/SR/DD/TO/Cost；有效评测后严格 `Ret > 3%` **且** `SR > 1` 就标 `qualified=true`，这就是正式成功和归档，不需要额外选拔、Alpha 独立库或 Score。
-- **Daily 特征门槛**：独立 Daily 沉淀 Agent 检查实际字段/时间/可复现/不重复，并对已有 Daily 特征执行**相关性严格小于 0.6** 的硬条件；统计方法、样本范围及空库行为尚待工程定义。否则不能声称自动通过。
+- **Daily 沉淀与门槛**：独立 M1 对每个新 Alpha Factor 强制回看、**最多提取一个新候选（允许零个）**，已有 Daily 作为完整构件而不向下拆；新候选需满足独立性、明确经济含义、非平凡性及与已入 Daily 相关性严格 `<0.6`，并经过真实字段/时间/复现验证。**不以计算成本、算子数量或与原始数据相关性作为准入门槛**。细则见 [Daily Curator 已确认原则](DAILY_CURATOR_RULES.md)；统计口径、Prompt 与输出格式待定。
 - **Score 只按需**：既定 `Score = Ret + 0.05·SR − 0.1·DD − Cost_ann` 不在两关中运行，只有需要排序才按保存的字段和统一参数版本由 Python 计算。
 - **库与档案不同**：`shared/A_alpha_mining/knowledge/` 是 D 系列论文研究机制卡，**不是**这里描述的运行时 Knowledge 数据库。后者保留所有 Alpha/Experiment 及外部作者报告，禁止混成已复现事实。
 
