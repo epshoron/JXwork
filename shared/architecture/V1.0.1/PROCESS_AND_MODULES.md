@@ -37,3 +37,9 @@
 **二、第一关失败不是低收益。** `blocked/technical_fail` 的金融字段为 NULL；真正金融失败只能是完整有效的回测且 Ret 或 SR 未过线。复测同一因子创建**新的 Experiment**，绝不覆盖历史。
 
 **三、Daily 的去相关 ≠ Alpha 的去相关。** Daily 的相关性门槛 `<0.6`；Alpha 只比较 Knowledge 已成功胜者，最大绝对相关性严格 `<0.65`，首次无胜者跳过此项。相关系数算法和样本对齐仍待冻结。并发时推荐在正式提交 `qualified=true` 前重新核验最新胜者快照，防止多个候选同时以空胜者库通过。
+
+## 四库读写的新增交接约束
+
+本轮已确认的逻辑对象、读写边界及云端验收清单见 [四库实施契约](FOUR_LIBRARY_RUNTIME_CONTRACT.md)：Min 研究侧不直读原始分钟 C 大表，只可选查历史行业分类；文献有独立结构化模块与三种等概率自选探索模式；Daily 为已发布 Feature（Base/Curated）+ 全量 Review；Knowledge 为 Factor + Experiment + 极简 Episode/read events。M2 仅统一 list/search、get_detail、get_values，不替 Agent 挑论文。
+
+**M1 Review 失败写 Daily Review，不创建 Alpha Experiment；M4/M8 才记录真实 Alpha 的 Factor/Experiment**。上述扩展不改变 M5A/M5B/M6/M7 原有门槛，也不新增 Alpha 评价模块。
