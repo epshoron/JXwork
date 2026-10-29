@@ -1,0 +1,104 @@
+{
+  "schema_version": "role-prompt-profiles-v0.1",
+  "role_taxonomy_version": "role-taxonomy-v0.2",
+  "status": "draft_for_review_not_activated",
+  "purpose": "neutral_domain_scope_only_not_an_experiment_result",
+  "roles": [
+    {
+      "role_id": "A01",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日价格变化的方向及变动幅度。",
+      "boundary": "不以分钟变化的先后顺序、固定钟点或收益分布形状作为主研究对象。"
+    },
+    {
+      "role_id": "A02",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日价格变化的整体强度和风险规模。",
+      "boundary": "不以标准化分布形状、顺序路径或跨采样尺度差异作为主研究对象。"
+    },
+    {
+      "role_id": "A03",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日分钟收益经验分布的性质和不对称性。",
+      "boundary": "不以收益出现顺序、价格路径时间位置或多股票关系作为主研究对象。"
+    },
+    {
+      "role_id": "A04",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日价格变化的先后顺序及动态依赖。",
+      "boundary": "不以忽略顺序的分布统计或固定绝对钟点效应作为主研究对象。"
+    },
+    {
+      "role_id": "A05",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日价格变化与实际交易时钟及日内时段的关系。",
+      "boundary": "不以脱离钟点的相对路径顺序或多股票同步关系作为主研究对象。"
+    },
+    {
+      "role_id": "A06",
+      "primary_domain": "A",
+      "focus": "研究同一股票单日价格信息在不同合法时间分辨率下的结构及差异。",
+      "boundary": "不只重复单一尺度的价格强度估计，也不研究跨交易日变化本身。"
+    },
+    {
+      "role_id": "B01",
+      "primary_domain": "B",
+      "focus": "研究同一股票日频信息在多个历史交易日之间的依赖、延续和变化。",
+      "boundary": "不把结构性分布变化或多种特征之间的关系作为主要问题。"
+    },
+    {
+      "role_id": "B02",
+      "primary_domain": "B",
+      "focus": "研究同一股票日频信息的统计性质在多个历史交易日间是否稳定、如何变化。",
+      "boundary": "不把单项指标的普通历史均值或跨股票关系变化作为主要问题。"
+    },
+    {
+      "role_id": "B03",
+      "primary_domain": "B",
+      "focus": "研究同一股票不同日频信息在多个历史交易日间的相互关系与条件依赖。",
+      "boundary": "不以单项特征自身的历史行为或跨股票关系作为主要问题。"
+    },
+    {
+      "role_id": "C01",
+      "primary_domain": "C",
+      "focus": "研究同一交易日某只股票相对于其他股票的数值位置与差异。",
+      "boundary": "不以多条分钟路径的同步变化、分组层级或多日相对地位的演化作为主研究对象。"
+    },
+    {
+      "role_id": "C02",
+      "primary_domain": "C",
+      "focus": "研究同一交易日股票与其他股票在相同时间的共同变化及其个体差异。",
+      "boundary": "不以非零时间滞后、特定分类层级或有条件极端联动作为主研究对象。"
+    },
+    {
+      "role_id": "C03",
+      "primary_domain": "C",
+      "focus": "研究同一交易日不同股票或群体之间具有时间先后的变化关系。",
+      "boundary": "不把同一分钟同步变化误认为时间传导，也不研究多日关系本身的变化。"
+    },
+    {
+      "role_id": "C04",
+      "primary_domain": "C",
+      "focus": "研究同一交易日个股与合法行业、组别及市场层级之间的关系。",
+      "boundary": "不把分类标签当连续数值，也不包办无层级约束的一般市场共变。"
+    },
+    {
+      "role_id": "C05",
+      "primary_domain": "C",
+      "focus": "研究同一交易日多个股票之间的非线性或条件性共同变化。",
+      "boundary": "不将普通无条件共动更名为非线性关系，也不把单股收益尾部分布当多股依赖。"
+    },
+    {
+      "role_id": "D01",
+      "primary_domain": "D",
+      "focus": "研究某只股票相对其他股票或合法群体的地位如何随多个交易日演变。",
+      "boundary": "不以单日静态排名或多股票共变关系本身的变化作为主要问题。"
+    },
+    {
+      "role_id": "D02",
+      "primary_domain": "D",
+      "focus": "研究股票与其他股票、市场或合法群体之间的关系如何跨多个交易日变化。",
+      "boundary": "不以个股自身单变量稳定性或单日共动快照作为主要问题。"
+    }
+  ]
+}

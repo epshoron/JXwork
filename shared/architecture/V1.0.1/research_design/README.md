@@ -19,6 +19,7 @@
 - [核心规则与可替换策略划分](STRATEGY_AND_CONTRACTS.md)
 - [角色采样和实验对照（尚未冻结）](ROLE_SCHEDULING_AND_VALIDATION.md)
 - [现有 C/CR 论文仅作为实例](ROLE_EXAMPLE_CROSSWALK.md)
+- [中立研究 Prompt V0.1（待审）](prompting/README.md)：统一系统提示、16份最小职责描述、动态输入、可校验输出与遮蔽隔离规则；**未自动启用**。
 - [role_manifest.json](role_manifest.json)：可供离线本地 Agent 读取的 16 角色清单。
 
 **研究空间不是生产调度的刚性顺序。** A/C 通常更靠近原始分钟价格，可提出基础 Daily；B/D 优先复用 Daily，也可以在合法时点受控访问历史分钟。任何范围都允许提出 Daily 中间特征或日频 Alpha 候选，最终都输出股票 × 日期一个数值；下游 Daily 审核及 Alpha 技术、统计、金融评价不因更换角色而改变。
