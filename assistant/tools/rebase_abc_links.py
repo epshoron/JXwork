@@ -83,13 +83,32 @@ for old in sorted(originals):
         continue
     previous = git("show",BASE+":"+old).decode("utf-8")
     current = file.read_text(encoding="utf-8")
+    # Even hand-edited docs contain legacy links in their preserved sections.
+    # Rebase only destinations that point to real paths in the pre-move tree;
+    # links already authored for the new tree remain unchanged.
     if current != previous:
         skipped.append(new)
-        continue
     transformed = patch(current,old,new)
     if transformed != current:
         file.write_text(transformed,encoding="utf-8")
         changed.append(new)
+
+# Historical original research guides were moved out of shared, so their old
+# relative links must be re-anchored to the new source locations as well.
+guide_sources = {
+    "assistant/research_guides/A_papers_original.md": "shared/papers/README.md",
+    "assistant/research_guides/A_knowledge_original.md": "shared/knowledge/README.md",
+    "assistant/research_guides/A_synthesis_original.md": "shared/synthesis/README.md",
+    "assistant/research_guides/B_overview_original.md": "shared/ai_trains_ai/README.md",
+    "assistant/research_guides/C_overview_original.md": "shared/intraday_to_daily/README.md",
+}
+for dst, src in guide_sources.items():
+    f = ROOT/dst
+    current=f.read_text(encoding="utf-8")
+    newer=patch(current,src,dst)
+    if newer != current:
+        f.write_text(newer,encoding="utf-8")
+        changed.append(dst)
 
 def audit():
     missing=[]
@@ -117,5 +136,5 @@ for p,url in missing[:80]:
     print("BROKEN",p,"->",url)
 # Report broken links; the original archive may include historic nonexisting links.
 # Fail only if very large regression.
-if len(missing)>120:
+if len(missing)>25:
     raise SystemExit("too many unresolved link targets")
