@@ -2,7 +2,7 @@
 
 > **2026-10-29 已确认的逻辑契约**，用于云端落地的接口设计；不代表 GitHub 已包含真实行情 CSV、Alpha 实验文件或已部署数据库。物理 DB 和目录绝对路径由公司环境决定。
 
-## 1. 一个 Knowledge，两个基本记录对象
+## 1. 一个 Knowledge，两个业务核心对象 + 极简研究日志
 
 **Factor（定义）**：`factor_id, name, formula_or_code_ref, code_hash, parameters, required_data, time_info, source_refs, parent_factor_ids, created_by, created_at, expression_version`。可与作者提出的 Factor 建立引用，但不得把作者实验当成内部结果。
 
@@ -42,3 +42,11 @@
 - 早期材料来源的作者收益或 IC 只能记 `external_reported`，**不得填进内部 Experiment 的 `ret_ann_gross`**。
 - CSV 数据要有 `factor_id/feature_id/experiment_id` 关联，至少 `data_version, code_hash, gate_version, eval_version, sample_range` 可复现。不要在 GitHub 上存公司真实 CSV 和访问凭据。
 - 规则更新时保留旧实验、旧标记与版本；需要跨版本比较时按同一版规则重算标签，不能用旧版 `qualified` 冒充新版结果。
+
+## 5. 本轮确认的最简对象补充
+
+- **Knowledge Episode**：研究运行日志（JSONL 或等价持久化），以 `run_id` 关联 `role_id, research_mode, seed, model_version, prompt_version, data_snapshot, knowledge_snapshot, exposure_mode, reading_events, research_question, generated_factor_ids`；可无 Alpha 候选。阅读行为即时记录，paper_id/read_level/section 可供计算累计精读，不必再建单独读书数据库或 Relation 表。
+- **Daily Feature**：只含已发布的基础 `feature_type=base` 或 M1 正式批准的 `feature_type=curated`，实际值路径关联独立 CSV/Parquet。
+- **Daily Review**：保存 M1 的全部 `approved/rejected/blocked/no_candidate` 审核历史；**准入相关性只比较已发布 Curated，不比较失败 Review 或 Base**。
+
+完整字段和读取约束见 [四库实施契约](FOUR_LIBRARY_RUNTIME_CONTRACT.md)。以上不改变 Factor/Experiment 的评价记录和版本规则。
