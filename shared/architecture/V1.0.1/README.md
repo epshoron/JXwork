@@ -1,19 +1,31 @@
-# JXwork｜V1.0.1 当前唯一拍板架构
+# JXwork｜V1.0.1 当前拍板架构（2026-10-29）
 
-> **2026-10-29 确认**：最新 [Research Loop v9 双流程图](RESEARCH_LOOP.md) 正式替代旧版 `dual_loop_v1.0.1` 的 Research 侧设计。旧版退出当前工作树、可从 Git 历史查阅。架构已确定 ≠ 已实现/验证。
+> **设计已确认，尚未宣称代码已部署或通过真实数据验证。** 本目录为唯一有效架构入口。Research Loop v9 的四库、独立 Daily 沉淀 Agent、可配置 Research Agent、统一程序读取、full/masked、自主探索、独立未来信息硬关卡及遗传经验反馈全部保留；**新确认的两级检查、结果字段与成功判定以本目录为准**。旧图的“Score 决定晋级/另建 Alpha 库”等表述不再适用。
 
-## Research Loop
+## 一句话
 
-Min 原始分钟数据 + 人工收录论文/研报 → 独立 Daily 沉淀 Agent → Daily 中间特征及知识库 → 统一**程序**读取接口 → Research Agent（数量 N 待定）自主研究与生成 → 后验全库去重 → 独立未来信息/数据泄漏硬关卡 → 独立 Evaluator → 全部成功、失败、阻断及实验结果记录入知识库 → 可复用中间特征申请 Daily 准入 / 历史候选参与遗传进化。所有候选和遗传子代都必须通过相同硬关卡。
+**四个逻辑库（Min、论文/研报、Daily、Knowledge），Research 候选先通过技术/统计关，再做昂贵金融评测，所有尝试统一进 Knowledge；通过金融硬门槛即正式成功，没有第五个 Alpha 库；Score 为独立的可选排序工具。**
 
-**四库且仅四库：** Min、论文/研报、Daily、知识库，属于逻辑职责，并不代表一定采用四套物理数据库。知识库区分外部作者报告 `external_reported` 与内部真实执行 `internal_executed`。Daily 不是正式 Alpha 因子池，遗传种群也不是正式因子池。
+## 权威文件（按职能拆分）
 
-输入可按 [V1.0.1 现行协议](RESEARCH_INPUT_PROTOCOL_V1.md) 使用 `full` / `masked` 可复现曝光；不允许遮蔽客观数据字段、时间可用性、代码安全和评分规则。现有 [单因子 Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md) 口径不变，不等于池级边际贡献规则已经决定。
+1. [RESEARCH_LOOP.md](RESEARCH_LOOP.md)：完整上下游流程图与两个回流循环。
+2. [PROCESS_AND_MODULES.md](PROCESS_AND_MODULES.md)：执行次序、程序模块责任、独立接口与分支。
+3. [GATES_AND_DECISIONS.md](GATES_AND_DECISIONS.md)：Alpha 两关、Daily 独立入库硬门槛、成功/失败定义与未冻结统计口径。
+4. [KNOWLEDGE_AND_CSV_CONTRACT.md](KNOWLEDGE_AND_CSV_CONTRACT.md)：Factor、Experiment、Daily、成功标签、CSV 与复现字段。
+5. [RESEARCH_INPUT_PROTOCOL_V1.md](RESEARCH_INPUT_PROTOCOL_V1.md)：full/masked、自主查阅、去重和实验记录。
+6. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
 
-## Meta Loop
+## 拍板的关键规则
 
-保留未来通过受控实验改进 Prompt、Skills、工具、搜索和 Agent 配置的方向，**当前尚未启动**，不把旧 Meta 实现细节或参数训练默认列为已确认开发任务。
+- **全部候选留痕**：一生成就创建 `factor_id/experiment_id`，每一关 PASS/FAIL/BLOCKED、原因、运行版本可追溯；金融字段在没有运行 Evaluator 时必须是 `NULL`。
+- **Alpha 第一关**：程序核验计算/字段、未来信息合法、完整性/有效性、严格重复和相关性等信号统计属性。失败就不做金融回测。**Alpha 的统计相关性阈值与定义尚未确定，不得擅自用 Daily 的 0.6 代替。**
+- **Alpha 第二关**：独立 Evaluator 对第一关 PASS 的候选计算 Ret/SR/DD/TO/Cost；有效评测后严格 `Ret > 3%` **且** `SR > 1` 就标 `qualified=true`，这就是正式成功和归档，不需要额外选拔、Alpha 独立库或 Score。
+- **Daily 特征门槛**：独立 Daily 沉淀 Agent 检查实际字段/时间/可复现/不重复，并对已有 Daily 特征执行**相关性严格小于 0.6** 的硬条件；统计方法、样本范围及空库行为尚待工程定义。否则不能声称自动通过。
+- **Score 只按需**：既定 `Score = Ret + 0.05·SR − 0.1·DD − Cost_ann` 不在两关中运行，只有需要排序才按保存的字段和统一参数版本由 Python 计算。
+- **库与档案不同**：`shared/A_alpha_mining/knowledge/` 是 D 系列论文研究机制卡，**不是**这里描述的运行时 Knowledge 数据库。后者保留所有 Alpha/Experiment 及外部作者报告，禁止混成已复现事实。
 
-## 未冻结事项
+## 未冻结，但不得编造
 
-Agent 数/角色、模型 API、物理存储、检索选型、随机遮蔽比例、Daily 特征准入量化阈值、遗传调度与正式因子池晋级策略尚待研究和实测。Daily 准入 Prompt v0 仍是未审批候选，留在非共享的 `assistant/handoffs/`，不作为正式云端指令。
+评测 Ret 的收益口径应在接入公司数据时与 [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md) 对齐（原定义为年化**毛**收益）；Alpha 第一关相关阈值、Daily 相关系数方法/样本、股票池、缺失/停牌、具体 CSV 布局、真实调用 API、物理数据库技术以及调度策略待测试后冻结。门槛数值（3%、1、0.6）本身已确认，**未确认的统计实现不能算“通过”**。
+
+**Meta Loop** 保留对 Prompt、Skills、工具、检索/工作流配置做受控优化的未来方向，当前尚未启动；研究内 Debug 不必等 Meta。

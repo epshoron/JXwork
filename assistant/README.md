@@ -1,5 +1,7 @@
-# assistant｜研究 LLM 专用协作规范
+# assistant｜仅供研究 LLM 的协作与交接
 
-[AGENTS.md](AGENTS.md) · [RESEARCH_PLAN.md](RESEARCH_PLAN.md) · [RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md) · [CHANGELOG.md](CHANGELOG.md) · [JXWORK_START_HERE.md](JXWORK_START_HERE.md)。
+此目录不包含公司运行所需指令。研究维护规则：[AGENTS.md](AGENTS.md)、[RESEARCH_PLAN.md](RESEARCH_PLAN.md)、[RESEARCH_WRITING_STANDARD.md](RESEARCH_WRITING_STANDARD.md)、[CHANGELOG.md](CHANGELOG.md)、[JXWORK_START_HERE.md](JXWORK_START_HERE.md)。
 
-本目录服务于 ChatGPT 等文献研究维护 Agent，不给公司云端执行 Agent 直接使用。旧根目录 `papers/ knowledge/ synthesis/ ai_trains_ai/ intraday_to_daily/ evaluation/` 路径都需前置 `shared/`；`visualization/ technical_reading/` 路径前置 `presentation/`。旧架构讨论交接存于 `handoffs/`，不再代表当前 V1.0.1。
+**原始研究协作/认领说明**移入 [research_guides/](research_guides/README.md)，保留历史全文与审批记录。实际研究资料则在 `shared/A_alpha_mining/`、`shared/B_ai_trains_ai/`、`shared/C_intraday_to_daily/`；架构资料在 `shared/architecture/V1.0.1/`，评价数学标准在 `shared/evaluation/`。
+
+`handoffs/` 为历史讨论/待审批工程 Prompt，不可作为当前拍板架构的优先规则。

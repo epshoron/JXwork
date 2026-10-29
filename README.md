@@ -1,11 +1,15 @@
-# JXwork｜研究资源
+# JXwork｜研究资源与 Agent 协作仓库
 
-仓库从 2026-10-29 起按用途分为三个区域：
+**2026-10-29 起：三个业务区，各自面向不同读者。**
 
-- **[shared/](shared/README.md)**：A/B/C 文献研究、当前 V1.0.1 架构及 Evaluator；公司云端优先只读取这里。
-- **[assistant/](assistant/README.md)**：给 ChatGPT 和文献研究维护 LLM 的协作规范、研究计划与变更记录；不是云端执行 Agent 的运行指令。
-- **[presentation/](presentation/README.md)**：HTML、Excel、ZIP、展示资料；按需下载。
+| 入口 | 内容 | 对公司云端的关系 |
+|---|---|---|
+| [`shared/`](shared/README.md) | A / B / C 研究档案、**已确定的 V1.0.1 Research Loop**、统一评价规范 | **仅把它作为知识/架构输入**；研究归档约定不是运行时 Prompt |
+| [`assistant/`](assistant/README.md) | 给 ChatGPT/文献研究 LLM 的审批、认领、协作、日志、交接 | 公司执行 Agent **不需要** |
+| [`presentation/`](presentation/README.md) | HTML 地图、Excel、ZIP、离线展示 | 按需读取 |
 
-**当前架构唯一入口：** [V1.0.1](shared/architecture/V1.0.1/README.md)。最新 Research Loop v9 已获研究者确认，取代旧双 Loop 的研究侧设计；Meta Loop 仍为未来方向。设计拍板不等于系统已实施或通过实验。
+**架构权威入口**：[V1.0.1](shared/architecture/V1.0.1/README.md)。四库：Min、论文/研报、Daily、Knowledge；Knowledge 记录一切候选与实验，第一关技术/统计检查通过后才开展金融评价；达标即正式存档，不增设第五个 Alpha 库。具体规则见架构文档。
 
-仓库研究资料不是可直接执行的 Agent 指令；作者报告不等于内部真实回测。未经授权不得上传公司内部信息、数据、代码或 API Key。
+**下载**：GitHub Actions 的 [Package shared folder](https://github.com/epshoron/JXwork/actions/workflows/package-shared.yml) 每次 `shared/` 合入 `main` 自动打包，可以在成功运行页面的 Artifacts 下载 `JXwork-shared`。普通 Code → Download ZIP 是整个仓库。
+
+本仓库包含论文/研报研究资料，不是公司数据部署区；不能将外部作者宣称视为本系统已复现，也不得推送未获授权的公司资料或密钥。

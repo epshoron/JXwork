@@ -59,7 +59,7 @@ def line_count(s: str, width: int) -> int:
 
 
 def load_rows(pid: str) -> list[list[str]]:
-    src = ROOT / "shared" / "papers" / pid / f"{pid}_工程复现问题清单_v1.csv"
+    src = ROOT / "shared" / "A_alpha_mining" / "papers" / pid / f"{pid}_工程复现问题清单_v1.csv"
     with src.open("r", encoding="utf-8-sig", newline="") as f:
         table = list(csv.reader(f))
     assert table and table[0] == ["主题", "关键问题", "简明答案"], (pid, "unexpected header")

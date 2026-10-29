@@ -1,4 +1,4 @@
-> **2026-10-29 目录重构声明：本文件只约束研究资料维护 Agent，云端执行 Agent 不应继承本文件。** 旧研究根路径现统一位于 shared/；最新拍板设计为 shared/architecture/V1.0.1/。历史代码路径示例按 [目录迁移说明](README.md) 解释。
+> **2026-10-29 目录重构声明：本文件只约束研究资料维护 Agent，云端执行 Agent 不应继承本文件。** A/B/C 当前路径分别是 shared/A_alpha_mining、shared/B_ai_trains_ai、shared/C_intraday_to_daily；最新拍板架构为 shared/architecture/V1.0.1/。历史代码路径示例按 [目录迁移说明](README.md) 解释。
 
 # JXwork · Agent 交接与协作规范
 
@@ -86,3 +86,8 @@
 **新增硬规则｜工程研究问题贪婪双向覆盖（2026-10-26）**：研究者针对某一篇提出的“特异性问题”不是该篇问题表的全部内容。每篇必须继承之前**所有已建工程表中适用的每一道问题**；新增问题必须在同一工作回合反向检查并补齐全部已建表（不论论文编号先后）。适用就回答，不适用才跳过；证据不足标明边界，禁止编造；完整覆盖优先于8–15行篇幅。仅做工程表回补不改正式Delta/审批和零字段矩阵。具体流程见 [papers/ENGINEERING_REVIEW_STANDARD.md](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。
 
 **关键算法通俗图解阅读层（2026-10-26）**：工程问题表最重要的是理解，而不是越短越好。遇到 Bandit、非负岭回归等机制，用简明单元格说明它做什么，并在论文目录建立一份可点击的 Markdown 深入图解：先用直观语言说明，再用可手算数字、GitHub Mermaid 流程图讲明输入、操作、反馈，最后核对原文/真实源码和未核边界。不因太复杂删问题，也不在主表硬塞长公式。详情见 [工程速查规范](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。
+
+
+## 2026-10-29 当前迁移补充
+
+研究 LLM 一律用 `shared/A_alpha_mining/{papers,knowledge,synthesis}`、`shared/B_ai_trains_ai/`、`shared/C_intraday_to_daily/` 新路径。上文 10 月历史协作规范中的旧根路径示例均仅为历史文字，不再作为真实文件路径。运行时 Knowledge ≠ A 方向的文献 D 机制档案；两阶段门槛和成功标签见共享架构，未实际运行不得虚构结果。最新导读见本目录 `research_guides/`。

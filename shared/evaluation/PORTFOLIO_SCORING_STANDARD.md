@@ -1,3 +1,5 @@
+> **2026-10-29 架构使用更新：** 下文 2026-10-27 的 Portfolio Fitness **数学定义完整保留**。V1.0.1 现行主流程先做技术/统计筛选，仅对合格候选运行金融 Evaluator；金融指标 `ret_ann_gross/sr_gross/mdd_gross/to_…/cost_ann` 无论最终 Ret/SR 达标与否，都写入同一个 Knowledge 的 Experiment 记录。达标仅按 `Ret>3%` 且 `SR>1` 严格判断，**Score 不是必经关卡，也不影响正式成功标签**。需要按分数排序时再由 Python 基于存储字段、评分版本及现有公式计算；不要误将 Score 当作回测收益或候选入库门槛。指标定义和结果字段详见 [现行两阶段规范](../architecture/V1.0.1/GATES_AND_DECISIONS.md)、[记录与 CSV 契约](../architecture/V1.0.1/KNOWLEDGE_AND_CSV_CONTRACT.md)。
+
 # 单因子多空组合评价标准｜V1 基准口径
 
 > **方向 A · 研究记录 · 2026-10-27**  

@@ -1,5 +1,13 @@
 # 研究更新日志（Changelog）
 
+## 2026-10-29 · 确认双阶段研究验收与共享资源 A/B/C 归类
+
+- 研究者拍板：四库不变；Knowledge 同时保存全部因子候选、第一关技术/统计检查、第二关金融评价和失败记录。第一关不通过禁止昂贵金融回测；通过第一关的实验不论金融成功与否都记录 Ret/SR/DD/TO/成本。
+- 因子是否正式成功只按 `Ret > 3%`、`SR > 1`（且两关实际通过）判定；达标即存档。无需第五个 Alpha 库，成功标签和查询视图保留于 Knowledge/Experiment；Score 不必在入库时计算，保留既有数学定义用于后续 Python 按需排序。
+- Daily 库须执行与已有 Daily 特征的相关性 `< 0.6` 硬门槛，具体统计定义和 Alpha 第一关相关性参数尚需真实数据口径；未定不假装已测试。
+- `shared/` 归并为 A_alpha_mining、B_ai_trains_ai、C_intraday_to_daily，历史研究 Agent 的专用导读移入 `assistant/research_guides/`；原始论文及编号不改。
+
+
 
 ## 2026-10-29 · 三目录重构与现行 V1.0.1 架构确认
 
