@@ -54,4 +54,4 @@ Agent 自主阅读被允许的材料、请求 `read_material(id)`、`read_source
 - [现行 V1.0.1 总架构](RESEARCH_LOOP.md)：旧版已退出当前工作树。
 - [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：评测参数保持不变。
 
-**文档状态**：本协议作为“先凑一版、以后实验纠错”的**暂行设计选择**；不是偏置已解决的结论。
+**文档状态**：本协议已纳入现行 V1.0.1 设计；具体参数和效果尚待实验验证，不得声称已解决偏置问题。
