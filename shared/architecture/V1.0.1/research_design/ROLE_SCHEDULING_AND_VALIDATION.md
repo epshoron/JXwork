@@ -11,3 +11,6 @@
 5. 再决定每轮角色数、按组预算、Prompt Guidance、遗传变异/交叉的触发策略；每次改动要记录strategy_version。
 
 A/C偏向原始分钟信息，B/D可复用已发布Daily；角色数量不规定调用预算。**所有16个Research Agent只输出日频Alpha候选**，由独立技术/统计/金融关卡审核；Daily中间特征的构造、审核、发布是M1 Daily Curator的专属职责。
+## 独立实施文件
+
+调度轮转、预算、Full/Masked组级遮蔽与公平比较已有独立实现规格：[Scheduling V0](scheduling/README.md)。本文保留专业角色验证原则；具体参数未拍板，由运行配置提供，实际代码由云端开发 Agent 接入。

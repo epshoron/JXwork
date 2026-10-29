@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Scheduler Run Configuration V0",
+  "description": "Validates explicit orchestrator-supplied parameters. Does not choose default allocation, ratios, probability or time windows.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "campaign_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role_strategy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_policy": {
+      "const": "coverage_round_robin_v0"
+    },
+    "selection_policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role_ids": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "B01",
+          "B02",
+          "B03",
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "D01",
+          "D02"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "run_seed": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "data_snapshot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "daily_catalog_snapshot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "knowledge_snapshot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool_registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "universe_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "information_cutoff": {
+      "type": "string",
+      "minLength": 1
+    },
+    "round_cursor_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_episodes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_concurrent_episodes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_tokens_total": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_tokens_per_episode": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_attempts_per_episode": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_wall_clock_seconds": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "max_episodes",
+        "max_concurrent_episodes",
+        "max_tokens_total",
+        "max_tokens_per_episode",
+        "max_attempts_per_episode",
+        "max_wall_clock_seconds"
+      ]
+    },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "full",
+            "masked"
+          ]
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "mask_probability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "mask_group_index_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "mode",
+        "seed"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "masked"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "mask_probability",
+              "mask_group_index_version"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "run_id",
+    "campaign_id",
+    "role_strategy_version",
+    "selection_policy",
+    "selection_policy_version",
+    "role_ids",
+    "run_seed",
+    "data_snapshot_id",
+    "daily_catalog_snapshot_id",
+    "knowledge_snapshot_id",
+    "tool_registry_version",
+    "universe_ref",
+    "information_cutoff",
+    "round_cursor_ref",
+    "budget",
+    "exposure"
+  ]
+}
