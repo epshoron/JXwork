@@ -10,8 +10,8 @@ flowchart TD
   PAP[("论文研报库：原文与作者证据")]
   CUR["Daily 沉淀 Agent<br/>公式/依赖/合法性审查"]
   DAG{"Daily 检查<br/>含 corr ＜ 0.6"}
-  DAILY[("Daily 库<br/>定义/版本/CSV")]
-  KNOW[("Knowledge 库<br/>Factor + 所有 Experiment<br/>状态/原因/指标/谱系")]
+  DAILY[("Daily Feature<br/>已发布 Base + Curated / 数值")]
+  KNOW[("Knowledge 库<br/>Factor + 所有 Experiment + Episode<br/>状态/原因/指标/阅读历史")]
   READER["统一程序读取<br/>目录、查询、按需 Python/原文"]
   RA["16 个专业 Research Agent<br/>只生成日频 Alpha 候选；人数可配置"]
   CAND["候选注册<br/>factor_id / experiment_id"]
@@ -23,11 +23,13 @@ flowchart TD
   FAIL2["第二类金融失败<br/>保留所有已测字段"]
   OK["正式成功<br/>qualified=true"]
   EVOLVE["经验复盘 / 遗传变异<br/>下一轮候选"]
+  REVIEW["Daily Review<br/>全部审核和无候选记录"]
   MIN --> CUR
   PAP --> CUR
   CUR --> DAG
   DAG -->|"确认合格"| DAILY
-  DAG -->|"拒绝/未决"| KNOW
+  DAG -->|"审核留痕"| REVIEW
+  DAG -->|"拒绝/阻断/无候选"| REVIEW
   PAP --> READER
   DAILY --> READER
   KNOW --> READER
@@ -53,6 +55,9 @@ flowchart TD
 ```
 
 ## 四库含义
+
+**最新四库读写与研究日志实施契约**：[FOUR_LIBRARY_RUNTIME_CONTRACT.md](FOUR_LIBRARY_RUNTIME_CONTRACT.md)。图中的 M1 审核历史写入 Daily Review，**不**把审核失败误写入 Knowledge Experiment；文献结构化、全量自主检索和三模式随机探索由本契约补充。
+
 
 - **Min**：不可随实验效果重写的真实分钟原始数据/字段/可用时点。
 - **论文/研报**：人为收集的原始来源，作者陈述必须带 `external_reported` 标签。
