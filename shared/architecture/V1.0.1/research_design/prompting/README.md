@@ -12,3 +12,7 @@
 [Prompt 文件清单](ALPHA_PROMPT_MANIFEST_V1.json) · [每轮动态输入](ALPHA_EPISODE_INPUT_V1.md) · [输出字段结构](ALPHA_OUTPUT_SCHEMA_V1.json) · [加载和提交方式](ASSEMBLY_ALPHA_V1.md)
 
 研究输入按M2的实际工具能力访问四个库；未在仓库硬编码公司API、原始数据或运行口令。评价与入库按照已有M4/M5/M6流程。
+
+## 四库实施统一规则
+
+每个角色都需同时使用 [四库实施契约](../../FOUR_LIBRARY_RUNTIME_CONTRACT.md) 与 [加载约定](ASSEMBLY_ALPHA_V1.md)：Min 研究阅读可选，历史行业 `sector_code/group_code` 可用；原始分钟 C 大表不直接暴露、公式由后台计算器执行；论文全量授权目录可查、三模式等概率随机、Agent 自主选文献且一篇一篇精读，记录历史；Daily 仅暴露正式发布 Base/Curated，Knowledge 遵守 Full/Masked。
