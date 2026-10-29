@@ -31,7 +31,7 @@
 Agent 自主阅读被允许的材料、请求 `read_material(id)`、`read_source_section(id, section)`、`analyze_daily(feature_ids, question)`、`request_daily_feature(...)`，并提交包含**金融假设、公式/代码、依赖字段、时点、实际参考来源**的候选。禁止凭空补造论文证据、字段、运行结果或来源引用。按需数据分析由程序返回可检查统计，不把全量 CSV 文本贴到 Prompt。
 
 ### 4. 候选产生后：全库审查 → 技术/统计硬关卡 → 金融评价与归档
-一旦有具体候选，关闭本次生成期遮蔽，全库审查表达式等价、依赖和历史相似案例；注册因子和实验 ID。**第一关：独立程序的技术/统计检查**（真实字段、可运行性、未来信息时点硬关卡、完整性、异常值、覆盖率、信号重复/相关性等），不通过或 UNKNOWN 时记录类型与理由并阻断金融回测。**第二关：只有第一关通过才由独立 Evaluator 计算 Ret/SR/DD/TO/Cost 等金融指标**，全部写入 Knowledge Experiment；`Ret > 3%` 且 `SR > 1` 即正式成功，其余是金融效果失败。无需单独 Alpha 库，Score 只在需要排序时按已保存指标计算。遗传子代亦走同一流程；历史失败不自动禁止新候选，必须参考数据/版本。参阅 [阶段门槛](GATES_AND_DECISIONS.md) 与 [字段契约](KNOWLEDGE_AND_CSV_CONTRACT.md)。
+一旦有具体候选，关闭本次生成期遮蔽，全库审查表达式等价、依赖和历史相似案例；注册因子和实验 ID。**第一关：独立程序的技术/统计检查**（M5A 技术/未来信息硬关：真实字段、代码和时点；M5B 独立 Statistical Evaluator：完整性、数值质量、重复及与 Knowledge 已成功 Alpha 的 `max_abs_corr<0.65`；无胜者时只跳过该比较），不通过或 UNKNOWN 时记录类型与理由并阻断金融回测。**第二关：只有第一关通过才由独立 Evaluator 计算 Ret/SR/DD/TO/Cost 等金融指标**，全部写入 Knowledge Experiment；`Ret > 3%` 且 `SR > 1` 即正式成功，其余是金融效果失败。无需单独 Alpha 库，Score 只在需要排序时按已保存指标计算。遗传子代亦走同一流程；历史失败不自动禁止新候选，必须参考数据/版本。参阅 [阶段门槛](GATES_AND_DECISIONS.md) 与 [字段契约](KNOWLEDGE_AND_CSV_CONTRACT.md)。
 
 ### 5. 双回流与记录
 - **知识库**：追加每一个实际候选及对应实验（含代码失败、不可计算、回测差、有效等），连同 `run_id/seed/mode/exposed_card_ids/hidden_group_ids/query_log/model_version/data_snapshot/score_version/parent_refs`；作者文献结论与内部实验身份分开，不因回测失败修改原文事实。

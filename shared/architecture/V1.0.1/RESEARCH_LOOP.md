@@ -15,7 +15,8 @@ flowchart TD
   READER["统一程序读取<br/>目录、查询、按需 Python/原文"]
   RA["Research Agent<br/>N 可配置"]
   CAND["候选注册<br/>factor_id / experiment_id"]
-  ST{"第一关：程序技术/统计检查<br/>未来信息/质量/重复/相关"}
+  ST{"第一关 A：技术/未来信息检查<br/>数据字段/可执行性"}
+  STAT{"第一关 B：Statistical Evaluator<br/>质量/重复/胜者相关性 ＜ 0.65"}
   EVAL["第二关：独立金融 Evaluator<br/>Ret/SR/DD/TO/Cost"]
   GATE{"Ret ＞ 3% 且 SR ＞ 1 ?"}
   FAIL1["第一关失败 / 阻断<br/>金融字段 NULL"]
@@ -36,7 +37,10 @@ flowchart TD
   CAND --> KNOW
   CAND --> ST
   ST -->|"FAIL / BLOCKED"| FAIL1
-  ST -->|"PASS"| EVAL
+  ST -->|"PASS"| STAT
+  STAT -->|"PASS"| EVAL
+  STAT -->|"FAIL / BLOCKED"| FAIL1
+  KNOW -.->|"只读取成功 Alpha；无胜者跳过相关比较"| STAT
   EVAL -->|"有效评测"| GATE
   EVAL -->|"执行失败"| FAIL1
   GATE -->|"否"| FAIL2
@@ -54,7 +58,7 @@ flowchart TD
 - **Min**：不可随实验效果重写的真实分钟原始数据/字段/可用时点。
 - **论文/研报**：人为收集的原始来源，作者陈述必须带 `external_reported` 标签。
 - **Daily**：有合法定义、依赖、时点、数据版本和物化 CSV 的日频中间特征。Daily 相关性门槛是**其自身准入**，不是 Alpha 盈利评价。
-- **Knowledge**：因子定义 + 每次真实测试与全链失败/成功记录；其中 `qualified=true` 的实验可以直接查询为正式成功 Alpha。它不需要额外的物理或逻辑 Alpha 库。外部作者实验与内部 `internal_executed` 结果分离。
+- **Knowledge**：因子定义 + 每次真实测试与全链失败/成功记录；其中 `qualified=true` 的实验可以直接查询为正式成功 Alpha。Alpha 与当前 Knowledge 中已成功胜者逐一比较最大绝对相关性，严格 `<0.65`；首个无胜者时只跳过这一比较。它不需要额外的物理或逻辑 Alpha 库。外部作者实验与内部 `internal_executed` 结果分离。
 
 ## 避免生成阶段锚定
 
