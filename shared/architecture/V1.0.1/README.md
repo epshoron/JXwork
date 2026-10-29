@@ -13,12 +13,13 @@
 3. [GATES_AND_DECISIONS.md](GATES_AND_DECISIONS.md)：Alpha 两关、Daily 独立入库硬门槛、成功/失败定义与未冻结统计口径。
 4. [KNOWLEDGE_AND_CSV_CONTRACT.md](KNOWLEDGE_AND_CSV_CONTRACT.md)：Factor、Experiment、Daily、成功标签、CSV 与复现字段。
 5. [RESEARCH_INPUT_PROTOCOL_V1.md](RESEARCH_INPUT_PROTOCOL_V1.md)：full/masked、自主查阅、去重和实验记录。
-6. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
+6. [待定实现细节](OPEN_DECISIONS.md)：相关性口径、数据样本、并发与测试验收。
+7. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
 
 ## 拍板的关键规则
 
 - **全部候选留痕**：一生成就创建 `factor_id/experiment_id`，每一关 PASS/FAIL/BLOCKED、原因、运行版本可追溯；金融字段在没有运行 Evaluator 时必须是 `NULL`。
-- **Alpha 第一关**：程序核验计算/字段、未来信息合法、完整性/有效性、严格重复和相关性等信号统计属性。失败就不做金融回测。**Alpha 的统计相关性阈值与定义尚未确定，不得擅自用 Daily 的 0.6 代替。**
+- **Alpha 第一关**：程序核验计算/字段、未来信息合法、完整性/有效性、严格重复和相关性等信号统计属性。失败就不做金融回测。**已确认：Alpha 只与 Knowledge 中内部真实实验通过金融硬门槛、已正式成功的胜者因子比较**。计算与各胜者的相关性并取最大绝对值，硬门槛严格 `<0.65`（等于也失败）；首次无胜者时仅跳过这个相关性子检查，其他技术/统计/金融门槛照常。具体相关系数算法和对齐样本尚未冻结。
 - **Alpha 第二关**：独立 Evaluator 对第一关 PASS 的候选计算 Ret/SR/DD/TO/Cost；有效评测后严格 `Ret > 3%` **且** `SR > 1` 就标 `qualified=true`，这就是正式成功和归档，不需要额外选拔、Alpha 独立库或 Score。
 - **Daily 特征门槛**：独立 Daily 沉淀 Agent 检查实际字段/时间/可复现/不重复，并对已有 Daily 特征执行**相关性严格小于 0.6** 的硬条件；统计方法、样本范围及空库行为尚待工程定义。否则不能声称自动通过。
 - **Score 只按需**：既定 `Score = Ret + 0.05·SR − 0.1·DD − Cost_ann` 不在两关中运行，只有需要排序才按保存的字段和统一参数版本由 Python 计算。
@@ -26,6 +27,6 @@
 
 ## 未冻结，但不得编造
 
-评测 Ret 的收益口径应在接入公司数据时与 [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md) 对齐（原定义为年化**毛**收益）；Alpha 第一关相关阈值、Daily 相关系数方法/样本、股票池、缺失/停牌、具体 CSV 布局、真实调用 API、物理数据库技术以及调度策略待测试后冻结。门槛数值（3%、1、0.6）本身已确认，**未确认的统计实现不能算“通过”**。
+评测 Ret 的收益口径应在接入公司数据时与 [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md) 对齐（原定义为年化**毛**收益）；Alpha 相关系数计算方式/样本、Daily 相关系数方法/样本、股票池、缺失/停牌、具体 CSV 布局、真实调用 API、物理数据库技术以及调度策略待测试后冻结。门槛数值（Ret 3%、SR 1、Alpha 相关 0.65、Daily 相关 0.6）本身已确认，**未确认的统计实现不能算“通过”**。
 
 **Meta Loop** 保留对 Prompt、Skills、工具、检索/工作流配置做受控优化的未来方向，当前尚未启动；研究内 Debug 不必等 Meta。
