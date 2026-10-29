@@ -29,7 +29,7 @@ flowchart TD
 
 ## 六篇论文的交互式机制 Atlas
 
-[**打开 T001–T006 HTML 机制地图（visualization）**](../visualization/ai-trains-ai-atlas/index.html) · [**下载完整离线 HTML 包**](../visualization/AI_Trains_AI_T001-T006_Atlas.zip) · [本地打开说明](../visualization/ai-trains-ai-atlas/README.md)。保留 P 系列 Atlas 的深色页头、三栏和清晰 SVG 结构，但按 B 方向自身的研究对象组织：Prompt 文字、Agent 代码、模型权重、科研评测。总图特别解释 T002 GEPA 与 T006 Agent4Sci 的“反馈过程类似、但不是工程实现关系”，并有各篇原文入口。
+[**打开 T001–T006 HTML 机制地图（visualization）**](../../presentation/visualization/ai-trains-ai-atlas/index.html) · [**下载完整离线 HTML 包**](../../presentation/visualization/AI_Trains_AI_T001-T006_Atlas.zip) · [本地打开说明](../../presentation/visualization/ai-trains-ai-atlas/README.md)。保留 P 系列 Atlas 的深色页头、三栏和清晰 SVG 结构，但按 B 方向自身的研究对象组织：Prompt 文字、Agent 代码、模型权重、科研评测。总图特别解释 T002 GEPA 与 T006 Agent4Sci 的“反馈过程类似、但不是工程实现关系”，并有各篇原文入口。
 
 ## 文件导航（仅本方向）
 
@@ -49,6 +49,6 @@ flowchart TD
 - 方向 A **AI Agent 因子挖掘**保留仓库根目录现有 [papers/](../papers/INDEX.md)、[knowledge/](../knowledge/DELTA_INDEX.md)、[synthesis/](../synthesis/README.md)，**不移动旧文件、不重编号**。
 - B 论文从 **T001** 开始，机制卡从 **TD001** 开始；与 A 的 P001–P010、D001–D020 分开管理。
 - 同一原文涉及两个方向时，先查**两边索引**，优先交叉引用、解释不同研究问题，避免重复整篇复制。跨方向不因措辞不同重复声称创新。
-- **共享规范**：[AGENTS.md](../AGENTS.md)、[RESEARCH_WRITING_STANDARD.md](../RESEARCH_WRITING_STANDARD.md)、[RESEARCH_PLAN.md](../RESEARCH_PLAN.md)。新论文骨架经原文核实可归档；创新/特化不足/原创研究想法/Delta **仍须研究者逐项批准与严格语义去重**，非论文来源须先批准来源本身。每次归档**同一回合同步本方向两份索引**。
+- **共享规范**：[AGENTS.md](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)、[RESEARCH_WRITING_STANDARD.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)、[RESEARCH_PLAN.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_PLAN.md)。新论文骨架经原文核实可归档；创新/特化不足/原创研究想法/Delta **仍须研究者逐项批准与严格语义去重**，非论文来源须先批准来源本身。每次归档**同一回合同步本方向两份索引**。
 
 **安全边界**：JXwork 目前为 Private；若日后修改可见性，必须重新审查 PDF 与其他素材的再分发权限。不得存放公司材料、账户/密钥或未经授权的内容。

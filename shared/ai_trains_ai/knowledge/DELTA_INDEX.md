@@ -21,6 +21,6 @@
 - 先核实**改变的对象**：训练数据、奖励/反馈、优化策略、模型参数或其他真实被更新的工件，区分提示修订与真实训练；同时区分作者主张、原文证据与我们的推断。
 - 与本方向现有 TD 卡及 [方向 A 的 D001–D020](../../knowledge/DELTA_INDEX.md) 做**严格语义去重**，重复者作交叉引用，不新增同义卡。
 - 每次新增、修改、撤回 TD 卡时，**同一回合同步本 Index、对应论文已审批引用和受影响的 [论文 Index](../papers/INDEX.md)**；共享文件写前读最新 SHA，冲突后合并。
-- 研究阶段和审批标准均继承 [统一规范](../../RESEARCH_WRITING_STANDARD.md)。
+- 研究阶段和审批标准均继承 [统一规范](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)。
 
 [本方向入口](../README.md) · [方向 A 的机制库](../../knowledge/DELTA_INDEX.md)

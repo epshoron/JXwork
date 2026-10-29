@@ -2,7 +2,7 @@
 
 `INDEX.md` 是**方向 A 研究 Agent 共享的唯一论文认领、去重和最小状态入口**，与具体聊天窗口编号无关。
 
-**方向 B 的论文另行登记**在 [ai_trains_ai/papers/INDEX.md](../ai_trains_ai/papers/INDEX.md)，编号 T001 起；新认领需跨方向核对原文，不能把 T 编号放进本目录或移动 P001–P010。两方向共用 [AGENTS.md](../AGENTS.md)。
+**方向 B 的论文另行登记**在 [ai_trains_ai/papers/INDEX.md](../ai_trains_ai/papers/INDEX.md)，编号 T001 起；新认领需跨方向核对原文，不能把 T 编号放进本目录或移动 P001–P010。两方向共用 [AGENTS.md](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)。
 
 - 研读前按 DOI/arXiv ID/原始题名查重，立即登记统一论文编号（`P001、P002…`）、权威原文链接和最小状态，避免多个 Agent 重复研究。
 - **当前为研究阶段一：完整阅读并理解论文自身的方法、流程、实验与证据**。阶段二才整合创新点与缺点；阶段三才在积累充分后有机结合提出我们的研究想法。参见 `../RESEARCH_PLAN.md`。

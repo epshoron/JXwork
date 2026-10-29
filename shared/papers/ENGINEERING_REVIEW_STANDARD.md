@@ -42,7 +42,7 @@
 ## 4. 文件位置、审阅与同步
 
 - 一律放在已有论文目录 `papers/P00X/`：`P00X_工程复现问题清单_v1.csv`（**GitHub上直接看**）和同名 `.xlsx`（Excel展示）。**两份保持相同主表内容**，不反复要求研究者下载审阅。
-- 工程表是**客观机制速览**，不是独立创新、缺点或Delta归档；任何新的贡献/风险判断仍须研究者先逐项审批和严格语义去重。参考 [研究写作规范](../RESEARCH_WRITING_STANDARD.md) 与 [AGENTS](../AGENTS.md)。
+- 工程表是**客观机制速览**，不是独立创新、缺点或Delta归档；任何新的贡献/风险判断仍须研究者先逐项审批和严格语义去重。参考 [研究写作规范](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md) 与 [AGENTS](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)。
 - 只追加真正有价值的新增问题；已有内容优先**原位精简与修订**，不为每轮审阅另建重复文件。若论文研究状态发生实质更新，同回合同步所属论文 INDEX；仅调整展示用表、不改研读状态时不刷 INDEX。
 - **公开仓库安全**：严禁写入任何内部网关URL、公司代码、策略、真实数据、API Key或隐私材料。来源级别与运行边界必须如实记录。
 - 此规范服务于方向 A，**不自动改变方向 B 的研究路线、审批权限或档案格式**。

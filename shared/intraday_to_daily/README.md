@@ -2,7 +2,7 @@
 
 > **状态：2026-10-27，第三方向已获研究者同意建立；目前处于阶段一：搜集、研读论文与券商金工研报。** 老师的具体预测目标、持有周期与可用数据尚待确认。本页是方向说明，不是已经确定的策略方案。现有方向 A / B 保持原位、不改编号。
 
-**轻量 HTML 索引（20 份资料）**：[点击查看 C 方向单页可视化](../visualization/intraday-to-daily-index/index.html)。仅列论文/研报名称与一行分钟→低频构造思路；下载 HTML 后可直接用浏览器打开，点击条目跳转各自 GitHub 研究档案。A/B 的复杂 Atlas 不适用于本方向。
+**轻量 HTML 索引（20 份资料）**：[点击查看 C 方向单页可视化](../../presentation/visualization/intraday-to-daily-index/index.html)。仅列论文/研报名称与一行分钟→低频构造思路；下载 HTML 后可直接用浏览器打开，点击条目跳转各自 GitHub 研究档案。A/B 的复杂 Atlas 不适用于本方向。
 
 ## 1. 研究目标：我们要做什么？
 
@@ -120,7 +120,7 @@ V1.0.1 的 P002 研究路线设想由不同金融专题 Agent 读取分钟级数
 - 论文经来源核查后，可以归档客观流程与来源，并同步本方向论文索引。**券商研报先把候选、价值和公开可见证据拿来讨论，研究者可按批确认收录**；正式研究结论以可核对的报告内容为准。
 - 特色创新、独立不足及机制知识卡要先拿证据来讨论，**得到研究者认可后再正式记入**；对照 A/B/C 防止同一构造被重复包装为不同创新。普通统计量、IC 检验、OOS 或成本约束不自动算创新。
 - 每次实际新增、纠正或撤回研究档案，**同时更新对应论文或研报的 INDEX**。仅在对话里讨论，尚未产生可确定的归档成果，就不用频繁改云端文件。
-- 遵守既有 [研究协作规范](../AGENTS.md)、[研究计划](../RESEARCH_PLAN.md)、[写作及审批规范](../RESEARCH_WRITING_STANDARD.md)，尽量图先行、言之有据、内容短而清楚。
+- 遵守既有 [研究协作规范](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)、[研究计划](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_PLAN.md)、[写作及审批规范](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)，尽量图先行、言之有据、内容短而清楚。
 - 当前 JXwork 为私有仓库，也不应擅自上传公司行情/内部资料/密钥、付费研报全文或缺少再分发许可的材料。
 
 ## 7. 接下来需要逐步确定，而不是现在拍板

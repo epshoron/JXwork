@@ -7,14 +7,14 @@
 ## 目录与编号：按方向独立，规则共用
 
 - **方向 A：AI Agent 因子挖掘**：旧 `papers/P00X/`、`papers/INDEX.md`、`knowledge/deltas/D00X_*.md` 与 `knowledge/DELTA_INDEX.md` 原位不变（当前 P001–P010、D001–D020）。
-- **方向 B：AI 如何训练 AI**：[ai_trains_ai/README.md](ai_trains_ai/README.md)，论文 `ai_trains_ai/papers/T00X/` + `ai_trains_ai/papers/INDEX.md`（T001 起），机制 `ai_trains_ai/knowledge/deltas/TD00X_*.md` + `ai_trains_ai/knowledge/DELTA_INDEX.md`（TD001 起）。目前 [T001 Promptbreeder](ai_trains_ai/papers/T001/ARCHITECTURE.md) 的两项特色与对应不足已获批、TD001/TD002 已入库；[T003 Agent Lightning](ai_trains_ai/papers/T003/ARCHITECTURE.md) 2+2 已批准并入库 TD008/TD009；具体单篇状态以本方向 [论文 Index](ai_trains_ai/papers/INDEX.md) 为准。
-- **方向 C：分钟数据 → 日频因子/特征**：[intraday_to_daily/README.md](intraday_to_daily/README.md)，学术论文 `intraday_to_daily/papers/C00X/` 与 `papers/INDEX.md`；券商研报 `intraday_to_daily/reports/CR00X/` 与 `reports/INDEX.md`（以上相对 C 目录）；机制增量需要且审批后用 CD 编号。**优先解释数据、分钟→日度算子、信息可见时点和回测口径；不以模型复杂度代替证据。**
+- **方向 B：AI 如何训练 AI**：[ai_trains_ai/README.md](../shared/ai_trains_ai/README.md)，论文 `ai_trains_ai/papers/T00X/` + `ai_trains_ai/papers/INDEX.md`（T001 起），机制 `ai_trains_ai/knowledge/deltas/TD00X_*.md` + `ai_trains_ai/knowledge/DELTA_INDEX.md`（TD001 起）。目前 [T001 Promptbreeder](../shared/ai_trains_ai/papers/T001/ARCHITECTURE.md) 的两项特色与对应不足已获批、TD001/TD002 已入库；[T003 Agent Lightning](../shared/ai_trains_ai/papers/T003/ARCHITECTURE.md) 2+2 已批准并入库 TD008/TD009；具体单篇状态以本方向 [论文 Index](../shared/ai_trains_ai/papers/INDEX.md) 为准。
+- **方向 C：分钟数据 → 日频因子/特征**：[intraday_to_daily/README.md](../shared/intraday_to_daily/README.md)，学术论文 `intraday_to_daily/papers/C00X/` 与 `papers/INDEX.md`；券商研报 `intraday_to_daily/reports/CR00X/` 与 `reports/INDEX.md`（以上相对 C 目录）；机制增量需要且审批后用 CD 编号。**优先解释数据、分钟→日度算子、信息可见时点和回测口径；不以模型复杂度代替证据。**
 - **本文下文旧 P/D 路径均是方向 A 的具体示例**；写 B/C 时必须换成本方向的路径。**审批、证据要求、语义去重、同回合 Index 同步完全一致**，而且新论文/机制需跨 A/B/C 检查是否重复。
 - B 的核心证据还应清楚说明**谁提供评价/训练信号、谁被优化、究竟更新了哪一个对象（Prompt/Skills/记忆/工具策略、训练数据/奖励器、还是模型参数）、怎样验证改进**。Prompt 自动搜索/版本更新是合法的**Agent 系统优化研究对象**，但不能把它误写成模型参数训练；SFT/RL 是训练方法、LoRA 是参数高效微调技术，层级不同。方向 B 同时研究两条路线与可能的组合，**不能先设哪一条更优**；只在独立证据支持时给出创新判断或收益主张。
 
-**C 方向认领和同步**：与 A/B 的多 Agent 协作一致，**每位 Agent 同时只负责一篇 C00X 或 CR00X**；不同 Agent 并行，不串行排队。认领当轮即建立最小单篇 `README.md` / `PAPER.md` 并登记**所属** INDEX，后续实际研读与核验状态由该 Agent 自己同步；共用 INDEX 必须读取最新 SHA、检查重复来源和占号，冲突后合并重试。非学术券商研报可先由研究者按批批准来源准入，再由各 Agent 独立认领；不因此豁免贡献/不足的逐项审核。见 [方向 C README](intraday_to_daily/README.md)。
+**C 方向认领和同步**：与 A/B 的多 Agent 协作一致，**每位 Agent 同时只负责一篇 C00X 或 CR00X**；不同 Agent 并行，不串行排队。认领当轮即建立最小单篇 `README.md` / `PAPER.md` 并登记**所属** INDEX，后续实际研读与核验状态由该 Agent 自己同步；共用 INDEX 必须读取最新 SHA、检查重复来源和占号，冲突后合并重试。非学术券商研报可先由研究者按批批准来源准入，再由各 Agent 独立认领；不因此豁免贡献/不足的逐项审核。见 [方向 C README](../shared/intraday_to_daily/README.md)。
 
-**C 方向 FIN/ARCH 分类与编号**：FIN 是金融现象/统计构造，ARCH 是模型架构/预测实验。主要以 ARCH 为内容的论文，正式编号和目录使用 `C00XA`（如 `C011A`；原ARCH来源 `C009N` 因数据不足优先标 N），其他为 `C00X`；同一数字唯一。INDEX 编号列只含编号链接，并按数字从小到大排列，分类释义不写在第一列。**判定依据是原文主要检验的是模型架构还是明确金融假设，以及主产物是隐含模型表示/预测分数还是具有独立计算定义与金融含义的 Daily 统计量；仅使用 CNN/LSTM/GARCH 作工具，不自动加 A；混合主类不明暂不改号，标注待核。** 预测分数不等于有金融解释的 Alpha；反推机制须独立检验。更名时同步路径与文内引用，不改变其他研究档案状态。详见 [方向 C README](intraday_to_daily/README.md)。
+**C 方向 FIN/ARCH 分类与编号**：FIN 是金融现象/统计构造，ARCH 是模型架构/预测实验。主要以 ARCH 为内容的论文，正式编号和目录使用 `C00XA`（如 `C011A`；原ARCH来源 `C009N` 因数据不足优先标 N），其他为 `C00X`；同一数字唯一。INDEX 编号列只含编号链接，并按数字从小到大排列，分类释义不写在第一列。**判定依据是原文主要检验的是模型架构还是明确金融假设，以及主产物是隐含模型表示/预测分数还是具有独立计算定义与金融含义的 Daily 统计量；仅使用 CNN/LSTM/GARCH 作工具，不自动加 A；混合主类不明暂不改号，标注待核。** 预测分数不等于有金融解释的 Alpha；反推机制须独立检验。更名时同步路径与文内引用，不改变其他研究档案状态。详见 [方向 C README](../shared/intraday_to_daily/README.md)。
 
 **方向 C 数据可得性 N 标记**：以当前预计的每股票1分钟 O/C/V/VWAP 为暂定输入，原文主方法依赖缺失且无法由其唯一恢复的逐笔成交、主动方向、大单订单、委托盘口或分钟 H/L 时，以 `N` 标记其**无法原样复现**（`C00XN` / `CR00XN`）；非质量评价也不是永远不能做。只缺非核心数据不自动加 N；ARCH+N 时编号用 N，方法性质在文中保留；确认真实数据前标待核。同一数字位次只对应一个来源，保持 INDEX 按数字排序、首列仅编号。不要把一分钟价格涨跌号当成原文主动资金 SIGN；数据权限改变时由负责 Agent 重审并同步所有引用。
 
@@ -87,8 +87,8 @@
 
 ## 方向 A 工程问题速查的专用展示口径（2026-10-26）
 
-研究者希望以极简表格理解单篇论文的**真实工程工作机制**，与正式架构/创新归档并列；执行时必须阅读 [工程速查规范](papers/ENGINEERING_REVIEW_STANDARD.md)。每篇通常 8–15 个核心问题，三列（主题／问题／简明答案），覆盖用户实际提出的所有追问；不要把密钥、端口、调试和部署细节机械拆成几十行。大量金融 Agent/术语的明细不得在主表单元格内逐项堆砌；主表一行概述实际实现，**一条可点开的详情链接**通往权威原文或同篇短 Markdown 说明，不另做第二张研究表。相同问题适用其他论文则复用并回答，不适用不硬套；已有 `technical_reading` 零字段矩阵不随意改动。作者论文叙述、真实公开 Prompt/代码、实际复现须分清；研究者未批准的新贡献、独特不足或 Delta 不得混入速查表。其余审批、安全、同回合同步条款不变。
+研究者希望以极简表格理解单篇论文的**真实工程工作机制**，与正式架构/创新归档并列；执行时必须阅读 [工程速查规范](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。每篇通常 8–15 个核心问题，三列（主题／问题／简明答案），覆盖用户实际提出的所有追问；不要把密钥、端口、调试和部署细节机械拆成几十行。大量金融 Agent/术语的明细不得在主表单元格内逐项堆砌；主表一行概述实际实现，**一条可点开的详情链接**通往权威原文或同篇短 Markdown 说明，不另做第二张研究表。相同问题适用其他论文则复用并回答，不适用不硬套；已有 `technical_reading` 零字段矩阵不随意改动。作者论文叙述、真实公开 Prompt/代码、实际复现须分清；研究者未批准的新贡献、独特不足或 Delta 不得混入速查表。其余审批、安全、同回合同步条款不变。
 
-**新增强制规定｜工程问题双向复用（2026-10-26）**：一篇工程表 = **所有历史适用问题 + 本篇特异新增问题**（语义去重），不得只记用户本轮针对这一篇提出的问题；每出现新问题，同轮必须反向复查以前及所有已有的论文表，并把有意义的对照问题补到各篇。优先完整覆盖，再考虑简洁和行数。答案必须描述该篇真实机制，不能机械复制；适用但证据不足须标示，不适用才跳过。同步更新所有受影响论文的CSV/XLSX；不可藉此绕过正式成果审批或修改零字段统一矩阵。操作步骤见 [工程研究规范](papers/ENGINEERING_REVIEW_STANDARD.md)。
+**新增强制规定｜工程问题双向复用（2026-10-26）**：一篇工程表 = **所有历史适用问题 + 本篇特异新增问题**（语义去重），不得只记用户本轮针对这一篇提出的问题；每出现新问题，同轮必须反向复查以前及所有已有的论文表，并把有意义的对照问题补到各篇。优先完整覆盖，再考虑简洁和行数。答案必须描述该篇真实机制，不能机械复制；适用但证据不足须标示，不适用才跳过。同步更新所有受影响论文的CSV/XLSX；不可藉此绕过正式成果审批或修改零字段统一矩阵。操作步骤见 [工程研究规范](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。
 
 **工程机制图解的深度标准（2026-10-26）**：不要只用陌生术语代替解释，也不要为了简短删掉算法机制。主表保留一张三列速查表；复杂问题另附一份可点击的同篇专题 Markdown，按“要解决的问题—每一步输入/运算/输出—具体手算例子—Mermaid 示意图—原文与代码核验边界”讲清楚，少量必要公式放在易懂的解释之后。区分教学虚构数字与论文报告，不能将解释性资料冒充新增研究表或未经批准的创新、缺点、Delta。

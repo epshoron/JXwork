@@ -16,7 +16,7 @@
 
 - 本地图：`visualization/ai-trains-ai-atlas/index.html`
 - 六篇图解：`visualization/ai-trains-ai-atlas/papers/T001.html`–`T006.html`
-- 论文记录：[B 论文索引](../../ai_trains_ai/papers/INDEX.md)
+- 论文记录：[B 论文索引](../../../shared/ai_trains_ai/papers/INDEX.md)
 - 原文：`ai_trains_ai/papers/T00X/` 内已私有归档的 PDF，各个详情页都可点开。
 - 参考外观：[P001–P010 Alpha Factor Atlas](../alpha-factor-atlas/index.html) 与 [UI 基准规范](../alpha-factor-atlas/UI_DESIGN_STANDARD.md)；没有改动 P 原版的 SVG 主骨架。
 - 所有数值是作者报告；不是统一基准排名或独立复现。T006 当前研究档案中的原始 PDF 方法尚未完成逐页复核，贡献/不足尚未审批。

@@ -4,4 +4,4 @@
 
 沿用三个研究阶段：先理解每篇论文及训练机制 → 再核对跨论文创新/不足与重复性 → 最后经研究者批准形成可检验的研究假设。只有研究者确认的成熟成果才写在这里；不建立讨论流水账。
 
-[本方向入口](../README.md) · [统一研究计划](../../RESEARCH_PLAN.md)
+[本方向入口](../README.md) · [统一研究计划](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_PLAN.md)

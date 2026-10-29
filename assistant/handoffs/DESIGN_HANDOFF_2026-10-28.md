@@ -8,7 +8,7 @@
 
 **目标不是继续增加论文，也不是重画双 Loop，而是明确 Research Loop 的知识/经验检索怎样工作。**
 
-- 既有系统主图在 [本目录 README](README.md)；单因子 Score 的已定详细数学口径在 [evaluation/PORTFOLIO_SCORING_STANDARD.md](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)。
+- 既有系统主图在 [本目录 README](../../shared/architecture/V1.0.1/README.md)；单因子 Score 的已定详细数学口径在 [evaluation/PORTFOLIO_SCORING_STANDARD.md](../../shared/evaluation/PORTFOLIO_SCORING_STANDARD.md)。
 - **结构已理解**：底层 **C 金融先验知识**，中层 **A Research Loop** 挖掘/评价/进化因子，上层 **B Meta Loop** 优化研究 Agent；Meta 当前仅有设计、尚未启动。
 - **已认可**：原始 A/B/C 文件和 PDF 不重排；C 结构化知识库 + Research 长期实验经验库；一个统一查询入口；两类库可共享检索字段，但要保留不同的数据语义及来源身份。
 - **首要未决**：传统 RAG/语义检索是否是合适的主方案？还是利用接入的 LLM API，做一个**Prompt 驱动的专用智能查询 Agent/Tool**？两者可能混合；尚未选定。
@@ -96,7 +96,7 @@ A/B 的原始论文是**系统设计来源参考**，C 是 Research Loop 运行�
 
 ## 5. 已确定的 Evaluator V1（不要在新对话中重新选参数）
 
-评测详情的**唯一权威入口**：[单因子多空组合评分标准 V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)。
+评测详情的**唯一权威入口**：[单因子多空组合评分标准 V1](../../shared/evaluation/PORTFOLIO_SCORING_STANDARD.md)。
 
 \[
 Score_{V1}=1.0R_{\mathrm{ann,gross}}+0.05SR_{\mathrm{gross}}
@@ -127,10 +127,10 @@ Score_{V1}=1.0R_{\mathrm{ann,gross}}+0.05SR_{\mathrm{gross}}
 
 ## 8. 必读路径
 
-- [V1.0.1 双 Loop 原架构](README.md)
-- [已确定单因子 Score V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)
-- [C 方向研究说明](../../intraday_to_daily/README.md)、[C 论文索引](../../intraday_to_daily/papers/INDEX.md)、[CR 研报索引](../../intraday_to_daily/reports/INDEX.md)
-- [A 论文索引](../../papers/INDEX.md)、[B 论文索引](../../ai_trains_ai/papers/INDEX.md)
-- [仓库研究协作规范](../../AGENTS.md)、[研究写作及审批规范](../../RESEARCH_WRITING_STANDARD.md)
+- [V1.0.1 双 Loop 原架构](../../shared/architecture/V1.0.1/README.md)
+- [已确定单因子 Score V1](../../shared/evaluation/PORTFOLIO_SCORING_STANDARD.md)
+- [C 方向研究说明](../../shared/intraday_to_daily/README.md)、[C 论文索引](../../shared/intraday_to_daily/papers/INDEX.md)、[CR 研报索引](../../shared/intraday_to_daily/reports/INDEX.md)
+- [A 论文索引](../../shared/papers/INDEX.md)、[B 论文索引](../../shared/ai_trains_ai/papers/INDEX.md)
+- [仓库研究协作规范](../AGENTS.md)、[研究写作及审批规范](../RESEARCH_WRITING_STANDARD.md)
 
 > **请接续讨论，不要将“候选检索方案”冒充正式设计；不要擅自修改原始论文档案或开启 Meta Loop。**

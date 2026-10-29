@@ -23,9 +23,9 @@
 ## 结构
 
 - [DELTA_INDEX.md](DELTA_INDEX.md)：所有已登记机制的总索引、首次观察来源、学术新颖性边界。
-- [deltas/](deltas/)：每一个独立机制的证据卡（D001、D002…），记录定义、来源、变体、客观缺口及后续修订。
-- [../papers/](../papers/)：论文档案（原文来源、系统图、作者贡献、评价以及我们的候选研究想法）。
-- [../synthesis/](../synthesis/)：跨论文比较成熟后、研究者认可的综合研究结论；知识卡不是完整研究地图。
+- [deltas/](deltas)：每一个独立机制的证据卡（D001、D002…），记录定义、来源、变体、客观缺口及后续修订。
+- [../papers/](../../papers)：论文档案（原文来源、系统图、作者贡献、评价以及我们的候选研究想法）。
+- [../synthesis/](../../synthesis)：跨论文比较成熟后、研究者认可的综合研究结论；知识卡不是完整研究地图。
 
 ## 新论文的 Delta 判定算法（人工 + 研究 Agent）
 
@@ -51,6 +51,6 @@ P001 是初始研究基线，**D002 是经讨论确认的重点机制**；P002 �
 - [D007｜LLM Python 因子代码级种群进化](deltas/D007_code_evolution.md)：**已获认可**；不把遗传算子误认作学术首创；其对应“自由代码较难检验”的弱缺点已由研究者否决，**不强行配缺点**。
 - 其他论文机制的评价性增量仍需研究者逐项审批；这不是全面转入阶段二/三。
 
-**写作与审批规范**：[RESEARCH_WRITING_STANDARD.md](../RESEARCH_WRITING_STANDARD.md)。
+**写作与审批规范**：[RESEARCH_WRITING_STANDARD.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)。
 
-**P004 去重结果**：D010 是树搜索的节点调度与奖励回传，不与普通反馈 D001 重复；D011 是高频子树的生成约束，不与 P003 的候选 AST 相似度惩罚 D008 重复。作者所说的 LLM 知识与生成边界只记录在 P004 文档，不另建 Delta。入库前强制执行 [严格语义去重规范](../RESEARCH_WRITING_STANDARD.md)。
+**P004 去重结果**：D010 是树搜索的节点调度与奖励回传，不与普通反馈 D001 重复；D011 是高频子树的生成约束，不与 P003 的候选 AST 相似度惩罚 D008 重复。作者所说的 LLM 知识与生成边界只记录在 P004 文档，不另建 Delta。入库前强制执行 [严格语义去重规范](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)。

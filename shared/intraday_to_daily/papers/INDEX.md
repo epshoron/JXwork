@@ -32,4 +32,4 @@
 - 一旦真正增加、修改或撤销论文档案，同轮更新此表；无内容变动不刷记录。
 - 对于券商报告，转到 [研报 Index](../reports/INDEX.md)，使用 CR 编号。
 
-[方向 C 入口](../README.md) · [JXwork 总入口](../../README.md)
+[方向 C 入口](../README.md) · [JXwork 总入口](../../../README.md)

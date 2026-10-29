@@ -20,4 +20,4 @@
 - **特色机制、特化不足、研究者原创想法以及机制 Delta**：逐项取得明确批准，且与**两方向已收录内容**严格语义去重后才记录；不抢跑跨论文综合。
 - 新增、变更、撤回档案时同步本索引；有关机制卡同时同步 [本方向 Delta Index](../knowledge/DELTA_INDEX.md) 和对应论文引用。修改共享文件前读取最新版 SHA，冲突时重新读取并合并。
 
-[本方向入口](../README.md) · [统一协作规范](../../AGENTS.md)
+[本方向入口](../README.md) · [统一协作规范](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)

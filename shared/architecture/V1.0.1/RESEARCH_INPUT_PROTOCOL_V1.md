@@ -49,9 +49,9 @@ Agent 自主阅读被允许的材料、请求 `read_material(id)`、`read_source
 
 ## 4. 与其他讨论文件的关系
 
-- [Research Loop 主骨架](README.md)：四库、职责与全局数据流。
+- [Research Loop 主骨架](RESEARCH_LOOP.md)：四库、职责与全局数据流。
 - Daily 准入 Prompt v0 是尚未审批的候选，保留在非共享的 assistant/handoffs/，不自动纳入当前架构。
-- [现行 V1.0.1 总架构](README.md)：旧版已退出当前工作树。
+- [现行 V1.0.1 总架构](RESEARCH_LOOP.md)：旧版已退出当前工作树。
 - [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：评测参数保持不变。
 
 **文档状态**：本协议作为“先凑一版、以后实验纠错”的**暂行设计选择**；不是偏置已解决的结论。
