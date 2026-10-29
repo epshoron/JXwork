@@ -25,3 +25,7 @@
 ## 第一轮本地验收建议
 
 用合成数据测试：初始成功胜者集合为空时，第一位 Alpha 仍完整接受合法性和金融评测；后续 Alpha 相关性等于 0.65 或更高时不能进入 Financial Evaluator；金融评测失败仍保存 Ret/SR/DD/TO；成功者自动成为后继参照；Score 不影响 `qualified`。所有阻断状态与使用的胜者 ID/版本可追溯。
+## 四库实施增量（已定与待核实分开）
+
+- **已定**：研究侧 Min 不提供原始分钟 C 大表自由读取；历史 sector_code/group_code 查询可选；文献全量目录、自选精读与 free/incremental/cross_domain 三模式等概率随机；Daily Base 不进 Curated 相关性集合；Knowledge Episode 为极简日志。见 [四库实施契约](FOUR_LIBRARY_RUNTIME_CONTRACT.md)。
+- **待核实**：Base 的日历/时点/缺失/复权，行业代码文字映射与历史有效性、精读分级验收、文献结构化核验方法、M2 API 参数、实际存储与运行环境权限。未知口径不能报通过。
