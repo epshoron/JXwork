@@ -1,11 +1,6 @@
 name: Package shared folder
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'shared/**'
-      - '.github/workflows/package-shared.yml'
   workflow_dispatch:
 
 permissions:

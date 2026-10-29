@@ -10,6 +10,6 @@
 
 **架构权威入口**：[V1.0.1](shared/architecture/V1.0.1/README.md)。四库：Min、论文/研报、Daily、Knowledge；Knowledge 记录一切候选与实验，第一关技术/统计检查通过后才开展金融评价；达标即正式存档，不增设第五个 Alpha 库。具体规则见架构文档。
 
-**下载**：GitHub Actions 的 [Package shared folder](https://github.com/epshoron/JXwork/actions/workflows/package-shared.yml) 每次 `shared/` 合入 `main` 自动打包，可以在成功运行页面的 Artifacts 下载 `JXwork-shared`。普通 Code → Download ZIP 是整个仓库。
+**下载**：GitHub Actions 的 [Package shared folder](https://github.com/epshoron/JXwork/actions/workflows/package-shared.yml) **仅在用户点击 Run workflow 手动触发时**打包；打开工作流页选择 `main` 并运行，完成后在该次成功运行的 Artifacts 下载 `JXwork-shared`。修改 shared 或 push main 均**不会自动打包**。普通 Code → Download ZIP 是整个仓库。
 
 本仓库包含论文/研报研究资料，不是公司数据部署区；不能将外部作者宣称视为本系统已复现，也不得推送未获授权的公司资料或密钥。
