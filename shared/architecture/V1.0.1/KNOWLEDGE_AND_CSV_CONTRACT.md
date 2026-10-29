@@ -9,7 +9,7 @@
 **Experiment（一次真实尝试）**：`experiment_id, factor_id, run_id, data_version, data_snapshot, sample_start, sample_end, eval_version, gate_version, model_version, seed, exposure_mode, created_at, stage, status, failure_code, failure_reason, stage1_metrics, ret_ann_gross, sr_gross, mdd_gross, to_daily_mean, to_ann, cost_ann, qualified, factor_csv_path, daily_metrics_csv_path, weights_csv_path, execution_log_ref, parent_experiment_id`。
 
 - **一个 Factor 可对应多个 Experiment**：重跑/更改数据窗口或版本必须生成新的 `experiment_id`，不能覆盖成功/失败历史。
-- `status` 可以为 `pending`、`blocked`、`technical_fail`、`evaluation_error`、`financial_fail`、`qualified`。`qualified` 建议为三态：`true`（正式成功）、`false`（有效金融评价但未达标）、`null`（未跑完金融评价），而不是把未执行算作失败收益。
+- `status` 可以为 `pending`、`blocked`、`technical_fail`、`statistical_fail`（含 `redundant` 原因）、`evaluation_error`、`financial_fail`、`qualified`。`qualified` 建议为三态：`true`（正式成功）、`false`（有效金融评价但未达标）、`null`（未跑完金融评价），而不是把未执行算作失败收益。
 - `stage1_metrics` 保存技术/泄漏及统计结果；Alpha 相关性须记录 `winner_reference_ids`（或引用集合快照）、`winner_count`、`max_abs_corr`、`closest_winner_factor_id`、`correlation_status`（`NO_REFERENCE/PASS/FAIL/BLOCKED`）、计算方法/样本/门槛版本。空胜者集合时 `max_abs_corr=NULL`，只跳过相关性检查，不能把 NULL 当成零。当前 Alpha 最大绝对相关严格 `<0.65`，算法和样本细节仍待冻结。
 - `ret_ann_gross/sr_gross/mdd_gross/to_daily_mean/to_ann/cost_ann` 为已计算的、可复算的**金融指标字段**；无 Evaluator 则为 NULL。收益、MDD 用小数比例，Sharpe 无量纲；`to_daily_mean` 是日均双边权重差换手，`to_ann=252*to_daily_mean`，`cost_ann=0.001*to_ann`（V1 假设）。
 - `score` **非必存字段**；需要时从金融原始字段按评分版本生成。若缓存 Score，应同时保存 `score_version` 且不能让它决定 `qualified`。
