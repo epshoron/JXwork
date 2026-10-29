@@ -14,8 +14,7 @@
 4. [KNOWLEDGE_AND_CSV_CONTRACT.md](KNOWLEDGE_AND_CSV_CONTRACT.md)：Factor、Experiment、Daily、成功标签、CSV 与复现字段。
 5. [RESEARCH_INPUT_PROTOCOL_V1.md](RESEARCH_INPUT_PROTOCOL_V1.md)：full/masked、自主查阅、去重和实验记录。
 6. [待定实现细节](OPEN_DECISIONS.md)：相关性口径、数据样本、并发与测试验收。
-7. [当前专业研究 Agent 策略 V0.2（四范围 16 角色）](research_design/README.md)
-   - [16份独立Alpha Prompt V1](research_design/prompting/README.md)：每个角色一份不同完整Prompt，现为待测草案；旧V0.1已废弃。：仅 M3 的可替换研究角色配置、职责边界与 Daily 输出合同，**不是评测规则，也不是永久固定的角色数量**。
+7. [当前专业研究 Agent 策略 V0.2（四范围 16 角色）](research_design/README.md)：M3的可替换研究分工，含[16份独立Alpha挖掘Prompt](research_design/prompting/README.md)，不修改评价规则。
 8. [Evaluator V1 原始数学标准](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：横截面权重、VWAP、Return/SR/MDD/TO/成本；**Score 公式保留但不参与硬门槛**。
 
 ## 拍板的关键规则

@@ -1,229 +1,134 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Research Agent Alpha-only output V1",
-  "description": "Machine-checks Alpha candidate/no-candidate structure; technical and financial validation remains external. No daily_intermediate option.",
-  "oneOf": [
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "result_type": {
-          "const": "alpha_candidate"
-        },
-        "role_id": {
-          "enum": [
-            "A01",
-            "A02",
-            "A03",
-            "A04",
-            "A05",
-            "A06",
-            "B01",
-            "B02",
-            "B03",
-            "C01",
-            "C02",
-            "C03",
-            "C04",
-            "C05",
-            "D01",
-            "D02"
-          ]
-        },
-        "role_strategy_version": {
-          "const": "role-taxonomy-v0.2"
-        },
-        "prompt_version": {
-          "const": "research-alpha-prompt-v1.0"
-        },
-        "primary_domain": {
-          "enum": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ]
-        },
-        "secondary_domains": {
-          "type": "array",
-          "items": {
-            "enum": [
-              "A",
-              "B",
-              "C",
-              "D"
-            ]
-          },
-          "uniqueItems": true
-        },
-        "research_question": {
-          "type": "string",
-          "minLength": 1
-        },
-        "financial_hypothesis": {
-          "type": "string",
-          "minLength": 1
-        },
-        "alpha_formula_or_code": {
-          "type": "string",
-          "minLength": 1
-        },
-        "required_raw_fields": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
-        "required_daily_feature_ids": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
-        "parameters": {
-          "type": "object",
-          "additionalProperties": {
-            "type": [
-              "string",
-              "number",
-              "integer",
-              "boolean",
-              "null"
-            ]
-          }
-        },
-        "history_window": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "cross_section_reference": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "observation_end_time": {
-          "type": "string",
-          "minLength": 1
-        },
-        "first_usable_at": {
-          "type": "string",
-          "minLength": 1
-        },
-        "missing_data_policy": {
-          "type": "string",
-          "minLength": 1
-        },
-        "minimum_samples": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "minimum": 1
-        },
-        "source_refs": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
-        "assumptions": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
-        "limitations": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        }
-      },
-      "required": [
-        "result_type",
-        "role_id",
-        "role_strategy_version",
-        "prompt_version",
-        "primary_domain",
-        "secondary_domains",
-        "research_question",
-        "financial_hypothesis",
-        "alpha_formula_or_code",
-        "required_raw_fields",
-        "required_daily_feature_ids",
-        "parameters",
-        "history_window",
-        "cross_section_reference",
-        "observation_end_time",
-        "first_usable_at",
-        "missing_data_policy",
-        "minimum_samples",
-        "source_refs",
-        "assumptions",
-        "limitations"
+  "title": "Research Alpha Candidate V1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "result_type": {
+      "const": "alpha_candidate"
+    },
+    "role_id": {
+      "enum": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "B01",
+        "B02",
+        "B03",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "D01",
+        "D02"
       ]
     },
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "result_type": {
-          "const": "no_candidate"
-        },
-        "role_id": {
-          "enum": [
-            "A01",
-            "A02",
-            "A03",
-            "A04",
-            "A05",
-            "A06",
-            "B01",
-            "B02",
-            "B03",
-            "C01",
-            "C02",
-            "C03",
-            "C04",
-            "C05",
-            "D01",
-            "D02"
-          ]
-        },
-        "role_strategy_version": {
-          "const": "role-taxonomy-v0.2"
-        },
-        "prompt_version": {
-          "const": "research-alpha-prompt-v1.0"
-        },
-        "reason": {
-          "type": "string",
-          "minLength": 1
-        },
-        "missing_requirements": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        }
+    "alpha_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "research_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "financial_hypothesis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alpha_formula_or_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "required_raw_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
       },
-      "required": [
-        "result_type",
-        "role_id",
-        "role_strategy_version",
-        "prompt_version",
-        "reason",
-        "missing_requirements"
+      "uniqueItems": true
+    },
+    "required_daily_feature_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "integer",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "history_window": {
+      "type": [
+        "string",
+        "null"
       ]
+    },
+    "universe_definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cross_section_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observation_end_time": {
+      "type": "string",
+      "minLength": 1
+    },
+    "first_usable_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "missing_data_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
+  },
+  "required": [
+    "result_type",
+    "role_id",
+    "alpha_name",
+    "research_question",
+    "financial_hypothesis",
+    "alpha_formula_or_code",
+    "required_raw_fields",
+    "required_daily_feature_ids",
+    "parameters",
+    "history_window",
+    "universe_definition",
+    "cross_section_reference",
+    "observation_end_time",
+    "first_usable_at",
+    "missing_data_policy",
+    "source_refs",
+    "assumptions"
   ]
 }

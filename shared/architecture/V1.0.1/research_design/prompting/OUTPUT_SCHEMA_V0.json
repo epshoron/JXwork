@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/epshoron/JXwork/blob/main/shared/architecture/V1.0.1/research_design/prompting/OUTPUT_SCHEMA_V0.json",
-  "title": "Neutral Research Agent Proposed Output v0.1",
-  "description": "DEPRECATED: old two-purpose Research-Agent schema is invalid. DO NOT USE. See ALPHA_OUTPUT_SCHEMA_V1.json. Kept only to prevent misleading missing file references.",
-  "oneOf": [],
-  "deprecated": true,
-  "not": {}
-}

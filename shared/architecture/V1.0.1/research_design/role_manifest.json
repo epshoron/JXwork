@@ -192,7 +192,7 @@
     "knowledge_recording",
     "alpha_qualification"
   ],
-  "research_prompt_version": "research-alpha-prompt-v1.0",
+  "research_prompt_version": "research-alpha-prompt-v1.1",
   "research_output_kind": "alpha_candidate_only",
-  "research_prompt_status": "draft_for_review_not_activated"
+  "research_prompt_status": "specified_not_runtime_tested"
 }

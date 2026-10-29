@@ -1,29 +1,22 @@
-# 每轮 Alpha 研究动态输入 V1｜供离线调度器填充
+# 每轮研究输入
 
-> 本文件是每轮输入模板，**不属于 Research Agent 独立专业 Prompt 的内容**。每次只加载本轮角色对应的一份 roles/Rxx.md 作为专业指示；下列材料按数据权限和 full/masked 规则动态提供。
+调度程序为每个研究角色加载 `roles/{role_id}.md`，并向该角色提供以下当前运行内容。输入内容由公司环境获取，不包含静态预设的因子公式或盈利结论。
 
-研究目标：由当前角色独立生成可执行的日频横截面 **Alpha候选**，若无法生成可靠候选则返回 no_candidate。不要生成、申请或批准 Daily 中间特征。
+```text
+role_id: {{role_id}}
+tool_registry: {{tool_registry}}
+data_snapshot: {{data_snapshot}}
+knowledge_snapshot: {{knowledge_snapshot}}
+universe: {{universe}}
+information_cutoff: {{information_cutoff}}
+available_raw_fields_and_timing: {{available_raw_fields_and_timing}}
+published_daily_catalog: {{published_daily_catalog}}
+visible_knowledge_catalog: {{visible_knowledge_catalog}}
+visible_paper_catalog: {{visible_paper_catalog}}
+allowed_research_window: {{allowed_research_window}}
+run_id: {{run_id}}
+seed: {{seed}}
+budget: {{budget}}
+```
 
-- run_id: {{run_id}}
-- role_id: {{role_id}}
-- role_strategy_version: {{role_strategy_version}}
-- prompt_version: {{prompt_version}}
-- data_snapshot: {{data_snapshot}}
-- authorized_data_schema_and_fields: {{authorized_data_schema_and_fields}}
-- information_cutoff_and_trade_calendar: {{information_cutoff_and_trade_calendar}}
-- valid_universe_and_historical_classification: {{valid_universe_and_historical_classification}}
-- missing_or_unconfirmed_fields: {{missing_or_unconfirmed_fields}}
-- permitted_min_query_tools: {{permitted_min_query_tools}}
-- published_daily_feature_catalog: {{published_daily_feature_catalog}}
-- permitted_daily_read_tools: {{permitted_daily_read_tools}}
-- visible_research_materials: {{visible_research_materials}}
-- visible_knowledge_records: {{visible_knowledge_records}}
-- knowledge_visibility_mode: {{knowledge_visibility_mode}}
-- allowed_history_window: {{allowed_history_window}}
-- generation_budget: {{generation_budget}}
-- seed: {{seed}}
-- supplementary_constraints: {{supplementary_constraints}}
-
-生成后用 [Alpha-only JSON Schema](ALPHA_OUTPUT_SCHEMA_V1.json) 提交一个对象；真实技术/统计/金融检查及持久化由外部模块完成。
-
-**权限提醒**：模型不得拥有未来收益原始标签读取权限；masked不仅遮蔽最初展示，也要约束后续知识查询，且不能遮蔽字段存在性、安全时点与已发布Daily定义。
+各专业Prompt按 `tool_registry` 中实际提供的权限调用M2读库和分析工具。`full/masked` 的知识可见性由运行程序过滤。候选输出依 [ALPHA_OUTPUT_SCHEMA_V1.json](ALPHA_OUTPUT_SCHEMA_V1.json) 由调度器提交至M4。

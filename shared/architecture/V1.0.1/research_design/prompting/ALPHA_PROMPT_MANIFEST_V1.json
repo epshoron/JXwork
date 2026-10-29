@@ -1,27 +1,74 @@
 {
-  "prompt_version": "research-alpha-prompt-v1.0",
-  "role_strategy_version": "role-taxonomy-v0.2",
-  "status": "draft_for_review_not_activated",
-  "role_files": {
-    "A01": "roles/A01.md",
-    "A02": "roles/A02.md",
-    "A03": "roles/A03.md",
-    "A04": "roles/A04.md",
-    "A05": "roles/A05.md",
-    "A06": "roles/A06.md",
-    "B01": "roles/B01.md",
-    "B02": "roles/B02.md",
-    "B03": "roles/B03.md",
-    "C01": "roles/C01.md",
-    "C02": "roles/C02.md",
-    "C03": "roles/C03.md",
-    "C04": "roles/C04.md",
-    "C05": "roles/C05.md",
-    "D01": "roles/D01.md",
-    "D02": "roles/D02.md"
-  },
-  "output_kind": "alpha_candidate_only",
-  "format_contract": "ALPHA_OUTPUT_SCHEMA_V1.json",
-  "runtime_context": "ALPHA_EPISODE_INPUT_V1.md",
-  "daily_curator_responsibility": "independent_module_outside_research_role_prompts"
+  "prompt_version": "research-alpha-prompt-v1.1",
+  "role_taxonomy": "role-taxonomy-v0.2",
+  "purpose": "16 standalone research Alpha prompts",
+  "roles": [
+    {
+      "role_id": "A01",
+      "file": "roles/A01.md"
+    },
+    {
+      "role_id": "A02",
+      "file": "roles/A02.md"
+    },
+    {
+      "role_id": "A03",
+      "file": "roles/A03.md"
+    },
+    {
+      "role_id": "A04",
+      "file": "roles/A04.md"
+    },
+    {
+      "role_id": "A05",
+      "file": "roles/A05.md"
+    },
+    {
+      "role_id": "A06",
+      "file": "roles/A06.md"
+    },
+    {
+      "role_id": "B01",
+      "file": "roles/B01.md"
+    },
+    {
+      "role_id": "B02",
+      "file": "roles/B02.md"
+    },
+    {
+      "role_id": "B03",
+      "file": "roles/B03.md"
+    },
+    {
+      "role_id": "C01",
+      "file": "roles/C01.md"
+    },
+    {
+      "role_id": "C02",
+      "file": "roles/C02.md"
+    },
+    {
+      "role_id": "C03",
+      "file": "roles/C03.md"
+    },
+    {
+      "role_id": "C04",
+      "file": "roles/C04.md"
+    },
+    {
+      "role_id": "C05",
+      "file": "roles/C05.md"
+    },
+    {
+      "role_id": "D01",
+      "file": "roles/D01.md"
+    },
+    {
+      "role_id": "D02",
+      "file": "roles/D02.md"
+    }
+  ],
+  "output_schema": "ALPHA_OUTPUT_SCHEMA_V1.json",
+  "runtime_input": "ALPHA_EPISODE_INPUT_V1.md",
+  "next_module": "M4 Candidate Register"
 }
