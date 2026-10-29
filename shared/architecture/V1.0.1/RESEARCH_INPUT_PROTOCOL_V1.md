@@ -4,6 +4,9 @@
 
 ## 1. 已固定的边界
 
+**本轮四库研究输入增量**：按 [四库实施契约](FOUR_LIBRARY_RUNTIME_CONTRACT.md)，Min 向研究 Agent 提供分钟 C 字段/时点说明和可选历史 `sector_code/group_code` 查询，分钟值由授权后台计算器处理；Papers 提供全量可分页授权目录、结构化 Card、自主逐篇精读；Daily 只暴露已发布 Base/Curated；Knowledge 以轻量 Episode 保存阅读历史（即使未生成 Alpha）。每轮 `research_mode=free/incremental/cross_domain` 按 seed 各 1/3 随机，**独立于**下文 `exposure_mode=full/masked`，不指定具体论文。
+
+
 - **只有四个逻辑库**：Min（分钟原始数据、字段）、论文/研报（人工收录的外源）、Daily（持续更新的日频中间特征）、知识库（**文献候选/作者报告** + **内部真实 Alpha 成败实验**）。前二者不接受实验结果自动回写；后二者进入研究反馈循环。
 - **独立 Daily Curator Agent**：根据Min数据、论文/研报和自身Daily研究任务，独立发现/构造/审查可复用中间特征，并记录来源与真实审核状态；M3专业Research Agent不代为生成或申请Daily中间特征。原文保留供核验。
 - **研究 Agent 专业角色采用独立、可替换策略版本**：当前已选用 [V0.2｜A6 + C5 + B3 + D2 = 16 个角色](research_design/README.md) 作为首版的专业思考角色基线；并非照搬 P002 的 21 角色。底层模型数量、每轮抽样人数、具体 Prompt 与预算仍可配置，不能把 16 当成必须同时运行 16 个独立模型。专业角色只输出每股每日的**Alpha候选**，不会输出Daily中间特征申请；下游审核规则不变。
