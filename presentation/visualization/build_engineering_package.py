@@ -2,7 +2,7 @@
 """Build a genuine, verified Excel workbook from P001–P010 canonical CSV files.
 
 No hand-authored XLSX XML, and no dependence on the previously broken workbook.
-Usage: python visualization/build_engineering_package.py
+Usage: python presentation/visualization/build_engineering_package.py
 """
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-ROOT = Path(__file__).resolve().parents[1]
-VIS = ROOT / "visualization"
+ROOT = Path(__file__).resolve().parents[2]
+VIS = ROOT / "presentation" / "visualization"
 RES = VIS / "resources"
 NAME = "JXwork_P001-P010_Engineering_QA.xlsx"
 ZIPNAME = "JXwork_P001-P010_Engineering_QA_Pack.zip"
@@ -59,7 +59,7 @@ def line_count(s: str, width: int) -> int:
 
 
 def load_rows(pid: str) -> list[list[str]]:
-    src = ROOT / "papers" / pid / f"{pid}_工程复现问题清单_v1.csv"
+    src = ROOT / "shared" / "papers" / pid / f"{pid}_工程复现问题清单_v1.csv"
     with src.open("r", encoding="utf-8-sig", newline="") as f:
         table = list(csv.reader(f))
     assert table and table[0] == ["主题", "关键问题", "简明答案"], (pid, "unexpected header")

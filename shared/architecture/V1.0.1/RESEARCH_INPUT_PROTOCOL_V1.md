@@ -1,6 +1,6 @@
-# Research Agent 输入与偏置控制｜V1 暂行协议
+# V1.0.1｜Research Agent 输入与偏置控制协议
 
-> 2026-10-28。**研究者要求先有一版逻辑清楚、可实施的工作方案，后续以真实实验修正。** 不是已证明能消除偏置的技术，也不是已运行的系统。只覆盖 Research Loop 的输入和候选生成前后衔接；不改 A/B/C 文献档案、既定 Evaluator V1、旧架构或 Meta Loop。
+> **2026-10-29 已纳入现行 V1.0.1 架构。** 确认流程边界，具体遮蔽参数和真实有效性仍须验证；当前尚未实现。
 
 ## 1. 已固定的边界
 
@@ -50,8 +50,8 @@ Agent 自主阅读被允许的材料、请求 `read_material(id)`、`read_source
 ## 4. 与其他讨论文件的关系
 
 - [Research Loop 主骨架](README.md)：四库、职责与全局数据流。
-- [Daily 沉淀准入候选 Prompt](DAILY_ADMISSION_AGENT_V0.md)：单独的未定阈值方案；不因采用本输入协议而自动批准评分门槛。
-- [旧双 Loop V1.0.1](../dual_loop_v1.0.1/README.md)：保持不动。
+- Daily 准入 Prompt v0 是尚未审批的候选，保留在非共享的 assistant/handoffs/，不自动纳入当前架构。
+- [现行 V1.0.1 总架构](README.md)：旧版已退出当前工作树。
 - [Evaluator V1](../../evaluation/PORTFOLIO_SCORING_STANDARD.md)：评测参数保持不变。
 
 **文档状态**：本协议作为“先凑一版、以后实验纠错”的**暂行设计选择**；不是偏置已解决的结论。

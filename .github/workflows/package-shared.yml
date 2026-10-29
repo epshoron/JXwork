@@ -1,0 +1,26 @@
+name: Package shared folder
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'shared/**'
+      - '.github/workflows/package-shared.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip shared only
+        run: zip -q -r shared.zip shared
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JXwork-shared
+          path: shared.zip
+          retention-days: 30
