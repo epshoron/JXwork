@@ -164,4 +164,4 @@ MDD_{\mathrm{gross}}=
 
 **本轮到此为止。** 股票池、停牌/缺失、可融券性、执行偏差、初期权重会计、净收益诊断及更精细的持仓漂移换手，属于实际编码或后续验证问题，**没有在本轮被冒充为已确认的详细工程参数**。
 
-**研究身份与出处**：以上是根据讨论确定的**一般化因子评价方案**，并非某论文的原文公式、学术新颖性主张、或已跑通的交易框架。常见的 Demean + L1 因子权重方法可对照 [Alphalens factor_weights 文档](https://alphalens.ml4trading.io/api-reference.html)；已有因子生成论文的奖励/投资回测口径可在方向 A 的 [论文索引](../papers/INDEX.md) 查阅。**不新建 Delta，不发布内部原始手稿、数据或策略代码。**
+**研究身份与出处**：以上是根据讨论确定的**一般化因子评价方案**，并非某论文的原文公式、学术新颖性主张、或已跑通的交易框架。常见的 Demean + L1 因子权重方法可对照 [Alphalens factor_weights 文档](https://alphalens.ml4trading.io/api-reference.html)；已有因子生成论文的奖励/投资回测口径可在方向 A 的 [论文索引](../A_alpha_mining/papers/INDEX.md) 查阅。**不新建 Delta，不发布内部原始手稿、数据或策略代码。**

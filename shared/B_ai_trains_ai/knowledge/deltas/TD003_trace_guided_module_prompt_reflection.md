@@ -12,7 +12,7 @@
 
 - [TD002（T001）](TD002_success_trace_prompt_induction_context_evolution.md)：从**成功 working out**反推任务 Prompt、改变 few-shot 正确示例；GEPA 本卡强调将**执行失败及外部评价器的诊断轨迹**转成**指定模块的改写**，再按同批任务实际得分接受。两者都存在“经验→Prompt”，不声称这一上层观念独有。
 - [TD001（T001）](TD001_coupled_task_mutator_prompt_evolution.md)：被进化的是**任务 Prompt P 与用于修改 P 的 mutation prompt M**；GEPA 这里固定反思框架，主要更新系统模块 Prompt，不将修改策略 M 一同进化。
-- [D001](../../../knowledge/deltas/D001_nested_feedback.md)、[D003](../../../knowledge/deltas/D003_success_memory.md)：普通评测循环/成功经验缓存不是本卡的失败轨迹与评测诊断→**局部 Prompt 改写**的具体路径。
+- [D001](../../../A_alpha_mining/knowledge/deltas/D001_nested_feedback.md)、[D003](../../../A_alpha_mining/knowledge/deltas/D003_success_memory.md)：普通评测循环/成功经验缓存不是本卡的失败轨迹与评测诊断→**局部 Prompt 改写**的具体路径。
 - [TD004](TD004_instancewise_pareto_parent_selection.md) 管父代候选的选择概率；[TD005](TD005_lineage_aware_module_merge.md) 管互补模块合并。与本卡三个干预位置不可互换。
 
 ## 对应已批准特化疑问①：反思改进 ≠ 原因归因已证实

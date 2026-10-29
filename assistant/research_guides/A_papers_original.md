@@ -2,19 +2,19 @@
 
 `INDEX.md` 是**方向 A 研究 Agent 共享的唯一论文认领、去重和最小状态入口**，与具体聊天窗口编号无关。
 
-**方向 B 的论文另行登记**在 [ai_trains_ai/papers/INDEX.md](../ai_trains_ai/papers/INDEX.md)，编号 T001 起；新认领需跨方向核对原文，不能把 T 编号放进本目录或移动 P001–P010。两方向共用 [AGENTS.md](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)。
+**方向 B 的论文另行登记**在 [ai_trains_ai/papers/INDEX.md](../../shared/B_ai_trains_ai/papers/INDEX.md)，编号 T001 起；新认领需跨方向核对原文，不能把 T 编号放进本目录或移动 P001–P010。两方向共用 [AGENTS.md](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)。
 
 - 研读前按 DOI/arXiv ID/原始题名查重，立即登记统一论文编号（`P001、P002…`）、权威原文链接和最小状态，避免多个 Agent 重复研究。
 - **当前为研究阶段一：完整阅读并理解论文自身的方法、流程、实验与证据**。阶段二才整合创新点与缺点；阶段三才在积累充分后有机结合提出我们的研究想法。参见 `../RESEARCH_PLAN.md`。
-- 论文研读的讨论过程仍在各自 LLM 对话，**不创建逐篇临时流水账**；**核实原文后，研究 Agent 可无需逐篇审批直接归档**到 `P00X/` 的是原文链接、简洁架构图、准确机制描述；作者贡献的独立评价、特化不足及研究者想法必须先讨论、获研究者逐项批准后才能归档。参见 [P001](P001/README.md)。
+- 论文研读的讨论过程仍在各自 LLM 对话，**不创建逐篇临时流水账**；**核实原文后，研究 Agent 可无需逐篇审批直接归档**到 `P00X/` 的是原文链接、简洁架构图、准确机制描述；作者贡献的独立评价、特化不足及研究者想法必须先讨论、获研究者逐项批准后才能归档。参见 [P001](../../shared/A_alpha_mining/papers/P001/README.md)。
 - **强制同步**：每个 Agent 的论文骨架、审批状态或核验范围发生实际变化时，**同一工作回合核对并更新 `INDEX.md` 的最低状态**；新增/修改经批准的 Delta 同步 `../knowledge/DELTA_INDEX.md` 与本论文的相关链接。结束前检查索引表格是否完整、状态是否真实；写共享文件前取最新 SHA，冲突时重新合并。日常对话不刷索引。
 - 各研究 Agent 不读取其他 Agent 的聊天；提交 INDEX 前刷新最新文件和 SHA，冲突时合并。
-- **Delta 分层**：用户确认的单篇成果放本目录 `P00X/`；可跨论文复用的机制及其增量进 [knowledge](../knowledge/README.md)；成熟综合结论放 `../synthesis/`。所有机制区分“首次入库”和“学术首次提出”。
+- **Delta 分层**：用户确认的单篇成果放本目录 `P00X/`；可跨论文复用的机制及其增量进 [knowledge](../../shared/A_alpha_mining/knowledge/README.md)；成熟综合结论放 `../synthesis/`。所有机制区分“首次入库”和“学术首次提出”。
 - 优先直接访问原文 HTML/公开 PDF/作者版本，无需研究者逐篇下载；访问受限时保留权威论文链接说明缺口。
 - Public 仓库不上传未经许可再分发的论文 PDF，也不存放任何公司内部资料或密钥。
 
 ## 工程复现问题速查表（2026-10-26）
 
-按 [工程速查规范](ENGINEERING_REVIEW_STANDARD.md) 在论文原目录增设简明 CSV/XLSX，GitHub 上优先看 CSV，不要求反复下载。首批：[P001 工程速查](P001/P001_工程复现问题清单_v1.csv) · [P002 工程速查](P002/P002_工程复现问题清单_v1.csv)。这只是各篇方法实现的展示材料，不是第二套论文索引或新的 Delta 审批。
+按 [工程速查规范](../../shared/A_alpha_mining/papers/ENGINEERING_REVIEW_STANDARD.md) 在论文原目录增设简明 CSV/XLSX，GitHub 上优先看 CSV，不要求反复下载。首批：[P001 工程速查](P001/P001_工程复现问题清单_v1.csv) · [P002 工程速查](P002/P002_工程复现问题清单_v1.csv)。这只是各篇方法实现的展示材料，不是第二套论文索引或新的 Delta 审批。
 
-**工程问题双向回看**：新论文先回答全部旧篇适用问题，再加本篇特色；新问题必须反向回补所有已建论文工程表。不得因控制行数遗漏，见 [工程速查规范](ENGINEERING_REVIEW_STANDARD.md)。
+**工程问题双向回看**：新论文先回答全部旧篇适用问题，再加本篇特色；新问题必须反向回补所有已建论文工程表。不得因控制行数遗漏，见 [工程速查规范](../../shared/A_alpha_mining/papers/ENGINEERING_REVIEW_STANDARD.md)。

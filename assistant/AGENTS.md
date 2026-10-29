@@ -8,17 +8,17 @@
 
 **方向 A：AI Agent 量化因子挖掘（现有内容）**：研究入口 [README](../README.md)；论文 `papers/INDEX.md` + `papers/P00X/`（现有 P001–P010），机制 `knowledge/DELTA_INDEX.md` + `knowledge/deltas/D00X_*.md`（现有 D001–D020），综合 `synthesis/`。**不得为改目录迁移、重命名或重编号任何既有档案。**
 
-**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](../shared/ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**T001 Promptbreeder 已批准两组机制＋配对不足、入库 TD001/TD002；T003 Agent Lightning 已批准 2+2 并入库 TD008/TD009。其余论文状态以 B 的实时 Index 为准。**
+**方向 B：AI 如何训练 AI（新）**：研究入口 [ai_trains_ai/README.md](../shared/B_ai_trains_ai/README.md)；论文 `ai_trains_ai/papers/INDEX.md` + `ai_trains_ai/papers/T00X/`（T001 起），机制 `ai_trains_ai/knowledge/DELTA_INDEX.md` + `ai_trains_ai/knowledge/deltas/TD00X_*.md`（TD001 起），综合 `ai_trains_ai/synthesis/`。**T001 Promptbreeder 已批准两组机制＋配对不足、入库 TD001/TD002；T003 Agent Lightning 已批准 2+2 并入库 TD008/TD009。其余论文状态以 B 的实时 Index 为准。**
 
-**方向 C：分钟级数据构建日频特征**：入口 [intraday_to_daily/README.md](../shared/intraday_to_daily/README.md)；学术论文 `intraday_to_daily/papers/INDEX.md`（C001 起），券商研报 `intraday_to_daily/reports/INDEX.md`（CR001 起）；机制知识需要时再用 CD001 起。**先搞清楚原始数据、分钟到日频的构造方法、可见时间及实际评价，不预设老师要的最终交易频率或是否使用 AI**。两份 INDEX 记录实际认领状态。
+**方向 C：分钟级数据构建日频特征**：入口 [intraday_to_daily/README.md](../shared/C_intraday_to_daily/README.md)；学术论文 `intraday_to_daily/papers/INDEX.md`（C001 起），券商研报 `intraday_to_daily/reports/INDEX.md`（CR001 起）；机制知识需要时再用 CD001 起。**先搞清楚原始数据、分钟到日频的构造方法、可见时间及实际评价，不预设老师要的最终交易频率或是否使用 AI**。两份 INDEX 记录实际认领状态。
 
-- **方向 C 并行硬规则（2026-10-27）**：每个研究 Agent **一次只认领一篇 C00X 论文或 CR00X 研报**；不同 Agent 可以并行认领不同来源，不与其他 Agent 串行排队。认领前刷新 C 论文/研报两份 INDEX 并与 A/B 查重；认领当轮建立自己的最小 README/PAPER 与对应 INDEX 条目，后续每次实际状态变更由该 Agent 同回合更新。共享 INDEX 写前取最新 SHA，冲突后重新分配未占编号并合并，绝不覆盖别人；研报准入支持研究者按批批准。具体流程以 [C 方向指南](../shared/intraday_to_daily/README.md) 为准。
+- **方向 C 并行硬规则（2026-10-27）**：每个研究 Agent **一次只认领一篇 C00X 论文或 CR00X 研报**；不同 Agent 可以并行认领不同来源，不与其他 Agent 串行排队。认领前刷新 C 论文/研报两份 INDEX 并与 A/B 查重；认领当轮建立自己的最小 README/PAPER 与对应 INDEX 条目，后续每次实际状态变更由该 Agent 同回合更新。共享 INDEX 写前取最新 SHA，冲突后重新分配未占编号并合并，绝不覆盖别人；研报准入支持研究者按批批准。具体流程以 [C 方向指南](../shared/C_intraday_to_daily/README.md) 为准。
 - **方向 C 知识类型及编号（研究者修正）**：FIN=金融现象/统计定义，ARCH=模型架构/隐含表征/预测实验。主要为 ARCH 的论文正式编号与目录加 `A`，如 `C011A`；`C009N` 因必需数据缺失以N优先，知识身份仍为ARCH；常规论文为 `C001` 等。共享 INDEX 第一列仅一个编号链接、按数字升序，**不准在编号单元格堆说明**。模型预测分数不等于已知金融 Alpha，归因不能唯一确定真实金融机制；迁移目录时同步引用。**具体按“主研究问题 + 日级主产物”共同判断；只研究模型压缩/融合/预测分数而无主要显式金融统计构造时加 A，单纯使用 ML/GARCH 辅助检验金融现象不自动加 A；混合难判保持编号、标明待核。** 类型不代表论文质量和创新审批。
 - **方向 C N 后缀：当前数据无法原样复现（2026-10-27）**：预计数据仅股票1分钟 O/C/V/VWAP，H/L不确定，缺逐笔成交、主动买卖、委托/盘口。原文**主要方法必需字段缺失且不能由现有字段唯一恢复**时，论文用 `C00XN`、研报用 `CR00XN`（例 `CR004N`）；不是永久无效/质量差，也不准把分钟涨跌方向当作真实大单主动净流入 SIGN。若同时 ARCH 和 N，编号优先 N、ARCH 写正文（C008N、C009N 已核属此类），不串接后缀；未确认字段先记待核。共享 INDEX 首列只放编号且数字排序，其他 Agent 档案不擅自改号。详见方向 C README。
 - **收到研究任务先判所属方向**，读取该方向 README、现有来源 Index 与相关单篇档案；其他方向的相同 DOI/arXiv/相近机制也需查重，不因分目录而重复认领或重复声称创新。
 - **本文件下文未带方向前缀的 `papers/P00X/`、`papers/INDEX.md`、`knowledge/DELTA_INDEX.md` 等旧路径，均是方向 A 的历史示例**。执行于 B 时必须替换为上述 `ai_trains_ai/` 的**本方向**路径，不得把 T/TD 误写到 A 的公共 Index。
 - 各方向**分别推进**阶段一原文研读 → 阶段二跨论文比较 → 阶段三原创研究设想；A 仍以阶段一研读与单篇评价为主，B 已有 T001 骨架但仍处于阶段一。**仅研究者决定阶段切换**，不能因另一方向已有成果就越级。
-- **方向 B 的明确研究问题（2026-10-22）**：上层 AI（可用 CLI 交互）基于知识/记忆与下层 Executor Agent 的任务反馈，自动改进下层 Prompt、Skills、工具路由、记忆检索或工作流；**与之并行研究**通过合成/筛选数据、SFT/RL、蒸馏等更新下层**模型参数**的路线。LoRA 是参数高效微调手段。两条路线都在研究范围，先通过原文和可验证实验比较，**不预先把用户场景定为已验证系统方案**；仅改 Prompt 属外部 Agent 优化，**不是模型权重训练或严格 RSI 的证据**。详情见 [ai_trains_ai/README.md](../shared/ai_trains_ai/README.md)。
+- **方向 B 的明确研究问题（2026-10-22）**：上层 AI（可用 CLI 交互）基于知识/记忆与下层 Executor Agent 的任务反馈，自动改进下层 Prompt、Skills、工具路由、记忆检索或工作流；**与之并行研究**通过合成/筛选数据、SFT/RL、蒸馏等更新下层**模型参数**的路线。LoRA 是参数高效微调手段。两条路线都在研究范围，先通过原文和可验证实验比较，**不预先把用户场景定为已验证系统方案**；仅改 Prompt 属外部 Agent 优化，**不是模型权重训练或严格 RSI 的证据**。详情见 [ai_trains_ai/README.md](../shared/B_ai_trains_ai/README.md)。
 - **入库规则**：论文客观骨架经原文核查可归档；非论文来源（包括方向 C 券商研报）先向研究者说明价值，可按批批准收录；创新、特化不足、研究观点和 Delta 经讨论批准并与 **A/B/C** 已有内容去重后正式归档。每次真正新增或修改资料时，同回合同步所属方向的**对应来源 Index**；没有成果变动不机械刷文件。
 - 根目录 `README.md`、`AGENTS.md`、`RESEARCH_PLAN.md`、`RESEARCH_WRITING_STANDARD.md` 和 `JXWORK_START_HERE.md` 为**共享导航与规范**；正常单篇研究无需机械编辑它们，协作规则变更时须同步维护。
 
@@ -81,11 +81,11 @@
 
 ## 方向 A 工程复现问题速查（2026-10-26 新增）
 
-研究者已要求针对 P001–P010 在各自目录使用简明工程问题速查表（CSV GitHub 直接看 + XLSX Excel 展示），具体见 [papers/ENGINEERING_REVIEW_STANDARD.md](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。每篇只保留关键工程问题，用户明确提问不得漏答；问题可跨篇复用但不强制统一字段。P002 等专题角色众多的论文，只在主表对应一行概述工程机制；完整名单放在**可点击的作者来源或同篇短 MD 补充说明**里（不是第二张表），不得将 21 个名称塞进主表单元格。此规定仅改变展示颗粒度，不放宽非论文准入、创新/缺点评价审批、跨方向去重与同回合同步义务；`technical_reading` 零字段占位不动。
+研究者已要求针对 P001–P010 在各自目录使用简明工程问题速查表（CSV GitHub 直接看 + XLSX Excel 展示），具体见 [papers/ENGINEERING_REVIEW_STANDARD.md](../shared/A_alpha_mining/papers/ENGINEERING_REVIEW_STANDARD.md)。每篇只保留关键工程问题，用户明确提问不得漏答；问题可跨篇复用但不强制统一字段。P002 等专题角色众多的论文，只在主表对应一行概述工程机制；完整名单放在**可点击的作者来源或同篇短 MD 补充说明**里（不是第二张表），不得将 21 个名称塞进主表单元格。此规定仅改变展示颗粒度，不放宽非论文准入、创新/缺点评价审批、跨方向去重与同回合同步义务；`technical_reading` 零字段占位不动。
 
-**新增硬规则｜工程研究问题贪婪双向覆盖（2026-10-26）**：研究者针对某一篇提出的“特异性问题”不是该篇问题表的全部内容。每篇必须继承之前**所有已建工程表中适用的每一道问题**；新增问题必须在同一工作回合反向检查并补齐全部已建表（不论论文编号先后）。适用就回答，不适用才跳过；证据不足标明边界，禁止编造；完整覆盖优先于8–15行篇幅。仅做工程表回补不改正式Delta/审批和零字段矩阵。具体流程见 [papers/ENGINEERING_REVIEW_STANDARD.md](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。
+**新增硬规则｜工程研究问题贪婪双向覆盖（2026-10-26）**：研究者针对某一篇提出的“特异性问题”不是该篇问题表的全部内容。每篇必须继承之前**所有已建工程表中适用的每一道问题**；新增问题必须在同一工作回合反向检查并补齐全部已建表（不论论文编号先后）。适用就回答，不适用才跳过；证据不足标明边界，禁止编造；完整覆盖优先于8–15行篇幅。仅做工程表回补不改正式Delta/审批和零字段矩阵。具体流程见 [papers/ENGINEERING_REVIEW_STANDARD.md](../shared/A_alpha_mining/papers/ENGINEERING_REVIEW_STANDARD.md)。
 
-**关键算法通俗图解阅读层（2026-10-26）**：工程问题表最重要的是理解，而不是越短越好。遇到 Bandit、非负岭回归等机制，用简明单元格说明它做什么，并在论文目录建立一份可点击的 Markdown 深入图解：先用直观语言说明，再用可手算数字、GitHub Mermaid 流程图讲明输入、操作、反馈，最后核对原文/真实源码和未核边界。不因太复杂删问题，也不在主表硬塞长公式。详情见 [工程速查规范](../shared/papers/ENGINEERING_REVIEW_STANDARD.md)。
+**关键算法通俗图解阅读层（2026-10-26）**：工程问题表最重要的是理解，而不是越短越好。遇到 Bandit、非负岭回归等机制，用简明单元格说明它做什么，并在论文目录建立一份可点击的 Markdown 深入图解：先用直观语言说明，再用可手算数字、GitHub Mermaid 流程图讲明输入、操作、反馈，最后核对原文/真实源码和未核边界。不因太复杂删问题，也不在主表硬塞长公式。详情见 [工程速查规范](../shared/A_alpha_mining/papers/ENGINEERING_REVIEW_STANDARD.md)。
 
 
 ## 2026-10-29 当前迁移补充

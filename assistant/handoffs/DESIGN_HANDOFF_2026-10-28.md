@@ -129,8 +129,8 @@ Score_{V1}=1.0R_{\mathrm{ann,gross}}+0.05SR_{\mathrm{gross}}
 
 - [V1.0.1 双 Loop 原架构](../../shared/architecture/V1.0.1/README.md)
 - [已确定单因子 Score V1](../../shared/evaluation/PORTFOLIO_SCORING_STANDARD.md)
-- [C 方向研究说明](../../shared/intraday_to_daily/README.md)、[C 论文索引](../../shared/intraday_to_daily/papers/INDEX.md)、[CR 研报索引](../../shared/intraday_to_daily/reports/INDEX.md)
-- [A 论文索引](../../shared/papers/INDEX.md)、[B 论文索引](../../shared/ai_trains_ai/papers/INDEX.md)
+- [C 方向研究说明](../../shared/C_intraday_to_daily/README.md)、[C 论文索引](../../shared/C_intraday_to_daily/papers/INDEX.md)、[CR 研报索引](../../shared/C_intraday_to_daily/reports/INDEX.md)
+- [A 论文索引](../../shared/A_alpha_mining/papers/INDEX.md)、[B 论文索引](../../shared/B_ai_trains_ai/papers/INDEX.md)
 - [仓库研究协作规范](../AGENTS.md)、[研究写作及审批规范](../RESEARCH_WRITING_STANDARD.md)
 
 > **请接续讨论，不要将“候选检索方案”冒充正式设计；不要擅自修改原始论文档案或开启 Meta Loop。**

@@ -6,8 +6,8 @@
 ## 三方向范围与独立进度
 
 - **方向 A｜AI Agent 因子挖掘**：现有根目录 `papers/`、`knowledge/`、`synthesis/`；P001–P010 / D001–D020 均不迁移。下文**第 1、3、4、6 节的因子研究内容、案例和三视角只针对 A**，不能自动投射到 B。
-- **方向 B｜AI 优化 AI（Agent 外部优化 vs 模型参数训练）**：独立 [ai_trains_ai/README.md](../shared/ai_trains_ai/README.md)、[T 论文 Index](../shared/ai_trains_ai/papers/INDEX.md) 与 [TD 机制 Index](../shared/ai_trains_ai/knowledge/DELTA_INDEX.md)。研究者提出的**研究场景（非已定方案）**是：上层 AI 与用户交互（如 CLI），有记忆/知识库和评价能力，根据下层执行 Agent（API/工具）的任务结果持续改善其 Prompt、Skills、工具与记忆策略；与之对比的是利用数据/奖励及 SFT/RL 真正更新模型参数，LoRA 属训练实现技术。**重点是比较更新对象与可验证收益，而非预设只研究权重或只研究 Prompt**。T001–T005 的最新归档及审批状态详见 B 论文 Index；最终架构或学术分类尚未选定。
-- **方向 C｜分钟级量价数据 → 日频特征**：[方向入口](../shared/intraday_to_daily/README.md)、[学术论文 C Index](../shared/intraday_to_daily/papers/INDEX.md)、[券商研报 CR Index](../shared/intraday_to_daily/reports/INDEX.md)。当前先研究高频统计量、分时段/条件聚合、量价关系和学习式时序压缩等怎样生成 Daily 特征；标签、用途、频率和数据条件仍需与老师确认，不预设模型。研报可按批讨论准入，首要任务是准确理解计算路径与证据。
+- **方向 B｜AI 优化 AI（Agent 外部优化 vs 模型参数训练）**：独立 [ai_trains_ai/README.md](../shared/B_ai_trains_ai/README.md)、[T 论文 Index](../shared/B_ai_trains_ai/papers/INDEX.md) 与 [TD 机制 Index](../shared/B_ai_trains_ai/knowledge/DELTA_INDEX.md)。研究者提出的**研究场景（非已定方案）**是：上层 AI 与用户交互（如 CLI），有记忆/知识库和评价能力，根据下层执行 Agent（API/工具）的任务结果持续改善其 Prompt、Skills、工具与记忆策略；与之对比的是利用数据/奖励及 SFT/RL 真正更新模型参数，LoRA 属训练实现技术。**重点是比较更新对象与可验证收益，而非预设只研究权重或只研究 Prompt**。T001–T005 的最新归档及审批状态详见 B 论文 Index；最终架构或学术分类尚未选定。
+- **方向 C｜分钟级量价数据 → 日频特征**：[方向入口](../shared/C_intraday_to_daily/README.md)、[学术论文 C Index](../shared/C_intraday_to_daily/papers/INDEX.md)、[券商研报 CR Index](../shared/C_intraday_to_daily/reports/INDEX.md)。当前先研究高频统计量、分时段/条件聚合、量价关系和学习式时序压缩等怎样生成 Daily 特征；标签、用途、频率和数据条件仍需与老师确认，不预设模型。研报可按批讨论准入，首要任务是准确理解计算路径与证据。
 - **共同程序**：各自先读懂来源 → 再进行跨论文创新/不足比较 → 最后形成自己的可验证研究设想。**每方向分别走三阶段，阶段切换由研究者确认**。统一遵守来源准入、创新逐项审批、严格语义去重与强制同步；新方向文献不可自动占用旧 P/D 编号。
 
 ## 1. 方向 A 的研究问题

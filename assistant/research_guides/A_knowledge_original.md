@@ -1,14 +1,14 @@
 # 方向 A｜JXwork 因子挖掘 Delta 知识库（跨论文机制数据库）
 
-**方向标识**：此处仅记录方向 A 的 P/D 机制知识，编号及既有内容不动。方向 B（AI 如何训练 AI）的 TD 机制另在 [ai_trains_ai/knowledge/DELTA_INDEX.md](../ai_trains_ai/knowledge/DELTA_INDEX.md)；新机制需跨方向核对重复，并使用所属方向索引。
+**方向标识**：此处仅记录方向 A 的 P/D 机制知识，编号及既有内容不动。方向 B（AI 如何训练 AI）的 TD 机制另在 [ai_trains_ai/knowledge/DELTA_INDEX.md](../../shared/B_ai_trains_ai/knowledge/DELTA_INDEX.md)；新机制需跨方向核对重复，并使用所属方向索引。
 
-**审核原则（2026-10-21）**：D010（P004 MCTS 多维搜索）与 D011（P004 FSA 高频子树规避）已获研究者认可，具体假设仍待验证；D002（P001 公式先验）与 D006（P002 金融专业主题 + 多样化提示）及其特化风险已获研究者讨论认可；但创新程度和实际风险尚需证据核查。D001/D003/D004 为背景对照，D005 为通用评价规范；代码级种群进化 D007 已获研究者认可；**代码灵活导致验证困难**的缺点提议未通过，不另立相应缺点。2026-10-21 P007 的 [D012](deltas/D012_literature_operator_assembly.md) 文献—算子构造与 [D013](deltas/D013_tmb_rl_factor_policy.md) 单因子 TMB 奖励/参数更新已获研究者认可；对应 TMB 极值风险仅低置信度保留，尚未实证。**先审后入库**。
+**审核原则（2026-10-21）**：D010（P004 MCTS 多维搜索）与 D011（P004 FSA 高频子树规避）已获研究者认可，具体假设仍待验证；D002（P001 公式先验）与 D006（P002 金融专业主题 + 多样化提示）及其特化风险已获研究者讨论认可；但创新程度和实际风险尚需证据核查。D001/D003/D004 为背景对照，D005 为通用评价规范；代码级种群进化 D007 已获研究者认可；**代码灵活导致验证困难**的缺点提议未通过，不另立相应缺点。2026-10-21 P007 的 [D012](../../shared/A_alpha_mining/knowledge/deltas/D012_literature_operator_assembly.md) 文献—算子构造与 [D013](../../shared/A_alpha_mining/knowledge/deltas/D013_tmb_rl_factor_policy.md) 单因子 TMB 奖励/参数更新已获研究者认可；对应 TMB 极值风险仅低置信度保留，尚未实证。**先审后入库**。
 
 **强制同步**：每个 Agent 在经审批和语义去重后新增、修改、合并或撤回 D 卡时，必须在**同一工作回合**核对并更新 `DELTA_INDEX.md`、相关 `papers/P00X/` 已审批机制引用；如该论文整体审批/归档进度改变，也要同步 `papers/INDEX.md`。共享文件写前取最新 SHA，遇冲突重新合并。**不允许只改 D 卡而留下过时索引**。
 
-**P008 已审批新增（2026-10-21）**：[D014｜种子 Alpha 连续进化](deltas/D014_seed_conditioned_evolution.md)及 [D015｜五目标分层训练奖励](deltas/D015_hierarchical_evolution_reward.md)。**两项机制现分别配有研究者已批准的特化验证不足**：D014 ↔ Pass@T 仅反映是否超越种子、未表征改善幅度；D015 ↔ 五项奖励的独立消融与组合必要性验证不充分。探索与一致性的制衡仍是设计价值，**不是缺点本身**。两项是相对既有论文有明确任务/训练信号差异的**项目级特色机制**，不等于世界学术首创；原始 PDF 细节仍待直接核验。
+**P008 已审批新增（2026-10-21）**：[D014｜种子 Alpha 连续进化](../../shared/A_alpha_mining/knowledge/deltas/D014_seed_conditioned_evolution.md)及 [D015｜五目标分层训练奖励](../../shared/A_alpha_mining/knowledge/deltas/D015_hierarchical_evolution_reward.md)。**两项机制现分别配有研究者已批准的特化验证不足**：D014 ↔ Pass@T 仅反映是否超越种子、未表征改善幅度；D015 ↔ 五项奖励的独立消融与组合必要性验证不充分。探索与一致性的制衡仍是设计价值，**不是缺点本身**。两项是相对既有论文有明确任务/训练信号差异的**项目级特色机制**，不等于世界学术首创；原始 PDF 细节仍待直接核验。
 
-**P009 新增已审（2026-10-22）**：[D017｜因子与内部评价指标联合进化](deltas/D017_joint_alpha_metric_evolution.md) 与 [D018｜SJS 角色权限和来源信息隔离](deltas/D018_sealed_joint_search_information_topology.md) 已获研究者批准；两项特化不足集中在 [P009/IDEAS](../papers/P009/IDEAS.md)，不另立重复通用风险卡。对照 D004/D005/D010/D013–D016 及 P010，**学术首创和实际算法故障均未被独立确认**。
+**P009 新增已审（2026-10-22）**：[D017｜因子与内部评价指标联合进化](../../shared/A_alpha_mining/knowledge/deltas/D017_joint_alpha_metric_evolution.md) 与 [D018｜SJS 角色权限和来源信息隔离](../../shared/A_alpha_mining/knowledge/deltas/D018_sealed_joint_search_information_topology.md) 已获研究者批准；两项特化不足集中在 [P009/IDEAS](../../shared/A_alpha_mining/papers/P009/IDEAS.md)，不另立重复通用风险卡。对照 D004/D005/D010/D013–D016 及 P010，**学术首创和实际算法故障均未被独立确认**。
 
 **目的**：不是重新存放逐篇论文综述，而是把每篇真正读懂的论文拆成**可对照的技术机制/知识单元**。未来研究 P00X 时，先对照现有知识，辨别它到底新增了什么；从积累的共性、差异和未解问题里，逐步形成真正的研究地图。
 
@@ -22,8 +22,8 @@
 
 ## 结构
 
-- [DELTA_INDEX.md](DELTA_INDEX.md)：所有已登记机制的总索引、首次观察来源、学术新颖性边界。
-- [deltas/](deltas)：每一个独立机制的证据卡（D001、D002…），记录定义、来源、变体、客观缺口及后续修订。
+- [DELTA_INDEX.md](../../shared/A_alpha_mining/knowledge/DELTA_INDEX.md)：所有已登记机制的总索引、首次观察来源、学术新颖性边界。
+- [deltas/](../../shared/A_alpha_mining/knowledge/deltas)：每一个独立机制的证据卡（D001、D002…），记录定义、来源、变体、客观缺口及后续修订。
 - [../papers/](../../papers)：论文档案（原文来源、系统图、作者贡献、评价以及我们的候选研究想法）。
 - [../synthesis/](../../synthesis)：跨论文比较成熟后、研究者认可的综合研究结论；知识卡不是完整研究地图。
 
@@ -47,8 +47,8 @@ P001 是初始研究基线，**D002 是经讨论确认的重点机制**；P002 �
 
 ## P002 审批进度（2026-10-21）
 
-- [D006｜专业领域 Agent + 提示多样化](deltas/D006_domain_guidance.md)：**已获认可**；固定主题可能制造表面多样、实际因子同质化的风险，也已认可为**待验证假设**。
-- [D007｜LLM Python 因子代码级种群进化](deltas/D007_code_evolution.md)：**已获认可**；不把遗传算子误认作学术首创；其对应“自由代码较难检验”的弱缺点已由研究者否决，**不强行配缺点**。
+- [D006｜专业领域 Agent + 提示多样化](../../shared/A_alpha_mining/knowledge/deltas/D006_domain_guidance.md)：**已获认可**；固定主题可能制造表面多样、实际因子同质化的风险，也已认可为**待验证假设**。
+- [D007｜LLM Python 因子代码级种群进化](../../shared/A_alpha_mining/knowledge/deltas/D007_code_evolution.md)：**已获认可**；不把遗传算子误认作学术首创；其对应“自由代码较难检验”的弱缺点已由研究者否决，**不强行配缺点**。
 - 其他论文机制的评价性增量仍需研究者逐项审批；这不是全面转入阶段二/三。
 
 **写作与审批规范**：[RESEARCH_WRITING_STANDARD.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)。

@@ -16,8 +16,8 @@
 ## 去重
 
 - [TD001](TD001_coupled_task_mutator_prompt_evolution.md)：固定锦标赛评价任务 Prompt 和其变异指令 M 的种群；**没有本卡特指的逐验证样例 Pareto 抽父代**。
-- [D010/P004](../../../knowledge/deltas/D010_mcts_multidimensional_search.md)：搜索树节点与统计回传，结合因子池相关的多维评分；这里是**每个验证样例当成一个比较维度**决定 Prompt 父代，既无 MCTS 树路径回传，也非金融因子评分。
-- [D020/P010](../../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md)：LightGBM 估算未实施语义 Plan 奖励分配实施预算；本机制**不训练代理分数预测器**，直接利用已测试候选的逐样例分数抽样。
+- [D010/P004](../../../A_alpha_mining/knowledge/deltas/D010_mcts_multidimensional_search.md)：搜索树节点与统计回传，结合因子池相关的多维评分；这里是**每个验证样例当成一个比较维度**决定 Prompt 父代，既无 MCTS 树路径回传，也非金融因子评分。
+- [D020/P010](../../../A_alpha_mining/knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md)：LightGBM 估算未实施语义 Plan 奖励分配实施预算；本机制**不训练代理分数预测器**，直接利用已测试候选的逐样例分数抽样。
 - [TD003](TD003_trace_guided_module_prompt_reflection.md) 负责新 Prompt 的诊断生成；本卡只记录**候选选择**。
 
 ## 对应已批准特化疑问②：样例级局部领先是否稳定？

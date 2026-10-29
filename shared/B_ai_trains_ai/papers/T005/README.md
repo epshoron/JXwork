@@ -38,4 +38,4 @@ flowchart TD
 
 ## 所属方向与去重定位（事实性）
 
-本篇属于方向 B 的**参数训练**路线。它不同于 [T001 Promptbreeder](../T001/README.md) 的外部 Prompt 种群变异，以及 [方向 A：P002/P008](../../../papers/INDEX.md) 面向 Alpha 因子搜索的具体任务；本篇 **TD006（Actor/Judge 同权重自评分 + DPO）**、**TD007（IFT/EFT 双任务初始化 + Judge 跨任务迁移）**已按研究者明确审批及跨方向去重登记；机制卡不代表 DPO、Judge 或多任务学习的全球首次发明。见 [TD006](../../knowledge/deltas/TD006_shared_actor_judge_self_reward_dpo.md) 与 [TD007](../../knowledge/deltas/TD007_dual_task_judge_transfer.md)。
+本篇属于方向 B 的**参数训练**路线。它不同于 [T001 Promptbreeder](../T001/README.md) 的外部 Prompt 种群变异，以及 [方向 A：P002/P008](../../../A_alpha_mining/papers/INDEX.md) 面向 Alpha 因子搜索的具体任务；本篇 **TD006（Actor/Judge 同权重自评分 + DPO）**、**TD007（IFT/EFT 双任务初始化 + Judge 跨任务迁移）**已按研究者明确审批及跨方向去重登记；机制卡不代表 DPO、Judge 或多任务学习的全球首次发明。见 [TD006](../../knowledge/deltas/TD006_shared_actor_judge_self_reward_dpo.md) 与 [TD007](../../knowledge/deltas/TD007_dual_task_judge_transfer.md)。

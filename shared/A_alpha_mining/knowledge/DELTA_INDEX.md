@@ -1,6 +1,6 @@
 # 方向 A｜Delta Index · AI Agent 因子挖掘机制增量总表
 
-> **本索引专属方向 A（D001–D020）**；方向 B（AI 如何训练 AI）的机制卡独立登记在 [ai_trains_ai/knowledge/DELTA_INDEX.md](../ai_trains_ai/knowledge/DELTA_INDEX.md)，使用 TD 编号。跨方向同义机制先关联、严格去重，不互相覆盖索引。
+> **本索引专属方向 A（D001–D020）**；方向 B（AI 如何训练 AI）的机制卡独立登记在 [ai_trains_ai/knowledge/DELTA_INDEX.md](../../B_ai_trains_ai/knowledge/DELTA_INDEX.md)，使用 TD 编号。跨方向同义机制先关联、严格去重，不互相覆盖索引。
 
 **P003 更新（2026-10-21）**：D008（AST 最大公共子树原创性惩罚）和 D009（金融假设—描述—公式双层对齐）已经讨论认可；验证缺口仍标为待核，学术新颖性未最终确认。详见下表及 P003 档案。
 

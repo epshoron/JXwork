@@ -17,7 +17,7 @@
 ## 去重
 
 - [TD001](TD001_coupled_task_mutator_prompt_evolution.md)：进化 P/M 内容与变异指令，不是按共同祖先把两个分支的**互补模块**组合。
-- [D007/P002](../../../knowledge/deltas/D007_code_evolution.md)：父代选择、Python 因子代码 mutation/crossover；**遗传交叉本身已有先例**。GEPA 特化点在于**候选代表一整套多模块 Prompt，利用模块身份 + 共同谱系合并各自已演化的组件**。
+- [D007/P002](../../../A_alpha_mining/knowledge/deltas/D007_code_evolution.md)：父代选择、Python 因子代码 mutation/crossover；**遗传交叉本身已有先例**。GEPA 特化点在于**候选代表一整套多模块 Prompt，利用模块身份 + 共同谱系合并各自已演化的组件**。
 - [TD003](TD003_trace_guided_module_prompt_reflection.md) 负责独立模块的 Prompt 改写；本机制解决的是**已有不同模块改进如何合并**，不是再次换名叙述“改 Prompt”。
 
 ## 对应已批准特化不足③：互补模块不一定形成互补性能

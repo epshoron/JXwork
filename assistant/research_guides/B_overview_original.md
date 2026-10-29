@@ -1,6 +1,6 @@
 # 方向 B｜AI 优化 AI：Agent 自动改进与模型训练（AI Improves AI）
 
-> **状态：2026-10-22 更新研究问题（研究者明确的目标场景）**。已批准作为研究方向；**T001 Promptbreeder 的两组机制及对应不足已获批（TD001/TD002）；T003 Agent Lightning 的[2+2 已审机制](papers/T003/ARCHITECTURE.md)已入库 TD008/TD009；T005 Self-Rewarding 的[两组已审创新与配对不足](papers/T005/ARCHITECTURE.md)已存档（TD006/TD007）；T002 GEPA 的三组特色与对应不足已获批（TD003–TD005）；T004 ADAS 已审 2+2（TD010/TD011）；其他实时进度见本方向论文 Index。尚未选定最终工程路线**。这里记录的是研究目标，不是已证实的方法或实现承诺。
+> **状态：2026-10-22 更新研究问题（研究者明确的目标场景）**。已批准作为研究方向；**T001 Promptbreeder 的两组机制及对应不足已获批（TD001/TD002）；T003 Agent Lightning 的[2+2 已审机制](../../shared/B_ai_trains_ai/papers/T003/ARCHITECTURE.md)已入库 TD008/TD009；T005 Self-Rewarding 的[两组已审创新与配对不足](../../shared/B_ai_trains_ai/papers/T005/ARCHITECTURE.md)已存档（TD006/TD007）；T002 GEPA 的三组特色与对应不足已获批（TD003–TD005）；T004 ADAS 已审 2+2（TD010/TD011）；其他实时进度见本方向论文 Index。尚未选定最终工程路线**。这里记录的是研究目标，不是已证实的方法或实现承诺。
 
 ## 核心研究问题：AI 应该优化什么？
 
@@ -35,18 +35,18 @@ flowchart TD
 
 | 位置 | 用途 |
 |---|---|
-| [papers/INDEX.md](papers/INDEX.md) | 方向 B 论文认领/去重/最小状态；[T001 Promptbreeder](papers/T001/ARCHITECTURE.md) 已审 2+2；[T002 GEPA](papers/T002/ARCHITECTURE.md) 已审 3+3；[T003 Agent Lightning](papers/T003/ARCHITECTURE.md) 已审 2+2；[T004 ADAS](papers/T004/ARCHITECTURE.md) 已审 2+2；**T005 Self-Rewarding 已完成[客观架构、原文方法](papers/T005/README.md)与[2+2 审批](papers/T005/ARCHITECTURE.md)**；其他并行认领以实时 Index 为准 |
+| [papers/INDEX.md](../../shared/B_ai_trains_ai/papers/INDEX.md) | 方向 B 论文认领/去重/最小状态；[T001 Promptbreeder](../../shared/B_ai_trains_ai/papers/T001/ARCHITECTURE.md) 已审 2+2；[T002 GEPA](../../shared/B_ai_trains_ai/papers/T002/ARCHITECTURE.md) 已审 3+3；[T003 Agent Lightning](../../shared/B_ai_trains_ai/papers/T003/ARCHITECTURE.md) 已审 2+2；[T004 ADAS](../../shared/B_ai_trains_ai/papers/T004/ARCHITECTURE.md) 已审 2+2；**T005 Self-Rewarding 已完成[客观架构、原文方法](../../shared/B_ai_trains_ai/papers/T005/README.md)与[2+2 审批](../../shared/B_ai_trains_ai/papers/T005/ARCHITECTURE.md)**；其他并行认领以实时 Index 为准 |
 | `papers/T00X/README.md` | 单篇原文依据的自绘架构与输入/反馈/训练路径（归档后才出现） |
 | `papers/T00X/PAPER.md` | 原文及查证范围 |
 | `papers/T00X/ARCHITECTURE.md` | **逐项经研究者确认**的特色机制；不强制每篇都有 |
 | `papers/T00X/IDEAS.md` | **逐项经研究者确认**的具体不足/待验问题 |
-| [knowledge/DELTA_INDEX.md](knowledge/DELTA_INDEX.md) | 本方向的机制增量索引（`TD001` 起） |
+| [knowledge/DELTA_INDEX.md](../../shared/B_ai_trains_ai/knowledge/DELTA_INDEX.md) | 本方向的机制增量索引（`TD001` 起） |
 | `knowledge/deltas/TD00X_*.md` | 获批并与已有机制去重的机制卡；暂无机制时不创建 |
-| [synthesis/README.md](synthesis/README.md) | 仅放后续经确认的跨论文综合结论 |
+| [synthesis/README.md](../../shared/B_ai_trains_ai/synthesis/README.md) | 仅放后续经确认的跨论文综合结论 |
 
 ## 与方向 A 的关系
 
-- 方向 A **AI Agent 因子挖掘**保留仓库根目录现有 [papers/](../papers/INDEX.md)、[knowledge/](../knowledge/DELTA_INDEX.md)、[synthesis/](../synthesis/README.md)，**不移动旧文件、不重编号**。
+- 方向 A **AI Agent 因子挖掘**保留仓库根目录现有 [papers/](../../shared/A_alpha_mining/papers/INDEX.md)、[knowledge/](../../shared/A_alpha_mining/knowledge/DELTA_INDEX.md)、[synthesis/](../../shared/A_alpha_mining/synthesis/README.md)，**不移动旧文件、不重编号**。
 - B 论文从 **T001** 开始，机制卡从 **TD001** 开始；与 A 的 P001–P010、D001–D020 分开管理。
 - 同一原文涉及两个方向时，先查**两边索引**，优先交叉引用、解释不同研究问题，避免重复整篇复制。跨方向不因措辞不同重复声称创新。
 - **共享规范**：[AGENTS.md](https://github.com/epshoron/JXwork/blob/main/assistant/AGENTS.md)、[RESEARCH_WRITING_STANDARD.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_WRITING_STANDARD.md)、[RESEARCH_PLAN.md](https://github.com/epshoron/JXwork/blob/main/assistant/RESEARCH_PLAN.md)。新论文骨架经原文核实可归档；创新/特化不足/原创研究想法/Delta **仍须研究者逐项批准与严格语义去重**，非论文来源须先批准来源本身。每次归档**同一回合同步本方向两份索引**。

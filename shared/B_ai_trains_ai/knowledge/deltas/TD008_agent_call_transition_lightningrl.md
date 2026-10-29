@@ -19,6 +19,6 @@
 - **TD006**：自生成答案+同模型 Judge→偏好数据→DPO；本卡是**已有多轮 Agent 中的调用级训练数据拆分**，不依赖自评分偏好对。
 - **TD007**：Judge 任务训练初始化/参数迁移，不是执行轨迹→RL transition。
 - **TD009**：在 TD008 可抽取的调用中**选哪些角色进入训练**；两者作用于数据的不同维度。
-- **[D016](../../../knowledge/deltas/D016_pool_trajectory_grpo.md)**：因子池探索的整体轨迹奖励用于 GRPO 的**金融专项目标**；本卡聚焦**跨 Agent 框架的调用级训练数据接口**，不另开“终端奖励 RL”同义条目。与 D013/D015 共用的参数 RL 基础不称独有。
+- **[D016](../../../A_alpha_mining/knowledge/deltas/D016_pool_trajectory_grpo.md)**：因子池探索的整体轨迹奖励用于 GRPO 的**金融专项目标**；本卡聚焦**跨 Agent 框架的调用级训练数据接口**，不另开“终端奖励 RL”同义条目。与 D013/D015 共用的参数 RL 基础不称独有。
 
 **原文**：[Agent Lightning 2025 §3.2–3.3、Fig.2–3、§5.2](https://arxiv.org/html/2508.03680)。[T003 特色与不足](../../papers/T003/ARCHITECTURE.md) · [原文证据范围](../../papers/T003/PAPER.md)。2026 v1.0 不在此卡范围内。

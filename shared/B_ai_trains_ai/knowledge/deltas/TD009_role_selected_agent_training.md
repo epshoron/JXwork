@@ -18,7 +18,7 @@
 - **TD008**：抽取单次调用并进行轨迹级奖励→模型 RL 参数训练，解决**训练单元**转换；本卡控制**哪些角色调用**被用于训练。分别具有不同干预位置。
 - **TD007（T005）**：涉及同模型 Actor/Judge 的 IFT/EFT 初始化与随回答训练而改变的 Judge 能力，是**跨任务评价能力转移**；本卡关注 Writer/Rewriter 调用是否进入训练及其对未选角色的影响，没有 EFT/Judge 能力任务。
 - **TD006（T005）**：同一 LLM 自评选择偏好对做 DPO；本卡没有自评分选择偏好对。
-- **[D004](../../../knowledge/deltas/D004_role_separation.md)**：通用生成/审查等 Agent 分工是旧机制；本卡**训练数据的角色级过滤**才是特化更新对象，不能把 Agent 分工本身记成创新。
-- **[D016](../../../knowledge/deltas/D016_pool_trajectory_grpo.md)**：为因子池结果训练搜索模型，与这里 SQL 等任务中选定 LLM 调用/角色的数据入口不同；并不重复“参数训练本身”。
+- **[D004](../../../A_alpha_mining/knowledge/deltas/D004_role_separation.md)**：通用生成/审查等 Agent 分工是旧机制；本卡**训练数据的角色级过滤**才是特化更新对象，不能把 Agent 分工本身记成创新。
+- **[D016](../../../A_alpha_mining/knowledge/deltas/D016_pool_trajectory_grpo.md)**：为因子池结果训练搜索模型，与这里 SQL 等任务中选定 LLM 调用/角色的数据入口不同；并不重复“参数训练本身”。
 
 **原文**：[Agent Lightning 2025 §3.2.2、§4.1](https://arxiv.org/html/2508.03680)。[T003 特色](../../papers/T003/ARCHITECTURE.md) · [配对不足](../../papers/T003/IDEAS.md)。未复现、2026 v1.0 不混入。

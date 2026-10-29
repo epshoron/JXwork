@@ -10,7 +10,7 @@
 
 **对应特化不足①**：P、M 的**文本内容**能变，但外层搜索拓扑、二元锦标赛、变异算子选择与外部评价器仍预先固定。即“改进教练的建议”不等于“自动改造整个教学制度”。这是作者 §6 的**明确扩展边界**，不是已证实性能故障。详见 [IDEAS §1](IDEAS.md)。
 
-**与方向 A 的关系**：不同于 [D007](../../../knowledge/deltas/D007_code_evolution.md) 对 Python **因子代码**进行变异/交叉，也不同于 [D017](../../../knowledge/deltas/D017_joint_alpha_metric_evolution.md) 同时搜索因子与**可执行评分指标代码**；这里被联动搜索的是**任务 Prompt P 与其自然语言变异策略 M**，评分规则本身没有进化。普通反馈和多轮遗传搜索不重复单独开卡。
+**与方向 A 的关系**：不同于 [D007](../../../A_alpha_mining/knowledge/deltas/D007_code_evolution.md) 对 Python **因子代码**进行变异/交叉，也不同于 [D017](../../../A_alpha_mining/knowledge/deltas/D017_joint_alpha_metric_evolution.md) 同时搜索因子与**可执行评分指标代码**；这里被联动搜索的是**任务 Prompt P 与其自然语言变异策略 M**，评分规则本身没有进化。普通反馈和多轮遗传搜索不重复单独开卡。
 
 ## ② TD002｜成功解答反推任务 Prompt，并更新 Few-shot 上下文
 
@@ -20,10 +20,10 @@
 
 **对应特化不足②**：作者在 Appendix J.5 的 few-shot 实验**直接观察到**：示例上下文可能主导模型表现，使任务 Prompt 漂移成 `The mutant` / `mutant` 一类无语义文本。由此不能仅凭整个个体的任务分数，断言 P 本身学到了可脱离示例复用的策略；**不等于证明全系统样本外泛化失败**。详见 [IDEAS §2](IDEAS.md)。
 
-**与方向 A 的关系**：与 [D003](../../../knowledge/deltas/D003_success_memory.md) 持久保存**成功因子并按相似度检索复用**不同，这里把**题目的正确执行轨迹**转化为下一代**自然语言任务 Prompt 与 few-shot 上下文**；与 TD001 的“变异算子自身也被进化”不是同一更新环节。
+**与方向 A 的关系**：与 [D003](../../../A_alpha_mining/knowledge/deltas/D003_success_memory.md) 持久保存**成功因子并按相似度检索复用**不同，这里把**题目的正确执行轨迹**转化为下一代**自然语言任务 Prompt 与 few-shot 上下文**；与 TD001 的“变异算子自身也被进化”不是同一更新环节。
 
 ## 去重与审批记录
 
-- **已对照**：方向 B 现有 [TD Index](../../knowledge/DELTA_INDEX.md)（本轮此前无 TD 卡），方向 A [D001–D020](../../../knowledge/DELTA_INDEX.md)（尤其 D003、D007、D017）及原有 T001 骨架。
+- **已对照**：方向 B 现有 [TD Index](../../knowledge/DELTA_INDEX.md)（本轮此前无 TD 卡），方向 A [D001–D020](../../../A_alpha_mining/knowledge/DELTA_INDEX.md)（尤其 D003、D007、D017）及原有 T001 骨架。
 - **结论**：TD001 记录 `P/M 联动进化`；TD002 记录 `成功推理→Prompt 反推 + 正确示例上下文演化`。输入、更新对象和操作位置不同，**不重复**。两项风险只放 [IDEAS.md](IDEAS.md) 与机制卡交叉引用，不另建“普通 OOS/成本/过拟合”卡。
 - **证据地位**：以上创新为研究者认可的**项目级特色设计**，两项不足分别为**作者承认的边界**与**作者直接报告的现象**；强度不同，不得混写为失效实证。

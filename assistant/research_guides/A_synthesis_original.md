@@ -1,13 +1,13 @@
 # 方向 A｜synthesis / 因子挖掘经确认的综合研究成果
 
-**方向 B 的成熟综合**未来写入 [ai_trains_ai/synthesis/](../ai_trains_ai/synthesis/README.md)，不可混入本目录；各方向研究阶段独立判定。
+**方向 B 的成熟综合**未来写入 [ai_trains_ai/synthesis/](../../shared/B_ai_trains_ai/synthesis/README.md)，不可混入本目录；各方向研究阶段独立判定。
 
 此目录目前保留 `RESEARCH_LENSES.md`，作为**暂定研究提问框架**，不是已验证的分类地图或逐篇笔记；当前项目仍处于**阶段一：完整理解原始论文**。
 
 **写入规则（2026-10-21 更新）：**
 
 - **阶段一（当前）**：论文理解、原文核验、疑问澄清保留在 LLM 对话；先完整弄清论文自身在做什么，不边读边建 GitHub 笔记/比较表/阶段性结论。
-- **已迁移**：P001 单篇原文/架构/客观评价/个人思考应放在 [papers/P001/](../papers/P001/README.md)；跨论文机制与增量的积累放在 [knowledge/](../knowledge/README.md)。本目录只负责项目层面的综合结论。
+- **已迁移**：P001 单篇原文/架构/客观评价/个人思考应放在 [papers/P001/](../../shared/A_alpha_mining/papers/P001/README.md)；跨论文机制与增量的积累放在 [knowledge/](../../shared/A_alpha_mining/knowledge/README.md)。本目录只负责项目层面的综合结论。
 - **单篇成果**按研究者明确要求落入对应 `papers/P00X/`；经核实的可复用机制增量存 `knowledge/`。**项目层面的跨论文综合成果**在研究者要求或确认后写入这里，注明证据与不确定性。
 - **阶段二（以后）**：研读积累充足后才系统整理经证据核验的创新点与局限、跨论文冲突和互补性。
 - **阶段三（最后）**：基于前两阶段充分积累，才有机结合有价值的创新与未解决的缺陷，提出自己的可检验研究设想。
@@ -16,4 +16,4 @@
 
 ## 单篇成果迁移说明
 
-- P002 CogAlpha 的用户确认档案已按最新规则迁入 [papers/P002/](../papers/P002/README.md)，包含原文来源、可渲染 Mermaid 架构图、客观评价和研究者问题。机制增量见 [knowledge/DELTA_INDEX.md](../knowledge/DELTA_INDEX.md)。**本目录不再保留 P002 的重复单篇文件**。
+- P002 CogAlpha 的用户确认档案已按最新规则迁入 [papers/P002/](../../shared/A_alpha_mining/papers/P002/README.md)，包含原文来源、可渲染 Mermaid 架构图、客观评价和研究者问题。机制增量见 [knowledge/DELTA_INDEX.md](../../shared/A_alpha_mining/knowledge/DELTA_INDEX.md)。**本目录不再保留 P002 的重复单篇文件**。

@@ -31,5 +31,5 @@
 ## 与两方向知识库总体关系
 
 - **T001/TD001–TD002**：同属自然语言提示演化，但 T001 改 P/M 和成功工作过程/few-shot；GEPA 的三项分别控制**诊断输入与局部改写、样例级父代选择、谱系级模块合并**。
-- **方向 A**：[D007](../../../knowledge/deltas/D007_code_evolution.md) 进化因子代码；[D010](../../../knowledge/deltas/D010_mcts_multidimensional_search.md) 做因子公式树搜索；[D020](../../../knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md) 训练语义计划奖励代理。和 T002 三个更新对象均不同。**普通遗传算法、Pareto 搜索、LLM 反思本身不另称首创**。
+- **方向 A**：[D007](../../../A_alpha_mining/knowledge/deltas/D007_code_evolution.md) 进化因子代码；[D010](../../../A_alpha_mining/knowledge/deltas/D010_mcts_multidimensional_search.md) 做因子公式树搜索；[D020](../../../A_alpha_mining/knowledge/deltas/D020_semantic_reward_surrogate_scheduler.md) 训练语义计划奖励代理。和 T002 三个更新对象均不同。**普通遗传算法、Pareto 搜索、LLM 反思本身不另称首创**。
 - **整体边界**：T002 仍属方向 B 阶段一的**已批准单篇特色评审**；不表示已进入跨论文阶段二、原创阶段三，或已实现针对某个用户 Executor 的优化系统。
