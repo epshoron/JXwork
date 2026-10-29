@@ -1,7 +1,5 @@
-# 方向 A｜因子组合评价标准
+# Evaluator V1｜评测数学规范与可选 Score
 
-> **V1 研究口径已确认（2026-10-27），不是已完成的代码或回测结果。** 这里记录通用的单因子组合评价方法；不属于论文创新、Delta 或实盘策略。
+[PORTFOLIO_SCORING_STANDARD.md](PORTFOLIO_SCORING_STANDARD.md) 定义原定的单因子多空组合：截面 1%/99% Winsorization、Demean、L1 权重归一化、日频 VWAP 理论收益、双边 Delta Turnover、每单位成交额 10 bps 成本。保存 Ret/SR/DD/TO/Cost 原始字段，以同一版本评价。
 
-- [单因子多空组合评价标准 V1](PORTFOLIO_SCORING_STANDARD.md)：每日横截面 1%–99% Winsorization → Demean + 绝对值归一化（多头 +0.5 / 空头 -0.5）→ 日频 VWAP 理论组合毛收益；根据相邻目标权重之差计算双边 Delta Turnover，以统一 **10 bps × 当日换手率**估算交易成本；最终使用**算术年化毛收益 ×1 + 毛 Sharpe ×0.05 − 毛 MDD ×0.1 − 年化换手成本**得到 Objective Score。
-- **参数定位**：系数 1 / 0.05 / -0.1 是暂定 V1 基准，并非学术公认或已验证最优；后续有数据再做敏感性分析。日频调仓不等于每日全额平仓。
-- **记录边界**：文档说明股票目标权重与 Objective 评分系数如何分别保存；本仓库未存真实历史仓位、内部数据或实际回测。股票池、停牌等其他工程细节本轮不展开。
+**2026-10-29 新决策**：正式成功只看 [两阶段门槛](../architecture/V1.0.1/GATES_AND_DECISIONS.md) 的第一关 PASS、Ret > 3%、SR > 1。原有线性 `Score = Ret + 0.05·SR − 0.1·DD − Cost_ann` 保持数学定义，但只在需要比较/排序时由 Python 按保存指标计算，**不是候选入库或成功的必要条件**。既有口径尚未声称被独立回测验证。

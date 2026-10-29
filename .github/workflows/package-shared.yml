@@ -17,6 +17,26 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - name: Verify relative links within shared
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.parse import unquote, urlsplit
+          import re
+          broken=[]
+          for source in Path("shared").rglob("*.md"):
+              for match in re.finditer(r']\(([^)\s]+)', source.read_text(encoding="utf-8")):
+                  url=match.group(1)
+                  if url.startswith(('#','//','/')) or re.match(r'^[a-z][a-z0-9+.-]*:',url,re.I):
+                      continue
+                  path=urlsplit(url).path
+                  if path and not (source.parent/unquote(path)).resolve().exists():
+                      broken.append((str(source),url))
+          if broken:
+              for a,b in broken[:40]: print("BROKEN",a,b)
+              raise SystemExit(f"{len(broken)} broken shared relative links")
+          print("Shared Markdown relative links OK")
+          PY
       - name: Prepare shared-only artifact
         run: |
           mkdir -p package
