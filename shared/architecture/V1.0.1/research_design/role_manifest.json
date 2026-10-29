@@ -9,112 +9,128 @@
       "scope": "A",
       "label": "价格方向与变动幅度",
       "definition": "A_single_stock_intraday/A01.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A01.md"
     },
     {
       "role_id": "A02",
       "scope": "A",
       "label": "波动强度与风险规模",
       "definition": "A_single_stock_intraday/A02.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A02.md"
     },
     {
       "role_id": "A03",
       "scope": "A",
       "label": "收益分布与不对称性",
       "definition": "A_single_stock_intraday/A03.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A03.md"
     },
     {
       "role_id": "A04",
       "scope": "A",
       "label": "路径顺序与动态依赖",
       "definition": "A_single_stock_intraday/A04.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A04.md"
     },
     {
       "role_id": "A05",
       "scope": "A",
       "label": "时钟时间与时段结构",
       "definition": "A_single_stock_intraday/A05.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A05.md"
     },
     {
       "role_id": "A06",
       "scope": "A",
       "label": "多时间尺度与层级结构",
       "definition": "A_single_stock_intraday/A06.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/A06.md"
     },
     {
       "role_id": "B01",
       "scope": "B",
       "label": "跨日持续性与记忆",
       "definition": "B_single_stock_cross_day/B01.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/B01.md"
     },
     {
       "role_id": "B02",
       "scope": "B",
       "label": "历史稳定性与结构变化",
       "definition": "B_single_stock_cross_day/B02.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/B02.md"
     },
     {
       "role_id": "B03",
       "scope": "B",
       "label": "历史多特征关系与条件机制",
       "definition": "B_single_stock_cross_day/B03.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/B03.md"
     },
     {
       "role_id": "C01",
       "scope": "C",
       "label": "横截面相对位置",
       "definition": "C_multi_stock_intraday/C01.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/C01.md"
     },
     {
       "role_id": "C02",
       "scope": "C",
       "label": "共同变化与个体残差",
       "definition": "C_multi_stock_intraday/C02.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/C02.md"
     },
     {
       "role_id": "C03",
       "scope": "C",
       "label": "跨股票时序传导",
       "definition": "C_multi_stock_intraday/C03.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/C03.md"
     },
     {
       "role_id": "C04",
       "scope": "C",
       "label": "行业与群体层级结构",
       "definition": "C_multi_stock_intraday/C04.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/C04.md"
     },
     {
       "role_id": "C05",
       "scope": "C",
       "label": "非线性共同变化与极端联动",
       "definition": "C_multi_stock_intraday/C05.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/C05.md"
     },
     {
       "role_id": "D01",
       "scope": "D",
       "label": "横截面相对地位的历史演化",
       "definition": "D_multi_stock_cross_day/D01.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/D01.md"
     },
     {
       "role_id": "D02",
       "scope": "D",
       "label": "群体关系的历史演化",
       "definition": "D_multi_stock_cross_day/D02.md",
-      "enabled": true
+      "enabled": true,
+      "prompt_file": "prompting/roles/D02.md"
     }
   ],
   "domains": {
@@ -175,5 +191,8 @@
     "evaluation_policy",
     "knowledge_recording",
     "alpha_qualification"
-  ]
+  ],
+  "research_prompt_version": "research-alpha-prompt-v1.0",
+  "research_output_kind": "alpha_candidate_only",
+  "research_prompt_status": "draft_for_review_not_activated"
 }

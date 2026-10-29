@@ -1,24 +1,24 @@
-# Research Agent 中立 Prompt｜V0.1 草案（待审，未自动启用）
+# Research Agent 独立 Alpha Prompt｜V1 草案（16份）
 
-**目的**：为当前16个专业研究角色提供一套干净、可组合的研究指示。只有信息范围和研究问题边界不同，所有角色共用同一套研究规则和输出规范。不要把已有论文的具体因子公式或作者收益塞进公共Prompt。
+**重要纠正**：M3 的16个专业Research Agent只负责生成**日频Alpha因子候选**，不能把Daily中间特征生成/准入作为其任务。Daily库由独立的M1 Daily Curator管理。上一版 `SYSTEM_COMMON_V0` + `ROLE_PROFILES_V0.json` 的两句角色配置方案已废弃，禁止作为当前指示装配方式。
 
-| 文件 | 作用 |
+## 16份独立专业 Prompt
+
+| 范围 | 独立Prompt文件 |
 |---|---|
-| [SYSTEM_COMMON_V0.md](SYSTEM_COMMON_V0.md) | 共同研究指示；只约束真实性、合法数据、Daily粒度和独立假设 |
-| [ROLE_PROFILES_V0.json](ROLE_PROFILES_V0.json) | 16个简短专业职责描述：研究焦点 + 排除边界，不给指标配方 |
-| [EPISODE_INPUT_V0.md](EPISODE_INPUT_V0.md) | 每轮由程序提供合法可见数据、Daily特征、知识材料、预算 |
-| [OUTPUT_SPEC_V0.md](OUTPUT_SPEC_V0.md) | 输出字段与候选/不可提出候选的语义 |
-| [OUTPUT_SCHEMA_V0.json](OUTPUT_SCHEMA_V0.json) | machine-readable JSON Schema Draft 2020-12 格式约束草案 |
-| [ASSEMBLY_AND_ISOLATION_V0.md](ASSEMBLY_AND_ISOLATION_V0.md) | 指示组装顺序、角色信息注入、Full/Masked隔离方式 |
-| [REVIEW_CHECKLIST_V0.md](REVIEW_CHECKLIST_V0.md) | 未定工程接口及中立性/角色重叠验收 |
+| A 单股日内（6） | [A01](roles/A01.md) · [A02](roles/A02.md) · [A03](roles/A03.md) · [A04](roles/A04.md) · [A05](roles/A05.md) · [A06](roles/A06.md) |
+| C 多股日内（5） | [C01](roles/C01.md) · [C02](roles/C02.md) · [C03](roles/C03.md) · [C04](roles/C04.md) · [C05](roles/C05.md) |
+| B 单股跨日（3） | [B01](roles/B01.md) · [B02](roles/B02.md) · [B03](roles/B03.md) |
+| D 多股跨日（2） | [D01](roles/D01.md) · [D02](roles/D02.md) |
 
-## 最小组装
+## 独立组件
 
-1. 通用系统约束（System Common + Output Spec）。
-2. 选定角色在ROLE_PROFILES_V0.json中对应的唯一 focus/boundary。
-3. 本轮可见且授权的动态数据与研究材料（Episode Input）；full/masked真实过滤由程序负责。
-4. 模型以Schema生成候选或no_candidate；下游独立Evaluator与Knowledge负责核验和记账。
+- [加载方式](ASSEMBLY_ALPHA_V1.md)：每个角色读取自己的一份完整专业Prompt。
+- [本轮动态输入](ALPHA_EPISODE_INPUT_V1.md)：真实数据和可见知识由运行时提供。
+- [Alpha-only输出Schema](ALPHA_OUTPUT_SCHEMA_V1.json)：只接受Alpha候选或no_candidate。
+- [16角色→Prompt映射](ALPHA_PROMPT_MANIFEST_V1.json)。
+- [仍需验证的问题](REVIEW_CHECKLIST_V0.md)：旧检查清单已重定向为V1的待定项。
 
-**版本状态**：提示词可更换，角色数量仍采用Role Taxonomy V0.2的A6/C5/B3/D2；本目录不修改已拍板Daily/Alpha准入标准。该Prompt只在代码接入并通过测试后才可作为运行时正式版本，当前是供审查的首稿。
+**Prompt不是Evaluator，也不是Daily Curator**：Alpha提交后由M4、M5A/M5B、M6和Knowledge执行既定审查；Daily版本、相关性0.6等属于独立M1，不在16个角色Prompt中实现。
 
-相关：[当前16角色](../ROLE_TAXONOMY.md) · [Daily输出接口](../ROLE_OUTPUT_CONTRACT.md) · [Research输入协议](../../RESEARCH_INPUT_PROTOCOL_V1.md)。
+状态：已完成写稿，尚未在公司环境试跑，不能宣称最佳或无偏。

@@ -1,5 +1,11 @@
 # 研究更新日志（Changelog）
 
+## 2026-10-29 · 纠正Research与Daily职责，改为16份独立Alpha Prompt
+
+- 用户明确纠正：16个专业思考Research Agent各自拥有独立完整Prompt，**只生成日频Alpha因子**，不负责Daily中间特征发现、构造、申请、审核和入库；后者属于独立M1 Daily Curator。
+- 原公共Prompt+两句角色描述V0.1退役；推出16份`prompting/roles/Rxx.md`和仅接受alpha_candidate/no_candidate的Schema，明确并保持四范围16角色人数及所有门槛不变。新Prompt仍待真实公司模型测试。
+
+
 ## 2026-10-29 · 中立 Research Agent Prompt V0.1 首稿入库（未启用）
 
 - 依据已采用的 A6/C5/B3/D2 角色划分，将共同研究规则、16种最小化专业职责、每轮动态输入、JSON输出字段与校验Schema、Full/Masked隔离和人审清单放入 `shared/architecture/V1.0.1/research_design/prompting/`。

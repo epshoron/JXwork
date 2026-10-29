@@ -13,7 +13,7 @@ flowchart TD
   DAILY[("Daily 库<br/>定义/版本/CSV")]
   KNOW[("Knowledge 库<br/>Factor + 所有 Experiment<br/>状态/原因/指标/谱系")]
   READER["统一程序读取<br/>目录、查询、按需 Python/原文"]
-  RA["Research Agent<br/>N 可配置"]
+  RA["16 个专业 Research Agent<br/>只生成日频 Alpha 候选；人数可配置"]
   CAND["候选注册<br/>factor_id / experiment_id"]
   ST{"第一关 A：技术/未来信息检查<br/>数据字段/可执行性"}
   STAT{"第一关 B：Statistical Evaluator<br/>质量/重复/胜者相关性 ＜ 0.65"}
@@ -50,15 +50,16 @@ flowchart TD
   OK --> KNOW
   KNOW --> EVOLVE
   EVOLVE --> CAND
-  RA -.->|"新可复用中间特征申请"| CUR
 ```
 
 ## 四库含义
 
 - **Min**：不可随实验效果重写的真实分钟原始数据/字段/可用时点。
 - **论文/研报**：人为收集的原始来源，作者陈述必须带 `external_reported` 标签。
-- **Daily**：有合法定义、依赖、时点、数据版本和物化 CSV 的日频中间特征。Daily 相关性门槛是**其自身准入**，不是 Alpha 盈利评价。
+- **Daily**：由独立 Daily Curator 自主构造与审核的日频中间特征，具有合法定义、依赖、时点、数据版本和物化 CSV；相关性 `<0.6` 是它自己的准入条件。Research Agent 只能读取已发布 Daily，不负责申请、构造或入库。
 - **Knowledge**：因子定义 + 每次真实测试与全链失败/成功记录；其中 `qualified=true` 的实验可以直接查询为正式成功 Alpha。Alpha 与当前 Knowledge 中已成功胜者逐一比较最大绝对相关性，严格 `<0.65`；首个无胜者时只跳过这一比较。它不需要额外的物理或逻辑 Alpha 库。外部作者实验与内部 `internal_executed` 结果分离。
+
+**职责隔离**：Research Agent 的日频 Alpha 输出与 Daily 库的中间特征不能混称。当前 Research 使用 [16份独立专业 Alpha Prompt](research_design/prompting/README.md)（草案未试跑）；Daily Curator 是独立 M1。两者可分别更换内部 Prompt，不影响统一技术、统计与金融评价。
 
 ## 避免生成阶段锚定
 
