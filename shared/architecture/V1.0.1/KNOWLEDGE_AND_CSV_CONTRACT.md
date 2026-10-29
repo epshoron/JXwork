@@ -10,7 +10,7 @@
 
 - **一个 Factor 可对应多个 Experiment**：重跑/更改数据窗口或版本必须生成新的 `experiment_id`，不能覆盖成功/失败历史。
 - `status` 可以为 `pending`、`blocked`、`technical_fail`、`evaluation_error`、`financial_fail`、`qualified`。`qualified` 建议为三态：`true`（正式成功）、`false`（有效金融评价但未达标）、`null`（未跑完金融评价），而不是把未执行算作失败收益。
-- `stage1_metrics` 可结构化包含覆盖率、缺失率、信号分散程度、严格重复检查、相关结果、未来信息检测器版本；**统计方法与阈值要有版本**。
+- `stage1_metrics` 保存技术/泄漏及统计结果；Alpha 相关性须记录 `winner_reference_ids`（或引用集合快照）、`winner_count`、`max_abs_corr`、`closest_winner_factor_id`、`correlation_status`（`NO_REFERENCE/PASS/FAIL/BLOCKED`）、计算方法/样本/门槛版本。空胜者集合时 `max_abs_corr=NULL`，只跳过相关性检查，不能把 NULL 当成零。当前 Alpha 最大绝对相关严格 `<0.65`，算法和样本细节仍待冻结。
 - `ret_ann_gross/sr_gross/mdd_gross/to_daily_mean/to_ann/cost_ann` 为已计算的、可复算的**金融指标字段**；无 Evaluator 则为 NULL。收益、MDD 用小数比例，Sharpe 无量纲；`to_daily_mean` 是日均双边权重差换手，`to_ann=252*to_daily_mean`，`cost_ann=0.001*to_ann`（V1 假设）。
 - `score` **非必存字段**；需要时从金融原始字段按评分版本生成。若缓存 Score，应同时保存 `score_version` 且不能让它决定 `qualified`。
 
@@ -19,7 +19,7 @@
 ## 2. 逻辑视图，而非新建 Alpha 库
 
 - `all_experiments`：所有生成候选与每次状态、阻断和评测结果。
-- `qualified_alpha`：`status='qualified' AND qualified=true` 的 Experiment 连接 Factor 元数据和 CSV 路径；**达标即正式存档**。
+- `qualified_alpha`：`status='qualified' AND qualified=true` 的 Experiment 连接 Factor 元数据和 CSV 路径；**达标即正式存档**。其中实际内部验证的成功 Alpha 是以后候选统计相关性的参照集合，失败候选和仅作者报告的因子不纳入。
 - `technical_or_blocked`：第一关失败或未完成的实验（无金融字段）。
 - `financial_failures`：完整有效评测但低于 Ret/SR 门槛的实验（包含实际金融指标）。
 
