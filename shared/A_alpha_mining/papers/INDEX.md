@@ -19,6 +19,10 @@
 | [P012](P012/README.md) | Illuminating search spaces by mapping elites | [arXiv:1504.04909](https://arxiv.org/abs/1504.04909)（2015 原始预印本） | **原文 Figure 2 / §2–3 已核，MAP-Elites 客观骨架已归档**；非 LLM / 非金融实证，未复现，无独立创新/不足/Delta 审批（2026-11-12） |
 | [P013](P013/README.md) | SCI-IDEA: Context-Aware Scientific Ideation Using Token and Sentence Embeddings | [Machine Learning DOI:10.1007/s10994-026-07036-8](https://doi.org/10.1007/s10994-026-07036-8)（2026） | **出版社开放原文摘要、§3 / Figure 2 和 §6 已核，科研 Idea 生成客观骨架已归档**；非金融实证，未复现，无独立创新/不足/Delta 审批（2026-11-12） |
 
+| [P014](P014/README.md) | FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents | [arXiv:2607.05682](https://arxiv.org/abs/2607.05682)（2026 预印本） | **原文 §3/§4/§5 核实，问题证书、证伪与最小实验客观骨架已归档**；非金融回测、未复现、没有创新/不足/Delta 审批（2026-11-12） |
+| [P015](P015/README.md) | Automated Hypothesis Validation with Agentic Sequential Falsifications | [ICML 2025 / PMLR 267](https://proceedings.mlr.press/v267/huang25n.html) | **官方摘要及题录核实，POPPER 主流程初步骨架已归档；原文全文及序贯检验细节待核**；非 Alpha 实证、未复现、没有创新/不足/Delta 审批（2026-11-12） |
+| [P016](P016/README.md) | Taming the Factor Zoo: A Test of New Factors | [Journal of Finance 2020 / DOI:10.1111/jofi.12883](https://doi.org/10.1111/jofi.12883) | **期刊及 NBER/CEPR 摘要核实，新因子对高维资产定价因子池的增量解释力检验已作客观导读**；不是交易策略 OOS 增量实证、未复现、没有创新/不足/Delta 审批（2026-11-12） |
+
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
 **每个研究 Agent 必须自己负责“论文 Markdown ↔ 本 INDEX ↔ 相关 Delta 索引”的一致性；不能指望别的 Agent 或后续会话补齐。** 新认领、骨架落档、已审批内容落档、重要证据状态改变、放弃/撤回时，**在同一工作回合更新本行的最小状态**，只写实际完成的内容、不记录过程流水账；仅对话探讨、无真实状态改变则不必刷屏更新。
