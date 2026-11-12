@@ -1,5 +1,13 @@
 # 研究更新日志（Changelog）
 
+
+## 2026-11-12 · Q2/Q3 相关原始论文客观骨架入库（A 方向，仅资料研究）
+
+- A 论文索引新增 [P011 ATLAS](../shared/A_alpha_mining/papers/P011/README.md)、[P012 MAP-Elites](../shared/A_alpha_mining/papers/P012/README.md)、[P013 SCI-IDEA](../shared/A_alpha_mining/papers/P013/README.md)，均直接核对相关原文并只记录来源、机制骨架、任务/证据边界。
+- P011 是 LLM 算法设计的 Embedding 引导质量-多样性搜索；P012 是经典特征地图搜索；P013 是科研文本的结构化语义和 Idea 生成。这些是**跨领域方法参考**，不是公司端金融回测实证，亦不是本项目原创机制确认。
+- 原有 P010 AlphaSchema 继续作为金融语义搜索的主对照。**未修改研究阶段、公司运行流程、门槛、Prompt 或代码，也没有新增未经审批的创新/特化不足/Delta**；待继续讨论后决定是否开展正式跨论文整合。
+
+
 ## 2026-11-12 · 增加私有执行进度的安全导航（仅文档）
 
 - 经授权的 Gmail 中有 `EP001_FINAL_REPORT.md`，描述公司端 V1.0.2 的 EP001 dev/smoke 运行状态；入口位置和阅读顺序见 [JXWORK_START_HERE.md](JXWORK_START_HERE.md)。本公开仓库的 V1.0.1 继续作为 2026-10-29 研究设计基线，不能冒充最新执行规范。
