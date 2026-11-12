@@ -23,6 +23,10 @@
 | [P015](P015/README.md) | Automated Hypothesis Validation with Agentic Sequential Falsifications | [ICML 2025 / PMLR 267](https://proceedings.mlr.press/v267/huang25n.html) | **官方摘要及题录核实，POPPER 主流程初步骨架已归档；原文全文及序贯检验细节待核**；非 Alpha 实证、未复现、没有创新/不足/Delta 审批（2026-11-12） |
 | [P016](P016/README.md) | Taming the Factor Zoo: A Test of New Factors | [Journal of Finance 2020 / DOI:10.1111/jofi.12883](https://doi.org/10.1111/jofi.12883) | **期刊及 NBER/CEPR 摘要核实，新因子对高维资产定价因子池的增量解释力检验已作客观导读**；不是交易策略 OOS 增量实证、未复现、没有创新/不足/Delta 审批（2026-11-12） |
 
+| [P017](P017/README.md) | Feature Selection Based on Mutual Information: Criteria of Max-Dependency, Max-Relevance, and Min-Redundancy | [IEEE TPAMI 2005 / DOI:10.1109/TPAMI.2005.159](https://doi.org/10.1109/TPAMI.2005.159) | **出版方摘要已核：mRMR 以预测相关性和特征冗余联合组织特征选择**；非金融实证、未复现、无独立创新/不足/Delta 审批（2026-11-12） |
+| [P018](P018/README.md) | Towards Diverse Scientific Hypothesis Search with Large Language Models | [ICML 2026 / PMLR 306](https://proceedings.mlr.press/v306/wang26gx.html) · [arXiv:2606.10587](https://arxiv.org/abs/2606.10587) | **官方摘要已核：EvoDiverse 的多温度搜索与质量-多样性目标**；非金融实证、尚未核完整公式、未复现、无独立创新/不足/Delta 审批（2026-11-12） |
+| [P019](P019/README.md) | Efficient Computation of Lead–Lag Signature Features for Financial Time-Series Forecasting | [Journal of Forecasting 2026 / DOI:10.1002/for.70176](https://doi.org/10.1002/for.70176) | **期刊摘要已核：高效低阶金融路径 Signature，作者报告对股票增量有限**；全文待核、未复现、无独立创新/不足/Delta 审批（2026-11-12） |
+
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
 **每个研究 Agent 必须自己负责“论文 Markdown ↔ 本 INDEX ↔ 相关 Delta 索引”的一致性；不能指望别的 Agent 或后续会话补齐。** 新认领、骨架落档、已审批内容落档、重要证据状态改变、放弃/撤回时，**在同一工作回合更新本行的最小状态**，只写实际完成的内容、不记录过程流水账；仅对话探讨、无真实状态改变则不必刷屏更新。
