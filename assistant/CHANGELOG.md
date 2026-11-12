@@ -1,6 +1,14 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-12 · Gate2b 高相关选择与 Idea 搜索文献补充（仅论文资料）
+
+- A 方向新增 [P017 mRMR](../shared/A_alpha_mining/papers/P017/README.md)：预测目标相关性 vs 特征冗余；[P018 EvoDiverse](../shared/A_alpha_mining/papers/P018/README.md)：固定预算下多温度假设搜索；[P019 Lead–Lag Signature](../shared/A_alpha_mining/papers/P019/README.md)：低阶金融价格路径表示及作者报告的股票低增量。三篇均为已核实来源、摘要级客观机制导读，全文细节和公司场景实验未核。
+- 研究问题：高相关新因子是否应在金融质量与条件信息贡献比较后决定留存，而不是仅因后出现直接淘汰；**仍为讨论中的候选方案，不得视为已获批准的门槛或流程修改**。
+- 无公司数据、执行报告、运行数值或代码提交；没有新增未经审批的独立创新、风险假设或 Delta。
+
+
+
 ## 2026-11-12 · Q2/Q3/Q5 的假设形成、证伪及增量检验论文增补
 
 - A 索引新增 [P014 FirstResearch](../shared/A_alpha_mining/papers/P014/README.md)、[P015 POPPER](../shared/A_alpha_mining/papers/P015/README.md)、[P016 Taming the Factor Zoo](../shared/A_alpha_mining/papers/P016/README.md)，已核对正式/原始来源；P014 阅读了原文主要方法及结果，P015/P016 仅完成正式摘要级初步导读，证据深度各自在 PAPER.md 标明。
