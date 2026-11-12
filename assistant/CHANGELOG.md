@@ -1,6 +1,13 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-12 · 高相关 Alpha 新旧竞争统计标准论文（仅客观资料）
+
+- 新增 [P020 Ledoit–Wolf Sharpe 差检验](../shared/A_alpha_mining/papers/P020/README.md)：在时间依赖、厚尾收益下使用 Studentized time-series bootstrap 检验两策略 Sharpe 差；[P021 Hansen–Lunde–Nason Model Confidence Set](../shared/A_alpha_mining/papers/P021/README.md)：通过多重比较形成无法显著区分优劣的候选集合。均已核正式来源及主要方法摘要，具体实施需独立验证。
+- 同回合更新 A 论文索引。**未修改公司 Gate2b / Alpha–Factor–Loser 实际分类规则，亦未批准新 bar、项目方法或 Delta；只为讨论提供原文依据**。不上传公司数据和私有报告。
+
+
+
 ## 2026-11-12 · Gate2b 高相关选择与 Idea 搜索文献补充（仅论文资料）
 
 - A 方向新增 [P017 mRMR](../shared/A_alpha_mining/papers/P017/README.md)：预测目标相关性 vs 特征冗余；[P018 EvoDiverse](../shared/A_alpha_mining/papers/P018/README.md)：固定预算下多温度假设搜索；[P019 Lead–Lag Signature](../shared/A_alpha_mining/papers/P019/README.md)：低阶金融价格路径表示及作者报告的股票低增量。三篇均为已核实来源、摘要级客观机制导读，全文细节和公司场景实验未核。
