@@ -1,6 +1,14 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-12 · 多元架构参考文献补充：度量学习 / 程序抽象 / 自适应预算 / 共同演化（仅客观资料）
+
+- A 论文索引新增五份经过原始摘要与官方来源核查的研究骨架：[P025 ITML](../shared/A_alpha_mining/papers/P025/README.md)、[P026 DreamCoder](../shared/A_alpha_mining/papers/P026/README.md)、[P027 Hyperband](../shared/A_alpha_mining/papers/P027/README.md)、[P028 Enhanced POET](../shared/A_alpha_mining/papers/P028/README.md)、[P029 SetFit](../shared/A_alpha_mining/papers/P029/README.md)。支持不同研究技术的证据比较，并未与 P010/P018 等旧文献重复入库。
+- 文献分别研究监督距离矩阵、程序抽象库与搜索策略互促、多保真早停、环境-求解器共同演化、Few-shot 表示适配；**均非公司 Alpha 搜索已验证有效机制**，未进行本项目复现。
+- 研究者提出的金融概念空间/小型映射器方案及四类架构路线**暂留讨论，未申请或获得项目创新、特化不足、Delta 审批**；未记录或修改公司私有执行方案、代码、数据、结果。
+
+
+
 ## 2026-11-12 · 跨学科 Idea 生成方法来源增补（仅客观论文骨架）
 
 - A 方向新收录 [P022 结构类比](../shared/A_alpha_mining/papers/P022/README.md)、[P023 PRISM 正交视角](../shared/A_alpha_mining/papers/P023/README.md)、[P024 Novelty Search](../shared/A_alpha_mining/papers/P024/README.md)，同回合同步该方向论文索引。原有 P010/P011/P012/P013/P018 等不重复建立。
