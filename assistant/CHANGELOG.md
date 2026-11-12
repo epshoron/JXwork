@@ -1,6 +1,14 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-12 · 跨学科 Idea 生成方法来源增补（仅客观论文骨架）
+
+- A 方向新收录 [P022 结构类比](../shared/A_alpha_mining/papers/P022/README.md)、[P023 PRISM 正交视角](../shared/A_alpha_mining/papers/P023/README.md)、[P024 Novelty Search](../shared/A_alpha_mining/papers/P024/README.md)，同回合同步该方向论文索引。原有 P010/P011/P012/P013/P018 等不重复建立。
+- 三篇涉及跨领域关系迁移、多视角正交子集选择、非目标得分主导的行为新颖性探索。**原文数据/实验均不等于公司金融场景已验证增量**。
+- 只归档客观研究方法与核验边界；尚未批准本项目的原创 Idea、机制卡或独立缺点评价。**不含公司内部 Gate2b 讨论规则、数据、回测数值或任何执行变更**。
+
+
+
 ## 2026-11-12 · 高相关 Alpha 新旧竞争统计标准论文（仅客观资料）
 
 - 新增 [P020 Ledoit–Wolf Sharpe 差检验](../shared/A_alpha_mining/papers/P020/README.md)：在时间依赖、厚尾收益下使用 Studentized time-series bootstrap 检验两策略 Sharpe 差；[P021 Hansen–Lunde–Nason Model Confidence Set](../shared/A_alpha_mining/papers/P021/README.md)：通过多重比较形成无法显著区分优劣的候选集合。均已核正式来源及主要方法摘要，具体实施需独立验证。
