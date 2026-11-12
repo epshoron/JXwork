@@ -1,6 +1,14 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-12 · Q2/Q3/Q5 的假设形成、证伪及增量检验论文增补
+
+- A 索引新增 [P014 FirstResearch](../shared/A_alpha_mining/papers/P014/README.md)、[P015 POPPER](../shared/A_alpha_mining/papers/P015/README.md)、[P016 Taming the Factor Zoo](../shared/A_alpha_mining/papers/P016/README.md)，已核对正式/原始来源；P014 阅读了原文主要方法及结果，P015/P016 仅完成正式摘要级初步导读，证据深度各自在 PAPER.md 标明。
+- 三者分别关注可审计科研问题形成、面向开放式假设的主动证伪、以及新资产定价因子超越高维既有因子的统计解释力。与已归档的 P010 语义计划、P011 ATLAS 和 P012 MAP-Elites 是不同研究切面。
+- **仅归档客观论文信息，不批准项目级新机制、独立创新/不足或 Delta；没有使用公司内部数据/报告，没有修改运行规则或代码**。Q2–Q5 整合观点暂留在讨论，后续由研究者判断是否正式开展。
+
+
+
 ## 2026-11-12 · Q2/Q3 相关原始论文客观骨架入库（A 方向，仅资料研究）
 
 - A 论文索引新增 [P011 ATLAS](../shared/A_alpha_mining/papers/P011/README.md)、[P012 MAP-Elites](../shared/A_alpha_mining/papers/P012/README.md)、[P013 SCI-IDEA](../shared/A_alpha_mining/papers/P013/README.md)，均直接核对相关原文并只记录来源、机制骨架、任务/证据边界。
