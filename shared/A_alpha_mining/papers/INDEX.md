@@ -15,6 +15,10 @@
 | [P009](P009/README.md) | AI Trading's Alpha Singularity: Emergent Market Reasoning through Agent-to-Agent Self-Evolution | [arXiv:2606.29194](https://arxiv.org/abs/2606.29194)（2026-06-28 预印本） | **架构已核并归档；[D017](../knowledge/deltas/D017_joint_alpha_metric_evolution.md)、[D018](../knowledge/deltas/D018_sealed_joint_search_information_topology.md) 两项特色机制 + [2 项特化不足](P009/IDEAS.md) 已经研究者批准，严格语义去重；风险未实证（2026-10-22）** |
 | [P010](P010/README.md) | AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining | [arXiv:2607.26642](https://arxiv.org/abs/2607.26642)（2026-07-29 预印本） | **骨架、原文及部分作者Python已核，[工程问题表](P010/P010_工程复现问题清单_v1.csv)与[图解](P010/P010_SEMANTIC_PLAN_GUIDE.md)已补；D019/D020及对应待核限制沿用原有审批**；未独立复现或认定学术首创（2026-10-26） |
 
+| [P011](P011/README.md) | ATLAS: Scaffold-Free Algorithm Synthesis by LLMs via Embedding-Guided Quality-Diversity Search | [arXiv:2608.15546](https://arxiv.org/abs/2608.15546)（2026 预印本） | **原文 §III 与 §IV 的主要机制已核，跨领域搜索方法客观骨架已归档**；非金融实证，未复现，无独立创新/不足/Delta 审批（2026-11-12） |
+| [P012](P012/README.md) | Illuminating search spaces by mapping elites | [arXiv:1504.04909](https://arxiv.org/abs/1504.04909)（2015 原始预印本） | **原文 Figure 2 / §2–3 已核，MAP-Elites 客观骨架已归档**；非 LLM / 非金融实证，未复现，无独立创新/不足/Delta 审批（2026-11-12） |
+| [P013](P013/README.md) | SCI-IDEA: Context-Aware Scientific Ideation Using Token and Sentence Embeddings | [Machine Learning DOI:10.1007/s10994-026-07036-8](https://doi.org/10.1007/s10994-026-07036-8)（2026） | **出版社开放原文摘要、§3 / Figure 2 和 §6 已核，科研 Idea 生成客观骨架已归档**；非金融实证，未复现，无独立创新/不足/Delta 审批（2026-11-12） |
+
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
 **每个研究 Agent 必须自己负责“论文 Markdown ↔ 本 INDEX ↔ 相关 Delta 索引”的一致性；不能指望别的 Agent 或后续会话补齐。** 新认领、骨架落档、已审批内容落档、重要证据状态改变、放弃/撤回时，**在同一工作回合更新本行的最小状态**，只写实际完成的内容、不记录过程流水账；仅对话探讨、无真实状态改变则不必刷屏更新。
