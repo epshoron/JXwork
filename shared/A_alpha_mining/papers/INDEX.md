@@ -33,6 +33,10 @@
 | [P027](P027/README.md) | Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization | [JMLR 2018](https://jmlr.org/papers/v18/16-558.html) | **期刊及方法核实：Successive Halving 和多 bracket 预算调度**；不证明金融低保真筛选可靠，未复现，无项目 Delta 审批（2026-11-12） |
 | [P028](P028/README.md) | Enhanced POET: Open-ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions | [ICML 2020 / PMLR 119](https://proceedings.mlr.press/v119/wang20l.html) | **论文官方摘要核实：任务环境和求解者共同演化、跨环境迁移**；非金融时序实证，未复现，无项目 Delta 审批（2026-11-12） |
 | [P029](P029/README.md) | Efficient Few-Shot Learning Without Prompts | [arXiv:2209.11055](https://arxiv.org/abs/2209.11055) | **原始摘要及作者技术说明核实：SetFit 少样本对比微调、轻量分类头**；非金融映射器的直接证明，未复现，无项目 Delta 审批（2026-11-12） |
+| [P030](P030/README.md) | GoAnt: Quality-Diversity Multi-Agent Search for Alpha Factor Discovery in Market Microstructure Data | [arXiv:2609.08719](https://arxiv.org/abs/2609.08719)（2026 预印本） | **arXiv 题录与摘要已核：Explorer/Exploiter/Connector、执行行为 Mental Map、动态预算分配及 effective-yield**；完整原文待核、金融效果未复现；无项目创新/不足/Delta 审批（2026-11-13） |
+| [P031](P031/README.md) | FactorEngine: A Program-level Knowledge-Infused Factor Mining Framework for Quantitative Investment | [arXiv:2603.16365](https://arxiv.org/abs/2603.16365)（2026 预印本） | **原始 HTML §1–§4 主要框架核实：LLM 程序逻辑宏观演化＋本地贝叶斯参数微观搜索**；非本项目实证，未复现、无项目 Delta 审批（2026-11-13） |
+| [P032](P032/README.md) | Alpha Discovery via Grammar-Guided Learning and Search | [arXiv:2601.22119](https://arxiv.org/abs/2601.22119)（2026 预印本） | **arXiv HTML 核实：形式语法约束和 grammar-aware MCTS/tree representation**；未核金融复现，不宣称正式会议录用，无 Delta 审批（2026-11-13） |
+| [P033](P033/README.md) | LABO: LLM-Accelerated Bayesian Optimization through Broad Exploration and Selective Experimentation | [ICML 2026 / PMLR 306](https://proceedings.mlr.press/v306/chen26fx.html) | **PMLR 摘要核实：LLM 低成本评价与真实实验门控的 Bayesian search**；与 P010 代理评分对照待核，未复现、无项目 Delta 审批（2026-11-13） |
 
 ## 必须同步更新：每个 Agent 的收尾义务（硬门槛）
 
