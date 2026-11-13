@@ -1,6 +1,14 @@
 # 研究更新日志（Changelog）
 
 
+## 2026-11-13 · 新研究方向对照文献：行为地图、两层搜索、生成语法与预算门控
+
+- A 论文索引客观资料新增 [P030 GoAnt](../shared/A_alpha_mining/papers/P030/README.md)（执行行为特征定义的质量-多样性地图及动态角色预算）、[P031 FactorEngine](../shared/A_alpha_mining/papers/P031/README.md)（LLM 调整程序逻辑与本地 Bayesian 搜数值参数分开）、[P032 AlphaCFG](../shared/A_alpha_mining/papers/P032/README.md)（生成前的金融语义语法约束和结构搜索）、[P033 LABO](../shared/A_alpha_mining/papers/P033/README.md)（LLM 廉价预测与真实实验的可信度门控）。
+- 证据边界：P031/P032 直接读过 arXiv HTML 主要方法；P030/P033 本轮以论文官方摘要/题录与补充材料核验为主，具体消融尚待全文复核。各项论文结果均非公司金融系统可直接继承的验证。
+- **仅归档客观论文内容；涉及公司系统是否已有该功能、如何组合及新的研究建议仅留对话讨论，尚未批准新 Delta、未变更研究规则或公司端代码。**
+
+
+
 ## 2026-11-12 · 多元架构参考文献补充：度量学习 / 程序抽象 / 自适应预算 / 共同演化（仅客观资料）
 
 - A 论文索引新增五份经过原始摘要与官方来源核查的研究骨架：[P025 ITML](../shared/A_alpha_mining/papers/P025/README.md)、[P026 DreamCoder](../shared/A_alpha_mining/papers/P026/README.md)、[P027 Hyperband](../shared/A_alpha_mining/papers/P027/README.md)、[P028 Enhanced POET](../shared/A_alpha_mining/papers/P028/README.md)、[P029 SetFit](../shared/A_alpha_mining/papers/P029/README.md)。支持不同研究技术的证据比较，并未与 P010/P018 等旧文献重复入库。
